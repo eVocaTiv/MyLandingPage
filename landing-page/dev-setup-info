@@ -1,0 +1,8 @@
+FOR PERSONAL USE ONLY.
+
+- VSCode configs, eslint, themes & fonts, plugins, git, node.
+- Gatsby setup
+- Component library - Material UI ( use diff. CDN imports for dev & prod build).
+- Redux Saga setup
+- aliases setup & hot reload.
+- Styled components
