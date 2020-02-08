@@ -11,15 +11,19 @@ module.exports = {
       options: {
         alias: {
           "@src": "src",
+          "@routes": "src/routes",
+          "@appContent": "src/appContent",
           "@components": "src/components",
           "@layouts": "src/layouts",
           "@pages": "src/pages",
           "@sass": "src/sass",
           "@templates": "src/templates",
           "@posts": "content/posts",
-          "@sagas": "src/sagas",
-          "@reducers": "src/reducers",
-          "@actionTypes": "src/sagas/actionTypes",
+          "@sagas": "src/store/sagas",
+          "@reducers": "src/store/reducers",
+          "@actionTypes": "src/store/sagas/actionTypes",
+          "@actions": "src/store/actions",
+          "@store": "src/store",
         },
         extensions: [
           "js", "jsx",
