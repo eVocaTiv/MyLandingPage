@@ -1,9 +1,9 @@
-import { put, fork } from "redux-saga/effects"
+import { put, fork } from 'redux-saga/effects';
 // import ActionTypes from "@actions/types"
 // import createAction from "@actions"
 
 function* dispatchReducerAction(action) {
-  yield put(action)
+  yield put(action);
 }
 
 // function* updateInFlightFlag(isInFlight) {
@@ -18,17 +18,14 @@ function* handleError(error, errorHandlerAction = null) {
   if (errorHandlerAction !== null) {
     yield fork({
       ...errorHandlerAction,
-    })
+    });
   }
 
-  if (process.env.NODE_ENV === "development") {
-    console.error(error)
-  } else if (process.env.NODE_ENV === "production") {
-    console.error("An error occurred. Please contact kunalx011@gmail.com")
+  if (process.env.NODE_ENV === 'development') {
+    console.error(error);
+  } else if (process.env.NODE_ENV === 'production') {
+    console.error('An error occurred. Please contact kunalx011@gmail.com');
   }
 }
 
-export {
-    handleError,
-    dispatchReducerAction
-};
+export { handleError, dispatchReducerAction };

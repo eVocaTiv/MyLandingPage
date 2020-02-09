@@ -6,7 +6,6 @@ import createAction from '@actions';
 function* demoSaga(action) {
   try {
     // yield* updateInFlightFlag(true);
-    console.log('in demo saga..');
 
     // perform api call to fetch data..
     const payload = {

@@ -4,7 +4,8 @@ import Routes from '@routes';
 
 class App extends Component {
   render() {
-    return <AppWrapper>{Routes}</AppWrapper>;
+    // Routes for dynamic URL links
+    return Routes;
   }
 }
 
