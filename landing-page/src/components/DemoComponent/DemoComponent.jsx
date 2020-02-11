@@ -1,13 +1,15 @@
-import React, { PureComponent } from "react"
-import Button from "@material-ui/core/Button"
+import React, { PureComponent } from 'react';
+import Button from '@material-ui/core/Button';
+import LogoImage from '@components/LogoImage';
+import styled from 'styled-components';
 
 class DemoComponent extends PureComponent {
   render() {
     return (
-      <Button variant="contained" color="primary">
-        Hello World! I'm Kunal!
-      </Button>
-    )
+      <div style={{ height: '100px' }}>
+        <LogoImage />
+      </div>
+    );
   }
 }
 

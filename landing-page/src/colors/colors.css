@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Purple-monoC-1-hex { color: #5266CC; }
+.Purple-monoC-2-hex { color: #687095; }
+.Purple-monoC-3-hex { color: #334080; }
+.Purple-monoC-4-hex { color: #8F99CC; }
+.Purple-monoC-5-hex { color: #1F264D; }
+
+/* Color Theme Swatches in RGBA */
+.Purple-monoC-1-rgba { color: rgba(82, 102, 204, 1); }
+.Purple-monoC-2-rgba { color: rgba(104, 112, 149, 1); }
+.Purple-monoC-3-rgba { color: rgba(51, 64, 128, 1); }
+.Purple-monoC-4-rgba { color: rgba(143, 153, 204, 1); }
+.Purple-monoC-5-rgba { color: rgba(31, 38, 77, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Purple-monoC-1-hsla { color: hsla(230, 54, 56, 1); }
+.Purple-monoC-2-hsla { color: hsla(229, 17, 49, 1); }
+.Purple-monoC-3-hsla { color: hsla(229, 43, 35, 1); }
+.Purple-monoC-4-hsla { color: hsla(230, 37, 68, 1); }
+.Purple-monoC-5-hsla { color: hsla(230, 42, 21, 1); }
