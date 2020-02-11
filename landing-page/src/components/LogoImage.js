@@ -32,7 +32,6 @@ const LogoImage = () => {
       imgStyle={{
         width: '100%',
       }}
-      objectFit="strech"
       fadeIn
       durationFadeIn={3000}
       fluid={data.placeholderImage.childImageSharp.fluid}

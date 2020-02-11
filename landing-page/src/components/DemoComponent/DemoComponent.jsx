@@ -6,9 +6,7 @@ import styled from 'styled-components';
 class DemoComponent extends PureComponent {
   render() {
     return (
-      <div style={{ height: '100px' }}>
         <LogoImage />
-      </div>
     );
   }
 }
