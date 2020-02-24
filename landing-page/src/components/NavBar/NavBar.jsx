@@ -13,7 +13,6 @@ import Fade from '@material-ui/core/Fade';
 const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '&:hover': {
     color: props.theme.palette.common.light,
-    // 'text-shadow': '5px 20px 4px props.theme.palette.primary.main',
   },
   color: 'rgba(255, 255, 255, 0.5)',
   margin: '1rem 0 1rem 3rem',
@@ -21,7 +20,6 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   transition: ' all 0.25s ease-out',
 }));
 
-// borrowed from google material-ui docs.
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
