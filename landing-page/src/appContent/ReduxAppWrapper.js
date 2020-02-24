@@ -12,7 +12,7 @@ export default ({ element }) => {
   const store = configureStore(appState);
   return (
     <Provider store={store}>
-      <AppWrapper>{element}</AppWrapper>
+        <AppWrapper>{element}</AppWrapper>
     </Provider>
   );
 };

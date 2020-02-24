@@ -25,6 +25,10 @@ module.exports = {
           "@actionTypes": "src/store/sagas/actionTypes",
           "@actions": "src/store/actions",
           "@store": "src/store",
+          "@images": "src/images",
+          "@videos": "src/videos",
+          "@colors": "src/colors",
+          "@styles": "src/styles",
         },
         extensions: [
           "js", "jsx",

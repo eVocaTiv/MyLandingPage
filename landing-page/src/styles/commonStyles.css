@@ -1,0 +1,17 @@
+/* fonts  */
+/* TODO : move to productionized web fonts */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+/* reset css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, span { 
+  font-family: 'Julius Sans One', cursive;
+}

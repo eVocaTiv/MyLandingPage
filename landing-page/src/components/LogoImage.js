@@ -16,11 +16,10 @@ import Img from 'gatsby-image';
 const LogoImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "logo-circle.png" }) {
         childImageSharp {
           fluid(maxHeight: 400) {
             ...GatsbyImageSharpFluid
-            presentationWidth
           }
         }
       }
@@ -29,8 +28,14 @@ const LogoImage = () => {
 
   return (
     <Img
+      style={{
+        width: '400px',
+        height: '200px',
+      }}
       imgStyle={{
-        width: '100%',
+        width: '400px',
+        height: '180px',
+        'margin-top': '10px',
       }}
       fadeIn
       durationFadeIn={3000}

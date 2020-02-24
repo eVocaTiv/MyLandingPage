@@ -6,6 +6,8 @@
   "author": "Kunal Dewan <kunalx011@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.9.1",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.44",
     "babel-polyfill": "^6.26.0",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
