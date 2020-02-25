@@ -15,7 +15,6 @@ class App extends Component {
           skeleton={
             <Skeleton height={'100vh'} width={'100vw'} animation="wave" />
           }
-          delay={2000}
         />
       </ThemeProvider>
     );

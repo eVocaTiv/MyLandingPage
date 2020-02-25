@@ -9,15 +9,27 @@ import {
   withTheme,
 } from '@material-ui/core/styles';
 import Fade from '@material-ui/core/Fade';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
+import AsyncLoaderComponent from '@components/AsyncLoaderComponent';
 
 const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '&:hover': {
-    color: props.theme.palette.common.light,
+    'box-shadow': '0px 0px 1px 0px #fff',
+    'font-weight': 'bold',
+    background: 'rgb(0,194,203)',
+    background:
+      'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(82,102,204,1) 70%)',
+    '-webkit-background-clip': 'text',
+    '-webkit-text-fill-color': 'transparent',
   },
+  'box-sizing': 'border-box',
   color: 'rgba(255, 255, 255, 0.5)',
-  margin: '1rem 0 1rem 3rem',
-  'text-shadow': '5px 20px 4px #fff',
-  transition: ' all 0.25s ease-out',
+  margin: '1rem 0 1rem 1.5rem',
+  padding: '0.5rem 1rem',
+  transition: 'color 0.25s ease-in-out',
 }));
 
 const useStyles = makeStyles((theme) => ({
@@ -57,9 +69,62 @@ function NavBar() {
           className={classes.customizeToolbar}
         >
           <Typography variant="h6" className={classes.title}></Typography>
-          <StyledButton color="inherit">About me</StyledButton>
-          <StyledButton color="inherit">Projects</StyledButton>
-          <StyledButton color="inherit">Get In Touch!</StyledButton>
+          <StyledButton
+            color="inherit"
+            endIcon={
+              <AsyncLoaderComponent
+                actualComponent={
+                  <Fade in={true} timeout={5000}>
+                    <VisibilityIcon />
+                  </Fade>
+                }
+              />
+            }
+          >
+            Vision
+          </StyledButton>
+          <StyledButton
+            color="inherit"
+            endIcon={
+              <AsyncLoaderComponent
+                actualComponent={
+                  <Fade in={true} timeout={5000}>
+                    <EmojiPeopleIcon />
+                  </Fade>
+                }
+              />
+            }
+          >
+            About me
+          </StyledButton>
+          <StyledButton
+            color="inherit"
+            endIcon={
+              <AsyncLoaderComponent
+                actualComponent={
+                  <Fade in={true} timeout={5000}>
+                    <MenuBookIcon />
+                  </Fade>
+                }
+              />
+            }
+          >
+            Projects
+          </StyledButton>
+          <StyledButton
+            color="inherit"
+            endIcon={
+              <AsyncLoaderComponent
+                actualComponent={
+                  <Fade in={true} timeout={5000}>
+                    <ContactPhoneIcon />
+                  </Fade>
+                }
+              />
+            }
+          >
+            Get In Touch!
+          </StyledButton>
         </Toolbar>
       </AppBar>
     </Fade>
