@@ -25,13 +25,14 @@ const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
 
 const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '&:hover': {
+    transform: 'translate(0.1rem)',
     'font-weight': 'bold',
     color: props.theme.palette.primary.main,
     background:
       'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(137,90,243,1) 70%)',
     '-webkit-background-clip': 'text',
     '-webkit-text-fill-color': 'transparent',
-    'box-shadow': '0px 0px 5px 0px #fff',
+    'box-shadow': '0px 0 0.5rem 0px #fff',
     '& * svg': {
       opacity: 1,
     },
@@ -44,6 +45,7 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   margin: '1rem 0 1rem 1.5rem',
   padding: '0.5rem 1rem',
   transition: 'box-shadow 0.2s ease',
+  transition: 'transform 0.5s ease',
 }));
 
 const useStyles = makeStyles((theme) => ({
@@ -94,20 +96,10 @@ function NavBar() {
           <StyledButton color="inherit" endIcon={<EmojiPeopleIcon />}>
             About me
           </StyledButton>
-          <StyledButton
-            color="inherit"
-            endIcon={
-              <MenuBookIcon />
-            }
-          >
+          <StyledButton color="inherit" endIcon={<MenuBookIcon />}>
             Projects
           </StyledButton>
-          <StyledButton
-            color="inherit"
-            endIcon={
-              <ContactPhoneIcon />
-            }
-          >
+          <StyledButton color="inherit" endIcon={<ContactPhoneIcon />}>
             Get In Touch!
           </StyledButton>
         </Toolbar>
