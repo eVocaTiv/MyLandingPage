@@ -34,6 +34,8 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
       'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(137,90,243,1) 70%)',
     '-webkit-background-clip': 'text',
     '-webkit-text-fill-color': 'transparent',
+    'text-fill-color': 'transparent',
+    'background-clip': 'text',
     'box-shadow': '0px 0 0.5rem 0px #fff',
     '& * svg': {
       opacity: 1,
