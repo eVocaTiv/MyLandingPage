@@ -16,8 +16,13 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import AsyncLoaderComponent from '@components/AsyncLoaderComponent';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
 import { red, green } from '@material-ui/core/colors';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
+  '@media only screen and (max-width: 1100px)': {
+    display: 'none',
+  },
   '&:hover': {
     color: props.theme.palette.secondary.main,
     transform: 'translate(0.1rem)',
@@ -26,7 +31,16 @@ const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   transition: 'transform 0.5s ease',
 }));
 
+const StyledMenuButton = materialUIStyled(withTheme(IconButton))((props) => ({
+  '@media only screen and (min-width: 1100px)': {
+    display: 'none',
+  },
+}));
+
 const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
+  '@media only screen and (max-width: 1100px)': {
+    display: 'none',
+  },
   '&:hover': {
     transform: 'translate(0.1rem)',
     color: props.theme.palette.primary.main,
@@ -44,10 +58,10 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '& * svg': {
     opacity: 0,
   },
+  margin: '1.5rem 0 1rem 1.5rem',
   'font-weight': 'bold',
   'box-sizing': 'border-box',
   color: 'rgba(255, 255, 255, 0.5 )',
-  margin: '1rem 0 1rem 1.5rem',
   padding: '0.5rem 1rem',
   transition: 'box-shadow 0.2s ease',
   transition: 'transform 0.5s ease',
@@ -92,6 +106,14 @@ function NavBar() {
           style={{ position: 'relative', right: 0 }}
           className={classes.customizeToolbar}
         >
+          <StyledMenuButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="menu"
+          >
+            <MenuIcon />
+          </StyledMenuButton>
           <Typography variant="h6" className={classes.title}>
             <AsyncLoaderComponent actualComponent={<StyledHomeIcon />} />
           </Typography>
