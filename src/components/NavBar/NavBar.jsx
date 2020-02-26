@@ -20,13 +20,15 @@ import { red, green } from '@material-ui/core/colors';
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '&:hover': {
     color: props.theme.palette.secondary.main,
+    transform: 'translate(0.1rem)',
+    'box-shadow': '0px 0 0.5rem 0px #fff',
   },
+  transition: 'transform 0.5s ease',
 }));
 
 const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '&:hover': {
     transform: 'translate(0.1rem)',
-    'font-weight': 'bold',
     color: props.theme.palette.primary.main,
     background:
       'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(137,90,243,1) 70%)',
@@ -40,6 +42,7 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '& * svg': {
     opacity: 0,
   },
+  'font-weight': 'bold',
   'box-sizing': 'border-box',
   color: 'rgba(255, 255, 255, 0.5 )',
   margin: '1rem 0 1rem 1.5rem',
