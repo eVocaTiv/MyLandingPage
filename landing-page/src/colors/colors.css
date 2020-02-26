@@ -1,20 +1,45 @@
+/* Primary palette */
+
 /* Color Theme Swatches in Hex */
-.Purple-monoC-1-hex { color: #5266CC; }
-.Purple-monoC-2-hex { color: #687095; }
-.Purple-monoC-3-hex { color: #334080; }
-.Purple-monoC-4-hex { color: #8F99CC; }
-.Purple-monoC-5-hex { color: #1F264D; }
+.New-PurpleMonoC-1-hex { color: #463E59; }
+.New-PurpleMonoC-2-hex { color: #895AF3; }
+.New-PurpleMonoC-3-hex { color: #AA96D9; }
+.New-PurpleMonoC-4-hex { color: #332359; }
+.New-PurpleMonoC-5-hex { color: #8272A6; }
 
 /* Color Theme Swatches in RGBA */
-.Purple-monoC-1-rgba { color: rgba(82, 102, 204, 1); }
-.Purple-monoC-2-rgba { color: rgba(104, 112, 149, 1); }
-.Purple-monoC-3-rgba { color: rgba(51, 64, 128, 1); }
-.Purple-monoC-4-rgba { color: rgba(143, 153, 204, 1); }
-.Purple-monoC-5-rgba { color: rgba(31, 38, 77, 1); }
+.New-PurpleMonoC-1-rgba { color: rgba(70, 62, 89, 1); }
+.New-PurpleMonoC-2-rgba { color: rgba(137, 90, 243, 1); }
+.New-PurpleMonoC-3-rgba { color: rgba(170, 150, 217, 1); }
+.New-PurpleMonoC-4-rgba { color: rgba(51, 35, 89, 1); }
+.New-PurpleMonoC-5-rgba { color: rgba(130, 114, 166, 1); }
 
 /* Color Theme Swatches in HSLA */
-.Purple-monoC-1-hsla { color: hsla(230, 54, 56, 1); }
-.Purple-monoC-2-hsla { color: hsla(229, 17, 49, 1); }
-.Purple-monoC-3-hsla { color: hsla(229, 43, 35, 1); }
-.Purple-monoC-4-hsla { color: hsla(230, 37, 68, 1); }
-.Purple-monoC-5-hsla { color: hsla(230, 42, 21, 1); }
+.New-PurpleMonoC-1-hsla { color: hsla(257, 17, 29, 1); }
+.New-PurpleMonoC-2-hsla { color: hsla(258, 86, 65, 1); }
+.New-PurpleMonoC-3-hsla { color: hsla(257, 46, 71, 1); }
+.New-PurpleMonoC-4-hsla { color: hsla(257, 43, 24, 1); }
+.New-PurpleMonoC-5-hsla { color: hsla(258, 22, 54, 1); }
+
+/* Secondary palette */
+
+/* Color Theme Swatches in Hex */
+.SecondaryTriad-1-hex { color: #803966; }
+.SecondaryTriad-2-hex { color: #EECC00; }
+.SecondaryTriad-3-hex { color: #CC70AB; }
+.SecondaryTriad-4-hex { color: #00C2CB; }
+.SecondaryTriad-5-hex { color: #407C80; }
+
+/* Color Theme Swatches in RGBA */
+.SecondaryTriad-1-rgba { color: rgba(128, 57, 102, 1); }
+.SecondaryTriad-2-rgba { color: rgba(238, 204, 0, 1); }
+.SecondaryTriad-3-rgba { color: rgba(204, 112, 171, 1); }
+.SecondaryTriad-4-rgba { color: rgba(0, 194, 203, 1); }
+.SecondaryTriad-5-rgba { color: rgba(64, 124, 128, 1); }
+
+/* Color Theme Swatches in HSLA */
+.SecondaryTriad-1-hsla { color: hsla(321, 38, 36, 1); }
+.SecondaryTriad-2-hsla { color: hsla(51, 100, 46, 1); }
+.SecondaryTriad-3-hsla { color: hsla(321, 47, 61, 1); }
+.SecondaryTriad-4-hsla { color: hsla(182, 100, 39, 1); }
+.SecondaryTriad-5-hsla { color: hsla(183, 33, 37, 1); }

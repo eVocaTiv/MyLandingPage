@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,22 +14,36 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import AsyncLoaderComponent from '@components/AsyncLoaderComponent';
+import HomeSharpIcon from '@material-ui/icons/HomeRounded';
+import { red, green } from '@material-ui/core/colors';
+
+const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
+  '&:hover': {
+    color: props.theme.palette.secondary.main,
+  },
+}));
 
 const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '&:hover': {
-    'box-shadow': '0px 0px 1px 0px #fff',
     'font-weight': 'bold',
-    background: 'rgb(0,194,203)',
+    color: props.theme.palette.primary.main,
     background:
-      'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(82,102,204,1) 70%)',
+      'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(137,90,243,1) 70%)',
     '-webkit-background-clip': 'text',
     '-webkit-text-fill-color': 'transparent',
+    'box-shadow': '0px 0px 5px 0px #fff',
+    '& * svg': {
+      opacity: 1,
+    },
+  },
+  '& * svg': {
+    opacity: 0,
   },
   'box-sizing': 'border-box',
-  color: 'rgba(255, 255, 255, 0.5)',
+  color: 'rgba(255, 255, 255, 0.5 )',
   margin: '1rem 0 1rem 1.5rem',
   padding: '0.5rem 1rem',
-  transition: 'color 0.25s ease-in-out',
+  transition: 'box-shadow 0.2s ease',
 }));
 
 const useStyles = makeStyles((theme) => ({
@@ -41,12 +55,15 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    'box-sizing': 'border-box',
+    color: 'rgba(255, 255, 255, 0.5)',
+    margin: '1.5rem 0 1rem 1.5rem',
+    padding: '0.5rem 1rem',
   },
   customizeToolbar: {
     minHeight: 16,
     height: '15vh',
     margin: 0,
-    'padding-right': '4rem',
     'padding-top': 0,
     'padding-bottom': 0,
   },
@@ -68,45 +85,19 @@ function NavBar() {
           style={{ position: 'relative', right: 0 }}
           className={classes.customizeToolbar}
         >
-          <Typography variant="h6" className={classes.title}></Typography>
-          <StyledButton
-            color="inherit"
-            endIcon={
-              <AsyncLoaderComponent
-                actualComponent={
-                  <Fade in={true} timeout={5000}>
-                    <VisibilityIcon />
-                  </Fade>
-                }
-              />
-            }
-          >
+          <Typography variant="h6" className={classes.title}>
+            <AsyncLoaderComponent actualComponent={<StyledHomeIcon />} />
+          </Typography>
+          <StyledButton color="inherit" endIcon={<VisibilityIcon />}>
             Vision
           </StyledButton>
-          <StyledButton
-            color="inherit"
-            endIcon={
-              <AsyncLoaderComponent
-                actualComponent={
-                  <Fade in={true} timeout={5000}>
-                    <EmojiPeopleIcon />
-                  </Fade>
-                }
-              />
-            }
-          >
+          <StyledButton color="inherit" endIcon={<EmojiPeopleIcon />}>
             About me
           </StyledButton>
           <StyledButton
             color="inherit"
             endIcon={
-              <AsyncLoaderComponent
-                actualComponent={
-                  <Fade in={true} timeout={5000}>
-                    <MenuBookIcon />
-                  </Fade>
-                }
-              />
+              <MenuBookIcon />
             }
           >
             Projects
@@ -114,13 +105,7 @@ function NavBar() {
           <StyledButton
             color="inherit"
             endIcon={
-              <AsyncLoaderComponent
-                actualComponent={
-                  <Fade in={true} timeout={5000}>
-                    <ContactPhoneIcon />
-                  </Fade>
-                }
-              />
+              <ContactPhoneIcon />
             }
           >
             Get In Touch!

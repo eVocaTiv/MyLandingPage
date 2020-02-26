@@ -5,6 +5,7 @@ import AsyncLoaderComponent from '@components/AsyncLoaderComponent';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
 import Skeleton from '@material-ui/lab/Skeleton';
+import RadioButtonUncheckedRoundedIcon from '@material-ui/icons/RadioButtonUncheckedRounded';
 
 class App extends Component {
   render() {
