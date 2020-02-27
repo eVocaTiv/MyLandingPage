@@ -48,7 +48,7 @@ class TopLayer extends Component {
     // show navigation bar before video ends for visual effect :-) !
     if (played) {
       this.setState({
-        showNavBar: duration - currentTime <= 5,
+        showNavBar: duration - currentTime <= 4,
       });
     }
   }
