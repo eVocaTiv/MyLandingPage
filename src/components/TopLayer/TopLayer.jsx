@@ -36,7 +36,7 @@ class TopLayer extends Component {
     if (state.played) {
       console.log('state.dur', state.duration - state.currentTime);
       this.setState({
-        showNavBar: state.duration - state.currentTime <= 7,
+        showNavBar: state.duration - state.currentTime <= 8.5,
       });
     }
   }
@@ -55,7 +55,6 @@ class TopLayer extends Component {
             muted
           >
             <source src={source} type="video/mp4" />
-            <ControlBar disableCompletely={true} />
           </StyledPlayer>
         </VideoContainerDiv>
       </Fragment>

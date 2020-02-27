@@ -60,7 +60,7 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '& * svg': {
     opacity: 0,
   },
-  margin: '1.5rem 0 1rem 1.5rem',
+  margin: '1.5rem 0 1rem 0.5rem',
   'font-weight': 'bold',
   'box-sizing': 'border-box',
   color: 'rgba(255, 255, 255, 0.5 )',
