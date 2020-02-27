@@ -69,7 +69,7 @@ class TopLayer extends Component {
             autoPlay
             showVideo={showVideo}
           >
-            <source src={source} />
+            <source src={source} type="video/mp4" />
           </StyledPlayer>
         </VideoContainerDiv>
       </Fragment>
