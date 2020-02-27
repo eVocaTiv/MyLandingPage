@@ -28,7 +28,8 @@ class AsyncLoaderComponent extends Component {
 
   render() {
     const { skeleton } = this.props;
-    return this.state.component || skeleton;
+    const { component} = this.state;
+    return component || skeleton;
   }
 }
 

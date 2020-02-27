@@ -1,3 +1,3 @@
-import TopLayer from './TopLayer';
+import TopLayerAsyncWrapper from './TopLayerAsyncWrapper';
 
-export default TopLayer;
+export default TopLayerAsyncWrapper;
