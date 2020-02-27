@@ -105,7 +105,7 @@ function NavBar() {
         position="fixed"
       >
         <Toolbar
-          style={{ position: 'relative', right: 0 }}
+          style={{ position: 'relative', right: 0, top: 0 }}
           className={classes.customizeToolbar}
         >
           <StyledMenuButton
