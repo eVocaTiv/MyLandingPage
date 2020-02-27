@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import NavBar from '@components/NavBar';
 import AsyncLoaderComponent from '@components/AsyncLoaderComponent';
-import StyledSkeleton from '@components/StyledSkeleton';
+import { Player, ControlBar } from 'video-react';
 
 const VideoContainerDiv = styled.div`
   overflow: hidden;
+`;
+
+const StyledPlayer = styled(Player)`
+  //  necessary for overriding default style.
+  padding-top: 0 !important;
 `;
 
 // TODO - optimize / compress video size.
@@ -16,38 +21,44 @@ class TopLayer extends Component {
   };
 
   state = {
-    isVideoReady: false,
+    showNavBar: false,
   };
+
+  componentDidMount() {
+    // subscribe to player state change
+    this.player.subscribeToStateChange(this.handleStateChange.bind(this));
+    this.player.video.play();
+  }
+
+  // TODO: unbind to prevent memory leak at video end.
+  handleStateChange(state) {
+    // show navigation bar before video ends for visual effect :-) !
+    if (state.played) {
+      console.log('state.dur', state.duration - state.currentTime);
+      this.setState({
+        showNavBar: state.duration - state.currentTime <= 7,
+      });
+    }
+  }
 
   render() {
     const { source } = this.props;
+    const { showNavBar } = this.state;
     return (
-      <AsyncLoaderComponent
-        delay={1000}
-        skeleton={<StyledSkeleton />}
-        actualComponent={
-          <Fragment>
-            <AsyncLoaderComponent delay={2000} actualComponent={<NavBar />} />
-            <VideoContainerDiv>
-              <video
-                id="intro-video"
-                style={{
-                  objectFit: 'cover',
-                  width: '100vw',
-                  height: '100vh',
-                }}
-                onLoad={console.log('video loaded.')}
-                preload={'auto'}
-                muted
-                autoPlay
-                controls
-              >
-                <source src={source} type="video/mp4" />
-              </video>
-            </VideoContainerDiv>
-          </Fragment>
-        }
-      />
+      <Fragment>
+        {showNavBar && <NavBar />}
+        <VideoContainerDiv>
+          <StyledPlayer
+            ref={(player) => {
+              this.player = player;
+            }}
+            muted
+          >
+            <source src={source} type="video/mp4" />
+            <ControlBar disableCompletely={true} />
+          </StyledPlayer>
+        </VideoContainerDiv>
+      </Fragment>
     );
   }
 }

@@ -25,7 +25,7 @@ const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   },
   '&:hover': {
     color: props.theme.palette.secondary.main,
-    transform: 'translate(0.1rem)',
+    transform: 'scale(1.1)',
     'box-shadow': '0px 0 0.5rem 0px #fff',
   },
   transition: 'transform 0.5s ease',
@@ -42,7 +42,9 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
     display: 'none',
   },
   '&:hover': {
-    transform: 'translate(0.1rem)',
+    transform: 'scale(1.1)',
+   'backface-visibility': 'hidden',
+    'box-sizing': 'border-box',
     color: props.theme.palette.primary.main,
     background:
       'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(137,90,243,1) 70%)',

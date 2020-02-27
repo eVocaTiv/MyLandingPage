@@ -1,25 +1,11 @@
 /* Primary palette */
 
 /* Color Theme Swatches in Hex */
-.New-PurpleMonoC-1-hex { color: #463E59; }
+.New-PurpleMonoC-1-hex { color: #B7A9D9; }
 .New-PurpleMonoC-2-hex { color: #895AF3; }
-.New-PurpleMonoC-3-hex { color: #AA96D9; }
-.New-PurpleMonoC-4-hex { color: #332359; }
-.New-PurpleMonoC-5-hex { color: #8272A6; }
-
-/* Color Theme Swatches in RGBA */
-.New-PurpleMonoC-1-rgba { color: rgba(70, 62, 89, 1); }
-.New-PurpleMonoC-2-rgba { color: rgba(137, 90, 243, 1); }
-.New-PurpleMonoC-3-rgba { color: rgba(170, 150, 217, 1); }
-.New-PurpleMonoC-4-rgba { color: rgba(51, 35, 89, 1); }
-.New-PurpleMonoC-5-rgba { color: rgba(130, 114, 166, 1); }
-
-/* Color Theme Swatches in HSLA */
-.New-PurpleMonoC-1-hsla { color: hsla(257, 17, 29, 1); }
-.New-PurpleMonoC-2-hsla { color: hsla(258, 86, 65, 1); }
-.New-PurpleMonoC-3-hsla { color: hsla(257, 46, 71, 1); }
-.New-PurpleMonoC-4-hsla { color: hsla(257, 43, 24, 1); }
-.New-PurpleMonoC-5-hsla { color: hsla(258, 22, 54, 1); }
+.New-PurpleMonoC-3-hex { color: #392B59; }
+.New-PurpleMonoC-4-hex { color: #8C81A6; }
+.New-PurpleMonoC-5-hex { color: #4C4659; }
 
 /* Secondary palette */
 
@@ -30,16 +16,3 @@
 .SecondaryTriad-4-hex { color: #00C2CB; }
 .SecondaryTriad-5-hex { color: #407C80; }
 
-/* Color Theme Swatches in RGBA */
-.SecondaryTriad-1-rgba { color: rgba(128, 57, 102, 1); }
-.SecondaryTriad-2-rgba { color: rgba(238, 204, 0, 1); }
-.SecondaryTriad-3-rgba { color: rgba(204, 112, 171, 1); }
-.SecondaryTriad-4-rgba { color: rgba(0, 194, 203, 1); }
-.SecondaryTriad-5-rgba { color: rgba(64, 124, 128, 1); }
-
-/* Color Theme Swatches in HSLA */
-.SecondaryTriad-1-hsla { color: hsla(321, 38, 36, 1); }
-.SecondaryTriad-2-hsla { color: hsla(51, 100, 46, 1); }
-.SecondaryTriad-3-hsla { color: hsla(321, 47, 61, 1); }
-.SecondaryTriad-4-hsla { color: hsla(182, 100, 39, 1); }
-.SecondaryTriad-5-hsla { color: hsla(183, 33, 37, 1); }
