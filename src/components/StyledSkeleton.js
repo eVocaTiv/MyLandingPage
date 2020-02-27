@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
   secondary: {
-    background: theme.palette.primary.dark,
+    background: 'black',
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     borderRadius: 3,
     border: 0,
     padding: '0 30px',
     '&::after': {
-      background: 'linear-gradient(90deg, transparent, black, transparent)',
+      background: 'linear-gradient(90deg, transparent, theme.palette.primary.dark, transparent)',
     },
   },
 }));

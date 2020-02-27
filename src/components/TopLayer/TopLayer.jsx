@@ -13,7 +13,8 @@ const StyledPlayer = styled(Player)`
   //  necessary for overriding default style.
   padding-top: 0 !important;
   display: ${(props) => (props.showVideo ? 'block' : 'none')};
-  > button {
+  > button,
+  .video-react-control-bar {
     display: none;
   }
 `;
@@ -32,7 +33,6 @@ class TopLayer extends Component {
   componentDidMount() {
     // subscribe to player state change
     this.player.subscribeToStateChange(this.handleStateChange.bind(this));
-    console.log('yelo', this.player.video);
   }
 
   handleStateChange(state) {
@@ -43,14 +43,12 @@ class TopLayer extends Component {
       this.setState({
         showVideo: true,
       });
-      console.log('yelo', this.player.video);
-      this.player.video.play();
     }
 
     // show navigation bar before video ends for visual effect :-) !
     if (played) {
       this.setState({
-        showNavBar: duration - currentTime <= 8.5,
+        showNavBar: duration - currentTime <= 5,
       });
     }
   }
@@ -71,7 +69,7 @@ class TopLayer extends Component {
             autoPlay
             showVideo={showVideo}
           >
-            <source src={source} type="video/mp4" />
+            <source src={source} />
           </StyledPlayer>
         </VideoContainerDiv>
       </Fragment>
