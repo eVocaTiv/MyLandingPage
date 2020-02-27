@@ -32,7 +32,7 @@ class TopLayer extends Component {
   componentDidMount() {
     // subscribe to player state change
     this.player.subscribeToStateChange(this.handleStateChange.bind(this));
-    this.player.video.play();
+    console.log('yelo', this.player.video);
   }
 
   handleStateChange(state) {
@@ -43,6 +43,8 @@ class TopLayer extends Component {
       this.setState({
         showVideo: true,
       });
+      console.log('yelo', this.player.video);
+      this.player.video.play();
     }
 
     // show navigation bar before video ends for visual effect :-) !
