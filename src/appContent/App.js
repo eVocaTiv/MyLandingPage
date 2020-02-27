@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import IntroVideo from '@videos/intro-video.mp4';
+import IntroVideo from '@videos/intro-video-compressed.mp4';
 import TopLayerAsyncWrapper from '@components/TopLayer';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
