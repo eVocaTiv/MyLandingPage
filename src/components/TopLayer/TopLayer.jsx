@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import NavBar from '@components/NavBar';
-import AsyncLoaderComponent from '@components/AsyncLoaderComponent';
-import { Player, ControlBar } from 'video-react';
+import { Player } from 'video-react';
+import StyledSkeleton from '@components/StyledSkeleton';
 
 const VideoContainerDiv = styled.div`
   overflow: hidden;
@@ -12,6 +12,10 @@ const VideoContainerDiv = styled.div`
 const StyledPlayer = styled(Player)`
   //  necessary for overriding default style.
   padding-top: 0 !important;
+  display: ${(props) => (props.showVideo ? 'block' : 'none')};
+  > button {
+    display: none;
+  }
 `;
 
 // TODO - optimize / compress video size.
@@ -22,6 +26,7 @@ class TopLayer extends Component {
 
   state = {
     showNavBar: false,
+    showVideo: false,
   };
 
   componentDidMount() {
@@ -30,22 +35,30 @@ class TopLayer extends Component {
     this.player.video.play();
   }
 
-  // TODO: unbind to prevent memory leak at video end.
   handleStateChange(state) {
-    // show navigation bar before video ends for visual effect :-) !
-    if (state.played) {
-      console.log('state.dur', state.duration - state.currentTime);
+    const { played, readyState, duration, currentTime, ended } = state;
+
+    // make video visible once ready to play.
+    if (readyState === 4) {
       this.setState({
-        showNavBar: state.duration - state.currentTime <= 8.5,
+        showVideo: true,
+      });
+    }
+
+    // show navigation bar before video ends for visual effect :-) !
+    if (played) {
+      this.setState({
+        showNavBar: duration - currentTime <= 8.5,
       });
     }
   }
 
   render() {
     const { source } = this.props;
-    const { showNavBar } = this.state;
+    const { showNavBar, showVideo } = this.state;
     return (
       <Fragment>
+        {!showVideo && <StyledSkeleton />}
         {showNavBar && <NavBar />}
         <VideoContainerDiv>
           <StyledPlayer
@@ -53,6 +66,8 @@ class TopLayer extends Component {
               this.player = player;
             }}
             muted
+            autoPlay
+            showVideo={showVideo}
           >
             <source src={source} type="video/mp4" />
           </StyledPlayer>
