@@ -8,7 +8,6 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <div id="intro-video"></div>
         <TopLayer source={IntroVideo} />
       </ThemeProvider>
     );
