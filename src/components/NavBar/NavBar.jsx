@@ -13,11 +13,10 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
-import AsyncLoaderComponent from '@components/AsyncLoaderComponent';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
-import { red, green } from '@material-ui/core/colors';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { AsyncLoaderComponent } from '@components';
 
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '@media only screen and (max-width: 1100px)': {
@@ -61,6 +60,7 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
     opacity: 0,
   },
   margin: '1.5rem 0 1rem 0.5rem',
+  'font-family': props.theme.fonts.primary,
   'font-weight': 'bold',
   'box-sizing': 'border-box',
   color: 'rgba(255, 255, 255, 0.5 )',

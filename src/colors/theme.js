@@ -23,6 +23,10 @@ const theme = createMuiTheme({
       light: '#ffffff',
     }
   },
+  fonts: {
+    primary:'Julius Sans One',
+    secondary: 'Great Vibes',
+  }
 });
 
 export default theme;

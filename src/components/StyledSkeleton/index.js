@@ -1,0 +1,1 @@
+export {default as StyledSkeleton} from "./StyledSkeleton";

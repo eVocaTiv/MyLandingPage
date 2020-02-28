@@ -1,9 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import NavBar from '@components/NavBar';
 import { Player } from 'video-react';
-import StyledSkeleton from '@components/StyledSkeleton';
+import { NavBar, StyledSkeleton } from '@components';
 
 const VideoContainerDiv = styled.div`
   overflow: hidden;

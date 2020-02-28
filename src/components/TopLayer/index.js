@@ -1,3 +1,1 @@
-import TopLayerAsyncWrapper from './TopLayerAsyncWrapper';
-
-export default TopLayerAsyncWrapper;
+export {default as TopLayer} from "./TopLayer";

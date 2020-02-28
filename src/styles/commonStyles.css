@@ -1,10 +1,19 @@
 /* fonts  */
-/* TODO : move to productionized web fonts */
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@font-face {
+  font-family: 'Julius Sans One';
+  src: url('typography/JuliusSansOne-Regular.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('typography/GreatVibes-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* reset css */
-
 html,
 body {
   margin: 0;
@@ -14,26 +23,12 @@ body {
   box-sizing: border-box;
 }
 
-html,
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span {
-  font-family: 'Julius Sans One', cursive;
-}
-
-/* workaround for video resolution */
+/* workaround for video resolution in small sized devices */
 @media only screen and (max-width: 1100px) {
   video {
     object-fit: fill !important;
   }
 }
-
 video {
   object-fit: cover;
   width: 100%;
