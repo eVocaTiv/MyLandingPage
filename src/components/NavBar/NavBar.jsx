@@ -27,8 +27,11 @@ const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '&:hover': {
     color: props.theme.palette.common.light,
     transform: 'scale(1.1)',
+    'box-shadow': '0px 0 0.5rem 0px #fff',
   },
   transition: 'transform 0.5s ease',
+  cursor: 'pointer',
+  fontSize: '1.75rem',
 }));
 
 const StyledMenuButton = materialUIStyled(withTheme(IconButton))((props) => ({
@@ -83,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     'box-sizing': 'border-box',
     color: 'rgba(255, 255, 255, 0.5)',
-    margin: '1.5rem 0 1rem 1.5rem',
+    margin: '2rem 0 1rem 1.5rem',
     padding: '0.5rem 1rem',
   },
   customizeToolbar: {
@@ -97,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
 
 function NavBar() {
   const classes = useStyles();
-  const { visionSection } = Constants.anchorIds;
+  const { home, visionSection } = Constants.anchorIds;
   return (
     <Fade in={true} timeout={2000}>
       <AppBar
@@ -120,7 +123,11 @@ function NavBar() {
             <MenuIcon />
           </StyledMenuButton>
           <Typography variant="h6" className={classes.title}>
-            <AsyncLoaderComponent actualComponent={<StyledHomeIcon />} />
+            <AsyncLoaderComponent
+              actualComponent={
+                <StyledHomeIcon onClick={() => scrollTo(`#${home}`)} />
+              }
+            />
           </Typography>
           <StyledButton
             onClick={() => scrollTo(`#${visionSection}`)}

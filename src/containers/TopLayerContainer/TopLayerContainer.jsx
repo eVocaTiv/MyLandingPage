@@ -6,6 +6,8 @@ import { NavBar, StyledSkeleton } from '@components';
 import { connect } from 'react-redux';
 import ActionTypes from '@actions/types';
 import createAction from '@actions';
+import Constants from '@constants';
+
 const VideoContainerDiv = styled.div`
   overflow: hidden;
 `;
@@ -73,12 +75,12 @@ class TopLayer extends Component {
   render() {
     const { source } = this.props;
     const { showNavBar, showVideo } = this.state;
-
+    const { home } = Constants.anchorIds;
     return (
       <Fragment>
         {!showVideo && <StyledSkeleton />}
         {showNavBar && <NavBar />}
-        <VideoContainerDiv>
+        <VideoContainerDiv id={`${home}`}>
           <StyledPlayer
             ref={(player) => {
               this.player = player;
