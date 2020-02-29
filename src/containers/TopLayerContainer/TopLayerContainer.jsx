@@ -16,6 +16,8 @@ const StyledPlayer = styled(Player)`
   .video-react-control-bar {
     display: none;
   }
+  background-color: black;
+  pointer-events: none;
 `;
 
 // TODO - optimize / compress video size.
@@ -27,6 +29,7 @@ class TopLayer extends Component {
   state = {
     showNavBar: false,
     showVideo: false,
+    scrolledToVisionSection: false,
   };
 
   componentDidMount() {
@@ -36,7 +39,6 @@ class TopLayer extends Component {
 
   handleStateChange(state) {
     const { played, readyState, duration, currentTime, ended } = state;
-
     // make video visible once ready to play.
     if (readyState === 4) {
       this.setState({
