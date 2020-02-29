@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -67,6 +67,7 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   color: 'rgba(255, 255, 255, 0.5 )',
   padding: '0.5rem 1rem',
   transition: 'box-shadow 0.2s ease',
+  //eslint-disable-next-line
   transition: 'transform 0.5s ease',
 }));
 

@@ -5,7 +5,9 @@ import Skeleton from '@material-ui/lab/Skeleton';
 const useStyles = makeStyles((theme) => ({
   header: {
     background: 'rgb(0,0,0)',
+    //eslint-disable-next-line
     background:
+    //eslint-disable-next-line
       'linear-gradient(45deg, rgba(0,0,0,1) 8%, rgba(128,57,100,1) 29%, rgba(204,112,171,1) 41%, rgba(137,90,243,1) 60%, rgba(0,194,203,1) 79%)',
     borderRadius: 3,
     border: 0,
