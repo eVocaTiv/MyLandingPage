@@ -1,1 +1,0 @@
-export {default as VisionContainer} from "./VisionContainer";

@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Julius Sans One';
   src: url('typography/JuliusSansOne-Regular.ttf');
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -18,7 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   font-size: 1.5rem;
   box-sizing: border-box;
 }

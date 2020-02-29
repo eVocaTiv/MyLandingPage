@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import IntroVideo from '@videos/intro-video-compressed.mp4';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
-import { TopLayerContainer, VisionContainer } from '@containers';
+import { TopLayer } from '@components';
 
 class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <TopLayerContainer source={IntroVideo} />
-        <VisionContainer />
+        <TopLayer source={IntroVideo} />
       </ThemeProvider>
     );
   }

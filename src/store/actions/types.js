@@ -1,0 +1,6 @@
+const ActionTypes = {
+  STORE_UPDATE_INIT_INFO: 'STORE_UPDATE_INIT_INFO',
+  FETCH_INIT_INFO_SUCCESS: 'FETCH_INIT_INFO_SUCCESS',
+};
+
+export default ActionTypes;
