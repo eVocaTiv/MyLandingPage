@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Player } from 'video-react';
 import { NavBar, StyledSkeleton } from '@components';
+import { connect } from 'react-redux';
+import ActionTypes from '@actions/types';
+import createAction from '@actions';
 
 const VideoContainerDiv = styled.div`
   overflow: hidden;
@@ -26,6 +29,10 @@ class TopLayer extends Component {
     source: PropTypes.string.isRequired,
   };
 
+  static propTypes = {
+    dispatchIsVideoLoadedSuccessAction: PropTypes.func.isRequired,
+  };
+
   state = {
     showNavBar: false,
     showVideo: false,
@@ -38,6 +45,7 @@ class TopLayer extends Component {
   }
 
   handleStateChange(state) {
+    const { dispatchIsVideoLoadedSuccessAction } = this.props;
     const { played, readyState, duration, currentTime, ended } = state;
     // make video visible once ready to play.
     if (readyState === 4) {
@@ -48,15 +56,22 @@ class TopLayer extends Component {
 
     // show navigation bar before video ends for visual effect :-) !
     if (played) {
+      console.log('showNavBar', this.state.showNavBar);
       this.setState({
-        showNavBar: duration - currentTime <= 6,
+        showNavBar: duration - currentTime <= 5,
       });
+      const isVideoLoadedSuccessAction = createAction(
+        ActionTypes.STORE_UPDATE_IS_VIDEO_LOADED_SUCCESS,
+        true,
+      );
+      dispatchIsVideoLoadedSuccessAction(isVideoLoadedSuccessAction);
     }
   }
 
   render() {
     const { source } = this.props;
     const { showNavBar, showVideo } = this.state;
+
     return (
       <Fragment>
         {!showVideo && <StyledSkeleton />}
@@ -78,4 +93,9 @@ class TopLayer extends Component {
   }
 }
 
-export default TopLayer;
+const mapDispatchToProps = (dispatch) => ({
+  dispatchIsVideoLoadedSuccessAction: (isVideoLoadedSuccessAction) =>
+    dispatch(isVideoLoadedSuccessAction),
+});
+
+export default connect(null, mapDispatchToProps)(TopLayer);
