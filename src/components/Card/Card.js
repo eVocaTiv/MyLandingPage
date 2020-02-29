@@ -15,7 +15,7 @@ class Card extends Component {
           <div className="card__data">
            A simple and resplendent design
             furnishes a facile user experience. I believe that understanding human
-            psychology is the key to the same &amp; endeavour to unveil the same with
+            psychology is the key to the same &amp; endeavour to unveil it with
             my tenacity.
             <div className="card__qoute">
             “Good design is obvious. Great design is transparent.” — Joe Sparano

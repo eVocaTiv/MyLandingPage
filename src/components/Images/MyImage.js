@@ -34,6 +34,7 @@ const MyImage = () => {
         backgroundSize: 'cover',
         borderTopLeftRadius: '3px',
         'backface-visibility': 'hidden',
+        '-webkit-backface-visibility': 'hidden',
       }}
       fadeIn={false}
       fluid={backgroundFluidImageStack}

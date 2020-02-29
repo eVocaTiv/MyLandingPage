@@ -44,6 +44,7 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '&:hover': {
     transform: 'scale(1.1)',
     'backface-visibility': 'hidden',
+    '-webkit-backface-visibility': 'hidden',
     'box-sizing': 'border-box',
     color: props.theme.palette.primary.main,
     background:

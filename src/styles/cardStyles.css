@@ -23,12 +23,9 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-.card__picture {
-  background-blend-mode: color-burn;
-}
-
 .card__side--back {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   background-image: linear-gradient(
     to right bottom,
@@ -39,6 +36,7 @@
 
 .card__side--front {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .card:hover .card__side--front {
@@ -57,7 +55,7 @@
   text-align: right;
   color: #fff;
   position: absolute;
-  top: -1rem;
+  top: 0.5rem;
   right: 0rem;
 }
 .card__heading-span {
