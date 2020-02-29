@@ -1,4 +1,5 @@
 /* fonts  */
+/* Julius Sans One */
 @font-face {
   font-family: 'Julius Sans One';
   src: url('typography/JuliusSansOne-Regular.ttf');
@@ -6,9 +7,18 @@
   font-style: normal;
 }
 
+/* Great Vibes */
 @font-face {
   font-family: 'Great Vibes';
   src: url('typography/GreatVibes-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Allan Bold Italic */
+@font-face {
+  font-family: 'Allan';
+  src: url('typography/Allan-Bold.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,9 +28,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
   font-size: 1.5rem;
   box-sizing: border-box;
+  background-color: black;
+  width: 100%;
 }
 
 /* workaround for video resolution in small sized devices */
@@ -34,4 +45,10 @@ video {
   width: 100%;
   height: 100vh;
   pointer-events: none;
+}
+
+/* add background-blend to card image */
+.card__side > div::before {
+  background-blend-mode: hue;
+  opacity: 0.75;
 }
