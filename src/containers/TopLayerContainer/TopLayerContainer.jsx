@@ -13,6 +13,9 @@ const VideoContainerDiv = styled.div`
 const StyledPlayer = styled(Player)`
   //  necessary for overriding default style.
   padding-top: 0 !important;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
   display: ${(props) => (props.showVideo ? 'block' : 'none')};
   > button,
   .video-react-control-bar {
