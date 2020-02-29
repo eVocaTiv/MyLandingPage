@@ -17,15 +17,16 @@ import HomeSharpIcon from '@material-ui/icons/HomeRounded';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { AsyncLoaderComponent } from '@components';
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import Constants from '@constants';
 
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '@media only screen and (max-width: 1100px)': {
     display: 'none',
   },
   '&:hover': {
-    color: props.theme.palette.secondary.main,
+    color: props.theme.palette.common.light,
     transform: 'scale(1.1)',
-    'box-shadow': '0px 0 0.5rem 0px #fff',
   },
   transition: 'transform 0.5s ease',
 }));
@@ -42,7 +43,7 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   },
   '&:hover': {
     transform: 'scale(1.1)',
-   'backface-visibility': 'hidden',
+    'backface-visibility': 'hidden',
     'box-sizing': 'border-box',
     color: props.theme.palette.primary.main,
     background:
@@ -94,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
 
 function NavBar() {
   const classes = useStyles();
-
+  const { visionSection } = Constants.anchorIds;
   return (
     <Fade in={true} timeout={2000}>
       <AppBar
@@ -119,7 +120,11 @@ function NavBar() {
           <Typography variant="h6" className={classes.title}>
             <AsyncLoaderComponent actualComponent={<StyledHomeIcon />} />
           </Typography>
-          <StyledButton color="inherit" endIcon={<VisibilityIcon />}>
+          <StyledButton
+            onClick={() => scrollTo(`#${visionSection}`)}
+            color="inherit"
+            endIcon={<VisibilityIcon />}
+          >
             Vision
           </StyledButton>
           <StyledButton color="inherit" endIcon={<EmojiPeopleIcon />}>

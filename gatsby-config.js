@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -16,6 +17,8 @@ module.exports = {
           '@routes': 'src/routes',
           '@appContent': 'src/appContent',
           '@components': 'src/components',
+          '@containers': 'src/containers',
+          '@constants': 'src/constants',
           '@layouts': 'src/layouts',
           '@pages': 'src/pages',
           '@sass': 'src/sass',
