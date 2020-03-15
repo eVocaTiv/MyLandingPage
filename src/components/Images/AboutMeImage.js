@@ -12,7 +12,7 @@ const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "bitsg.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "nescafe.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
