@@ -3,6 +3,7 @@ const Constants = {
     visionSection: 'vision-bg-image',
     aboutMeSection: 'about-me',
     home: 'home',
+    footer: 'footer',
   },
 };
 

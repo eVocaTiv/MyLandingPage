@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import IntroVideo from '@videos/intro-video-compressed.mp4';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
-import { TopLayerContainer, VisionContainer } from '@containers';
+import {
+  TopLayerContainer,
+  VisionContainer,
+  AboutMeContainer,
+  FooterContainer,
+} from '@containers';
 import { connect } from 'react-redux';
 
 class App extends Component {
@@ -12,7 +17,11 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <TopLayerContainer source={IntroVideo} />
         {isTopLayerLoaded && (
-          <VisionContainer />
+          <Fragment>
+            <VisionContainer />
+            <AboutMeContainer />
+            <FooterContainer />
+          </Fragment>
         )}
       </ThemeProvider>
     );

@@ -36,9 +36,9 @@ const MyImage = () => {
         'backface-visibility': 'hidden',
         '-webkit-backface-visibility': 'hidden',
       }}
-      fadeIn={false}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan"
+      loading="eager"
     />
   );
 };
