@@ -92,13 +92,14 @@
 .card__data {
   transform: rotate(10deg);
   left: 45%;
+  font-size: 1.05rem;
   overflow: hidden;
   font-family: 'Allan';
   color: rgba(255, 255, 255, 0.8);
   width: 50%;
   position: absolute;
-  bottom: 40%;
-  line-height: 2rem;
+  bottom: 35%;
+  line-height: 1.75rem;
   letter-spacing: 0.05rem;
   left: 70%;
   transform: translate(-50%, 50%);
