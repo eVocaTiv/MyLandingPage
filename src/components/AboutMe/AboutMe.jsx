@@ -51,7 +51,7 @@ export default function SimpleCard() {
 
   return (
     <StyledCard className={classes.root}>
-      <CardContent>
+      {/* <CardContent>
         <Typography
           className={classes.title}
           color="textSecondary"
@@ -73,7 +73,7 @@ export default function SimpleCard() {
       </CardContent>
       <CardActions>
         <StyledButton size="small">Learn More</StyledButton>
-      </CardActions>
+      </CardActions> */}
     </StyledCard>
   );
 }
