@@ -24,10 +24,8 @@ const StyledBody = styled(Typography)`
   align-items: center;
   justify-content: center;
   width: 90%;
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
-  margin-left: auto;
-  margin-right: auto;
+  // !important necessary because of material ui card issues.
+  margin: 0.5rem auto !important; 
 `;
 
 const useStyles = makeStyles({
@@ -57,11 +55,6 @@ const useStyles = makeStyles({
     'font-size': '1rem',
     ' color': '#b7a9d9',
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
     fontSize: 14,
   },
@@ -72,7 +65,6 @@ const useStyles = makeStyles({
 
 export default function SimpleCard() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <StyledCard className={classes.root}>
