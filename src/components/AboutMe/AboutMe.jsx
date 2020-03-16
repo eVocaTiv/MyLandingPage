@@ -7,11 +7,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 
-const StyledButton = styled(Button)`
-  &:hover {
-  }
-`;
-
 const StyledCard = styled(Card)`
   color: white;
   border-radius: 0px;
@@ -21,25 +16,18 @@ const StyledHeader = styled(Typography)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Great Vibes';
-  font-size: 2rem;
-  color: #CC70AB;
+  padding-top: .5rem;
 `;
 
 const StyledBody = styled(Typography)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Allan';
-  line-height: 1.75rem;
-  letter-spacing: 0.05rem;
-  font-size: 1rem;
   width: 90%;
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
   margin-left: auto;
   margin-right: auto;
-  color: #B7A9D9;
 `;
 
 const useStyles = makeStyles({
@@ -56,6 +44,18 @@ const useStyles = makeStyles({
       'box-shadow': '0px 0 5rem 0px #B7A9D9',
     },
     transition: 'all 0.5s ease-out',
+  },
+  cardHeader: {
+    ' font-family': 'Great Vibes',
+    'font-size': '2rem',
+    color: '#CC70AB',
+  },
+  cardBody: {
+    'font-family': 'Allan',
+    'line-height': '1.75rem',
+    ' letter-spacing': ' 0.05rem',
+    'font-size': '1rem',
+    ' color': '#b7a9d9',
   },
   bullet: {
     display: 'inline-block',
@@ -77,17 +77,14 @@ export default function SimpleCard() {
   return (
     <StyledCard className={classes.root}>
       <CardContent>
-        <Typography
-          className={classes.title}
-          color="textSecondary"
-          gutterBottom
+        <StyledHeader
+          className={classes.cardHeader}
+          variant="h5"
+          component="h2"
         >
-          dummy secondary text
-        </Typography>
-        <StyledHeader variant="h5" component="h2">
           Something about me!
         </StyledHeader>
-        <StyledBody variant="body2" component="p">
+        <StyledBody className={classes.cardBody} variant="body2" component="p">
           I'm an impassioned programmer &amp; designer striving to create a
           subtle UX. I earned my B. E. (Hons.) Computer Science from BITS
           Pilani, Goa Campus in 2019. Having explored various fields in the
@@ -103,7 +100,7 @@ export default function SimpleCard() {
         </StyledBody>
       </CardContent>
       <CardActions>
-        <StyledButton size="small">Learn More</StyledButton>
+        <Button size="small">Learn More</Button>
       </CardActions>
     </StyledCard>
   );
