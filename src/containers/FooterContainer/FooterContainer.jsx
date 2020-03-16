@@ -49,7 +49,6 @@ const StyledAboutMeDiv = styled.div`
 `;
 
 const StyledMailIcon = styled(MailOutlineIcon)`
-  cursor: pointer;
   color: #ffffff;
   transition: all 0.25s ease !important;
   fontSize: 1rem;
@@ -130,7 +129,7 @@ class FooterContainer extends Component {
           </Tooltip>
           <Tooltip title="Email: Kunalx011@gmail.com">
             <a>
-              <StyledMailIcon onClick={this.sendEmail} />
+              <StyledMailIcon />
             </a>
           </Tooltip>
           <Tooltip title="LinkedIn">
