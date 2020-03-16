@@ -77,7 +77,7 @@ export default function SimpleCard() {
           Something about me!
         </StyledHeader>
         <StyledBody className={classes.cardBody} variant="body2" component="p">
-          I'm an impassioned  designer &amp; programmer striving to create a
+          I'm an impassioned designer &amp; programmer striving to create a
           subtle user experience. I earned my B. E. (Hons.) Computer Science from BITS
           Pilani, Goa Campus in 2019. Having explored various fields in the
           subject like Computer Networks, Compilers, Logic, Back-End
