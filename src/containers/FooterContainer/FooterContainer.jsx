@@ -40,7 +40,7 @@ const StyledAboutMeDiv = styled.div`
 const StyledMailIcon = styled(MailOutlineIcon)`
   cursor: pointer;
   color: #ffffff;
-  transition: all 0.25s ease;
+  transition: all 0.25s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #dc574c;
@@ -50,7 +50,7 @@ const StyledMailIcon = styled(MailOutlineIcon)`
 
 const StyledLinkedInIcon = styled(LinkedInIcon)`
   color: #ffffff;
-  transition: all 0.25s ease;
+  transition: all 0.25s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #0077b5;
@@ -60,7 +60,7 @@ const StyledLinkedInIcon = styled(LinkedInIcon)`
 
 const StyledFacebookIcon = styled(FacebookIcon)`
   color: #ffffff;
-  transition: all 0.25s ease;
+  transition: all 0.25s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #4267b2;
