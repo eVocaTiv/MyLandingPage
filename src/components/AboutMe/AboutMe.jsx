@@ -6,14 +6,41 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
-import theme from '@colors/theme';
 
 const StyledButton = styled(Button)`
   &:hover {
   }
 `;
 
-const StyledCard = styled(Card)``;
+const StyledCard = styled(Card)`
+  color: white;
+  border-radius: 0px;
+`;
+
+const StyledHeader = styled(Typography)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Great Vibes';
+  font-size: 2rem;
+  color: #CC70AB;
+`;
+
+const StyledBody = styled(Typography)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Allan';
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  width: 90%;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #B7A9D9;
+`;
 
 const useStyles = makeStyles({
   root: {
@@ -21,13 +48,11 @@ const useStyles = makeStyles({
     width: '80%',
     left: '10%',
     top: '30vh',
-    height: '60vh',
-    // 'box-shadow': '0 0 0rem 0.5rem  black',
-    opacity: '0.1',
-    borderRadius: '10px',
+    height: '65vh',
     'background-color': 'black',
+    opacity: '0',
     '&:hover': {
-      opacity: '0.6',
+      opacity: '1',
       'box-shadow': '0px 0 5rem 0px #B7A9D9',
     },
     transition: 'all 0.5s ease-out',
@@ -51,7 +76,7 @@ export default function SimpleCard() {
 
   return (
     <StyledCard className={classes.root}>
-      {/* <CardContent>
+      <CardContent>
         <Typography
           className={classes.title}
           color="textSecondary"
@@ -59,21 +84,27 @@ export default function SimpleCard() {
         >
           dummy secondary text
         </Typography>
-        <Typography variant="h5" component="h2">
-          Who Am I?..
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
+        <StyledHeader variant="h5" component="h2">
+          Something about me!
+        </StyledHeader>
+        <StyledBody variant="body2" component="p">
+          I'm an impassioned programmer &amp; designer striving to create a
+          subtle UX. I earned my B. E. (Hons.) Computer Science from BITS
+          Pilani, Goa Campus in 2019. Having explored various fields in the
+          subject like Computer Networks, Compilers, Logic, Back-End
+          development, Front-End development, Information Retrieval, etc., I
+          became fascinated the most by human-computer interaction. Presently, I
+          work at Amazon as a Front-End Engineer. A firm believer of "A great UX
+          is more than what meets the eye, it tricks the brain.", I assay to
+          provide a gratifying experience to my users. Otherwise, I'm probably
+          at the gym.
           <br />
-          {'"a benevolent smile"'}
-        </Typography>
+          Thank you for reading!
+        </StyledBody>
       </CardContent>
       <CardActions>
         <StyledButton size="small">Learn More</StyledButton>
-      </CardActions> */}
+      </CardActions>
     </StyledCard>
   );
 }

@@ -52,3 +52,9 @@ video {
   background-blend-mode: hue;
   opacity: 0.75;
 }
+
+/* Card hover text reveal */
+.MuiCardContent-root:hover p {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
