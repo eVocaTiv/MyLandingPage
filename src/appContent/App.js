@@ -7,6 +7,7 @@ import {
   VisionContainer,
   AboutMeContainer,
   FooterContainer,
+  ProjectDisplayContainer,
 } from '@containers';
 import { connect } from 'react-redux';
 
@@ -20,6 +21,7 @@ class App extends Component {
           <Fragment>
             <VisionContainer />
             <AboutMeContainer />
+            <ProjectDisplayContainer />
             <FooterContainer />
           </Fragment>
         )}

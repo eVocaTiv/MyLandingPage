@@ -100,7 +100,13 @@ const useStyles = makeStyles((theme) => ({
 
 function NavBar() {
   const classes = useStyles();
-  const { home, visionSection, aboutMeSection, footer } = Constants.anchorIds;
+  const {
+    home,
+    visionSection,
+    aboutMeSection,
+    footer,
+    projectDisplay,
+  } = Constants.anchorIds;
   return (
     <Fade in={true} timeout={2000}>
       <AppBar
@@ -143,7 +149,11 @@ function NavBar() {
           >
             About me
           </StyledButton>
-          <StyledButton color="inherit" endIcon={<MenuBookIcon />}>
+          <StyledButton
+            onClick={() => scrollTo(`#${projectDisplay}`)}
+            color="inherit"
+            endIcon={<MenuBookIcon />}
+          >
             Projects
           </StyledButton>
           <StyledButton

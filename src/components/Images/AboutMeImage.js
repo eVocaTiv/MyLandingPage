@@ -5,8 +5,6 @@ import Constants from '@constants';
 import { AboutMe } from '@components';
 import BackgroundImage from 'gatsby-background-image';
 
-const { footer } = Constants.anchorIds;
-
 const MultiBackground = ({ className }) => {
   const { visionSection } = Constants.anchorIds;
   const { seamlessBackground } = useStaticQuery(

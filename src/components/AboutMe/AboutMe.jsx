@@ -46,7 +46,7 @@ const useStyles = makeStyles({
   cardHeader: {
     ' font-family': 'Great Vibes',
     'font-size': '2rem',
-    color: '#CC70AB',
+    color: '#00C2CB',
   },
   cardBody: {
     'font-family': 'Allan',

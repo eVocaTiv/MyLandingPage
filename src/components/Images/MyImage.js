@@ -26,7 +26,7 @@ const MyImage = () => {
       style={{
         height: '100%',
         width: '40%',
-        'clip-path': 'polygon(0 0, 100% 0px, 100% 50%, 50% 0, 100% 60%, 50% 100%, 0px 60%, 50% 0, 0 50%)',
+        clipPath: 'polygon(0 0, 100% 0px, 100% 50%, 50% 0, 100% 60%, 50% 100%, 0px 60%, 50% 0, 0 50%)',
       }}
       imgStyle={{
         height: '100%',

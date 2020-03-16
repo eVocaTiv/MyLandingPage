@@ -4,6 +4,7 @@ const Constants = {
     aboutMeSection: 'about-me',
     home: 'home',
     footer: 'footer',
+    projectDisplay: 'project-display',
   },
 };
 

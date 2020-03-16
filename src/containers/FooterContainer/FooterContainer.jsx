@@ -15,6 +15,15 @@ const StyledFooterText = styled.div`
   left: 20%;
   top: 35%;
   font-size: 4rem;
+  color: #00C2CB;
+`;
+
+const StyledFooterSubText = styled.div`
+  position: absolute;
+  font-family: 'Julius Sans One';
+  left: 25%;
+  top: 45%;
+  font-size: 1.15rem;
 `;
 
 const StyledIconsDiv = styled.div`
@@ -88,6 +97,7 @@ class FooterContainer extends Component {
     return (
       <StyledAboutMeDiv id={footer}>
         <StyledFooterText>Get In Touch!</StyledFooterText>
+        <StyledFooterSubText>© 2020 Kunal Dewan</StyledFooterSubText>
         <StyledIconsDiv>
           <Tooltip title="Email: Kunalx011@gmail.com">
             <StyledMailIcon
