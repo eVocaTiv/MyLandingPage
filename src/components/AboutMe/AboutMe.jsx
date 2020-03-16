@@ -84,7 +84,7 @@ export default function SimpleCard() {
           development, Front-End development, Information Retrieval, etc., I
           became fascinated the most by human-computer interaction. Presently, I
           work at Amazon as a Front-End Engineer. A firm believer of “A great UX
-          is more than what meets the eye, it tricks the brain.”, I assay to
+          is more than what meets the eye, it resonates with the mind.”, I assay to
           provide a gratifying experience to my users. Otherwise, I'm probably
           at the gym.
           <br />
