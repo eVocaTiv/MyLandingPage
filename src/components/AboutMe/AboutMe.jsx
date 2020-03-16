@@ -36,7 +36,7 @@ const useStyles = makeStyles({
     top: '30vh',
     height: '65vh',
     'background-color': 'black',
-    opacity: '0',
+    opacity: '0.1',
     '&:hover': {
       opacity: '1',
       'box-shadow': '0px 0 5rem 0px #B7A9D9',
@@ -78,13 +78,13 @@ export default function SimpleCard() {
         </StyledHeader>
         <StyledBody className={classes.cardBody} variant="body2" component="p">
           I'm an impassioned programmer &amp; designer striving to create a
-          subtle UX. I earned my B. E. (Hons.) Computer Science from BITS
+          subtle user experience. I earned my B. E. (Hons.) Computer Science from BITS
           Pilani, Goa Campus in 2019. Having explored various fields in the
           subject like Computer Networks, Compilers, Logic, Back-End
           development, Front-End development, Information Retrieval, etc., I
           became fascinated the most by human-computer interaction. Presently, I
-          work at Amazon as a Front-End Engineer. A firm believer of "A great UX
-          is more than what meets the eye, it tricks the brain.", I assay to
+          work at Amazon as a Front-End Engineer. A firm believer of “A great UX
+          is more than what meets the eye, it tricks the brain.”, I assay to
           provide a gratifying experience to my users. Otherwise, I'm probably
           at the gym.
           <br />
