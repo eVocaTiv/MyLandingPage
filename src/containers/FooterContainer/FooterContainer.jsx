@@ -5,6 +5,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const { footer } = Constants.anchorIds;
@@ -57,6 +59,28 @@ const StyledMailIcon = styled(MailOutlineIcon)`
   },
 `;
 
+const StyledInstagramIcon = styled(InstagramIcon)`
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.25s ease !important;
+  fontSize: 1rem;
+  &:hover {
+    color: #a72b9b;
+    transform: scale(1.5);
+  },
+`;
+
+const StyledResumeIcon = styled(AssignmentIcon)`
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.25s ease !important;
+  fontSize: 1rem;
+  &:hover {
+    color: #3cb371;
+    transform: scale(1.5);
+  },
+`;
+
 const StyledLinkedInIcon = styled(LinkedInIcon)`
   color: #ffffff;
   transition: all 0.25s ease !important;
@@ -99,10 +123,15 @@ class FooterContainer extends Component {
         <StyledFooterText>Get In Touch!</StyledFooterText>
         <StyledFooterSubText>© 2020 Kunal Dewan</StyledFooterSubText>
         <StyledIconsDiv>
+          <Tooltip title="Resume">
+            <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
+              <StyledResumeIcon />
+            </a>
+          </Tooltip>
           <Tooltip title="Email: Kunalx011@gmail.com">
-            <StyledMailIcon
-              onClick={this.sendEmail}
-            />
+            <a>
+              <StyledMailIcon onClick={this.sendEmail} />
+            </a>
           </Tooltip>
           <Tooltip title="LinkedIn">
             <a href="https://tinyurl.com/linkedin-kd" target="_blank">
@@ -117,6 +146,11 @@ class FooterContainer extends Component {
           <Tooltip title="Facebook">
             <a href="https://www.facebook.com/NkT.NeveR" target="_blank">
               <StyledFacebookIcon />
+            </a>
+          </Tooltip>
+          <Tooltip title="Instagram">
+            <a href="https://www.instagram.com/kunz_dewn" target="_blank">
+              <StyledInstagramIcon />
             </a>
           </Tooltip>
         </StyledIconsDiv>
