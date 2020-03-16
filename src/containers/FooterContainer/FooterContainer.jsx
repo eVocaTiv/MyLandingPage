@@ -70,7 +70,8 @@ const StyledFacebookIcon = styled(FacebookIcon)`
 
 const StyledGitHubIcon = styled(GitHubIcon)`
   color: #ffffff;
-  transition: all 0.25s ease;
+  // overriding default child transition
+  transition: all 0.25s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #000000;
