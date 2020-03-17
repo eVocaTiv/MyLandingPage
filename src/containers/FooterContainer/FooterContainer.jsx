@@ -39,7 +39,7 @@ const StyledIconsDiv = styled.div`
   z-index: 1000;
 `;
 
-const StyledAboutMeDiv = styled.div`
+const StyledFooterDiv = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
@@ -50,7 +50,7 @@ const StyledAboutMeDiv = styled.div`
 
 const StyledMailIcon = styled(MailOutlineIcon)`
   color: #ffffff;
-  transition: all 0.25s ease !important;
+  transition: all 0.5s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #dc574c;
@@ -61,7 +61,7 @@ const StyledMailIcon = styled(MailOutlineIcon)`
 const StyledInstagramIcon = styled(InstagramIcon)`
   cursor: pointer;
   color: #ffffff;
-  transition: all 0.25s ease !important;
+  transition: all 0.5s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #a72b9b;
@@ -72,7 +72,7 @@ const StyledInstagramIcon = styled(InstagramIcon)`
 const StyledResumeIcon = styled(AssignmentIcon)`
   cursor: pointer;
   color: #ffffff;
-  transition: all 0.25s ease !important;
+  transition: all 0.5s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #3cb371;
@@ -82,7 +82,7 @@ const StyledResumeIcon = styled(AssignmentIcon)`
 
 const StyledLinkedInIcon = styled(LinkedInIcon)`
   color: #ffffff;
-  transition: all 0.25s ease !important;
+  transition: all 0.5s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #0077b5;
@@ -92,7 +92,7 @@ const StyledLinkedInIcon = styled(LinkedInIcon)`
 
 const StyledFacebookIcon = styled(FacebookIcon)`
   color: #ffffff;
-  transition: all 0.25s ease !important;
+  transition: all 0.5s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #4267b2;
@@ -103,7 +103,7 @@ const StyledFacebookIcon = styled(FacebookIcon)`
 const StyledGitHubIcon = styled(GitHubIcon)`
   color: #ffffff;
   // overriding default child transition
-  transition: all 0.25s ease !important;
+  transition: all 0.5s ease !important;
   fontSize: 1rem;
   &:hover {
     color: #000000;
@@ -118,7 +118,7 @@ class FooterContainer extends Component {
 
   render() {
     return (
-      <StyledAboutMeDiv id={footer}>
+      <StyledFooterDiv id={footer}>
         <StyledFooterText>Get In Touch!</StyledFooterText>
         <StyledFooterSubText>© 2020 Kunal Dewan</StyledFooterSubText>
         <StyledIconsDiv>
@@ -153,7 +153,7 @@ class FooterContainer extends Component {
             </a>
           </Tooltip>
         </StyledIconsDiv>
-      </StyledAboutMeDiv>
+      </StyledFooterDiv>
     );
   }
 }
