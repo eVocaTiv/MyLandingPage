@@ -22,7 +22,7 @@ const StyledPaper = styled(Paper)`
    border: thick solid #00C2CB;
    box-shadow: 1px 5px 1px 1px #895AF3;
   }
-  background-color: #803966;
+  background-color: #803966 !important;
 `;
 
 export default function Variants() {
