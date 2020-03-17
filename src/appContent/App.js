@@ -11,6 +11,7 @@ import {
 } from '@containers';
 import { connect } from 'react-redux';
 import ParallaxWrapper from './ParallaxWrapper';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class App extends Component {
   
@@ -24,7 +25,9 @@ class App extends Component {
             <VisionContainer />
             <AboutMeContainer />
             <ProjectDisplayContainer />
-            <ParallaxWrapper />
+            <ScrollAnimation animateIn="fadeIn">
+              <ParallaxWrapper />
+            </ScrollAnimation>
             <FooterContainer />
           </Fragment>
         )}

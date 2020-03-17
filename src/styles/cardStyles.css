@@ -6,7 +6,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: absolute;
-  top: 22.5%;
+  top: 20%;
   left: 17.5%;
   transition: box-shadow ease 0.5s;
 }

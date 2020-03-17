@@ -121,9 +121,48 @@ class FooterContainer extends Component {
     return (
       <StyledFooterDiv id={footer}>
         <StyledFooterText>
-          <ScrollAnimation animateIn="zoomInLeft">Get In Touch!</ScrollAnimation>
+          <ScrollAnimation
+            initiallyVisible={true}
+            delay={2000}
+            animateIn="rotateOut"
+            animateOnce
+          >
+            Get In Touch!
+          </ScrollAnimation>
+          <ScrollAnimation
+            delay={7500}
+            animateIn="zoomOut"
+            animateOnce
+            initiallyVisible={true}
+          >
+            <ScrollAnimation
+              initiallyVisible={false}
+              delay={2500}
+              animateIn="zoomIn"
+              animateOnce
+            >
+              This way &#x2198;
+            </ScrollAnimation>
+          </ScrollAnimation>
+          <ScrollAnimation
+              initiallyVisible={false}
+              delay={9000}
+              animateIn="zoomIn"
+              animateOnce
+            >
+             🙏
+            </ScrollAnimation>
         </StyledFooterText>
-        <StyledFooterSubText>© 2020 Kunal Dewan</StyledFooterSubText>
+        <StyledFooterSubText>
+          <ScrollAnimation
+            initiallyVisible={true}
+            delay={2000}
+            animateIn="fadeOutLeftBig"
+            animateOnce
+          >
+            © 2020 Kunal Dewan
+          </ScrollAnimation>
+        </StyledFooterSubText>
         <StyledIconsDiv>
           <Tooltip title="Resume">
             <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
