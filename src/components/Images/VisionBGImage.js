@@ -10,7 +10,7 @@ const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "goa road.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "crow in sea.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
@@ -24,7 +24,7 @@ const MultiBackground = ({ className }) => {
   // The lowermost image comes last!
   const backgroundFluidImageStack = [
     seamlessBackground.childImageSharp.fluid,
-    'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(57,43,89,0.6) 100%)',
+    'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(57,43,89,0.6) 10%)',
   ].reverse();
 
   return (

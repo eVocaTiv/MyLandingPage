@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Constants from '@constants';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 const { projectDisplay } = Constants.anchorIds;
+import "animate.css/animate.min.css";
 
 const StyledFooterText = styled.div`
   position: absolute;
@@ -26,7 +27,9 @@ class ProjectDisplayContainer extends Component {
   render() {
     return (
       <StyledAboutMeDiv id={projectDisplay}>
-        <StyledFooterText>Coming Soon!..</StyledFooterText>
+        <StyledFooterText>
+          <ScrollAnimation animateIn="zoomIn">Coming Soon!.. </ScrollAnimation>
+        </StyledFooterText>
       </StyledAboutMeDiv>
     );
   }

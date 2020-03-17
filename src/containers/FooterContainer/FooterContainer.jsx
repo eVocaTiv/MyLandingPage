@@ -8,6 +8,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Tooltip from '@material-ui/core/Tooltip';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const { footer } = Constants.anchorIds;
 
@@ -119,7 +120,9 @@ class FooterContainer extends Component {
   render() {
     return (
       <StyledFooterDiv id={footer}>
-        <StyledFooterText>Get In Touch!</StyledFooterText>
+        <StyledFooterText>
+          <ScrollAnimation animateIn="zoomInLeft">Get In Touch!</ScrollAnimation>
+        </StyledFooterText>
         <StyledFooterSubText>© 2020 Kunal Dewan</StyledFooterSubText>
         <StyledIconsDiv>
           <Tooltip title="Resume">

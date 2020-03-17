@@ -1,5 +1,6 @@
 /* fonts  */
 /* Julius Sans One */
+
 @font-face {
   font-family: 'Julius Sans One';
   src: url('typography/JuliusSansOne-Regular.ttf');
@@ -57,4 +58,15 @@ video {
 .MuiCardContent-root:hover p {
   opacity: 1;
   transition: opacity 1s ease;
+}
+
+/* Vision bg image blend */
+#vision-bg-image::before {
+  background-blend-mode: overlay;
+  opacity: 0.4;
+  transition: all 1s ease;
+}
+
+#vision-bg-image:hover::before {
+  filter: blur(5px);
 }
