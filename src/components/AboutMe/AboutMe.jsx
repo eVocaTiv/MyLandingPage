@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     'background-color': 'black',
     opacity: '0.25',
     '&:hover': {
-      opacity: '0.75',
+      opacity: '0.7',
       'box-shadow': '0px 0 5rem 0px #B7A9D9',
     },
     transition: 'all 0.5s ease-out',

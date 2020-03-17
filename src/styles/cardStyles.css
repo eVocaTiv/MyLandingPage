@@ -8,15 +8,19 @@
   position: absolute;
   top: 22.5%;
   left: 17.5%;
-  /* -webkit-box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.75);
+  transition: box-shadow ease 0.5s;
+}
+
+.card:hover {
+   -webkit-box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.75); */
+  box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.75);
 }
 
 .card__side {
   height: 100%;
   transition: all 0.8s ease;
-  /* transition-delay: 0.1s; */
+  transition-delay: 0.25s;
   color: white;
   font-size: 2rem;
   position: absolute;

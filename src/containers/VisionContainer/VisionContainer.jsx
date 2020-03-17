@@ -7,7 +7,7 @@ const StyledVisionBGImage = styled(VisionBGImage)`
 `;
 
 const StyledVisionContainer = styled.div`
-  height: 110vh;
+  height: 100vh;
 `;
 
 // use clip design in footer
