@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Card extends Component {
   render() {
     return (
-      <div className="card fadeIn">
+      <div id="vision-card" className="card">
         <div className="card__side card__side--back">
           <MyImage />
           <h4 className="card__heading">
@@ -25,11 +25,9 @@ class Card extends Component {
         </div>
         <div className="card__side card__side--front">
           <div className="card__cta">
-            <p className="card-value">
-                <ScrollAnimation initiallyVisible ={false} animateIn="zoomIn">
-                It's not the same.
-              </ScrollAnimation>
-            </p>
+            <ScrollAnimation   animateIn="fadeIn">
+              <p className="card-value">It's not the same.</p>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

@@ -10,8 +10,10 @@ import {
   ProjectDisplayContainer,
 } from '@containers';
 import { connect } from 'react-redux';
+import ParallaxWrapper from './ParallaxWrapper';
 
 class App extends Component {
+  
   render() {
     const { isTopLayerLoaded } = this.props;
     return (
@@ -22,6 +24,7 @@ class App extends Component {
             <VisionContainer />
             <AboutMeContainer />
             <ProjectDisplayContainer />
+            <ParallaxWrapper />
             <FooterContainer />
           </Fragment>
         )}
