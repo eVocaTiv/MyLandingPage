@@ -15,7 +15,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const StyledPaper = styled(Paper)`
-  transition: all ease 0.5s;
+  // override default transition in card's child.
+  transition: all ease 0.5s !important;
   &:hover {
    transform: scale(1.15);
    border: thick solid #00C2CB;
