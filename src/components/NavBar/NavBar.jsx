@@ -19,6 +19,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { AsyncLoaderComponent } from '@components';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Constants from '@constants';
+import Badge from '@material-ui/core/Badge';
+import { withStyles } from '@material-ui/core/styles';
 
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '@media only screen and (max-width: 1100px)': {
@@ -74,6 +76,14 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   //eslint-disable-next-line
   transition: 'transform 0.5s ease',
 }));
+
+const StyledBadge = withStyles((theme) => ({
+  badge: {
+    right: 40,
+    top: 0,
+    padding: '0 4px',
+  },
+}))(Badge);
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -159,7 +169,11 @@ function NavBar() {
           <StyledButton
             onClick={() => scrollTo(`#${footer}`)}
             color="inherit"
-            endIcon={<ContactPhoneIcon />}
+            endIcon={
+              <StyledBadge variant="dot" color="secondary">
+                <ContactPhoneIcon />
+              </StyledBadge>
+            }
           >
             Get In Touch!
           </StyledButton>
