@@ -118,7 +118,7 @@ function NavBar() {
     projectDisplay,
   } = Constants.anchorIds;
   return (
-    <Fade in={true} timeout={2000}>
+    <Fade in={true} timeout={5000}>
       <AppBar
         style={{
           background: 'transparent',

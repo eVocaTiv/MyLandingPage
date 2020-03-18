@@ -5,7 +5,7 @@ import BackgroundImage from 'gatsby-background-image';
 const MyImage = () => {
   const { cardImage } = useStaticQuery(graphql`
     query {
-      cardImage: file(relativePath: { eq: "myImage.jpg" }) {
+      cardImage: file(relativePath: { eq: "logo-big.png" }) {
         childImageSharp {
           fluid(quality: 90) {
             ...GatsbyImageSharpFluid
@@ -17,7 +17,6 @@ const MyImage = () => {
 
   const backgroundFluidImageStack = [
     cardImage.childImageSharp.fluid,
-    `linear-gradient(rgba(255, 255, 255, 0.73), rgba(86, 67, 250, 0.73))`,
   ].reverse();
 
   return (
@@ -26,7 +25,7 @@ const MyImage = () => {
       style={{
         height: '100%',
         width: '40%',
-        clipPath: 'polygon(0 0, 100% 0px, 100% 50%, 50% 0, 100% 60%, 50% 100%, 0px 60%, 50% 0, 0 50%)',
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)',
       }}
       imgStyle={{
         height: '100%',

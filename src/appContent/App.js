@@ -16,11 +16,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class App extends Component {
   
   render() {
-    const { isTopLayerLoaded } = this.props;
     return (
       <ThemeProvider theme={theme}>
-        <TopLayerContainer source={IntroVideo} />
-        {isTopLayerLoaded && (
+        <TopLayerContainer />
           <Fragment>
             <VisionContainer />
             <AboutMeContainer />
@@ -30,7 +28,6 @@ class App extends Component {
             </ScrollAnimation>
             <FooterContainer />
           </Fragment>
-        )}
       </ThemeProvider>
     );
   }

@@ -1,105 +1,105 @@
 import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Player } from 'video-react';
 import { NavBar, StyledSkeleton } from '@components';
-import { connect } from 'react-redux';
-import ActionTypes from '@actions/types';
-import createAction from '@actions';
 import Constants from '@constants';
+import { AsyncLoaderComponent } from '@components';
+import LandingImage from '@components/Images/LandingImage';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-const VideoContainerDiv = styled.div`
-  overflow: hidden;
+const NavBarContainer= styled.div`
+  width: 100%;
 `;
 
-const StyledPlayer = styled(Player)`
-  //  necessary for overriding default style.
-  padding-top: 0 !important;
+const LandingViewContainer = styled.div`
+  padding-top: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  display: ${(props) => (props.showVideo ? 'block' : 'none')};
-  > button,
-  .video-react-control-bar {
-    display: none;
-  }
   background-color: black;
-  pointer-events: none;
 `;
+
+
+const StyledText = styled.div`
+  position: absolute;
+  font-family: 'Great Vibes';
+  left: 50%;
+  top: 50%;
+  font-size: 4rem;
+  color: #B7A9D9;
+`;
+
+const StyledSubText = styled.div`
+  position: absolute;
+  font-family: 'Julius Sans One';
+  left: 55%;
+  top: 70%;
+  font-size: 1.15rem;
+  color: #00C2CB;
+`;
+
+
+
+const { home } = Constants.anchorIds;
 
 // TODO - optimize / compress video size.
 class TopLayer extends Component {
-  static propTypes = {
-    source: PropTypes.string.isRequired,
-  };
-
-  static propTypes = {
-    dispatchIsVideoLoadedSuccessAction: PropTypes.func.isRequired,
-  };
-
-  state = {
-    showNavBar: false,
-    showVideo: false,
-    scrolledToVisionSection: false,
-  };
-
-  componentDidMount() {
-    // subscribe to player state change
-    this.player.subscribeToStateChange(this.handleStateChange.bind(this));
-  }
-
-  handleStateChange(state) {
-    const { dispatchIsVideoLoadedSuccessAction } = this.props;
-    const { played, readyState, duration, currentTime, ended } = state;
-    const { showVideo, showNavBar } = this.state;
-    // make video visible once ready to play.
-    if (!showVideo && readyState === 4) {
-      this.setState({
-        showVideo: true,
-      });
-      const isVideoLoadedSuccessAction = createAction(
-        ActionTypes.STORE_UPDATE_IS_VIDEO_LOADED_SUCCESS,
-        true,
-      );
-      dispatchIsVideoLoadedSuccessAction(isVideoLoadedSuccessAction);
-    }
-
-    // show navigation bar before video ends for visual effect :-) !
-    if (!showNavBar && played) {
-      this.setState({
-        showNavBar: duration - currentTime <= 5,
-      });
-    }
-  }
-
-  render() {
-    const { source } = this.props;
-    const { showNavBar, showVideo } = this.state;
-    const { home } = Constants.anchorIds;
+  getTopLayer = () => {
     return (
       <Fragment>
-        {!showVideo && <StyledSkeleton />}
-        {showNavBar && <NavBar />}
-        <VideoContainerDiv id={`${home}`}>
-          <StyledPlayer
-            ref={(player) => {
-              this.player = player;
-            }}
-            muted
-            autoPlay
-            showVideo={showVideo}
-          >
-            <source src={source} type="video/mp4" />
-          </StyledPlayer>
-        </VideoContainerDiv>
+        <NavBarContainer id={home}>
+          <NavBar />
+        </NavBarContainer>
+        <LandingViewContainer>
+          <LandingImage />
+          <StyledText>
+            <ScrollAnimation
+              animateOnce
+              delay={3000}
+              initiallyVisible={true}
+              animateIn="flipOutY"
+            >
+              <ScrollAnimation
+                animateOnce
+                initiallyVisible={false}
+                delay={1000}
+                animateIn="flash"
+              >
+                Welcome! :)
+              </ScrollAnimation>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateOnce
+              initiallyVisible={false}
+              delay={4000}
+              animateIn="fadeIn"
+            >
+              Glad you're here!
+            </ScrollAnimation>
+          </StyledText>
+          <StyledSubText>
+            <ScrollAnimation
+              initiallyVisible={false}
+              delay={4000}
+              animateIn="fadeInRight"
+              animateOnce
+            >
+              © 2020 Kunal Dewan
+            </ScrollAnimation>
+          </StyledSubText>
+        </LandingViewContainer>
       </Fragment>
+    );
+  };
+
+  render() {
+    return (
+      <AsyncLoaderComponent
+        delay={1000}
+        skeleton={<StyledSkeleton />}
+        actualComponent={this.getTopLayer()}
+      />
     );
   }
 }
-
-const mapDispatchToProps = (dispatch) => ({
-  dispatchIsVideoLoadedSuccessAction: (isVideoLoadedSuccessAction) =>
-    dispatch(isVideoLoadedSuccessAction),
-});
-
-export default connect(null, mapDispatchToProps)(TopLayer);
+ 
+export default TopLayer;

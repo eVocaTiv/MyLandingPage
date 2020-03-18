@@ -21,14 +21,6 @@ const StyledFooterText = styled.div`
   color: #00C2CB;
 `;
 
-const StyledFooterSubText = styled.div`
-  position: absolute;
-  font-family: 'Julius Sans One';
-  left: 25%;
-  top: 45%;
-  font-size: 1.15rem;
-`;
-
 const StyledIconsDiv = styled.div`
   display: flex;
   width: 17.5%;
@@ -146,23 +138,14 @@ class FooterContainer extends Component {
           </ScrollAnimation>
           <ScrollAnimation
               initiallyVisible={false}
-              delay={9000}
+              delay={7500}
               animateIn="zoomIn"
               animateOnce
             >
-             🙏
+             Thank you!
             </ScrollAnimation>
         </StyledFooterText>
-        <StyledFooterSubText>
-          <ScrollAnimation
-            initiallyVisible={true}
-            delay={2000}
-            animateIn="fadeOutLeftBig"
-            animateOnce
-          >
-            © 2020 Kunal Dewan
-          </ScrollAnimation>
-        </StyledFooterSubText>
+ 
         <StyledIconsDiv>
           <Tooltip title="Resume">
             <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
