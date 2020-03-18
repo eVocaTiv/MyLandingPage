@@ -10,14 +10,14 @@ const StyledFooterText = styled.div`
   position: absolute;
   color: #CC70AB;
   font-family: 'Great Vibes';
-  left: 32.5%;
-  top: 20%;
-  font-size: 4rem;
+  left: 37.5%;
+  top: 12.5%;
+  font-size: 3rem;
 `;
 
 const StyledAboutMeDiv = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   position: relative;
   z-index: 1;
   background-color: #4C4659;
@@ -25,7 +25,7 @@ const StyledAboutMeDiv = styled.div`
 
 const ProjectDisplayCardsDiv = styled.div`
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 40%;
   display: grid;
   grid-template-columns: minmax(100px, 1fr)  minmax(100px, 1fr) ;
@@ -39,30 +39,32 @@ class ProjectDisplayContainer extends Component {
     return (
       <StyledAboutMeDiv id={projectDisplay}>
         <StyledFooterText>
-          <ScrollAnimation animateIn="zoomIn">Coming Soon!.. </ScrollAnimation>
+          <ScrollAnimation animateOnce duration={0.25} animateIn="zoomIn">
+            Coming Soon!..
+          </ScrollAnimation>
         </StyledFooterText>
         <ProjectDisplayCardsDiv>
-          <ScrollAnimation delay={500} animateIn="fadeInLeft">
+          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInLeft">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation delay={500} animateIn="fadeInRight">
+          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInRight">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation delay={600} animateIn="fadeInLeft">
+          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInLeft">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation delay={600} animateIn="fadeInRight">
+          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInRight">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation delay={700} animateIn="fadeInLeft">
+          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInLeft">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation delay={700} animateIn="fadeInRight">
+          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInRight">
             <ProjectDisplayCard />
           </ScrollAnimation>
         </ProjectDisplayCardsDiv>

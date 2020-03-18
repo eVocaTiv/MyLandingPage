@@ -25,7 +25,7 @@ class Card extends Component {
         </div>
         <div className="card__side card__side--front">
           <div className="card__cta">
-            <ScrollAnimation   animateIn="fadeIn">
+            <ScrollAnimation duration ={.25}  animateIn="fadeIn">
               <p className="card-value">It's not the same.</p>
             </ScrollAnimation>
           </div>

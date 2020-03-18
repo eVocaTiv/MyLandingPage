@@ -8,7 +8,7 @@ const { aboutMeSection } = Constants.anchorIds;
 
 const StyledAboutMeDiv = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   position: relative;
   z-index: 1;
   clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);

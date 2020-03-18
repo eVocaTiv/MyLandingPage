@@ -71,13 +71,13 @@ export default function SimpleCard() {
   return (
     <StyledCard className={classes.root}>
       <CardContent>
-        <ScrollAnimation animateIn="rollIn">
+        <ScrollAnimation animateOnce animateIn="rollIn">
           <StyledHeader
             className={classes.cardHeader}
             variant="h5"
             component="h2"
           >
-            <ScrollAnimation delay={1000} initiallyVisible={false} animateIn="flash">
+            <ScrollAnimation delay={500} initiallyVisible={false} animateIn="flash">
               Something about me!
             </ScrollAnimation>
           </StyledHeader>
