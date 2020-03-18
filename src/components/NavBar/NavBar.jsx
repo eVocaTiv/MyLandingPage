@@ -16,7 +16,6 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import { AsyncLoaderComponent } from '@components';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Constants from '@constants';
 import Badge from '@material-ui/core/Badge';
@@ -139,11 +138,7 @@ function NavBar() {
             <MenuIcon />
           </StyledMenuButton>
           <Typography variant="h6" className={classes.title}>
-            <AsyncLoaderComponent
-              actualComponent={
-                <StyledHomeIcon onClick={() => scrollTo(`#${home}`)} />
-              }
-            />
+            <StyledHomeIcon onClick={() => scrollTo(`#${home}`)} />
           </Typography>
           <StyledButton
             onClick={() => scrollTo(`#${visionSection}`)}

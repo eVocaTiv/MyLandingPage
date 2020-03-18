@@ -12,10 +12,18 @@ import {
 import { connect } from 'react-redux';
 import ParallaxWrapper from './ParallaxWrapper';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { StyledSkeleton } from '@components';
 
 class App extends Component {
-  
-  render() {
+  state = {
+    isLoading: true,
+  };
+
+  getDisplay = () => {
+    const {isLoading } = this.state;
+    if(isLoading) {
+      return <StyledSkeleton />
+    }
     return (
       <ThemeProvider theme={theme}>
         <TopLayerContainer />
@@ -30,6 +38,17 @@ class App extends Component {
         </Fragment>
       </ThemeProvider>
     );
+  };
+
+  componentDidMount = () => {
+    this.setState({
+      isLoading: false,
+    });
+    console.log('mounted');
+  };
+
+  render() {
+    return this.getDisplay();
   }
 }
 

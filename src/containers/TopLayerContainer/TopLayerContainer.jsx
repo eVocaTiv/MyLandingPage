@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import { NavBar, StyledSkeleton } from '@components';
 import Constants from '@constants';
-import { AsyncLoaderComponent } from '@components';
 import LandingImage from '@components/Images/LandingImage';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -17,7 +16,6 @@ const LandingViewContainer = styled.div`
   overflow: hidden;
   background-color: black;
 `;
-
 
 const StyledText = styled.div`
   position: absolute;
@@ -37,22 +35,18 @@ const StyledSubText = styled.div`
   color: #00C2CB;
 `;
 
-const StyledContainer = styled.div`
-  height: 100vh;
-`;
-
 const { home } = Constants.anchorIds;
 
 // TODO - optimize / compress video size.
 class TopLayer extends Component {
   getTopLayer = () => {
     return (
-      <StyledContainer>
+      <Fragment>
         <NavBarContainer id={home}>
           <NavBar />
         </NavBarContainer>
         <LandingViewContainer>
-          <LandingImage />
+          {/* <LandingImage />
           <StyledText>
             <ScrollAnimation
               animateOnce
@@ -87,20 +81,14 @@ class TopLayer extends Component {
             >
               © 2020 Kunal Dewan
             </ScrollAnimation>
-          </StyledSubText>
+          </StyledSubText> */}
         </LandingViewContainer>
-      </StyledContainer>
+      </Fragment>
     );
   };
 
   render() {
-    return (
-      <AsyncLoaderComponent
-        delay={1000}
-        skeleton={<StyledSkeleton />}
-        actualComponent={this.getTopLayer()}
-      />
-    );
+    return this.getTopLayer();
   }
 }
  
