@@ -37,7 +37,9 @@ const StyledSubText = styled.div`
   color: #00C2CB;
 `;
 
-
+const StyledContainer = styled.div`
+  height: 100vh;
+`;
 
 const { home } = Constants.anchorIds;
 
@@ -45,7 +47,7 @@ const { home } = Constants.anchorIds;
 class TopLayer extends Component {
   getTopLayer = () => {
     return (
-      <Fragment>
+      <StyledContainer>
         <NavBarContainer id={home}>
           <NavBar />
         </NavBarContainer>
@@ -87,7 +89,7 @@ class TopLayer extends Component {
             </ScrollAnimation>
           </StyledSubText>
         </LandingViewContainer>
-      </Fragment>
+      </StyledContainer>
     );
   };
 

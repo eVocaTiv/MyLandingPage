@@ -19,15 +19,15 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <TopLayerContainer />
-          <Fragment>
-            <VisionContainer />
-            <AboutMeContainer />
-            <ProjectDisplayContainer />
-            <ScrollAnimation animateIn="fadeIn">
-              <ParallaxWrapper />
-            </ScrollAnimation>
-            <FooterContainer />
-          </Fragment>
+        <Fragment>
+          <VisionContainer />
+          <AboutMeContainer />
+          <ProjectDisplayContainer />
+          <ScrollAnimation animateIn="fadeIn">
+            <ParallaxWrapper />
+          </ScrollAnimation>
+          <FooterContainer />
+        </Fragment>
       </ThemeProvider>
     );
   }

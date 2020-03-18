@@ -20,6 +20,7 @@
 .card__side {
   height: 100%;
   transition: all 0.8s ease;
+  transition-delay: 0.1s;
   color: white;
   font-size: 2rem;
   position: absolute;
