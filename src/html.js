@@ -32,7 +32,7 @@ export default function HTML(props) {
             zIndex: 1,
           }}
         >
-          <LoadingSpinner />
+         <LoadingSpinner />
         </div>
         <div
           key={`body`}

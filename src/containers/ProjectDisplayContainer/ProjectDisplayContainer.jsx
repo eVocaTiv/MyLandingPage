@@ -39,32 +39,32 @@ class ProjectDisplayContainer extends Component {
     return (
       <StyledAboutMeDiv id={projectDisplay}>
         <StyledFooterText>
-          <ScrollAnimation animateOnce duration={0.25} animateIn="zoomIn">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="zoomIn">
             Coming Soon!..
           </ScrollAnimation>
         </StyledFooterText>
         <ProjectDisplayCardsDiv>
-          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInLeft">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInLeft">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInRight">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInRight">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInLeft">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInLeft">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInRight">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInRight">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInLeft">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInLeft">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.25} animateIn="fadeInRight">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInRight">
             <ProjectDisplayCard />
           </ScrollAnimation>
         </ProjectDisplayCardsDiv>

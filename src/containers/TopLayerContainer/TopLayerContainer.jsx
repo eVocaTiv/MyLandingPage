@@ -57,7 +57,7 @@ class TopLayer extends Component {
               <ScrollAnimation
                 animateOnce
                 initiallyVisible={false}
-                delay={1000}
+                delay={1500}
                 animateIn="flash"
               >
                 Welcome! :)

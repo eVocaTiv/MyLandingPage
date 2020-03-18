@@ -9,6 +9,20 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        // Configure color of the scroll indicator
+        color: '#00C2CB',
+        // Height of the scroll indicator
+        height: '10px',
+        // Configure paths where the scroll indicator will appear
+        paths: ['/', '/blog/**'],
+        // Configure the z-index of the indicator element
+        zIndex: `9999`,
+      },
+    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {

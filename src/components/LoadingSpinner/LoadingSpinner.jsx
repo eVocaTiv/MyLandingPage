@@ -1,17 +1,18 @@
 import React from 'react';
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import Loader from 'react-loader-spinner';
+import { css } from '@emotion/core';
+import BounceLoader from 'react-spinners/BounceLoader';
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+`;
 
 class LoadingSpinner extends React.Component {
   render() {
     return (
-      <Loader
-        type="Triangle"
-        color="#803966"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-      />
+      <div className="sweet-loading">
+        <BounceLoader css={override} size={150} color={'#00C2CB'} loading />
+      </div>
     );
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { AboutMe } from '@components';
 import styled from 'styled-components';
 import Constants from '@constants';
 import AboutMeImage from '@components/Images/AboutMeImage';

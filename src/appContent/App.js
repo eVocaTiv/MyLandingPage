@@ -10,44 +10,26 @@ import {
 } from '@containers';
 import ParallaxWrapper from './ParallaxWrapper';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { StyledSkeleton } from '@components';
 
 class App extends Component {
-  state = {
-    isLoading: true,
-  };
-
-  getDisplay = () => {
-    const {isLoading } = this.state;
-    if(isLoading) {
-      console.log('isLoading');
-      return <StyledSkeleton />
-    }
+  render() {
     return (
       <ThemeProvider theme={theme}>
-        <TopLayerContainer />
-        <Fragment>
-          <VisionContainer />
-          <AboutMeContainer />
-          <ProjectDisplayContainer />
-          <ScrollAnimation animateIn="fadeIn">
-            <ParallaxWrapper />
-          </ScrollAnimation>
-          <FooterContainer />
-        </Fragment>
+   
+        <ScrollAnimation animateIn="zoomIn">
+          <TopLayerContainer />
+          <Fragment>
+            <VisionContainer />
+            <AboutMeContainer />
+            <ProjectDisplayContainer />
+            <ScrollAnimation animateIn="fadeIn">
+              <ParallaxWrapper />
+            </ScrollAnimation>
+            <FooterContainer />
+          </Fragment>
+        </ScrollAnimation>
       </ThemeProvider>
     );
-  };
-
-  componentDidMount = () => {
-    this.setState({
-      isLoading: false,
-    });
-    console.log('mounted');
-  };
-
-  render() {
-    return this.getDisplay();
   }
 }
 

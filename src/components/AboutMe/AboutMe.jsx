@@ -8,27 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const StyledCard = styled(Card)`
-  color: white;
-  border-radius: 0px;
-`;
-
-const StyledHeader = styled(Typography)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: .5rem;
-`;
-
-const StyledBody = styled(Typography)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-  // !important necessary because of material ui card issues.
-  margin: 0.5rem auto !important; 
-`;
-
 const useStyles = makeStyles({
   root: {
     position: 'absolute',
@@ -41,21 +20,33 @@ const useStyles = makeStyles({
     '&:hover': {
       'background-color': 'black',
       opacity: '0.7',
-      'box-shadow': '0px 0 5rem 0px #00C2CB',
+      // Lag issues w/ gatsby
+      // 'box-shadow': '0px 0px 1rem 0px #00C2CB',
     },
-    transition: 'all 0.5s ease-out',
+    // transition: ' all 1s ease',
   },
   cardHeader: {
     ' font-family': 'Great Vibes',
     'font-size': '2rem',
     color: '#00C2CB',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: '0.5rem',
   },
   cardBody: {
     'font-family': 'Allan',
     'line-height': '1.75rem',
     ' letter-spacing': ' 0.05rem',
     'font-size': '1rem',
-    ' color': '#b7a9d9',
+    'color': '#b7a9d9',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '90%',
+    // !important necessary because of material ui card issues.
+    margin: '0.5rem auto !important',
+    // transition: 'all 1s ease-in',
   },
   title: {
     fontSize: 14,
@@ -65,27 +56,38 @@ const useStyles = makeStyles({
   },
 });
 
+// LAG ISSUES EXIST W/ gatsby.
+const StyledBodyText = styled.div`
+  &: hover {
+    // box-shadow: 0px 0px 1rem 0px #00c2cb;
+  }
+  // transition: box-shadow 0.5s ease;
+  padding: 1rem;
+`;
+
+const StyledCard = styled(Card)`
+  // transition: all 1s ease;
+  // box-sizing: content-box;
+  // transform: translateZ(0);
+`;
+
 export default function SimpleCard() {
   const classes = useStyles();
 
   return (
     <StyledCard className={classes.root}>
       <CardContent>
-        <ScrollAnimation animateOnce animateIn="rollIn">
-          <StyledHeader
-            className={classes.cardHeader}
-            variant="h5"
-            component="h2"
+        <div className={classes.cardHeader} variant="h5" component="h2">
+          <ScrollAnimation
+            delay={500}
+            initiallyVisible={false}
+            animateIn="flash"
           >
-            <ScrollAnimation delay={500} initiallyVisible={false} animateIn="flash">
-              Something about me!
-            </ScrollAnimation>
-          </StyledHeader>
-          <StyledBody
-            className={classes.cardBody}
-            variant="body2"
-            component="p"
-          >
+            Something about me!
+          </ScrollAnimation>
+        </div>
+        <div className={classes.cardBody} variant="body2" component="p">
+          <StyledBodyText>
             I'm an impassioned designer &amp; programmer striving to create a
             subtle user experience. I earned my B. E. (Hons.) Computer Science
             from BITS Pilani, Goa Campus in 2019. Having explored various fields
@@ -98,12 +100,9 @@ export default function SimpleCard() {
             Otherwise, I'm probably at the gym.
             <br />
             Thank you for reading!
-          </StyledBody>
-        </ScrollAnimation>
+          </StyledBodyText>
+        </div>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </StyledCard>
   );
 }
