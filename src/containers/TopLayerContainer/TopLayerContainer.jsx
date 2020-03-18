@@ -46,7 +46,7 @@ class TopLayer extends Component {
           <NavBar />
         </NavBarContainer>
         <LandingViewContainer>
-          {/* <LandingImage />
+          <LandingImage />
           <StyledText>
             <ScrollAnimation
               animateOnce
@@ -81,7 +81,7 @@ class TopLayer extends Component {
             >
               © 2020 Kunal Dewan
             </ScrollAnimation>
-          </StyledSubText> */}
+          </StyledSubText>
         </LandingViewContainer>
       </Fragment>
     );

@@ -1,2 +1,5 @@
-import ReduxAppWrapper from '@appContent/ReduxAppWrapper';
-export const wrapRootElement = ReduxAppWrapper;
+exports.onInitialClientRender = () => {
+  setTimeout(function() {
+    document.getElementById("___loader").style.display = "none"
+  }, 200)
+}
