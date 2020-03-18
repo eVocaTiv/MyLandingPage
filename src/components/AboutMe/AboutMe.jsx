@@ -13,17 +13,9 @@ const useStyles = makeStyles({
     position: 'absolute',
     width: '80%',
     left: '10%',
-    top: '30vh',
+    top: '25vh',
     height: '65vh',
     'background-color': 'transparent',
-    opacity: '0.25',
-    '&:hover': {
-      'background-color': 'black',
-      opacity: '0.7',
-      // Lag issues w/ gatsby
-      // 'box-shadow': '0px 0px 1rem 0px #00C2CB',
-    },
-    // transition: ' all 1s ease',
   },
   cardHeader: {
     ' font-family': 'Great Vibes',
@@ -33,20 +25,27 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: '0.5rem',
+    paddingBottom: '0.5rem',
   },
   cardBody: {
     'font-family': 'Allan',
     'line-height': '1.75rem',
     ' letter-spacing': ' 0.05rem',
     'font-size': '1rem',
-    'color': '#b7a9d9',
+    color: '#b7a9d9',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     width: '90%',
     // !important necessary because of material ui card issues.
     margin: '0.5rem auto !important',
-    // transition: 'all 1s ease-in',
+    'box-shadow': '0px 0px 1rem 0px #00C2CB',
+    opacity: '0',
+    '&:hover': {
+      'background-color': 'black',
+      opacity: '0.8',
+    },
+    transition: 'opacity 0.5s ease-in-out',
   },
   title: {
     fontSize: 14,
@@ -58,24 +57,14 @@ const useStyles = makeStyles({
 
 // LAG ISSUES EXIST W/ gatsby.
 const StyledBodyText = styled.div`
-  &: hover {
-    // box-shadow: 0px 0px 1rem 0px #00c2cb;
-  }
-  // transition: box-shadow 0.5s ease;
   padding: 1rem;
-`;
-
-const StyledCard = styled(Card)`
-  // transition: all 1s ease;
-  // box-sizing: content-box;
-  // transform: translateZ(0);
 `;
 
 export default function SimpleCard() {
   const classes = useStyles();
 
   return (
-    <StyledCard className={classes.root}>
+    <Card className={classes.root}>
       <CardContent>
         <div className={classes.cardHeader} variant="h5" component="h2">
           <ScrollAnimation
@@ -83,7 +72,7 @@ export default function SimpleCard() {
             initiallyVisible={false}
             animateIn="flash"
           >
-            Something about me!
+            Something about me &#8623;
           </ScrollAnimation>
         </div>
         <div className={classes.cardBody} variant="body2" component="p">
@@ -103,6 +92,6 @@ export default function SimpleCard() {
           </StyledBodyText>
         </div>
       </CardContent>
-    </StyledCard>
+    </Card>
   );
 }

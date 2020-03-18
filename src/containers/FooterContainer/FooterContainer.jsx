@@ -13,12 +13,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const { footer } = Constants.anchorIds;
 
 const StyledFooterText = styled.div`
-  position: absolute;
+  position: relative;
   font-family: 'Great Vibes';
   left: 20%;
   top: 35%;
   font-size: 4rem;
   color: #00C2CB;
+  height: 100%;
+  width: 40%;
 `;
 
 const StyledIconsDiv = styled.div`
@@ -49,6 +51,16 @@ const StyledMailIcon = styled(MailOutlineIcon)`
     color: #dc574c;
     transform: scale(1.5);
   },
+`;
+
+const StyledSubText = styled.div`
+  position: absolute;
+  font-family: 'Julius Sans One';
+  left: -5vw;
+  top: -29vh;
+  font-size: 1rem;
+  color: #00c2cb;
+  z-index: 1000;
 `;
 
 const StyledInstagramIcon = styled(InstagramIcon)`
@@ -116,7 +128,7 @@ class FooterContainer extends Component {
           <ScrollAnimation
             initiallyVisible={true}
             delay={2000}
-            animateIn="rotateOut"
+            animateIn="fadeOut"
             animateOnce
           >
             Get In Touch!
@@ -137,15 +149,22 @@ class FooterContainer extends Component {
             </ScrollAnimation>
           </ScrollAnimation>
           <ScrollAnimation
-              initiallyVisible={false}
-              delay={7500}
-              animateIn="zoomIn"
-              animateOnce
+            initiallyVisible={false}
+            delay={7500}
+            animateIn="zoomIn"
+            animateOnce
+          >
+            Thank you!
+          </ScrollAnimation>
+          <StyledSubText>
+            <ScrollAnimation
+              animateIn="fadeIn"
             >
-             Thank you!
+              © 2020 Kunal Dewan
             </ScrollAnimation>
+          </StyledSubText>
         </StyledFooterText>
- 
+
         <StyledIconsDiv>
           <Tooltip title="Resume">
             <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">

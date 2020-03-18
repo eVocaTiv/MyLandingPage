@@ -15,18 +15,24 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-   
-        <ScrollAnimation animateIn="zoomIn">
+        <ScrollAnimation duration={1.5} animateOnce animateIn="zoomIn">
           <TopLayerContainer />
-          <Fragment>
+          <ScrollAnimation animateIn="zoomIn">
             <VisionContainer />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="zoomIn">
             <AboutMeContainer />
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="zoomIn">
             <ProjectDisplayContainer />
-            <ScrollAnimation animateIn="fadeIn">
-              <ParallaxWrapper />
-            </ScrollAnimation>
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeIn">
+            <ParallaxWrapper />
             <FooterContainer />
-          </Fragment>
+          </ScrollAnimation>
         </ScrollAnimation>
       </ThemeProvider>
     );

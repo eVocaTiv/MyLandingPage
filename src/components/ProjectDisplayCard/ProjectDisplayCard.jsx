@@ -16,6 +16,8 @@ const useStyles = makeStyles(theme => ({
 
 const StyledPaper = styled(Paper)`
   // override default transition in card's child.
+  min-width: 200px !important;
+  width: 35vw !important;
   transition: all ease 0.5s !important;
   &:hover {
    transform: scale(1.15);

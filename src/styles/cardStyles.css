@@ -9,7 +9,7 @@
 
 .card__side {
   height: 100%;
-  transition: all 0.5s ease;
+  transition: transform 1s ease;
   color: white;
   font-size: 2rem;
   position: absolute;

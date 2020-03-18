@@ -58,3 +58,16 @@ video {
 /* #vision-bg-image:hover::before {
   filter: blur(5px);
 } */
+
+.arrow-div * svg {
+  font-size: 6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.arrow-div * svg:hover {
+ color: #895AF3;
+ border: 0.5px solid #895AF3;
+ border-radius: 100px;
+}
+

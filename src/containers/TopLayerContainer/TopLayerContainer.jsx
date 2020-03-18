@@ -4,8 +4,11 @@ import { NavBar, StyledSkeleton } from '@components';
 import Constants from '@constants';
 import LandingImage from '@components/Images/LandingImage';
 import ScrollAnimation from 'react-animate-on-scroll';
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import { StyledArrow } from '@styles/commonStyledComponents';
+const { home, visionSection } = Constants.anchorIds;
 
-const NavBarContainer= styled.div`
+const NavBarContainer = styled.div`
   width: 100%;
 `;
 
@@ -17,27 +20,34 @@ const LandingViewContainer = styled.div`
   background-color: black;
 `;
 
+const StyledSubText = styled.div`
+  position: absolute;
+  font-family: 'Great Vibes';
+  left: 55%;
+  top: 30%;
+  font-size: 3rem;
+  color: #b7a9d9;
+`;
+
 const StyledText = styled.div`
   position: absolute;
   font-family: 'Great Vibes';
-  left: 50%;
-  top: 50%;
-  font-size: 4rem;
-  color: #B7A9D9;
+  left: 45%;
+  top: 25%;
+  font-size: 3.5rem;
+  color: #b7a9d9;
 `;
 
-const StyledSubText = styled.div`
+const ArrowDiv = styled.div`
   position: absolute;
-  font-family: 'Julius Sans One';
-  left: 55%;
-  top: 70%;
-  font-size: 1.15rem;
-  color: #00C2CB;
+  left: 60%;
+  top: 42.5%;
+  height: 2rem;
+    '& * svg': {
+    font-size: 2rem;
+  },
 `;
 
-const { home } = Constants.anchorIds;
-
-// TODO - optimize / compress video size.
 class TopLayer extends Component {
   getTopLayer = () => {
     return (
@@ -50,38 +60,35 @@ class TopLayer extends Component {
           <StyledText>
             <ScrollAnimation
               animateOnce
-              delay={3000}
+              delay={2500}
               initiallyVisible={true}
-              animateIn="flipOutY"
+              animateIn="fadeOut"
             >
               <ScrollAnimation
                 animateOnce
                 initiallyVisible={false}
                 delay={1500}
-                animateIn="flash"
+                animateIn="fadeInUp"
               >
-                Welcome! :)
+                "It's dangerous to go alone!"
               </ScrollAnimation>
-            </ScrollAnimation>
-            <ScrollAnimation
-              animateOnce
-              initiallyVisible={false}
-              delay={4000}
-              animateIn="fadeIn"
-            >
-              Glad you're here!
             </ScrollAnimation>
           </StyledText>
           <StyledSubText>
             <ScrollAnimation
-              initiallyVisible={false}
-              delay={4000}
-              animateIn="fadeInRight"
               animateOnce
+              initiallyVisible={false}
+              delay={3000}
+              animateIn="fadeInUp"
             >
-              © 2020 Kunal Dewan
+              "Take this."
             </ScrollAnimation>
           </StyledSubText>
+          <ArrowDiv className="arrow-div">
+            <ScrollAnimation animateOnce delay={4000} animateIn="zoomIn">
+              <StyledArrow onClick={() => scrollTo(`#${visionSection}`)} />
+            </ScrollAnimation>
+          </ArrowDiv>
         </LandingViewContainer>
       </Fragment>
     );
@@ -91,5 +98,5 @@ class TopLayer extends Component {
     return this.getTopLayer();
   }
 }
- 
+
 export default TopLayer;
