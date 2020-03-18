@@ -22,6 +22,7 @@ class App extends Component {
   getDisplay = () => {
     const {isLoading } = this.state;
     if(isLoading) {
+      console.log('isLoading');
       return <StyledSkeleton />
     }
     return (
