@@ -40,7 +40,7 @@ const MultiBackground = ({ className }) => {
           // old design
           // clipPath: 'polygon(0px 0px, 100% 0px, 100% 50%, 50% 0px, 100% 60%, 70% 50%, 100% 97%, 0% 60%, 50% 90%, 50% 98%, 0px 90%, 45% 60%, 0px 70%, 50% 0px, 0px 60%)',
         }}
-      ></Img>
+      />
     </ScrollAnimation>
   );
 };

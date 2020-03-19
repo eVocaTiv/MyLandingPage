@@ -5,7 +5,6 @@
   position: absolute;
   top: 20%;
   left: 17.5%;
-  will-change: auto;
 }
 
 .card__side {
@@ -21,7 +20,7 @@
 }
 
 .card__side--back {
-  will-change: auto;
+  will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -31,7 +30,7 @@
 }
 
 .card__side--front {
-  will-change: auto;
+  will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }

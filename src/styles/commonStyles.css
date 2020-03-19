@@ -60,14 +60,16 @@ video {
 } */
 
 .arrow-div * svg {
-  font-size: 6rem;
+  font-size: 4rem;
   padding: 0;
   margin: 0;
+  border: 1px solid #00C2CB;
+  border-radius: 10px;
 }
 
 .arrow-div * svg:hover {
  color: #895AF3;
- border: 0.5px solid #895AF3;
+ border: 1px solid #895AF3;
  border-radius: 100px;
 }
 

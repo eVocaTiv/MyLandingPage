@@ -14,9 +14,9 @@ class Card extends Component {
             <span className="card__heading-span">touch</span>
           </h4>
           <div className="card__data">
-            A schematic design furnishes a fluid user experience.
-            I believe that understanding human psychology is the key to the same
-            &amp; endeavour to unveil it with my tenacity.
+            A schematic design furnishes a fluid user experience. I believe that
+            understanding human psychology is the key to the same &amp;
+            endeavour to unveil it with my tenacity.
             <div className="card__qoute">
               “Good design is obvious. Great design is transparent.” — Joe
               Sparano
@@ -25,7 +25,7 @@ class Card extends Component {
         </div>
         <div className="card__side card__side--front">
           <div className="card__cta">
-            <ScrollAnimation duration ={.25}  animateIn="fadeIn">
+            <ScrollAnimation duration={0.25} animateIn="fadeIn">
               <p className="card-value">It's not the same.</p>
             </ScrollAnimation>
           </div>

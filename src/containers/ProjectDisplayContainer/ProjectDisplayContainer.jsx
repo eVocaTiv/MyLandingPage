@@ -32,18 +32,14 @@ const ProjectDisplayCardsDiv = styled.div`
   left: 10vw;
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) ;
-  grid-column-gap: 5vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 2.5vh;
 `;
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 44.5%;
+  left: 45.5%;
   top: 55%;
-  height: 2rem;
-    '& * svg': {
-    font-size: 2rem;
-  },
 `;
 
 class ProjectDisplayContainer extends Component {

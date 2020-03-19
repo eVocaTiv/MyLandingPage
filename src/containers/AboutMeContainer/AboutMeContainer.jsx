@@ -18,10 +18,6 @@ const ArrowDiv = styled.div`
   position: absolute;
   left: 45%;
   bottom: 40%;
-  height: 2rem;
-    '& * svg': {
-    font-size: 2rem;
-  },
 `;
 
 class AboutMeContainer extends Component {

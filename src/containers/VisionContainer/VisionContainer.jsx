@@ -18,12 +18,8 @@ const StyledVisionContainer = styled.div`
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 70%;
-  top: 52%;
-  height: 2rem;
-    '& * svg': {
-    font-size: 2rem;
-  },
+  left: 75%;
+  top: 48%;
 `;
 
 class VisionContainer extends Component {

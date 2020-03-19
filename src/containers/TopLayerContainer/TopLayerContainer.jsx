@@ -18,6 +18,7 @@ const LandingViewContainer = styled.div`
   height: 100vh;
   overflow: hidden;
   background-color: black;
+  position: relative;
 `;
 
 const StyledSubText = styled.div`
@@ -40,12 +41,8 @@ const StyledText = styled.div`
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 60%;
-  top: 42.5%;
-  height: 2rem;
-    '& * svg': {
-    font-size: 2rem;
-  },
+  left: 62%;
+  top: 45%;
 `;
 
 class TopLayer extends Component {
