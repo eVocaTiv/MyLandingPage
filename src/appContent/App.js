@@ -31,8 +31,8 @@ class App extends Component {
 
           <ScrollAnimation animateIn="fadeIn">
             <ParallaxWrapper />
+            <FooterContainer />
           </ScrollAnimation>
-          <FooterContainer />
         </ScrollAnimation>
       </ThemeProvider>
     );
