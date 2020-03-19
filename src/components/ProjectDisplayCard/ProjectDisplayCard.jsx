@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import styled from 'styled-components';
 
 const useStyles = makeStyles(theme => ({
+  'will-change': 'auto',
   root: {
     display: 'flex',
     '& > *': {

@@ -15,9 +15,7 @@ const MyImage = () => {
     }
   `);
 
-  const backgroundFluidImageStack = [
-    cardImage.childImageSharp.fluid,
-  ].reverse();
+  const backgroundFluidImageStack = [cardImage.childImageSharp.fluid].reverse();
 
   return (
     <BackgroundImage
@@ -25,7 +23,8 @@ const MyImage = () => {
       style={{
         height: '100%',
         width: '40%',
-        clipPath: 'polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)',
+        clipPath:
+          'polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)',
       }}
       imgStyle={{
         height: '100%',
@@ -36,7 +35,6 @@ const MyImage = () => {
       }}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan"
-      loading="eager"
     />
   );
 };

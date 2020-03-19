@@ -5,5 +5,5 @@ exports.onInitialClientRender = () => {
   setTimeout(function() {
     document.getElementById('___gatsby').style.opacity = 1;
     document.getElementById('___loader').style.display = 'none';
-  }, 500);
+  }, 750);
 };

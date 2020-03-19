@@ -5,11 +5,12 @@
   position: absolute;
   top: 20%;
   left: 17.5%;
+  will-change: auto;
 }
 
 .card__side {
   height: 100%;
-  transition: transform 1s ease;
+  transition: transform 0.5s ease-in-out;
   color: white;
   font-size: 2rem;
   position: absolute;
@@ -20,6 +21,7 @@
 }
 
 .card__side--back {
+  will-change: auto;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -29,6 +31,7 @@
 }
 
 .card__side--front {
+  will-change: auto;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
