@@ -15,6 +15,8 @@ import { connect } from 'react-redux';
 class App extends Component {
   render() {
 
+
+
     return (
       <ThemeProvider theme={theme}>
         {/* <ScrollAnimation duration={1.5} animateOnce animateIn="zoomIn"> */}
@@ -43,8 +45,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  isTopLayerLoaded: state.isVideoLoaded,
-});
-
-export default connect(mapStateToProps, null)(App);
+export default App;
