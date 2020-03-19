@@ -13,9 +13,9 @@ const StyledFooterText = styled.div`
   position: absolute;
   color: #cc70ab;
   font-family: 'Great Vibes';
-  left: 37.5%;
+  left: 40%;
   top: 12.5%;
-  font-size: 3rem;
+  font-size: 2.5rem;
 `;
 
 const StyledAboutMeDiv = styled.div`
@@ -33,7 +33,7 @@ const ProjectDisplayCardsDiv = styled.div`
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) ;
   grid-column-gap: 5vw;
-  grid-row-gap: 5vh;
+  grid-row-gap: 2.5vh;
 `;
 
 const ArrowDiv = styled.div`

@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Img  from 'gatsby-background-image';
+import Img from 'gatsby-background-image';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
@@ -25,19 +26,22 @@ const MultiBackground = ({ className }) => {
   ].reverse();
 
   return (
-    <Img
-      Tag={`section`}
-      className={className}
-      fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan About Me Background"
-      style={{
-        height: '100%',
-        width: '40%',
-        clipPath: 'polygon(0px 0px, 100% 0px, 100% 50%, 50% 0px, 100% 60%, 70% 50%, 100% 97%, 53% 80%, 51% 70%, 49% 80%, 0% 97%, 30% 50%, 0px 60%, 50% 0px, 0px 50%)',
-        // old design
-        // clipPath: 'polygon(0px 0px, 100% 0px, 100% 50%, 50% 0px, 100% 60%, 70% 50%, 100% 97%, 0% 60%, 50% 90%, 50% 98%, 0px 90%, 45% 60%, 0px 70%, 50% 0px, 0px 60%)',
-      }}
-    ></Img>
+    <ScrollAnimation delay={1000} duration={2} animateOnce animateIn="fadeIn">
+      <Img
+        Tag={`section`}
+        className={className}
+        fluid={backgroundFluidImageStack}
+        alt="Kunal Dewan About Me Background"
+        style={{
+          height: '100%',
+          width: '40%',
+          clipPath:
+            'polygon(0px 0px, 100% 0px, 100% 50%, 50% 0px, 100% 60%, 70% 50%, 100% 97%, 53% 80%, 51% 70%, 49% 80%, 0% 97%, 30% 50%, 0px 60%, 50% 0px, 0px 50%)',
+          // old design
+          // clipPath: 'polygon(0px 0px, 100% 0px, 100% 50%, 50% 0px, 100% 60%, 70% 50%, 100% 97%, 0% 60%, 50% 90%, 50% 98%, 0px 90%, 45% 60%, 0px 70%, 50% 0px, 0px 60%)',
+        }}
+      ></Img>
+    </ScrollAnimation>
   );
 };
 

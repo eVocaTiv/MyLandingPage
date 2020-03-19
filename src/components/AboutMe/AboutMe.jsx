@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     position: 'absolute',
     width: '80%',
     left: '10%',
-    top: '25vh',
+    top: '15vh',
     height: '65vh',
     'background-color': 'transparent',
   },
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     width: '90%',
     // !important necessary because of material ui card issues.
-    margin: '0.5rem auto !important',
+    margin: '1.5rem auto !important',
     'box-shadow': '0px 0px 1rem 0px #00C2CB',
     opacity: '0',
     '&:hover': {
