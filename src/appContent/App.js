@@ -23,17 +23,17 @@ class App extends Component {
           {/* </ScrollAnimation> */}
 
           {/* <ScrollAnimation animateIn="zoomIn"> */}
-          <AboutMeContainer />
+          {/* <AboutMeContainer /> */}
           {/* </ScrollAnimation> */}
 
           {/* <ScrollAnimation animateIn="zoomIn"> */}
-          <ProjectDisplayContainer />
+          {/* <ProjectDisplayContainer /> */}
           {/* </ScrollAnimation> */}
 
           {/* <ScrollAnimation animateIn="fadeIn"> */}
-          <ParallaxWrapper />
+          {/* <ParallaxWrapper /> */}
           {/* </ScrollAnimation> */}
-          <FooterContainer />
+          {/* <FooterContainer /> */}
         </Fragment>
         {/* </ScrollAnimation> */}
       </ThemeProvider>
