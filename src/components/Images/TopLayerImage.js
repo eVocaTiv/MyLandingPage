@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import Img from 'gatsby-background-image';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const MultiBackground = ({ className }) => {
+const TopLayerImage = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "myImage.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "top-layer-image.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
@@ -45,7 +45,7 @@ const MultiBackground = ({ className }) => {
   );
 };
 
-const StyledMultiBackground = styled(MultiBackground)`
+const StyledTopLayerImage = styled(TopLayerImage)`
   width: 100%;
   min-height: 100vh;
   background-color: transparent;
@@ -55,4 +55,4 @@ const StyledMultiBackground = styled(MultiBackground)`
   color: #fff;
 `;
 
-export default StyledMultiBackground;
+export default StyledTopLayerImage;

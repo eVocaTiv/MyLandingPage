@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import { NavBar, StyledSkeleton } from '@components';
 import Constants from '@constants';
-import LandingImage from '@components/Images/LandingImage';
+import TopLayerImage from '@components/Images/TopLayerImage';
 import ScrollAnimation from 'react-animate-on-scroll';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
@@ -53,7 +53,7 @@ class TopLayer extends Component {
           <NavBar />
         </NavBarContainer>
         <LandingViewContainer>
-          <LandingImage />
+          <TopLayerImage />
           <StyledText>
             <ScrollAnimation
               animateOnce

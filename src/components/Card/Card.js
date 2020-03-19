@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MyImage from '@components/Images/MyImage';
+import CardImage from '@components/Images/CardImage';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 class Card extends Component {
@@ -7,7 +7,7 @@ class Card extends Component {
     return (
       <div id="vision-card" className="card">
         <div className="card__side card__side--back">
-          <MyImage />
+          <CardImage />
           <h4 className="card__heading">
             <span className="card__heading-span">A messianic</span>
             <br />
@@ -26,7 +26,7 @@ class Card extends Component {
         <div className="card__side card__side--front">
           <div className="card__cta">
             <ScrollAnimation duration={0.25} animateIn="fadeIn">
-              <p className="card-value">It's not the same.</p>
+              <p className="card-value">Transcend the usual.</p>
             </ScrollAnimation>
           </div>
         </div>

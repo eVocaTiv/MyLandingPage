@@ -2,10 +2,10 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-background-image';
 
-const MyImage = () => {
+const CardImage = () => {
   const { cardImage } = useStaticQuery(graphql`
     query {
-      cardImage: file(relativePath: { eq: "logo-big.png" }) {
+      cardImage: file(relativePath: { eq: "card-image.jpg" }) {
         childImageSharp {
           fluid(quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -33,4 +33,4 @@ const MyImage = () => {
   );
 };
 
-export default MyImage;
+export default CardImage;
