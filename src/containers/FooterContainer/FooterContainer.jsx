@@ -19,7 +19,6 @@ const StyledFooterText = styled.div`
   top: 35%;
   font-size: 4rem;
   color: #00C2CB;
-  height: 100%;
   width: 40%;
 `;
 
@@ -134,7 +133,7 @@ class FooterContainer extends Component {
             Get In Touch!
           </ScrollAnimation>
           <ScrollAnimation
-            delay={7500}
+            delay={6000}
             animateIn="zoomOut"
             animateOnce
             initiallyVisible={true}
@@ -150,7 +149,7 @@ class FooterContainer extends Component {
           </ScrollAnimation>
           <ScrollAnimation
             initiallyVisible={false}
-            delay={7500}
+            delay={6000}
             animateIn="zoomIn"
             animateOnce
           >
