@@ -60,7 +60,7 @@ class TopLayer extends Component {
           <StyledText>
             <ScrollAnimation
               animateOnce
-              delay={3000}
+              delay={3500}
               initiallyVisible={true}
               animateIn="fadeOut"
             >
@@ -78,14 +78,14 @@ class TopLayer extends Component {
             <ScrollAnimation
               animateOnce
               initiallyVisible={false}
-              delay={3500}
+              delay={4000}
               animateIn="fadeInUp"
             >
               "Take this."
             </ScrollAnimation>
           </StyledSubText>
           <ArrowDiv className="arrow-div">
-            <ScrollAnimation animateOnce delay={4500} animateIn="zoomIn">
+            <ScrollAnimation animateOnce delay={5000} animateIn="zoomIn">
               <StyledArrow onClick={() => scrollTo(`#${visionSection}`)} />
             </ScrollAnimation>
           </ArrowDiv>
