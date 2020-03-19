@@ -30,14 +30,17 @@ export default function HTML(props) {
             right: 0,
             bottom: 0,
             zIndex: 1,
+            height: '100%',
+            width: '100%',
           }}
         >
-         <LoadingSpinner />
+          <LoadingSpinner />
         </div>
         <div
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
+          style={{ display: 'none' }}
         />
         {props.postBodyComponents}
       </body>
