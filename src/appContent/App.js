@@ -13,6 +13,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 class App extends Component {
   render() {
+
+
+
     return (
       <ThemeProvider theme={theme}>
         {/* <ScrollAnimation duration={1.5} animateOnce animateIn="zoomIn"> */}
@@ -23,7 +26,7 @@ class App extends Component {
           {/* </ScrollAnimation> */}
 
           {/* <ScrollAnimation animateIn="zoomIn"> */}
-          {/* <AboutMeContainer /> */}
+          <AboutMeContainer />
           {/* </ScrollAnimation> */}
 
           {/* <ScrollAnimation animateIn="zoomIn"> */}
