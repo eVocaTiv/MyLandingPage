@@ -3,6 +3,7 @@ exports.onInitialClientRender = () => {
   // work around gatsby's default scroll memory behavior.
   document.getElementById('___gatsby').style.display = 'block';
   setTimeout(function() {
+    document.getElementById('___gatsby').style.opacity = 1;
     document.getElementById('___loader').style.display = 'none';
-  }, 200);
+  }, 500);
 };
