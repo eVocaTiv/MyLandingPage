@@ -17,7 +17,7 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         {/* <ScrollAnimation duration={1.5} animateOnce animateIn="zoomIn"> */}
         <Fragment>
-          <TopLayerContainer />
+          {/* <TopLayerContainer /> */}
           {/* <ScrollAnimation animateIn="zoomIn"> */}
           <VisionContainer />
           {/* </ScrollAnimation> */}
