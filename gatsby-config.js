@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
         // Configure color of the scroll indicator
-        color: '#00C2CB',
+        color: 'linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(128,57,102,1) 25%, rgba(137,90,243,1) 56%, rgba(0,194,203,1) 81%)',
         // Height of the scroll indicator
         height: '10px',
         // Configure paths where the scroll indicator will appear
@@ -87,7 +87,7 @@ module.exports = {
         background_color: `#895AF3`,
         theme_color: `#895AF3`,
         display: `minimal-ui`,
-        icon: `src/images/newIcon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -14,9 +14,9 @@ class Card extends Component {
             <span className="card__heading-span">touch</span>
           </h4>
           <div className="card__data">
-            A schematic design furnishes a fluid user experience. I believe that
-            understanding human psychology is the key to the same &amp;
-            endeavour to unveil it with my tenacity.
+            <div className="card__data__prelude">
+            A spark of vivified design fused with user psychology animate the lacklustre semblance of otherwise drab code. 
+            </div>
             <div className="card__qoute">
               “Good design is obvious. Great design is transparent.” — Joe
               Sparano

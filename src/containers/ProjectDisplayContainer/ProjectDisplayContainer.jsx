@@ -52,27 +52,27 @@ class ProjectDisplayContainer extends Component {
           </ScrollAnimation>
         </StyledFooterText>
         <ProjectDisplayCardsDiv>
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUp">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUp">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUp">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUp">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUp">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
             <ProjectDisplayCard />
           </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUp">
+          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
             <ProjectDisplayCard />
           </ScrollAnimation>
         </ProjectDisplayCardsDiv>

@@ -31,8 +31,8 @@ const useStyles = makeStyles({
     'font-family': 'Allan',
     'line-height': '1.75rem',
     ' letter-spacing': ' 0.05rem',
-    'font-size': '1rem',
-    color: '#b7a9d9',
+    'font-size': '1.15rem',
+    color: '#B7A9D9',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
     opacity: '0',
     '&:hover': {
       'background-color': 'black',
-      opacity: '0.8',
+      opacity: '0.9',
     },
     transition: 'opacity 0.5s ease-in-out',
   },
@@ -78,15 +78,14 @@ export default function SimpleCard() {
         <div className={classes.cardBody} variant="body2" component="p">
           <StyledBodyText>
             I'm an impassioned designer &amp; programmer striving to create a
-            subtle user experience. I earned my B. E. (Hons.) Computer Science
-            from BITS Pilani, Goa Campus in 2019. Having explored various fields
-            in the subject like Computer Networks, Compilers, Logic, Back-End
-            development, Front-End development, Information Retrieval, etc., I
-            became fascinated the most by human-computer interaction. Presently,
-            I work at Amazon as a Front-End Engineer. A firm believer of “A
-            great UX is more than what meets the eye, it resonates with the
-            mind.”, I assay to provide a gratifying experience to my users.
-            Otherwise, I'm probably at the gym.
+            lucid user experience. Having completed my B. E. (Hons.) Computer
+            Science from BITS Pilani, Goa Campus in 2019, I became fascinated
+            the most by Human-Computer Interaction. Presently, I work at Amazon
+            as a Front-End Engineer where I solve customer problems observing a
+            'user-friendly' fashion. A firm believer of “A great UX is more than
+            what meets the eye, it resonates with the mind.”, I assay to furnish
+            a gratifying experience to my users. Otherwise, I'm probably at the
+            gym.
             <br />
             Thank you for reading!
           </StyledBodyText>
