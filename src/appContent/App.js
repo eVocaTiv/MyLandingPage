@@ -10,11 +10,10 @@ import {
 } from '@containers';
 import ParallaxWrapper from './ParallaxWrapper';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
-
-
 
     return (
       <ThemeProvider theme={theme}>
@@ -44,4 +43,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  isTopLayerLoaded: state.isVideoLoaded,
+});
+
+export default connect(mapStateToProps, null)(App);
