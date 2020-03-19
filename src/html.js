@@ -40,6 +40,9 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
+          style={{
+            display: none,
+          }}
         />
         {props.postBodyComponents}
       </body>
