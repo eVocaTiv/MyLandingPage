@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <ScrollAnimation duration={1.5}  animateIn="zoomIn">
+        {/* <ScrollAnimation duration={1.5}  animateIn="zoomIn"> */}
           <TopLayerContainer />
           <ScrollAnimation animateIn="zoomIn">
             <VisionContainer />
@@ -33,7 +33,7 @@ class App extends Component {
             <ParallaxWrapper />
             <FooterContainer />
           </ScrollAnimation>
-        </ScrollAnimation>
+        {/* </ScrollAnimation> */}
       </ThemeProvider>
     );
   }
