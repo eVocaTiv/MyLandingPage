@@ -24,6 +24,7 @@ import {
   onProjectsClicked,
   onConnectClicked,
 } from '@utils/commonUtils';
+import '@styles/commonStyles.css';
 
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '@media only screen and (max-width: 1100px)': {

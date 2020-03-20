@@ -6,6 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
 import { onVisionClicked } from '@utils/commonUtils';
+// import '@styles/commonStyles.css';
 
 const NavBarContainer = styled.div`
   width: 100%;
