@@ -9,6 +9,11 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Tooltip from '@material-ui/core/Tooltip';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { NavBar } from '@components';
+
+const NavBarContainer = styled.div`
+  width: 100%;
+`;
 
 const { footer } = Constants.anchorIds;
 
@@ -31,6 +36,9 @@ const StyledIconsDiv = styled.div`
   top: 90%;
   left: 12.5%;
   z-index: 1000;
+`;
+const BlackDiv = styled.div`
+  background-color: black;
 `;
 
 const StyledFooterDiv = styled.div`
@@ -116,87 +124,87 @@ const StyledGitHubIcon = styled(GitHubIcon)`
 `;
 
 class FooterContainer extends Component {
-  sendEmail = () => {
-    window.open('mailto:kunalx011@gmail.com');
-  };
 
   render() {
     return (
-      <StyledFooterDiv id={footer}>
-        <StyledFooterText>
-          <ScrollAnimation
-            initiallyVisible={true}
-            delay={2000}
-            animateIn="fadeOut"
-            animateOnce
-          >
-            Get In Touch!
-          </ScrollAnimation>
-          <ScrollAnimation
-            delay={6000}
-            animateIn="zoomOut"
-            animateOnce
-            initiallyVisible={true}
-          >
+      <BlackDiv>
+        <NavBarContainer>
+          <NavBar />
+        </NavBarContainer>
+        <StyledFooterDiv id={footer}>
+          <StyledFooterText>
+            <ScrollAnimation
+              initiallyVisible={true}
+              delay={2000}
+              animateIn="fadeOut"
+              animateOnce
+            >
+              Get In Touch!
+            </ScrollAnimation>
+            <ScrollAnimation
+              delay={6000}
+              animateIn="zoomOut"
+              animateOnce
+              initiallyVisible={true}
+            >
+              <ScrollAnimation
+                initiallyVisible={false}
+                delay={2500}
+                animateIn="zoomIn"
+                animateOnce
+              >
+                This way &#x2198;
+              </ScrollAnimation>
+            </ScrollAnimation>
             <ScrollAnimation
               initiallyVisible={false}
-              delay={2500}
+              delay={6000}
               animateIn="zoomIn"
               animateOnce
             >
-              This way &#x2198;
+              Thank you!
             </ScrollAnimation>
-          </ScrollAnimation>
-          <ScrollAnimation
-            initiallyVisible={false}
-            delay={6000}
-            animateIn="zoomIn"
-            animateOnce
-          >
-            Thank you!
-          </ScrollAnimation>
-          <StyledSubText>
-            <ScrollAnimation
-              animateIn="fadeIn"
-            >
-              © 2020 Kunal Dewan
-            </ScrollAnimation>
-          </StyledSubText>
-        </StyledFooterText>
+            <StyledSubText>
+              <ScrollAnimation animateIn="fadeIn">
+                © 2020 Kunal Dewan
+              </ScrollAnimation>
+            </StyledSubText>
+          </StyledFooterText>
 
-        <StyledIconsDiv>
-          <Tooltip title="Resume">
-            <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
-              <StyledResumeIcon />
-            </a>
-          </Tooltip>
-          <Tooltip title="Email: Kunalx011@gmail.com">
-            <a>
-              <StyledMailIcon />
-            </a>
-          </Tooltip>
-          <Tooltip title="LinkedIn">
-            <a href="https://tinyurl.com/linkedin-kd" target="_blank">
-              <StyledLinkedInIcon />
-            </a>
-          </Tooltip>
-          <Tooltip title="GitHub">
-            <a href="https://github.com/eVocaTiv" target="_blank">
-              <StyledGitHubIcon />
-            </a>
-          </Tooltip>
-          <Tooltip title="Facebook">
-            <a href="https://www.facebook.com/NkT.NeveR" target="_blank">
-              <StyledFacebookIcon />
-            </a>
-          </Tooltip>
-          <Tooltip title="Instagram">
-            <a href="https://www.instagram.com/kunz_dewn" target="_blank">
-              <StyledInstagramIcon />
-            </a>
-          </Tooltip>
-        </StyledIconsDiv>
-      </StyledFooterDiv>
+          <StyledIconsDiv>
+            <Tooltip title="Resume">
+              <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
+                <StyledResumeIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="Email: Kunalx011@gmail.com">
+              <a>
+                <StyledMailIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="LinkedIn">
+              <a href="https://tinyurl.com/linkedin-kd" target="_blank">
+                <StyledLinkedInIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="GitHub">
+              <a href="https://github.com/eVocaTiv" target="_blank">
+                <StyledGitHubIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="Facebook">
+              <a href="https://www.facebook.com/NkT.NeveR" target="_blank">
+                <StyledFacebookIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="Instagram">
+              <a href="https://www.instagram.com/kunz_dewn" target="_blank">
+                <StyledInstagramIcon />
+              </a>
+            </Tooltip>
+          </StyledIconsDiv>
+        </StyledFooterDiv>
+      </BlackDiv>
     );
   }
 }

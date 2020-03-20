@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import BounceLoader from 'react-spinners/BounceLoader';
+import RingLoader from 'react-spinners/RingLoader';
 
 const override = css`
   display: block;
@@ -11,7 +11,7 @@ class LoadingSpinner extends React.Component {
   render() {
     return (
       <div className="sweet-loading">
-        <BounceLoader css={override} size={150} color={'#00C2CB'} loading />
+        <RingLoader css={override} size={150} color={'#00C2CB'} loading />
       </div>
     );
   }

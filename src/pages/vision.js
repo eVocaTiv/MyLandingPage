@@ -2,17 +2,20 @@ import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
 import {
-   TopLayerContainer,
+  VisionContainer,
 } from '@containers';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-class LandingPage extends Component {
+class Vision extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-          <TopLayerContainer />
+        {/* <ScrollAnimation animateIn="zoomIn"> */}
+          <VisionContainer />
+        {/* </ScrollAnimation> */}
       </ThemeProvider>
     );
   }
 }
 
-export default LandingPage;
+export default Vision;

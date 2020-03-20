@@ -1,9 +1,9 @@
-exports.onInitialClientRender = () => {
+exports.onRouteUpdate = () => {
   window.scrollTo(0, 0);
-  // work around gatsby's default scroll memory behavior.
-  document.getElementById('___gatsby').style.display = 'block';
+  document.getElementById('___gatsby').style.opacity = 0;
+  document.getElementById('___loader').style.opacity = 1;
   setTimeout(function() {
     document.getElementById('___gatsby').style.opacity = 1;
-    document.getElementById('___loader').style.display = 'none';
-  }, 750);
-};
+    document.getElementById('___loader').style.opacity = 0;
+  }, 200);
+}

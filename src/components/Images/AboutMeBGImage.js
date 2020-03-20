@@ -43,12 +43,12 @@ const MultiBackground = ({ className }) => {
 
 const StyledMultiBackground = styled(MultiBackground)`
   width: 100%;
-  min-height: 100vh;
   background-color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 155%, center, center;
   color: #fff;
+  background-attachment: fixed;
 `;
 
 export default StyledMultiBackground;

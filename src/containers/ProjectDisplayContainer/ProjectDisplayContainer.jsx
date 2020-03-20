@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import Constants from '@constants';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -8,6 +8,11 @@ import 'animate.css/animate.min.css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
 const { footer } = Constants.anchorIds;
+import { NavBar } from '@components';
+
+const NavBarContainer = styled.div`
+  width: 100%;
+`;
 
 const StyledFooterText = styled.div`
   position: absolute;
@@ -20,7 +25,7 @@ const StyledFooterText = styled.div`
 
 const StyledAboutMeDiv = styled.div`
   width: 100%;
-  height: 140vh;
+  height: 100vh;
   position: relative;
   z-index: 1;
   background-color: #4c4659;
@@ -39,49 +44,54 @@ const ProjectDisplayCardsDiv = styled.div`
 const ArrowDiv = styled.div`
   position: absolute;
   left: 45.5%;
-  top: 55%;
+  top: 65%;
 `;
 
 class ProjectDisplayContainer extends Component {
   render() {
     return (
-      <StyledAboutMeDiv id={projectDisplay}>
-        <StyledFooterText>
-          <ScrollAnimation animateOnce duration={0.5} animateIn="zoomIn">
-            Coming Soon!..
-          </ScrollAnimation>
-        </StyledFooterText>
-        <ProjectDisplayCardsDiv>
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
-            <ProjectDisplayCard />
-          </ScrollAnimation>
+      <Fragment>
+        <NavBarContainer>
+          <NavBar />
+        </NavBarContainer>
+        <StyledAboutMeDiv id={projectDisplay}>
+          <StyledFooterText>
+            <ScrollAnimation animateOnce duration={0.5} animateIn="zoomIn">
+              Coming Soon!..
+            </ScrollAnimation>
+          </StyledFooterText>
+          <ProjectDisplayCardsDiv>
+            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+              <ProjectDisplayCard />
+            </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
-            <ProjectDisplayCard />
-          </ScrollAnimation>
+            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+              <ProjectDisplayCard />
+            </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
-            <ProjectDisplayCard />
-          </ScrollAnimation>
+            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+              <ProjectDisplayCard />
+            </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
-            <ProjectDisplayCard />
-          </ScrollAnimation>
+            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+              <ProjectDisplayCard />
+            </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
-            <ProjectDisplayCard />
-          </ScrollAnimation>
+            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+              <ProjectDisplayCard />
+            </ScrollAnimation>
 
-          <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
-            <ProjectDisplayCard />
-          </ScrollAnimation>
-        </ProjectDisplayCardsDiv>
-        <ArrowDiv className="arrow-div">
-          <ScrollAnimation animateOnce animateIn="zoomIn">
-            <StyledArrow onClick={() => scrollTo(`#${footer}`)} />
-          </ScrollAnimation>
-        </ArrowDiv>
-      </StyledAboutMeDiv>
+            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+              <ProjectDisplayCard />
+            </ScrollAnimation>
+          </ProjectDisplayCardsDiv>
+          <ArrowDiv className="arrow-div">
+            <ScrollAnimation animateOnce animateIn="zoomIn">
+              <StyledArrow onClick={() => scrollTo(`#${footer}`)} />
+            </ScrollAnimation>
+          </ArrowDiv>
+        </StyledAboutMeDiv>
+      </Fragment>
     );
   }
 }

@@ -8,7 +8,6 @@ import {
   styled as materialUIStyled,
   withTheme,
 } from '@material-ui/core/styles';
-import Fade from '@material-ui/core/Fade';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
@@ -16,15 +15,16 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import scrollTo from 'gatsby-plugin-smoothscroll';
 import Constants from '@constants';
 import Badge from '@material-ui/core/Badge';
 import { withStyles } from '@material-ui/core/styles';
+import { StyledLink } from '@styles/commonStyledComponents';
 
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '@media only screen and (max-width: 1100px)': {
     display: 'none',
   },
+  color: '#fff',
   '&:hover': {
     color: props.theme.palette.common.light,
     transform: 'scale(1.1)',
@@ -117,7 +117,6 @@ function NavBar() {
     projectDisplay,
   } = Constants.anchorIds;
   return (
-    <Fade in={true} timeout={5000}>
       <AppBar
         style={{
           background: 'transparent',
@@ -138,43 +137,39 @@ function NavBar() {
             <MenuIcon />
           </StyledMenuButton>
           <Typography variant="h6" className={classes.title}>
-            <StyledHomeIcon onClick={() => scrollTo(`#${home}`)} />
+            <StyledLink to="/">
+              <StyledHomeIcon />
+            </StyledLink>
           </Typography>
-          <StyledButton
-            onClick={() => scrollTo(`#${visionSection}`)}
-            color="inherit"
-            endIcon={<VisibilityIcon />}
-          >
-            Vision
-          </StyledButton>
-          <StyledButton
-            onClick={() => scrollTo(`#${aboutMeSection}`)}
-            color="inherit"
-            endIcon={<EmojiPeopleIcon />}
-          >
-            About me
-          </StyledButton>
-          <StyledButton
-            onClick={() => scrollTo(`#${projectDisplay}`)}
-            color="inherit"
-            endIcon={<MenuBookIcon />}
-          >
-            Projects
-          </StyledButton>
-          <StyledButton
-            onClick={() => scrollTo(`#${footer}`)}
-            color="inherit"
-            endIcon={
-              <StyledBadge variant="dot" color="secondary">
-                <ContactPhoneIcon />
-              </StyledBadge>
-            }
-          >
-            Get In Touch!
-          </StyledButton>
+          <StyledLink to="/vision">
+            <StyledButton color="inherit" endIcon={<VisibilityIcon />}>
+              Vision
+            </StyledButton>
+          </StyledLink>
+          <StyledLink to="/about-me">
+            <StyledButton color="inherit" endIcon={<EmojiPeopleIcon />}>
+              About me
+            </StyledButton>
+          </StyledLink>
+          <StyledLink to="/projects">
+            <StyledButton color="inherit" endIcon={<MenuBookIcon />}>
+              Projects
+            </StyledButton>
+          </StyledLink>
+          <StyledLink to="/connect">
+            <StyledButton
+              color="inherit"
+              endIcon={
+                <StyledBadge variant="dot" color="secondary">
+                  <ContactPhoneIcon />
+                </StyledBadge>
+              }
+            >
+              Get In Touch!
+            </StyledButton>
+          </StyledLink>
         </Toolbar>
       </AppBar>
-    </Fade>
   );
 }
 

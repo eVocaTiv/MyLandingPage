@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { Link } from "gatsby"
 
 const StyledArrow = styled(ArrowDropDownIcon)`
   color: #00C2CB;
@@ -12,4 +13,8 @@ const StyledArrow = styled(ArrowDropDownIcon)`
   },
 `;
 
-export {StyledArrow };
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+export {StyledArrow, StyledLink };

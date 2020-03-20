@@ -1,12 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
-import { NavBar, StyledSkeleton } from '@components';
-import Constants from '@constants';
 import TopLayerImage from '@components/Images/TopLayerImage';
 import ScrollAnimation from 'react-animate-on-scroll';
-import scrollTo from 'gatsby-plugin-smoothscroll';
-import { StyledArrow } from '@styles/commonStyledComponents';
-const { home, visionSection } = Constants.anchorIds;
+import { StyledArrow, StyledLink } from '@styles/commonStyledComponents';
+import { NavBar } from '@components';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -49,7 +46,7 @@ class TopLayer extends Component {
   getTopLayer = () => {
     return (
       <Fragment>
-        <NavBarContainer id={home}>
+        <NavBarContainer>
           <NavBar />
         </NavBarContainer>
         <LandingViewContainer>
@@ -82,9 +79,11 @@ class TopLayer extends Component {
             </ScrollAnimation>
           </StyledSubText>
           <ArrowDiv className="arrow-div">
-            <ScrollAnimation animateOnce delay={5000} animateIn="zoomIn">
-              <StyledArrow onClick={() => scrollTo(`#${visionSection}`)} />
-            </ScrollAnimation>
+            <StyledLink to="/vision">
+              <ScrollAnimation animateOnce delay={5000} animateIn="zoomIn">
+                <StyledArrow />
+              </ScrollAnimation>
+            </StyledLink>
           </ArrowDiv>
         </LandingViewContainer>
       </Fragment>

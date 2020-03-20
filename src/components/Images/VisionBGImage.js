@@ -12,7 +12,7 @@ const MultiBackground = ({ className }) => {
       query {
         seamlessBackground: file(relativePath: { eq: "vision-bg-image.jpg" }) {
           childImageSharp {
-            fluid(quality: 30) {
+            fluid(quality: 50) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -35,7 +35,7 @@ const MultiBackground = ({ className }) => {
       alt="Kunal Dewan Vision Background"
       id={visionSection}
     >
-      <Card />
+      Hello
     </BackgroundImage>
   );
 };
@@ -48,6 +48,7 @@ const StyledMultiBackground = styled(MultiBackground)`
   background-repeat: no-repeat;
   background-position: center 155%, center, center;
   color: #fff;
+  background-attachment: fixed;
 `;
 
 export default StyledMultiBackground;

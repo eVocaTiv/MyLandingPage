@@ -7,7 +7,7 @@ const CardImage = () => {
     query {
       cardImage: file(relativePath: { eq: "card-image.jpg" }) {
         childImageSharp {
-          fluid(quality: 10) {
+          fluid(quality: 50) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

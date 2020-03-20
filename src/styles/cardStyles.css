@@ -9,6 +9,7 @@
 
 .card__side {
   height: 100%;
+  transform-style:preserve-3d;
   transition: transform 0.5s ease-in-out;
   color: white;
   font-size: 2rem;
@@ -22,6 +23,7 @@
 .card__side--back {
   will-change: transform;
   backface-visibility: hidden;
+  transform-style:preserve-3d;
   -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   background-image: linear-gradient(
