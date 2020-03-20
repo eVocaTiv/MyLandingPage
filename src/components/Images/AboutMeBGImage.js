@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import Constants from '@constants';
-import { AboutMe } from '@components';
+import { AboutMeCard } from '@components';
 import BackgroundImage from 'gatsby-background-image';
 
 const MultiBackground = ({ className }) => {
@@ -36,13 +36,14 @@ const MultiBackground = ({ className }) => {
       id={visionSection}
       loading="eager"
     >
-      <AboutMe />
+      <AboutMeCard />
     </BackgroundImage>
   );
 };
 
 const StyledMultiBackground = styled(MultiBackground)`
   width: 100%;
+  height: 100vh;
   background-color: transparent;
   background-size: cover;
   background-repeat: no-repeat;

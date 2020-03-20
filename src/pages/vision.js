@@ -4,15 +4,13 @@ import theme from '@colors/theme';
 import {
   VisionContainer,
 } from '@containers';
-import ScrollAnimation from 'react-animate-on-scroll';
+import '@styles/commonStyles.css';
 
 class Vision extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        {/* <ScrollAnimation animateIn="zoomIn"> */}
           <VisionContainer />
-        {/* </ScrollAnimation> */}
       </ThemeProvider>
     );
   }

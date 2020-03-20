@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
-import {
-  FooterContainer,
-} from '@containers';
+import { FooterContainer } from '@containers';
 import ParallaxWrapper from '@src/appContent/ParallaxWrapper';
 import ScrollAnimation from 'react-animate-on-scroll';
+import '@styles/commonStyles.css';
 
 class Footer extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        {/* <ScrollAnimation animateIn="fadeIn"> */}
+        <ScrollAnimation animateIn="fadeIn">
           <ParallaxWrapper />
-          <FooterContainer />
-        {/* </ScrollAnimation> */}
+        <FooterContainer />
+        </ScrollAnimation>
       </ThemeProvider>
     );
   }

@@ -26,7 +26,7 @@ const TopLayerImage = ({ className }) => {
   ].reverse();
 
   return (
-    <ScrollAnimation delay={1000} duration={2} animateOnce animateIn="fadeIn">
+    <ScrollAnimation delay={500} duration={2} animateIn="fadeIn">
       <Img
         Tag={`section`}
         className={className}

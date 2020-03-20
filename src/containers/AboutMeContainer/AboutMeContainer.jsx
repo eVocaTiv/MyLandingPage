@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import Constants from '@constants';
 import AboutMeBGImage from '@components/Images/AboutMeBGImage';
 import ScrollAnimation from 'react-animate-on-scroll';
-import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
-const { aboutMeSection, projectDisplay } = Constants.anchorIds;
+const { aboutMeSection } = Constants.anchorIds;
 import { NavBar } from '@components';
+import { onProjectsClicked } from '@utils/commonUtils';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -22,8 +22,8 @@ const StyledAboutMeDiv = styled.div`
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 45%;
-  top: 55%;
+  left: 47.5%;
+  top: 75%;
 `;
 
 class AboutMeContainer extends Component {
@@ -34,10 +34,12 @@ class AboutMeContainer extends Component {
           <NavBar />
         </NavBarContainer>
         <StyledAboutMeDiv id={aboutMeSection}>
+        <ScrollAnimation duration={1.5} animateIn="zoomIn">
           <AboutMeBGImage />
+        </ScrollAnimation>
           <ArrowDiv className="arrow-div">
-            <ScrollAnimation animateOnce animateIn="zoomIn">
-              <StyledArrow onClick={() => scrollTo(`#${projectDisplay}`)} />
+            <ScrollAnimation delay={1500}  animateIn="zoomIn">
+              <StyledArrow onClick={onProjectsClicked} />
             </ScrollAnimation>
           </ArrowDiv>
         </StyledAboutMeDiv>

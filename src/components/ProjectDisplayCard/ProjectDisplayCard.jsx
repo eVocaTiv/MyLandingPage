@@ -19,12 +19,12 @@ const StyledPaper = styled(Paper)`
   // override default transition in card's child.
   min-width: 200px !important;
   width: 35vw !important;
-  // transition: all ease 0.5s !important;
-  // &:hover {
-  //  transform: scale(1.15);
-  //  border: thick solid #00C2CB;
-  //  box-shadow: 1px 5px 1px 1px #895AF3;
-  // }
+  transition: all ease 0.5s !important;
+  &:hover {
+   transform: scale(1.15);
+   border: thick solid #00C2CB;
+   box-shadow: 1px 5px 1px 1px #895AF3;
+  }
   background-color: #803966 !important;
 `;
 

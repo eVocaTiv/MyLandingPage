@@ -10,6 +10,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import Tooltip from '@material-ui/core/Tooltip';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { NavBar } from '@components';
+import 'animate.css/animate.min.css';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -65,9 +66,13 @@ const StyledSubText = styled.div`
   font-family: 'Julius Sans One';
   left: -5vw;
   top: -29vh;
-  font-size: 1rem;
-  color: #00c2cb;
+  font-size: 0.9rem;
+  color: #fff;
   z-index: 1000;
+  opacity: 0.5;
+  margin: '1.5rem 0 1rem 0.25rem',
+  padding: '0.5rem 1rem',
+  fontSize: '0.75rem',
 `;
 
 const StyledInstagramIcon = styled(InstagramIcon)`
@@ -165,9 +170,7 @@ class FooterContainer extends Component {
               Thank you!
             </ScrollAnimation>
             <StyledSubText>
-              <ScrollAnimation animateIn="fadeIn">
                 © 2020 Kunal Dewan
-              </ScrollAnimation>
             </StyledSubText>
           </StyledFooterText>
 

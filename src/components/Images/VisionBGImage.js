@@ -35,7 +35,7 @@ const MultiBackground = ({ className }) => {
       alt="Kunal Dewan Vision Background"
       id={visionSection}
     >
-      Hello
+      <Card />
     </BackgroundImage>
   );
 };

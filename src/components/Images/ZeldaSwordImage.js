@@ -1,13 +1,14 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from "gatsby-image";
+import styled from 'styled-components';
 
-const CardImage = () => {
+const ZeldaSwordImage = () => {
   const { cardImage } = useStaticQuery(graphql`
     query {
-      cardImage: file(relativePath: { eq: "card-image.jpg" }) {
+      cardImage: file(relativePath: { eq: "zelda-sword.jpg" }) {
         childImageSharp {
-          fluid(quality: 50) {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -21,15 +22,21 @@ const CardImage = () => {
       <Img
         // inline style for image wrapper div.
         style={{
-          height: '100%',
-          width: '40%',
-          clipPath:
-            'polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)',
+          minWidth: '100%',
+          minHeight: '100%',
+          transform: 'rotate(-45deg)',
         }}
         fluid={backgroundFluidImageStack}
-        alt="Kunal Dewan"
+        alt="Kunal Dewan Zelda Sword Image"
       />
   );
 };
 
-export default CardImage;
+const StyledZeldaSwordImage = styled(ZeldaSwordImage)`
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+`;
+
+
+export default StyledZeldaSwordImage;

@@ -4,17 +4,13 @@ import theme from '@colors/theme';
 import {
   AboutMeContainer,
 } from '@containers';
-import ScrollAnimation from 'react-animate-on-scroll';
+import '@styles/commonStyles.css';
 
 class AboutMe extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        {/* <ScrollAnimation duration={1.5} animateOnce animateIn="zoomIn"> */}
-          {/* <ScrollAnimation animateIn="zoomIn"> */}
             <AboutMeContainer />
-          {/* </ScrollAnimation> */}
-        {/* </ScrollAnimation> */}
       </ThemeProvider>
     );
   }

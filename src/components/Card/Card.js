@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import CardImage from '@components/Images/CardImage';
 import ScrollAnimation from 'react-animate-on-scroll';
+import '@styles/cardStyles.css';
 
 class Card extends Component {
   render() {
     return (
       <div id="vision-card" className="card">
         <div className="card__side card__side--back">
-          <CardImage />
+            <CardImage />
           <h4 className="card__heading">
             <span className="card__heading-span">A messianic</span>
             <br />
@@ -15,7 +16,8 @@ class Card extends Component {
           </h4>
           <div className="card__data">
             <div className="card__data__prelude">
-            A spark of vivified design fused with user psychology animate the lacklustre semblance of otherwise drab code. 
+              A spark of vivified design fused with user psychology animates the
+              lacklustre semblance of otherwise drab code.
             </div>
             <div className="card__qoute">
               “Good design is obvious. Great design is transparent.” — Joe
@@ -25,7 +27,7 @@ class Card extends Component {
         </div>
         <div className="card__side card__side--front">
           <div className="card__cta">
-            <ScrollAnimation duration={0.25} animateIn="fadeIn">
+            <ScrollAnimation  delay={750} animateIn="fadeIn">
               <p className="card-value">Transcend the usual.</p>
             </ScrollAnimation>
           </div>

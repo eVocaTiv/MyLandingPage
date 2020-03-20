@@ -47,6 +47,7 @@ module.exports = {
           '@videos': 'src/videos',
           '@colors': 'src/colors',
           '@styles': 'src/styles',
+          '@utils': 'src/utils',
         },
         extensions: ['js', 'jsx'],
       },

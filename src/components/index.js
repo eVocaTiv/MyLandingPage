@@ -2,6 +2,6 @@ export { NavBar } from './NavBar';
 export { AsyncLoaderComponent } from './AsyncLoaderComponent';
 export { StyledSkeleton } from './StyledSkeleton';
 export { Card } from './Card';
-export { AboutMe } from './AboutMe';
+export { AboutMeCard } from './AboutMeCard';
 export { ProjectDisplayCard } from './ProjectDisplayCard';
 export { LoadingSpinner } from './LoadingSpinner';

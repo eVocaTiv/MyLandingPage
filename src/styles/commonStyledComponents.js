@@ -1,11 +1,13 @@
 import styled from 'styled-components';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import { Link } from "gatsby"
+import DoubleArrowRoundedIcon from '@material-ui/icons/DoubleArrowRounded';
+import { Link } from 'gatsby';
 
-const StyledArrow = styled(ArrowDropDownIcon)`
+const StyledArrow = styled(DoubleArrowRoundedIcon)`
   color: #00C2CB;
   height: 100%;
   padding-top: 2rem;
+  cursor: pointer;
+  box-sizing: content-box;
   // overriding default child transition
   transition: all 0.5s ease !important;
   &:hover {
@@ -13,8 +15,4 @@ const StyledArrow = styled(ArrowDropDownIcon)`
   },
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
-export {StyledArrow, StyledLink };
+export { StyledArrow };

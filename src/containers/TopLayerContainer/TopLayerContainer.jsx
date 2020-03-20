@@ -1,21 +1,23 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import TopLayerImage from '@components/Images/TopLayerImage';
+import ZeldaSwordImage from '@components/Images/ZeldaSwordImage';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { StyledArrow, StyledLink } from '@styles/commonStyledComponents';
+import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
+import { onVisionClicked } from '@utils/commonUtils';
 
 const NavBarContainer = styled.div`
   width: 100%;
 `;
 
 const LandingViewContainer = styled.div`
+  position: relative;
   padding-top: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background-color: black;
-  position: relative;
 `;
 
 const StyledSubText = styled.div`
@@ -38,11 +40,34 @@ const StyledText = styled.div`
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 62%;
+  left: 80%;
   top: 45%;
 `;
 
+const ZeldaSwordImageContainer = styled.div`
+  height: 50%;
+  width: 20%;
+  position: absolute;
+  top: 25%;
+  left: 65%;
+`;
+
 class TopLayer extends Component {
+
+
+  // vanish effect for zelda sword image.
+  vanishSword =  () => {
+    let swordImage = document.getElementById('zelda-sword-image-container');
+    swordImage.style.color = "#fff";
+    swordImage.style.fontSize = "1.5rem";
+    swordImage.style.top = "50%";
+    swordImage.style.left = "57.5%";
+    swordImage.style.fontFamily = "Great Vibes";
+    swordImage.style.lineHeight= "2rem";
+    
+    swordImage.innerHTML = "You found the Sword of Time! =]";
+  }
+
   getTopLayer = () => {
     return (
       <Fragment>
@@ -61,7 +86,7 @@ class TopLayer extends Component {
               <ScrollAnimation
                 animateOnce
                 initiallyVisible={false}
-                delay={2000}
+                delay={1500}
                 animateIn="fadeInUp"
               >
                 "It's dangerous to go alone!"
@@ -72,18 +97,27 @@ class TopLayer extends Component {
             <ScrollAnimation
               animateOnce
               initiallyVisible={false}
-              delay={4000}
+              delay={3500}
               animateIn="fadeInUp"
             >
               "Take this."
             </ScrollAnimation>
           </StyledSubText>
-          <ArrowDiv className="arrow-div">
-            <StyledLink to="/vision">
+
+            <ZeldaSwordImageContainer
+              onClick={this.vanishSword}
+              id="zelda-sword-image-container"
+              className="zelda-sword-image-container"
+            >
               <ScrollAnimation animateOnce delay={5000} animateIn="zoomIn">
-                <StyledArrow />
+                <ZeldaSwordImage />
               </ScrollAnimation>
-            </StyledLink>
+            </ZeldaSwordImageContainer>
+
+          <ArrowDiv className="arrow-div">
+            <ScrollAnimation animateOnce delay={6000} animateIn="zoomIn">
+              <StyledArrow onClick={onVisionClicked} />
+            </ScrollAnimation>
           </ArrowDiv>
         </LandingViewContainer>
       </Fragment>

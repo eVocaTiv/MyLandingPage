@@ -2,13 +2,13 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import Constants from '@constants';
 import ScrollAnimation from 'react-animate-on-scroll';
-const { projectDisplay } = Constants.anchorIds;
 import { ProjectDisplayCard } from '@components';
 import 'animate.css/animate.min.css';
-import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
-const { footer } = Constants.anchorIds;
 import { NavBar } from '@components';
+import {
+  onConnectClicked,
+} from '@utils/commonUtils';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -19,11 +19,11 @@ const StyledFooterText = styled.div`
   color: #cc70ab;
   font-family: 'Great Vibes';
   left: 40%;
-  top: 12.5%;
+  top: 15%;
   font-size: 2.5rem;
 `;
 
-const StyledAboutMeDiv = styled.div`
+const StyledProjectsDiv = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
@@ -33,7 +33,7 @@ const StyledAboutMeDiv = styled.div`
 
 const ProjectDisplayCardsDiv = styled.div`
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 10vw;
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) ;
@@ -43,8 +43,8 @@ const ProjectDisplayCardsDiv = styled.div`
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 45.5%;
-  top: 65%;
+  left: 45%;
+  top: 80%;
 `;
 
 class ProjectDisplayContainer extends Component {
@@ -54,43 +54,43 @@ class ProjectDisplayContainer extends Component {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
-        <StyledAboutMeDiv id={projectDisplay}>
+        <StyledProjectsDiv>
           <StyledFooterText>
-            <ScrollAnimation animateOnce duration={0.5} animateIn="zoomIn">
+            <ScrollAnimation delay={250}  duration={0.5} animateIn="rotateIn">
               Coming Soon!..
             </ScrollAnimation>
           </StyledFooterText>
           <ProjectDisplayCardsDiv>
-            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+            <ScrollAnimation delay={300}  duration={0.5} animateIn="fadeInLeftBig">
               <ProjectDisplayCard />
             </ScrollAnimation>
 
-            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+            <ScrollAnimation delay={350}  duration={0.5} animateIn="fadeInRightBig">
               <ProjectDisplayCard />
             </ScrollAnimation>
 
-            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+            <ScrollAnimation delay={400}  duration={0.5} animateIn="fadeInLeftBig">
               <ProjectDisplayCard />
             </ScrollAnimation>
 
-            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+            <ScrollAnimation delay={450}  duration={0.5} animateIn="fadeInRightBig">
               <ProjectDisplayCard />
             </ScrollAnimation>
 
-            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+            <ScrollAnimation delay={500}  duration={0.5} animateIn="fadeInLeftBig">
               <ProjectDisplayCard />
             </ScrollAnimation>
 
-            <ScrollAnimation animateOnce duration={0.5} animateIn="fadeInUpBig">
+            <ScrollAnimation delay={550}  duration={0.5} animateIn="fadeInRightBig">
               <ProjectDisplayCard />
             </ScrollAnimation>
           </ProjectDisplayCardsDiv>
           <ArrowDiv className="arrow-div">
-            <ScrollAnimation animateOnce animateIn="zoomIn">
-              <StyledArrow onClick={() => scrollTo(`#${footer}`)} />
+            <ScrollAnimation delay={600} animateOnce animateIn="zoomIn">
+              <StyledArrow onClick={onConnectClicked} />
             </ScrollAnimation>
           </ArrowDiv>
-        </StyledAboutMeDiv>
+        </StyledProjectsDiv>
       </Fragment>
     );
   }

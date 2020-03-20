@@ -4,15 +4,13 @@ import theme from '@colors/theme';
 import {
   ProjectDisplayContainer,
 } from '@containers';
-import ScrollAnimation from 'react-animate-on-scroll';
+import '@styles/commonStyles.css';
 
 class Projects extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        {/* <ScrollAnimation animateIn="zoomIn"> */}
           <ProjectDisplayContainer />
-        {/* </ScrollAnimation> */}
       </ThemeProvider>
     );
   }

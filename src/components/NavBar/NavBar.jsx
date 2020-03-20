@@ -15,10 +15,15 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Constants from '@constants';
 import Badge from '@material-ui/core/Badge';
 import { withStyles } from '@material-ui/core/styles';
-import { StyledLink } from '@styles/commonStyledComponents';
+import {
+  onHomeClicked,
+  onVisionClicked,
+  onAboutMeClicked,
+  onProjectsClicked,
+  onConnectClicked,
+} from '@utils/commonUtils';
 
 const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
   '@media only screen and (max-width: 1100px)': {
@@ -65,13 +70,14 @@ const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
   '& * svg': {
     opacity: 0,
   },
-  margin: '1.5rem 0 1rem 0.5rem',
   'font-family': props.theme.fonts.primary,
   'font-weight': 'bold',
   'box-sizing': 'border-box',
   color: 'rgba(255, 255, 255, 0.5 )',
-  padding: '0.5rem 1rem',
   transition: 'box-shadow 0.2s ease',
+  margin: '1.5rem 0 1rem 0.25rem',
+  padding: '0.5rem 1rem',
+  fontSize: '0.75rem',
   //eslint-disable-next-line
   transition: 'transform 0.5s ease',
 }));
@@ -109,67 +115,63 @@ const useStyles = makeStyles((theme) => ({
 
 function NavBar() {
   const classes = useStyles();
-  const {
-    home,
-    visionSection,
-    aboutMeSection,
-    footer,
-    projectDisplay,
-  } = Constants.anchorIds;
   return (
-      <AppBar
-        style={{
-          background: 'transparent',
-          boxShadow: 'none',
-        }}
-        position="fixed"
+    <AppBar
+      style={{
+        background: 'transparent',
+        boxShadow: 'none',
+      }}
+      position="fixed"
+    >
+      <Toolbar
+        style={{ position: 'relative', right: 0, top: 0 }}
+        className={classes.customizeToolbar}
       >
-        <Toolbar
-          style={{ position: 'relative', right: 0, top: 0 }}
-          className={classes.customizeToolbar}
+        <StyledMenuButton
+          edge="start"
+          className={classes.menuButton}
+          color="inherit"
+          aria-label="menu"
         >
-          <StyledMenuButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </StyledMenuButton>
-          <Typography variant="h6" className={classes.title}>
-            <StyledLink to="/">
-              <StyledHomeIcon />
-            </StyledLink>
-          </Typography>
-          <StyledLink to="/vision">
-            <StyledButton color="inherit" endIcon={<VisibilityIcon />}>
-              Vision
-            </StyledButton>
-          </StyledLink>
-          <StyledLink to="/about-me">
-            <StyledButton color="inherit" endIcon={<EmojiPeopleIcon />}>
-              About me
-            </StyledButton>
-          </StyledLink>
-          <StyledLink to="/projects">
-            <StyledButton color="inherit" endIcon={<MenuBookIcon />}>
-              Projects
-            </StyledButton>
-          </StyledLink>
-          <StyledLink to="/connect">
-            <StyledButton
-              color="inherit"
-              endIcon={
-                <StyledBadge variant="dot" color="secondary">
-                  <ContactPhoneIcon />
-                </StyledBadge>
-              }
-            >
-              Get In Touch!
-            </StyledButton>
-          </StyledLink>
-        </Toolbar>
-      </AppBar>
+          <MenuIcon />
+        </StyledMenuButton>
+        <Typography variant="h6" className={classes.title}>
+          <StyledHomeIcon onClick={onHomeClicked} />
+        </Typography>
+        <StyledButton
+          onClick={onVisionClicked}
+          color="inherit"
+          endIcon={<VisibilityIcon />}
+        >
+          Vision
+        </StyledButton>
+        <StyledButton
+          onClick={onAboutMeClicked}
+          color="inherit"
+          endIcon={<EmojiPeopleIcon />}
+        >
+          About me
+        </StyledButton>
+        <StyledButton
+          onClick={onProjectsClicked}
+          color="inherit"
+          endIcon={<MenuBookIcon />}
+        >
+          Projects
+        </StyledButton>
+        <StyledButton
+          onClick={onConnectClicked}
+          color="inherit"
+          endIcon={
+            <StyledBadge variant="dot" color="secondary">
+              <ContactPhoneIcon />
+            </StyledBadge>
+          }
+        >
+          Get In Touch!
+        </StyledButton>
+      </Toolbar>
+    </AppBar>
   );
 }
 
