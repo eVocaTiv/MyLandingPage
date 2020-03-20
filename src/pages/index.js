@@ -4,6 +4,7 @@ import theme from '@colors/theme';
 import {
    TopLayerContainer,
 } from '@containers';
+
 class LandingPage extends Component {
   render() {
     return (

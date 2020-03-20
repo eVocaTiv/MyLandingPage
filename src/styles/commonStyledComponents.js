@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import DoubleArrowRoundedIcon from '@material-ui/icons/DoubleArrowRounded';
-import { Link } from 'gatsby';
 
 const StyledArrow = styled(DoubleArrowRoundedIcon)`
   color: #00C2CB;

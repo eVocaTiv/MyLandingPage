@@ -6,7 +6,6 @@ import { AboutMeCard } from '@components';
 import BackgroundImage from 'gatsby-background-image';
 
 const MultiBackground = ({ className }) => {
-  const { visionSection } = Constants.anchorIds;
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
@@ -33,7 +32,6 @@ const MultiBackground = ({ className }) => {
       className={className}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan About Me Background"
-      id={visionSection}
       loading="eager"
     >
       <AboutMeCard />

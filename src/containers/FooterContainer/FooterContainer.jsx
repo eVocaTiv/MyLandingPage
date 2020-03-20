@@ -16,8 +16,6 @@ const NavBarContainer = styled.div`
   width: 100%;
 `;
 
-const { footer } = Constants.anchorIds;
-
 const StyledFooterText = styled.div`
   position: relative;
   font-family: 'Great Vibes';
@@ -136,7 +134,7 @@ class FooterContainer extends Component {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
-        <StyledFooterDiv id={footer}>
+        <StyledFooterDiv>
           <StyledFooterText>
             <ScrollAnimation
               initiallyVisible={true}

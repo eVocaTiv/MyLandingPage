@@ -4,7 +4,6 @@ import Constants from '@constants';
 import AboutMeBGImage from '@components/Images/AboutMeBGImage';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
-const { aboutMeSection } = Constants.anchorIds;
 import { NavBar } from '@components';
 import { onProjectsClicked } from '@utils/commonUtils';
 
@@ -33,7 +32,7 @@ class AboutMeContainer extends Component {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
-        <StyledAboutMeDiv id={aboutMeSection}>
+        <StyledAboutMeDiv>
         <ScrollAnimation duration={1.5} animateIn="zoomIn">
           <AboutMeBGImage />
         </ScrollAnimation>
