@@ -32,6 +32,7 @@ const MultiBackground = ({ className }) => {
       className={className}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan Vision Background"
+      id="vision-bg-image"
     >
       <Card />
     </BackgroundImage>

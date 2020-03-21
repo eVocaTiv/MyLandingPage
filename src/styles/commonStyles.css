@@ -43,14 +43,15 @@ html, body {
 
 /* Vision bg image blend */
 
-/* #vision-bg-image::before {
+#vision-bg-image::before {
   background-blend-mode: overlay;
   opacity: 0.6;
-} */
+  transition: filter 0.5s ease;
+}
 
-/* #vision-bg-image:hover::before {
+#vision-bg-image:hover::before {
   filter: blur(5px);
-} */
+}
 
 .arrow-div * svg {
   font-size: 4rem;
