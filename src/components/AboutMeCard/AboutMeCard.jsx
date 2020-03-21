@@ -35,7 +35,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     width: '90%',
     // !important necessary because of material ui card issues.
-    margin: '1.5rem auto !important',
+    margin: '0rem auto !important',
     'box-shadow': '0px 0px 1rem 0px #00C2CB',
     opacity: '0.9',
     'background-color': 'black',

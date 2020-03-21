@@ -53,7 +53,7 @@
   font-weight: 300;
   text-align: right;
   color: #fff;
-  top: 0.5rem;
+  top: -1rem;
   right: 0rem;
 }
 .card__heading-span {
@@ -103,12 +103,6 @@
   font-size: 1.25rem;
 }
 
-/* @media only screen and (min-width: 1100px) {
-  .card__data {
-    width: 80%;
-  }
-} */
-
 .card__data > .card__qoute {
   margin-top: 0.5rem;
   font-size: 1.15rem;
@@ -120,4 +114,6 @@
   text-shadow: 10px 10px #000000;
   border-bottom: 2px solid #000;
   transform: rotate(8deg);
+  margin: 0 0 1.45rem !important;
+  line-height: 50%;
 }

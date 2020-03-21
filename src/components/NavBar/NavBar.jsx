@@ -4,10 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import {
-  styled as materialUIStyled,
-  withTheme,
-} from '@material-ui/core/styles';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
@@ -24,64 +20,7 @@ import {
   onProjectsClicked,
   onConnectClicked,
 } from '@utils/commonUtils';
-import '@styles/commonStyles.css';
-
-const StyledHomeIcon = materialUIStyled(withTheme(HomeSharpIcon))((props) => ({
-  '@media only screen and (max-width: 1100px)': {
-    display: 'none',
-  },
-  color: '#fff',
-  '&:hover': {
-    color: props.theme.palette.common.light,
-    transform: 'scale(1.1)',
-    'box-shadow': '0px 0 0.5rem 0px #fff',
-  },
-  transition: 'transform 0.5s ease',
-  cursor: 'pointer',
-  fontSize: '1.75rem',
-}));
-
-const StyledMenuButton = materialUIStyled(withTheme(IconButton))((props) => ({
-  '@media only screen and (min-width: 1100px)': {
-    display: 'none',
-  },
-}));
-
-const StyledButton = materialUIStyled(withTheme(Button))((props) => ({
-  '@media only screen and (max-width: 1100px)': {
-    display: 'none',
-  },
-  '&:hover': {
-    transform: 'scale(1.1)',
-    'backface-visibility': 'hidden',
-    '-webkit-backface-visibility': 'hidden',
-    'box-sizing': 'border-box',
-    color: props.theme.palette.primary.main,
-    background:
-      'linear-gradient(45deg, rgba(0,194,203,1) 30%, rgba(137,90,243,1) 70%)',
-    '-webkit-background-clip': 'text',
-    '-webkit-text-fill-color': 'transparent',
-    'text-fill-color': 'transparent',
-    'background-clip': 'text',
-    'box-shadow': '0px 0 0.5rem 0px #fff',
-    '& * svg': {
-      opacity: 1,
-    },
-  },
-  '& * svg': {
-    opacity: 0,
-  },
-  'font-family': props.theme.fonts.primary,
-  'font-weight': 'bold',
-  'box-sizing': 'border-box',
-  color: 'rgba(255, 255, 255, 0.5 )',
-  transition: 'box-shadow 0.2s ease',
-  margin: '1.5rem 0 1rem 0.25rem',
-  padding: '0.5rem 1rem',
-  fontSize: '0.75rem',
-  //eslint-disable-next-line
-  transition: 'transform 0.5s ease',
-}));
+import styled from 'styled-components';
 
 const StyledBadge = withStyles((theme) => ({
   badge: {
@@ -128,41 +67,45 @@ function NavBar() {
         style={{ position: 'relative', right: 0, top: 0 }}
         className={classes.customizeToolbar}
       >
-        <StyledMenuButton
+        <Button
           edge="start"
-          className={classes.menuButton}
+          className="menu-button"
           color="inherit"
           aria-label="menu"
         >
           <MenuIcon />
-        </StyledMenuButton>
+        </Button>
         <Typography variant="h6" className={classes.title}>
-          <StyledHomeIcon onClick={onHomeClicked} />
+          <HomeSharpIcon className="home-button" onClick={onHomeClicked} />
         </Typography>
-        <StyledButton
+        <Button
           onClick={onVisionClicked}
           color="inherit"
+          className="nav-button"
           endIcon={<VisibilityIcon />}
         >
           Vision
-        </StyledButton>
-        <StyledButton
+        </Button>
+        <Button
           onClick={onAboutMeClicked}
           color="inherit"
+          className="nav-button"
           endIcon={<EmojiPeopleIcon />}
         >
           About me
-        </StyledButton>
-        <StyledButton
+        </Button>
+        <Button
           onClick={onProjectsClicked}
           color="inherit"
+          className="nav-button"
           endIcon={<MenuBookIcon />}
         >
           Projects
-        </StyledButton>
-        <StyledButton
+        </Button>
+        <Button
           onClick={onConnectClicked}
           color="inherit"
+          className="nav-button"
           endIcon={
             <StyledBadge variant="dot" color="secondary">
               <ContactPhoneIcon />
@@ -170,7 +113,7 @@ function NavBar() {
           }
         >
           Get In Touch!
-        </StyledButton>
+        </Button>
       </Toolbar>
     </AppBar>
   );
