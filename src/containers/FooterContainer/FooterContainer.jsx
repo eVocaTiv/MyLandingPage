@@ -17,13 +17,14 @@ const NavBarContainer = styled.div`
 `;
 
 const StyledFooterText = styled.div`
-  position: relative;
+  position: fixed;
   font-family: 'Great Vibes';
   left: 20%;
-  top: 35%;
+  top: 20%;
+  width: 500px;
+  height: 500px;
   font-size: 4rem;
-  color: #00C2CB;
-  width: 40%;
+  color: #00c2cb;
 `;
 
 const StyledIconsDiv = styled.div`
@@ -59,12 +60,12 @@ const StyledMailIcon = styled(MailOutlineIcon)`
   },
 `;
 
-const StyledSubText = styled.div`
-  position: absolute;
+const CopyRightDiv = styled.div`
+  position: fixed;
   font-family: 'Julius Sans One';
-  left: -5vw;
-  top: -29vh;
-  font-size: 0.9rem;
+  left: 10rem;
+  top: 1.75rem;
+  font-size: 1.25rem;
   color: #fff;
   z-index: 1000;
   opacity: 0.5;
@@ -127,49 +128,30 @@ const StyledGitHubIcon = styled(GitHubIcon)`
 `;
 
 class FooterContainer extends Component {
-
   render() {
     return (
       <BlackDiv>
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
+
+        <CopyRightDiv>© 2020 Kunal Dewan</CopyRightDiv>
+
         <StyledFooterDiv>
           <StyledFooterText>
-            <ScrollAnimation
-              initiallyVisible={true}
-              delay={2000}
-              animateIn="fadeOut"
-              animateOnce
-            >
-              Get In Touch!
-            </ScrollAnimation>
-            <ScrollAnimation
-              delay={6000}
-              animateIn="zoomOut"
-              animateOnce
-              initiallyVisible={true}
-            >
-              <ScrollAnimation
-                initiallyVisible={false}
-                delay={2500}
-                animateIn="zoomIn"
-                animateOnce
-              >
-                This way &#x2198;
-              </ScrollAnimation>
-            </ScrollAnimation>
-            <ScrollAnimation
-              initiallyVisible={false}
-              delay={6000}
-              animateIn="zoomIn"
-              animateOnce
-            >
+            <ScrollAnimation delay={7000} animateIn="fadeIn">
               Thank you!
             </ScrollAnimation>
-            <StyledSubText>
-                © 2020 Kunal Dewan
-            </StyledSubText>
+            <ScrollAnimation delay={2000} animateIn="fadeIn">
+              <ScrollAnimation
+                delay={5000}
+                initiallyVisible={true}
+                animateOut="fadeOut"
+                animateIn="fadeOut"
+              >
+                This way &#8600;
+              </ScrollAnimation>
+            </ScrollAnimation>
           </StyledFooterText>
 
           <StyledIconsDiv>

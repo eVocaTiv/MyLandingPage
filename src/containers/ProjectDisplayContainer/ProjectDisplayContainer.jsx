@@ -44,7 +44,7 @@ const ProjectDisplayCardsDiv = styled.div`
 const ArrowDiv = styled.div`
   position: absolute;
   left: 45%;
-  top: 80%;
+  top: 77.5%;
 `;
 
 class ProjectDisplayContainer extends Component {

@@ -10,9 +10,9 @@ class Footer extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateIn="fadeInRight">
           <ParallaxWrapper />
-        <FooterContainer />
+          <FooterContainer />
         </ScrollAnimation>
       </ThemeProvider>
     );

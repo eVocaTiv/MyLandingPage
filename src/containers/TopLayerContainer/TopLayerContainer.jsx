@@ -66,7 +66,7 @@ class TopLayer extends Component {
     swordImage.style.fontFamily = "Great Vibes";
     swordImage.style.lineHeight= "2rem";
     
-    swordImage.innerHTML = "You found the Sword of Time! =]";
+    swordImage.innerHTML = "Item picked up: <br> Sword of Time!";
   }
 
   getTopLayer = () => {
@@ -98,7 +98,7 @@ class TopLayer extends Component {
             <ScrollAnimation
               animateOnce
               initiallyVisible={false}
-              delay={3500}
+              delay={4000}
               animateIn="fadeInUp"
             >
               "Take this."
