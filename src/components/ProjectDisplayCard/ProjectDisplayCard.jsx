@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       width: theme.spacing(16),
       height: theme.spacing(16),
-      padding: theme.spacing(2),
     },
   },
 }));
@@ -25,6 +24,7 @@ const StyledPaper = styled(Paper)`
   width: 35vw !important;
   transition: all ease 0.5s !important;
   box-sizing: border-box;
+  padding: 0.5rem;
   &:hover {
     transform: scale(1.05);
     box-shadow: 1px 5px 5px 1px #803966;
@@ -45,7 +45,7 @@ export default function Variants(props) {
   const classes = useStyles();
   const toolTipClasses = useStylesBootstrap();
 
-  const { children, projectTitle, placement } = props;
+  const { children, projectTitle } = props;
   return (
     <Tooltip
       TransitionComponent={Fade}
