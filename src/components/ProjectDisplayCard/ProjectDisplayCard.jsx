@@ -1,8 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import styled from 'styled-components';
 import Tooltip from '@material-ui/core/Tooltip';
+import Fade from '@material-ui/core/Fade';
 
 const useStyles = makeStyles((theme) => ({
   'will-change': 'auto',
@@ -12,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       width: theme.spacing(16),
       height: theme.spacing(16),
+      padding: theme.spacing(2),
     },
   },
 }));
@@ -24,23 +26,40 @@ const StyledPaper = styled(Paper)`
   transition: all ease 0.5s !important;
   box-sizing: border-box;
   &:hover {
-    transform: scale(1.15);
-    border: thick solid #00c2cb;
-    box-shadow: 1px 5px 1px 1px #895af3;
+    transform: scale(1.05);
+    box-shadow: 1px 5px 5px 1px #803966;
+    padding: 0;
   }
   background-color: #803966 !important;
 `;
+const useStylesBootstrap = makeStyles((theme) => ({
+  arrow: {
+    color: theme.palette.common.black,
+  },
+  tooltip: {
+    backgroundColor: theme.palette.common.black,
+  },
+}));
 
 export default function Variants(props) {
   const classes = useStyles();
-  const { children, projectTitle } = props;
+  const toolTipClasses = useStylesBootstrap();
+
+  const { children, projectTitle, placement } = props;
   return (
-    <div className={classes.root}>
-      <Tooltip title={projectTitle}>
+    <Tooltip
+      TransitionComponent={Fade}
+      placement={placement}
+      TransitionProps={{ timeout: 600 }}
+      arrow
+      classes={toolTipClasses}
+      title={projectTitle}
+    >
+      <div className={classes.root}>
         <StyledPaper elevation={24} variant="elevation">
           {children}
         </StyledPaper>
-      </Tooltip>
-    </div>
+      </div>
+    </Tooltip>
   );
 }

@@ -38,16 +38,16 @@ const StyledProjectsDiv = styled.div`
 const ProjectDisplayCardsDiv = styled.div`
   position: absolute;
   top: 25%;
-  left: 10vw;
+  left: 12vw;
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   grid-column-gap: 4vw;
-  grid-row-gap: 2.5vh;
+  grid-row-gap: 5vh;
 `;
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 45%;
+  left: 47%;
   top: 77.5%;
 `;
 
@@ -78,7 +78,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard projectTitle="IoT Vulnerability Scanner">
+              <ProjectDisplayCard
+                placement="left"
+                projectTitle="IoT Vulnerability Scanner"
+              >
                 <IoTImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -88,7 +91,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard projectTitle="Custom made effects">
+              <ProjectDisplayCard
+                placement="right"
+                projectTitle="Custom made effects"
+              >
                 <VentureUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -98,7 +104,7 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard projectTitle="My website">
+              <ProjectDisplayCard placement="left" projectTitle="My website">
                 <LandingPageImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -108,8 +114,11 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard projectTitle="Zentors UX design">
-                <ZentorsUIImage />
+              <ProjectDisplayCard
+                placement="left"
+                projectTitle="Udemy courses' projects"
+              >
+                <UdemyImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
 
@@ -118,8 +127,11 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard projectTitle="Udemy courses' projects">
-                <UdemyImage />
+              <ProjectDisplayCard
+                placement="right"
+                projectTitle="Zentors UX design"
+              >
+                <ZentorsUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
 
@@ -128,7 +140,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard projectTitle="Other UI fiddles">
+              <ProjectDisplayCard
+                placement="right"
+                projectTitle="Other UI fiddles"
+              >
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation>

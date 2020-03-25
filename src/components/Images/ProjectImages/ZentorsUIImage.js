@@ -26,7 +26,7 @@ const CardImage = () => {
         width: '100%',
       }}
       imgStyle={{ 
-        // objectPosition: 'center',
+        objectPosition: 'center',
         objectFit: 'fill',
       }}
       fluid={backgroundFluidImageStack}

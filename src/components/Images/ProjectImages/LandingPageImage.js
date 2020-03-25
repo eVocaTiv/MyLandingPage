@@ -26,8 +26,7 @@ const CardImage = () => {
         width: '100%',
       }}
       imgStyle={{ 
-        objectPosition: 'center',
-        objectFit: 'fill',
+        objectPosition: 'top',
       }}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan UI Website's landing page"
