@@ -6,9 +6,13 @@ import { ProjectDisplayCard } from '@components';
 import 'animate.css/animate.min.css';
 import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
-import {
-  onConnectClicked,
-} from '@utils/commonUtils';
+import { onConnectClicked } from '@utils/commonUtils';
+import IoTImage from '@components/Images/ProjectImages/IoTImage';
+import VentureUIImage from '@components/Images/ProjectImages/VentureUIImage';
+import LandingPageImage from '@components/Images/ProjectImages/LandingPageImage';
+import OtherFiddlesImage from '@components/Images/ProjectImages/OtherFiddlesImage';
+import UdemyImage from '@components/Images/ProjectImages/UdemyImage';
+import ZentorsUIImage from '@components/Images/ProjectImages/ZentorsUIImage';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -36,7 +40,7 @@ const ProjectDisplayCardsDiv = styled.div`
   top: 25%;
   left: 10vw;
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) ;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   grid-column-gap: 4vw;
   grid-row-gap: 2.5vh;
 `;
@@ -45,6 +49,14 @@ const ArrowDiv = styled.div`
   position: absolute;
   left: 45%;
   top: 77.5%;
+`;
+
+const ImgDescriptionDiv = styled.div`
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
 `;
 
 class ProjectDisplayContainer extends Component {
@@ -56,33 +68,69 @@ class ProjectDisplayContainer extends Component {
         </NavBarContainer>
         <StyledProjectsDiv>
           <StyledFooterText>
-            <ScrollAnimation delay={250}  duration={0.5} animateIn="rotateIn">
-              Coming Soon!..
+            <ScrollAnimation delay={250} duration={0.5} animateIn="rotateIn">
+              Coming Soon
             </ScrollAnimation>
           </StyledFooterText>
           <ProjectDisplayCardsDiv>
-            <ScrollAnimation delay={300}  duration={0.5} animateIn="fadeInLeftBig">
-              <ProjectDisplayCard />
+            <ScrollAnimation
+              delay={300}
+              duration={0.5}
+              animateIn="fadeInLeftBig"
+            >
+              <ProjectDisplayCard projectTitle="IoT Vulnerability Scanner">
+                <IoTImage />
+              </ProjectDisplayCard>
             </ScrollAnimation>
 
-            <ScrollAnimation delay={350}  duration={0.5} animateIn="fadeInRightBig">
-              <ProjectDisplayCard />
+            <ScrollAnimation
+              delay={350}
+              duration={0.5}
+              animateIn="fadeInRightBig"
+            >
+              <ProjectDisplayCard projectTitle="Custom made effects">
+                <VentureUIImage />
+              </ProjectDisplayCard>
             </ScrollAnimation>
 
-            <ScrollAnimation delay={400}  duration={0.5} animateIn="fadeInLeftBig">
-              <ProjectDisplayCard />
+            <ScrollAnimation
+              delay={400}
+              duration={0.5}
+              animateIn="fadeInLeftBig"
+            >
+              <ProjectDisplayCard projectTitle="My website">
+                <LandingPageImage />
+              </ProjectDisplayCard>
             </ScrollAnimation>
 
-            <ScrollAnimation delay={450}  duration={0.5} animateIn="fadeInRightBig">
-              <ProjectDisplayCard />
+            <ScrollAnimation
+              delay={450}
+              duration={0.5}
+              animateIn="fadeInRightBig"
+            >
+              <ProjectDisplayCard projectTitle="Zentors UX design">
+                <ZentorsUIImage />
+              </ProjectDisplayCard>
             </ScrollAnimation>
 
-            <ScrollAnimation delay={500}  duration={0.5} animateIn="fadeInLeftBig">
-              <ProjectDisplayCard />
+            <ScrollAnimation
+              delay={500}
+              duration={0.5}
+              animateIn="fadeInLeftBig"
+            >
+              <ProjectDisplayCard projectTitle="Udemy courses' projects">
+                <UdemyImage />
+              </ProjectDisplayCard>
             </ScrollAnimation>
 
-            <ScrollAnimation delay={550}  duration={0.5} animateIn="fadeInRightBig">
-              <ProjectDisplayCard />
+            <ScrollAnimation
+              delay={550}
+              duration={0.5}
+              animateIn="fadeInRightBig"
+            >
+              <ProjectDisplayCard projectTitle="Other UI fiddles">
+                <OtherFiddlesImage />
+              </ProjectDisplayCard>
             </ScrollAnimation>
           </ProjectDisplayCardsDiv>
           <ArrowDiv className="arrow-div">

@@ -44,8 +44,8 @@ html, body {
 /* Vision bg image blend */
 
 #vision-bg-image::before {
-  background-blend-mode: overlay;
-  opacity: 0.6;
+  background-blend-mode: overlay !important;
+  opacity: 0.6 !important;
   transition: filter 0.5s ease;
 }
 

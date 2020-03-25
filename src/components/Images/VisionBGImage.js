@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Constants from '@constants';
 import { Card } from '@components';
 import BackgroundImage from 'gatsby-background-image';
 

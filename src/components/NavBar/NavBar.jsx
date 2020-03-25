@@ -100,7 +100,7 @@ function NavBar() {
           className="nav-button"
           endIcon={<MenuBookIcon />}
         >
-          Projects
+          Showcase
         </Button>
         <Button
           onClick={onConnectClicked}
