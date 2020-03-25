@@ -61,6 +61,15 @@ const ImgDescriptionDiv = styled.div`
 
 class ProjectDisplayContainer extends Component {
   render() {
+    const {
+      iotScanner,
+      myWebsite,
+      otherFiddles,
+      udemy,
+      ventureUI,
+      zentors,
+    } = Constants.projects;
+
     return (
       <Fragment>
         <NavBarContainer>
@@ -78,7 +87,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard projectTitle="IoT Vulnerability Scanner">
+              <ProjectDisplayCard
+                projectURL={iotScanner}
+                projectTitle="IoT Vulnerability Scanner"
+              >
                 <IoTImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -88,7 +100,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard projectTitle="Custom made effects">
+              <ProjectDisplayCard
+                projectURL={ventureUI}
+                projectTitle="Custom made effects"
+              >
                 <VentureUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -98,7 +113,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard placement="left" projectTitle="My website">
+              <ProjectDisplayCard
+                projectURL={myWebsite}
+                projectTitle="My website"
+              >
                 <LandingPageImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -108,7 +126,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard projectTitle="Udemy courses' projects">
+              <ProjectDisplayCard
+                projectURL={udemy}
+                projectTitle="Udemy courses' projects"
+              >
                 <UdemyImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -118,7 +139,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard projectTitle="Zentors UX design">
+              <ProjectDisplayCard
+                projectURL={zentors}
+                projectTitle="Zentors UX design"
+              >
                 <ZentorsUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -128,7 +152,10 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard projectTitle="Other UI fiddles">
+              <ProjectDisplayCard
+                projectURL={otherFiddles}
+                projectTitle="Other UI fiddles"
+              >
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation>

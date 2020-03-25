@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import styled from 'styled-components';
 import Tooltip from '@material-ui/core/Tooltip';
 import Fade from '@material-ui/core/Fade';
+import { navigate } from 'gatsby';
 
 const useStyles = makeStyles((theme) => ({
   'will-change': 'auto',
@@ -45,7 +46,7 @@ export default function Variants(props) {
   const classes = useStyles();
   const toolTipClasses = useStylesBootstrap();
 
-  const { children, projectTitle } = props;
+  const { children, projectTitle, projectURL } = props;
   return (
     <Tooltip
       TransitionComponent={Fade}
@@ -56,7 +57,11 @@ export default function Variants(props) {
       title={projectTitle}
     >
       <div className={classes.root}>
-        <StyledPaper elevation={24} variant="elevation">
+        <StyledPaper
+          onClick={() => navigate(`/${projectURL}`)}
+          elevation={24}
+          variant="elevation"
+        >
           {children}
         </StyledPaper>
       </div>
