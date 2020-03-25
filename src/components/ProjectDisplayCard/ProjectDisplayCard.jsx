@@ -49,7 +49,7 @@ export default function Variants(props) {
   return (
     <Tooltip
       TransitionComponent={Fade}
-      placement={placement}
+      placement="top"
       TransitionProps={{ timeout: 600 }}
       arrow
       classes={toolTipClasses}

@@ -78,10 +78,7 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard
-                placement="left"
-                projectTitle="IoT Vulnerability Scanner"
-              >
+              <ProjectDisplayCard projectTitle="IoT Vulnerability Scanner">
                 <IoTImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -91,10 +88,7 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard
-                placement="right"
-                projectTitle="Custom made effects"
-              >
+              <ProjectDisplayCard projectTitle="Custom made effects">
                 <VentureUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -114,10 +108,7 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard
-                placement="left"
-                projectTitle="Udemy courses' projects"
-              >
+              <ProjectDisplayCard projectTitle="Udemy courses' projects">
                 <UdemyImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -127,10 +118,7 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
-              <ProjectDisplayCard
-                placement="right"
-                projectTitle="Zentors UX design"
-              >
+              <ProjectDisplayCard projectTitle="Zentors UX design">
                 <ZentorsUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
@@ -140,10 +128,7 @@ class ProjectDisplayContainer extends Component {
               duration={0.5}
               animateIn="fadeInRightBig"
             >
-              <ProjectDisplayCard
-                placement="right"
-                projectTitle="Other UI fiddles"
-              >
+              <ProjectDisplayCard projectTitle="Other UI fiddles">
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
