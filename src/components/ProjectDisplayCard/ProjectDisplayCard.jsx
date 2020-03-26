@@ -33,6 +33,7 @@ const StyledPaper = styled(Paper)`
   }
   background-color: #803966 !important;
 `;
+
 const useStylesBootstrap = makeStyles((theme) => ({
   arrow: {
     color: theme.palette.common.black,

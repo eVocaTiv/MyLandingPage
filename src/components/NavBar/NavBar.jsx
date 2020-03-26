@@ -53,8 +53,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function NavBar() {
+function NavBar(props) {
+  const { isProjectPage } = props;
   const classes = useStyles();
+  
   return (
     <AppBar
       style={{
@@ -78,42 +80,49 @@ function NavBar() {
         <Typography variant="h6" className={classes.title}>
           <HomeSharpIcon className="home-button" onClick={onHomeClicked} />
         </Typography>
-        <Button
-          onClick={onVisionClicked}
-          color="inherit"
-          className="nav-button"
-          endIcon={<VisibilityIcon />}
-        >
-          Vision
-        </Button>
-        <Button
-          onClick={onAboutMeClicked}
-          color="inherit"
-          className="nav-button"
-          endIcon={<EmojiPeopleIcon />}
-        >
-          About me
-        </Button>
+        {!isProjectPage && (
+          <Button
+            onClick={onVisionClicked}
+            color="inherit"
+            className="nav-button"
+            endIcon={<VisibilityIcon />}
+          >
+            Vision
+          </Button>
+        )}
+        {!isProjectPage && (
+          <Button
+            onClick={onAboutMeClicked}
+            color="inherit"
+            className="nav-button"
+            endIcon={<EmojiPeopleIcon />}
+          >
+            About me
+          </Button>
+        )}
+
         <Button
           onClick={onProjectsClicked}
           color="inherit"
           className="nav-button"
           endIcon={<MenuBookIcon />}
         >
-          Showcase
+          {isProjectPage ? 'Back to showcase' : 'Showcase'}
         </Button>
-        <Button
-          onClick={onConnectClicked}
-          color="inherit"
-          className="nav-button"
-          endIcon={
-            <StyledBadge variant="dot" color="secondary">
-              <ContactPhoneIcon />
-            </StyledBadge>
-          }
-        >
-          Get In Touch!
-        </Button>
+        {!isProjectPage && (
+          <Button
+            onClick={onConnectClicked}
+            color="inherit"
+            className="nav-button"
+            endIcon={
+              <StyledBadge variant="dot" color="secondary">
+                <ContactPhoneIcon />
+              </StyledBadge>
+            }
+          >
+            Get In Touch!
+          </Button>
+        )}
       </Toolbar>
     </AppBar>
   );

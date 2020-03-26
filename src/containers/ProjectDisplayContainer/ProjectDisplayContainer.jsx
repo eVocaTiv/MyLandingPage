@@ -22,7 +22,7 @@ const StyledFooterText = styled.div`
   position: absolute;
   color: #cc70ab;
   font-family: 'Great Vibes';
-  left: 37.5%;
+  left: 40%;
   top: 15%;
   font-size: 2.5rem;
 `;
