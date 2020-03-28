@@ -41,8 +41,7 @@ const MultiBackground = ({ className }) => {
   // The lowermost image comes last!
   const backgroundFluidImageStack = [
     seamlessBackground.childImageSharp.fluid,
-    // 'linear-gradient(to right bottom, rgba(128,57,102,0.85) 0%, rgba(204,112,171,1) 100%)',
-    'linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,  rgba(128,57,102,0.85)  40%, rgba(0,0,0,0.95) 100%)',
+    'linear-gradient(45deg, rgba(128,57,102,0.75) 0%, rgba(204,112,171,0.5) 100%)',
   ].reverse();
 
   return (
