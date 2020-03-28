@@ -1,10 +1,10 @@
 import React from 'react';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import styled from 'styled-components';
 import Tooltip from '@material-ui/core/Tooltip';
 import Fade from '@material-ui/core/Fade';
-import { navigate } from 'gatsby';
+import { onNavigate } from '@utils/commonUtils';
 
 const useStyles = makeStyles((theme) => ({
   'will-change': 'auto',
@@ -59,7 +59,7 @@ export default function Variants(props) {
     >
       <div className={classes.root}>
         <StyledPaper
-          onClick={() => navigate(`/${projectURL}`)}
+          onClick={() => onNavigate(`/${projectURL}`)}
           elevation={24}
           variant="elevation"
         >
