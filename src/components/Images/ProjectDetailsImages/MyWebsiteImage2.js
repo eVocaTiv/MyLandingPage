@@ -16,7 +16,7 @@ const StyledPaperText = styled.div`
   background-color: transparent !important;
   position: absolute;
   left: 27.5%;
-  top: 45%;
+  top: 40%;
   pointer-events: none;
   color: white;
   width: 100%;
@@ -27,7 +27,7 @@ const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "proj-iot-1.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "proj-my-website-2.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
@@ -41,7 +41,8 @@ const MultiBackground = ({ className }) => {
   // The lowermost image comes last!
   const backgroundFluidImageStack = [
     seamlessBackground.childImageSharp.fluid,
-    'linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(20,43,89,0.9) 40%, rgba(0,0,0,0.75) 100%)',
+    // 'linear-gradient(to right bottom, rgba(128,57,102,0.85) 0%, rgba(204,112,171,1) 100%)',
+    'linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,  rgba(128,57,102,0.85)  40%, rgba(0,0,0,0.95) 100%)',
   ].reverse();
 
   return (
@@ -49,18 +50,17 @@ const MultiBackground = ({ className }) => {
       Tag={`section`}
       className={className}
       fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan IoT Vulnerability Scanner"
+      alt="Kunal Dewan Personal Website"
     >
       <StyledPaperText>
         <ScrollAnimation animateIn="zoomIn">
-          IoT Vulnerability Scanner
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>
   );
 };
 
-const IoTImage1 = styled(MultiBackground)`
+const MyWebsiteImage2 = styled(MultiBackground)`
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -71,4 +71,4 @@ const IoTImage1 = styled(MultiBackground)`
   background-attachment: fixed;
 `;
 
-export default IoTImage1;
+export default MyWebsiteImage2;

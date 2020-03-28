@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
-import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LiveTvIcon from '@material-ui/icons/LiveTv';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const StyledPaperText = styled.div`
   // override default transition in card's child.
@@ -32,12 +33,23 @@ const StyledGitHubIcon = styled(GitHubIcon)`
   fontSize: 1rem;
   pointer-events: auto;
   &:hover {
-    color: #000000;
     transform: scale(1.5);
   },
 `;
 
-const MultiBackground = ({ className }) => {
+const StyledTvIcon = styled(LiveTvIcon)`
+  color: #ffffff;
+  // overriding default child transition
+  transition: all 0.5s ease !important;
+  fontSize: 1rem;
+  pointer-events: auto;
+  margin: 0.25rem 0.25rem;
+  &:hover {
+    transform: scale(1.5);
+  },
+`;
+
+const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
@@ -58,30 +70,43 @@ const MultiBackground = ({ className }) => {
     'linear-gradient(to bottom, rgba(0,0,0, 1) 0%, rgba(20,43,89,1) 40%, rgba(0,0,0,0.5) 100%)',
   ].reverse();
 
+  const getDemoLinks = (demoURLs) => {
+    if (!demoURLs) return null;
+    return demoURLs.map((url, index) => (
+      <Tooltip title={toolTips[index]}>
+        <a key={url} target="_blank" href={url}>
+          <StyledTvIcon />
+        </a>
+      </Tooltip>
+    ));
+  };
+
   return (
     <BackgroundImage
       Tag={`section`}
-      className={className}
       fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan IoT Vulnerability Scanner"
+      className={className}
+      alt="Kunal Dewan Project Footer Image"
     >
       <StyledPaperText>
         <ScrollAnimation animateIn="flash">
           <br />
-          GitHub repo &nbsp;
-          <a
-            href="https://github.com/eVocaTiv/IoTVulnerabilityScanner-1"
-            target="_blank"
-          >
-            <StyledGitHubIcon />
-          </a>
+          {githubURL && 'GitHub Repo: '}
+          {githubURL && (
+            <a href={githubURL} target="_blank">
+              <StyledGitHubIcon />
+            </a>
+          )}
+          <br />
+          {demoURLs && 'Demos: '}
+          {getDemoLinks(demoURLs)}
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>
   );
 };
 
-const IoTImage1 = styled(MultiBackground)`
+const FooterImage = styled(MultiBackground)`
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -92,4 +117,4 @@ const IoTImage1 = styled(MultiBackground)`
   background-attachment: fixed;
 `;
 
-export default IoTImage1;
+export default FooterImage;

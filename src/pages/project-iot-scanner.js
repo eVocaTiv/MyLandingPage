@@ -17,7 +17,10 @@ class Project extends Component {
            in an enterprise network by scanning multiple communication protocols. 
            The application scans through the given IP range, detects devices present on each
            IP, logs the scanned data and presents a graphical report. I contributed as the UML prototyper &amp; UI developer."
-          FooterImage={<FooterImage />}
+          FooterImage={
+            <FooterImage githubURL="https://github.com/eVocaTiv/IoTVulnerabilityScanner-1" />
+          }
+          isMoreSpaced={"medium"}
         />
       </ThemeProvider>
     );

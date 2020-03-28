@@ -30,7 +30,14 @@ const StyledPaper = styled(Card)`
   background-color: transparent !important;
   position: absolute;
   left: 20%;
-  top: 10%;
+  top: ${(props) =>
+    props.isMoreSpaced === 'xLarge'
+      ? '35%'
+      : props.isMoreSpaced === 'large'
+      ? '25%'
+      : props.isMoreSpaced === 'medium'
+      ? '15%'
+      : '10%'};
   line-height: 3rem;
   font-size: 1.75rem;
   letter-spacing: 0.1rem;
@@ -51,6 +58,7 @@ export default class ProjectContainer extends Component {
       BottomImage,
       ProjectDescription,
       FooterImage,
+      isMoreSpaced,
     } = this.props;
 
     return (
@@ -61,7 +69,7 @@ export default class ProjectContainer extends Component {
         {TopImage}
         <ScrollAnimation animateIn="fadeInRight">
           <StyledProjectDescriptionDiv>
-            <StyledPaper>{ProjectDescription}</StyledPaper>
+            <StyledPaper isMoreSpaced={isMoreSpaced}>{ProjectDescription}</StyledPaper>
           </StyledProjectDescriptionDiv>
         </ScrollAnimation>
         {BottomImage}

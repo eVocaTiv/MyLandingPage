@@ -22,7 +22,7 @@ const StyledFooterText = styled.div`
   position: absolute;
   color: #cc70ab;
   font-family: 'Great Vibes';
-  left: 40%;
+  left: 37.5%;
   top: 15%;
   font-size: 2.5rem;
 `;
@@ -78,7 +78,7 @@ class ProjectDisplayContainer extends Component {
         <StyledProjectsDiv>
           <StyledFooterText>
             <ScrollAnimation delay={250} duration={0.5} animateIn="rotateIn">
-              Coming Soon
+              Some of my work!
             </ScrollAnimation>
           </StyledFooterText>
           <ProjectDisplayCardsDiv>
@@ -101,10 +101,10 @@ class ProjectDisplayContainer extends Component {
               animateIn="fadeInRightBig"
             >
               <ProjectDisplayCard
-                projectURL={ventureUI}
-                projectTitle="Custom made effects"
+                projectURL={udemy}
+                projectTitle="Udemy courses' projects"
               >
-                <VentureUIImage />
+                <UdemyImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
 
@@ -127,10 +127,11 @@ class ProjectDisplayContainer extends Component {
               animateIn="fadeInRightBig"
             >
               <ProjectDisplayCard
-                projectURL={udemy}
-                projectTitle="Udemy courses' projects"
+                projectURL={ventureUI}
+                projectTitle="Custom made effects"
+                isDisabled
               >
-                <UdemyImage />
+                <VentureUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
 
@@ -142,6 +143,7 @@ class ProjectDisplayContainer extends Component {
               <ProjectDisplayCard
                 projectURL={zentors}
                 projectTitle="Zentors UX design"
+                isDisabled
               >
                 <ZentorsUIImage />
               </ProjectDisplayCard>
@@ -155,6 +157,7 @@ class ProjectDisplayContainer extends Component {
               <ProjectDisplayCard
                 projectURL={otherFiddles}
                 projectTitle="Other UI fiddles"
+                isDisabled
               >
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
