@@ -20,7 +20,6 @@ import {
   onProjectsClicked,
   onConnectClicked,
 } from '@utils/commonUtils';
-import styled from 'styled-components';
 
 const StyledBadge = withStyles((theme) => ({
   badge: {

@@ -51,14 +51,6 @@ const ArrowDiv = styled.div`
   top: 77.5%;
 `;
 
-const ImgDescriptionDiv = styled.div`
-  color: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: all 0.5s ease;
-`;
-
 class ProjectDisplayContainer extends Component {
   render() {
     const {
