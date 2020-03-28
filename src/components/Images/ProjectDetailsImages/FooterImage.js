@@ -18,8 +18,8 @@ const StyledPaperText = styled.div`
   padding: 0.5rem;
   background-color: transparent !important;
   position: absolute;
-  left: 35%;
-  top: 30%;
+  left: 36%;
+  top: 35%;
   pointer-events: none;
   color: white;
   width: 100%;
@@ -67,7 +67,7 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
   // The lowermost image comes last!
   const backgroundFluidImageStack = [
     seamlessBackground.childImageSharp.fluid,
-    'linear-gradient(to bottom, rgba(0,0,0, 1) 0%, rgba(20,43,89,1) 40%, rgba(0,0,0,0.5) 100%)',
+    'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(15,37,70,0.75) 20%, rgba(15,37,70,0.9) 30%, rgba(15,37,70,0.9) 70%, rgba(15,37,70,0.75) 80%,  rgba(0,0,0,0.5) 100%)',
   ].reverse();
 
   const getDemoLinks = (demoURLs) => {
@@ -97,7 +97,6 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
               <StyledGitHubIcon />
             </a>
           )}
-          <br />
           {demoURLs && 'Demos: '}
           {getDemoLinks(demoURLs)}
         </ScrollAnimation>
