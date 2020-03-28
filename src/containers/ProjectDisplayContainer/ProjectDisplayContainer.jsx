@@ -41,7 +41,7 @@ const ProjectDisplayCardsDiv = styled.div`
   left: 12vw;
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
-  grid-column-gap: 4vw;
+  grid-column-gap: 6.5vw;
   grid-row-gap: 5vh;
 `;
 
@@ -123,7 +123,7 @@ class ProjectDisplayContainer extends Component {
                 projectTitle="Custom made effects"
                 isDisabled
               >
-                <VentureUIImage />
+                <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
 
@@ -137,7 +137,7 @@ class ProjectDisplayContainer extends Component {
                 projectTitle="Zentors UX design"
                 isDisabled
               >
-                <ZentorsUIImage />
+                <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
 

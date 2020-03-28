@@ -10,11 +10,6 @@ const useStyles = makeStyles((theme) => ({
   'will-change': 'auto',
   root: {
     display: 'flex',
-    '& > *': {
-      margin: theme.spacing(1),
-      width: theme.spacing(16),
-      height: theme.spacing(16),
-    },
   },
 }));
 
@@ -27,7 +22,7 @@ const StyledPaper = styled(Paper)`
   transition: all ease 0.5s !important;
   box-sizing: border-box;
   &:hover {
-    transform: rotate(2deg) scale(1.1);
+    transform: rotate(3deg) scale(1.15);
     box-shadow: 5px 5px 15px 1px #00C2CB;
     padding: 0;
   }
