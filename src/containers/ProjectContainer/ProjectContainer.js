@@ -67,7 +67,7 @@ export default class ProjectContainer extends Component {
           <NavBar isProjectPage />
         </NavBarContainer>
         {TopImage}
-        <ScrollAnimation animateIn="fadeInRight">
+        <ScrollAnimation animateIn="fadeInUp">
           <StyledProjectDescriptionDiv>
             <StyledPaper isMoreSpaced={isMoreSpaced}>{ProjectDescription}</StyledPaper>
           </StyledProjectDescriptionDiv>
