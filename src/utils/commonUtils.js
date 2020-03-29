@@ -7,7 +7,14 @@ const onProjectsClicked = () => onNavigate('/projects');
 const onConnectClicked = () => onNavigate('/connect');
 
 const onNavigate = (URL) => {
-  navigate(URL);
+  const currentURL = window.location.href;
+  const currentURLArray = currentURL.split('/');
+  const currentSection = currentURLArray[currentURLArray.length - 1];
+  if (`/${currentSection}` != URL) {
+    document.getElementById('___gatsby').style.opacity = 0;
+    document.getElementById('___loader').style.display = 'flex';
+    navigate(URL);
+  }
 };
 
 export {
