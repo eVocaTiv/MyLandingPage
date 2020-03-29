@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
 import { TopLayerContainer } from '@containers';
-import App from '@components/3DModel/App.js';
+import App from '@components/Bubbles/Bubbles.js';
 import { NavBar } from '@components';
 import styled from 'styled-components';
 
