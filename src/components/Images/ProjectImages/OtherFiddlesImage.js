@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 const CardImage = () => {
   const { cardImage } = useStaticQuery(graphql`
     query {
-      cardImage: file(relativePath: { eq: "other-fiddles.jpg" }) {
+      cardImage: file(relativePath: { eq: "other-ui-fiddles.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -27,7 +27,6 @@ const CardImage = () => {
       }}
       imgStyle={{ 
         objectPosition: 'center',
-        objectFit: 'fill',
       }}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan UI fiddles"

@@ -26,7 +26,7 @@ const CardImage = () => {
         width: '100%',
       }}
       imgStyle={{ 
-        objectPosition: 'top',
+        objectPosition: 'center',
       }}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan IoT vulnerability scanner"

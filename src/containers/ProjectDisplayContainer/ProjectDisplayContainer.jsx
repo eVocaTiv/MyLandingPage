@@ -20,7 +20,7 @@ const NavBarContainer = styled.div`
 
 const StyledFooterText = styled.div`
   position: absolute;
-  color: #cc70ab;
+  color: #00C2CB;
   font-family: 'Great Vibes';
   left: 37.5%;
   top: 12.5%;
@@ -42,7 +42,7 @@ const ProjectDisplayCardsDiv = styled.div`
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   grid-column-gap: 6.5vw;
-  grid-row-gap: 5vh;
+  grid-row-gap: 7.5vh;
 `;
 
 const ArrowDiv = styled.div`
@@ -129,13 +129,14 @@ class ProjectDisplayContainer extends Component {
             >
               <ProjectDisplayCard
                 projectURL={ventureUI}
-                projectTitle="Custom made effects"
+                projectTitle="Coming soon!"
+                // projectTitle="Other UI Fiddles"
                 isDisabled
               >
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
-
+{/* 
             <ScrollAnimation
               animateOnce
               delay={500}
@@ -164,7 +165,7 @@ class ProjectDisplayContainer extends Component {
               >
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
-            </ScrollAnimation>
+            </ScrollAnimation> */}
           </ProjectDisplayCardsDiv>
           <ArrowDiv className="arrow-div">
             <ScrollAnimation delay={600} animateOnce animateIn="zoomIn">

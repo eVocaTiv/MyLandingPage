@@ -10,7 +10,7 @@ const MultiBackground = ({ className }) => {
       query {
         seamlessBackground: file(relativePath: { eq: "vision-bg-image.jpg" }) {
           childImageSharp {
-            fluid(quality: 50) {
+            fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
