@@ -21,10 +21,11 @@ const StyledPaper = styled(Paper)`
   height: 17.5vh !important;
   transition: all ease 0.5s !important;
   box-sizing: border-box;
+  background-blend-mode: hue;
   &:hover {
     transform: rotate(3deg) scale(1.15);
     box-shadow: 5px 5px 15px 1px #00C2CB;
-    padding: 0;
+    margin: 0.5rem;
   }
   background-color: #803966 !important;
   pointer-events: ${props => props.isDisabled ? "none" : "all"} !important;
