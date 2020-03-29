@@ -69,12 +69,18 @@ class ProjectDisplayContainer extends Component {
         </NavBarContainer>
         <StyledProjectsDiv>
           <StyledFooterText>
-            <ScrollAnimation delay={250} duration={0.5} animateIn="rotateIn">
+            <ScrollAnimation
+              animateOnce
+              delay={250}
+              duration={0.5}
+              animateIn="rotateIn"
+            >
               Some of my work!
             </ScrollAnimation>
           </StyledFooterText>
           <ProjectDisplayCardsDiv>
             <ScrollAnimation
+              animateOnce
               delay={300}
               duration={0.5}
               animateIn="fadeInLeftBig"
@@ -88,6 +94,7 @@ class ProjectDisplayContainer extends Component {
             </ScrollAnimation>
 
             <ScrollAnimation
+              animateOnce
               delay={350}
               duration={0.5}
               animateIn="fadeInRightBig"
@@ -101,6 +108,7 @@ class ProjectDisplayContainer extends Component {
             </ScrollAnimation>
 
             <ScrollAnimation
+              animateOnce
               delay={400}
               duration={0.5}
               animateIn="fadeInLeftBig"
@@ -114,6 +122,7 @@ class ProjectDisplayContainer extends Component {
             </ScrollAnimation>
 
             <ScrollAnimation
+              animateOnce
               delay={450}
               duration={0.5}
               animateIn="fadeInRightBig"
@@ -128,6 +137,7 @@ class ProjectDisplayContainer extends Component {
             </ScrollAnimation>
 
             <ScrollAnimation
+              animateOnce
               delay={500}
               duration={0.5}
               animateIn="fadeInLeftBig"
@@ -142,6 +152,7 @@ class ProjectDisplayContainer extends Component {
             </ScrollAnimation>
 
             <ScrollAnimation
+              animateOnce
               delay={550}
               duration={0.5}
               animateIn="fadeInRightBig"
