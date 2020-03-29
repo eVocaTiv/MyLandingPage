@@ -9,7 +9,6 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
-import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Badge from '@material-ui/core/Badge';
 import { withStyles } from '@material-ui/core/styles';
@@ -20,6 +19,11 @@ import {
   onProjectsClicked,
   onConnectClicked,
 } from '@utils/commonUtils';
+import styled from 'styled-components';
+
+const StyledButton = styled(Button)`
+  font-size: 0.5rem !important;
+`;
 
 const StyledBadge = withStyles((theme) => ({
   badge: {
@@ -68,48 +72,48 @@ function NavBar(props) {
         style={{ position: 'relative', right: 0, top: 0 }}
         className={classes.customizeToolbar}
       >
-        <Button
+        <StyledButton
           edge="start"
           className="menu-button"
           color="inherit"
           aria-label="menu"
         >
           <MenuIcon />
-        </Button>
-        <Typography variant="h6" className={classes.title}>
+        </StyledButton>
+        <Typography  className={classes.title}>
           <HomeSharpIcon className="home-button" onClick={onHomeClicked} />
         </Typography>
         {!isProjectPage && (
-          <Button
+          <StyledButton
             onClick={onVisionClicked}
             color="inherit"
             className="nav-button"
             endIcon={<VisibilityIcon />}
           >
             Vision
-          </Button>
+          </StyledButton>
         )}
         {!isProjectPage && (
-          <Button
+          <StyledButton
             onClick={onAboutMeClicked}
             color="inherit"
             className="nav-button"
             endIcon={<EmojiPeopleIcon />}
           >
             About me
-          </Button>
+          </StyledButton>
         )}
 
-        <Button
+        <StyledButton
           onClick={onProjectsClicked}
           color="inherit"
           className="nav-button"
           endIcon={<MenuBookIcon />}
         >
           {isProjectPage ? 'Back to showcase' : 'Showcase'}
-        </Button>
+        </StyledButton>
         {!isProjectPage && (
-          <Button
+          <StyledButton
             onClick={onConnectClicked}
             color="inherit"
             className="nav-button"
@@ -120,7 +124,7 @@ function NavBar(props) {
             }
           >
             Get In Touch!
-          </Button>
+          </StyledButton>
         )}
       </Toolbar>
     </AppBar>
