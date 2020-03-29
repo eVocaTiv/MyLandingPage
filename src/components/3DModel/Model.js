@@ -51,13 +51,13 @@ function Elf({ layer = DEFAULT_LAYER }) {
   return (
     <group ref={group}>
       <group rotation={[-1.5707963267948963, 0, 0]} position={[0, 2, 0]}>
-        <mesh material={material} layers={layer} castShcastadow>
+        <mesh material={material} layers={layer} receiveShadow castShadow>
           <bufferGeometry attach="geometry" {...gltf.__$[4].geometry} />
         </mesh>
-        <mesh material={material} layers={layer}>
+        <mesh material={material} layers={layer} receiveShadow castShadow>
           <bufferGeometry attach="geometry" {...gltf.__$[5].geometry} />
         </mesh>
-        <mesh material={material} layers={layer}>
+        <mesh material={material} layers={layer} receiveShadow castShadow>
           <bufferGeometry attach="geometry" {...gltf.__$[6].geometry} />
         </mesh>
       </group>
@@ -125,19 +125,22 @@ function Effects() {
 function Model() {
   return (
     <StyledCanvas
+      shadowMap
       style={{ background: '#171717' }}
-      camera={{ position: [0, 0, 10], fov: 70 }}
+      camera={{ position: [0, 0, 10], fov: 60 }}
       gl={{ antialias: false }}
       onCreated={({ gl }) => {
         gl.toneMapping = THREE.Uncharted2ToneMapping;
         gl.outputEncoding = THREE.sRGBEncoding;
       }}
     >
+      <ambientLight intensity={0.5} />
+      <pointLight position={[0, 60, -100]} intensity={20} />
       <pointLight position={[-50, 0, -50]} intensity={2} />
       <spotLight
         castShadow
-        intensity={4}
-        angle={2 / 10}
+        intensity={8}
+        angle={Math.PI / 10}
         position={[10, 10, 10]}
         shadow-mapSize-width={2048}
         shadow-mapSize-height={2048}
