@@ -127,7 +127,7 @@ function Model() {
     <StyledCanvas
       shadowMap
       style={{ background: '#171717' }}
-      camera={{ position: [0, 0, 10], fov: 60 }}
+      camera={{ position: [0, 0, 10], fov: 75 }}
       gl={{ antialias: false }}
       onCreated={({ gl }) => {
         gl.toneMapping = THREE.Uncharted2ToneMapping;
