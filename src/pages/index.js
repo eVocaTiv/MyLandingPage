@@ -4,6 +4,7 @@ import theme from '@colors/theme';
 import Model from '@components/3DModel/Model.js';
 import { NavBar } from '@components';
 import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -28,15 +29,17 @@ class LandingPage extends Component {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
-        <Model />
-        <ModelCreditsDiv>
-          <a
-            target="_blank"
-            href="https://sketchfab.com/3d-models/elven-ranger-statue-71aec2d9f7724ae09992435ce8ff7258"
-          >
-            Model credits: Eon
-          </a>
-        </ModelCreditsDiv>
+        <ScrollAnimation delay={1000} duration={3} animateOnce animateIn="fadeIn">
+          <Model />
+          <ModelCreditsDiv>
+            <a
+              target="_blank"
+              href="https://sketchfab.com/3d-models/elven-ranger-statue-71aec2d9f7724ae09992435ce8ff7258"
+            >
+              Model credits: Eon
+            </a>
+          </ModelCreditsDiv>
+        </ScrollAnimation>
       </ThemeProvider>
     );
   }

@@ -1,5 +1,3 @@
-// model by eon/sketchfab https://sketchfab.com/3d-models/elven-ranger-statue-71aec2d9f7724ae09992435ce8ff7258
-
 import * as THREE from 'three';
 import React, { Suspense, useEffect, useRef, useMemo } from 'react';
 import {
@@ -29,6 +27,10 @@ const StyledCanvas = styled(Canvas)`
 
 function Elf({ layer = DEFAULT_LAYER }) {
   const group = useRef();
+  // (data, path, onLoad, onError)
+  // scene and draco-gltf referenced from 'public' folder
+  // which is populated by these static assets from 'static' folder
+  // and other runtime assets.
   const gltf = useLoader(GLTFLoader, '/scene.glb', (loader) => {
     const dracoLoader = new DRACOLoader();
     dracoLoader.setDecoderPath('/draco-gltf/');
@@ -122,12 +124,25 @@ function Effects() {
   );
 }
 
+function DomCenter() {
+  return (
+    <mesh>
+      <boxBufferGeometry
+        position={[10, 10, 10]}
+        attach="geometry"
+        args={[1, 1, 1]}
+      />
+      <meshStandardMaterial attach="material" transparent opacity={0.5} />
+    </mesh>
+  );
+}
+
 function Model() {
   return (
     <StyledCanvas
       shadowMap
       style={{ background: '#171717' }}
-      camera={{ position: [0, 0, 10], fov: 75 }}
+      camera={{ position: [0, 0, 10], fov: 65 }}
       gl={{ antialias: false }}
       onCreated={({ gl }) => {
         gl.toneMapping = THREE.Uncharted2ToneMapping;
