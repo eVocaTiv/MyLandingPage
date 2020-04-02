@@ -9,7 +9,6 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
-import MenuIcon from '@material-ui/icons/Menu';
 import Badge from '@material-ui/core/Badge';
 import { withStyles } from '@material-ui/core/styles';
 import {
@@ -40,13 +39,6 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    flexGrow: 1,
-    'box-sizing': 'border-box',
-    color: 'rgba(255, 255, 255, 0.5)',
-    margin: '2rem 0 1rem 1.5rem',
-    padding: '0.5rem 1rem',
-  },
   customizeToolbar: {
     minHeight: 16,
     height: '15vh',
@@ -59,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 function NavBar(props) {
   const { isProjectPage } = props;
   const classes = useStyles();
-  
+
   return (
     <AppBar
       style={{
@@ -72,17 +64,22 @@ function NavBar(props) {
         style={{ position: 'relative', right: 0, top: 0 }}
         className={classes.customizeToolbar}
       >
-        <StyledButton
-          edge="start"
-          className="menu-button"
-          color="inherit"
-          aria-label="menu"
-        >
-          <MenuIcon />
-        </StyledButton>
-        <Typography  className={classes.title}>
-          <HomeSharpIcon className="home-button" onClick={onHomeClicked} />
+        {/* hack for left margin */}
+        <Typography className="home-button-left-container">
+          <StyledButton
+            onClick={onHomeClicked}
+            color="inherit"
+            className="nav-button"
+            endIcon={<HomeSharpIcon />}
+          ></StyledButton>
         </Typography>
+
+        <StyledButton
+          onClick={onHomeClicked}
+          color="inherit"
+          className="home-button-right-container nav-button"
+          endIcon={<HomeSharpIcon />}
+        ></StyledButton>
         {!isProjectPage && (
           <StyledButton
             onClick={onVisionClicked}
@@ -90,7 +87,7 @@ function NavBar(props) {
             className="nav-button"
             endIcon={<VisibilityIcon />}
           >
-            Vision
+            <div className="nav-text">Vision</div>
           </StyledButton>
         )}
         {!isProjectPage && (
@@ -100,7 +97,7 @@ function NavBar(props) {
             className="nav-button"
             endIcon={<EmojiPeopleIcon />}
           >
-            About me
+            <div className="nav-text">About me</div>
           </StyledButton>
         )}
 
@@ -110,7 +107,9 @@ function NavBar(props) {
           className="nav-button"
           endIcon={<MenuBookIcon />}
         >
-          {isProjectPage ? 'Back to showcase' : 'Showcase'}
+          <div className="nav-text">
+            {isProjectPage ? 'Back to showcase' : 'Showcase'}
+          </div>
         </StyledButton>
         {!isProjectPage && (
           <StyledButton
@@ -123,7 +122,7 @@ function NavBar(props) {
               </StyledBadge>
             }
           >
-            Get In Touch!
+            <div className="nav-text">Get In Touch!</div>
           </StyledButton>
         )}
       </Toolbar>
