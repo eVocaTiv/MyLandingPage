@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
-import { NewLandingContainer } from '@containers';
+import { ModelContainer } from '@containers';
 import '@styles/commonStyles.css';
 
-class LandingPage extends Component {
+class ModelEffect extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <NewLandingContainer />
+        <ModelContainer />
       </ThemeProvider>
     );
   }
 }
-
-export default LandingPage;
+export default ModelEffect;

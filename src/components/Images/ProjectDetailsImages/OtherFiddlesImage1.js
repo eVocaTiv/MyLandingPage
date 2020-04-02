@@ -27,7 +27,7 @@ const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "proj-my-website-1.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "proj-other-fiddles-1.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
@@ -53,14 +53,14 @@ const MultiBackground = ({ className }) => {
     >
       <StyledPaperText>
         <ScrollAnimation animateIn="zoomIn">
-          My Website!
+          My UI Fiddles!
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>
   );
 };
 
-const MyWebsiteImage1 = styled(MultiBackground)`
+const OtherFiddlesImage1 = styled(MultiBackground)`
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -71,4 +71,4 @@ const MyWebsiteImage1 = styled(MultiBackground)`
   background-attachment: fixed;
 `;
 
-export default MyWebsiteImage1;
+export default OtherFiddlesImage1;

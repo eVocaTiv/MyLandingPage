@@ -81,7 +81,7 @@ class ProjectDisplayContainer extends Component {
           <ProjectDisplayCardsDiv>
             <ScrollAnimation
               animateOnce
-              delay={300}
+              delay={600}
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
@@ -95,7 +95,7 @@ class ProjectDisplayContainer extends Component {
 
             <ScrollAnimation
               animateOnce
-              delay={350}
+              delay={650}
               duration={0.5}
               animateIn="fadeInRightBig"
             >
@@ -109,7 +109,7 @@ class ProjectDisplayContainer extends Component {
 
             <ScrollAnimation
               animateOnce
-              delay={400}
+              delay={700}
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
@@ -123,29 +123,28 @@ class ProjectDisplayContainer extends Component {
 
             <ScrollAnimation
               animateOnce
-              delay={450}
+              delay={750}
               duration={0.5}
               animateIn="fadeInRightBig"
             >
               <ProjectDisplayCard
-                projectURL={ventureUI}
-                projectTitle="Coming soon!"
-                // projectTitle="Other UI Fiddles"
-                isDisabled
+                projectURL={otherFiddles}
+                projectTitle="UI Fiddles"
               >
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
-{/* 
-            <ScrollAnimation
+
+            {/* <ScrollAnimation
               animateOnce
               delay={500}
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
               <ProjectDisplayCard
-                projectURL={zentors}
-                projectTitle="Zentors UX design"
+                projectURL={ventureUI}
+                projectTitle="Coming soon!"
+                // projectTitle="Other UI Fiddles"
                 isDisabled
               >
                 <OtherFiddlesImage />

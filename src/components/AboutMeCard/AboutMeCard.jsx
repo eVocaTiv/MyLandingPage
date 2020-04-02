@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   cardBody: {
     'font-family': 'Allan',
     'line-height': '1.75rem',
-    ' letter-spacing': ' 0.05rem',
+    'letter-spacing': ' 0.05rem',
     'font-size': '1.15rem',
     color: '#B7A9D9',
     display: 'flex',

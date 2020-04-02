@@ -18,7 +18,8 @@ const StyledPaperText = styled.div`
   padding: 0.5rem;
   background-color: transparent !important;
   position: absolute;
-  left: 36%;
+  left: 35%;
+  text-align: center;
   top: 35%;
   pointer-events: none;
   color: white;
@@ -73,7 +74,7 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
   const getDemoLinks = (demoURLs) => {
     if (!demoURLs) return null;
     return demoURLs.map((url, index) => (
-      <Tooltip title={toolTips[index]}>
+      <Tooltip key={url}title={toolTips[index]}>
         <a key={url} target="_blank" href={url}>
           <StyledTvIcon />
         </a>
@@ -97,7 +98,8 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
               <StyledGitHubIcon />
             </a>
           )}
-          {demoURLs && 'Demos: '}
+          {demoURLs && 'Demos '}
+          <br />
           {getDemoLinks(demoURLs)}
         </ScrollAnimation>
       </StyledPaperText>

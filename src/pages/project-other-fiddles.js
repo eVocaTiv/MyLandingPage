@@ -3,8 +3,8 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
 import '@styles/commonStyles.css';
 import { ProjectContainer } from '@containers';
-import IoTImage1 from '@components/Images/ProjectDetailsImages/IoTImage1';
-import IoTImage2 from '@components/Images/ProjectDetailsImages/IoTImage2';
+import OtherFiddlesImage1 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage1';
+import OtherFiddlesImage2 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 
 class Project extends Component {
@@ -12,16 +12,30 @@ class Project extends Component {
     return (
       <ThemeProvider theme={theme}>
         <ProjectContainer
-          TopImage={<IoTImage1 />}
-          BottomImage={<IoTImage2 />}
-          ProjectDescription="An interactive IoT vulnerability scanner for detecting vulnerabilities
-           in an enterprise network by scanning multiple communication protocols. 
-           The application scans through the given IP range, detects devices present on each
-           IP, logs the scanned data and presents a graphical report. I contributed as the UML prototyper &amp; UI developer."
+          TopImage={<OtherFiddlesImage1 />}
+          BottomImage={<OtherFiddlesImage2 />}
+          ProjectDescription="Some mesmerizing effects I made in my hobby time!! These are made using CSS, HTML, Javascript and misc. libraries."
           FooterImage={
-            <FooterImage />
+            <FooterImage
+              demoURLs={[
+                process.env.NODE_ENV === 'development'
+                  ? 'http://localhost:8000/model-effect'
+                  : 'https://www.kunaldewan.com/model-effect',
+                'https://evocativ.github.io/VentureUI',
+                'https://evocativ.github.io/SteeringEffectXclam',
+                'https://evocativ.github.io/RockPaperScissorCSS',
+                'https://evocativ.github.io/PureCSS_Nav',
+              ]}
+              toolTips={[
+                'A 3-D model effect using GLTFJSX! \ [ caution: GPU heavy ]',
+                'A split page effect!',
+                'A text effect using p5js library!',
+                'Rock-Paper-Scissors game!',
+                'A simple navbar with drop down using only pure CSS!',
+              ]}
+            />
           }
-          isMoreSpaced={"medium"}
+          isMoreSpaced={'xLarge'}
         />
       </ThemeProvider>
     );

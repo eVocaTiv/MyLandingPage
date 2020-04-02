@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import RingLoader from 'react-spinners/RingLoader';
+import ScaleLoader from 'react-spinners/ScaleLoader';
 
 const override = css`
   display: block;
@@ -11,7 +11,7 @@ class LoadingSpinner extends React.Component {
   render() {
     return (
       <div className="sweet-loading">
-        <RingLoader css={override} size={150} color={'#00C2CB'} loading />
+        <ScaleLoader css={override} size={500} color={'#00C2CB'} loading />
       </div>
     );
   }
