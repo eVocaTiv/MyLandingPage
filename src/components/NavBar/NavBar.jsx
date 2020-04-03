@@ -22,6 +22,9 @@ import styled from 'styled-components';
 
 const StyledButton = styled(Button)`
   font-size: 0.5rem !important;
+  & * svg {
+    font-size: 1.25rem !important;
+  }
 `;
 
 const StyledBadge = withStyles((theme) => ({

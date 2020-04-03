@@ -90,7 +90,6 @@ due to bugs in gatsby. */
   transition: box-shadow 0.2s ease !important;
   transition: transform 0.5s ease !important;
   padding: 0.5rem 1rem !important;
-  font-size: 0.75rem !important;
   font-weight: bold !important;
   margin: 1.5rem 0 1rem 0.25rem !important;
 }
@@ -136,7 +135,6 @@ due to bugs in gatsby. */
   margin: 2rem 0 1rem 1.5rem;
   padding: 0.5rem 1rem;
   transition: transform 0.5s ease !important;
-  font-size: 1.75rem !important;
 }
 
 .home-button-left-container * svg {
@@ -160,6 +158,7 @@ due to bugs in gatsby. */
   }
   .nav-button * svg {
     opacity: 1 !important;
+    font-size: 1.25rem !important;
   }
 }
 
