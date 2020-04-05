@@ -5,6 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
 import { onAboutMeClicked } from '@utils/commonUtils';
+import 'animate.css/animate.min.css';
 
 const StyledVisionBGImage = styled(VisionBGImage)`
   clip-path: polygon(0 25vh, 100% 0, 100% 75vh, 0 100%);
