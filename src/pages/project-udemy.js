@@ -6,7 +6,6 @@ import UdemyImage1 from '@components/Images/ProjectDetailsImages/UdemyImage1';
 import UdemyImage2 from '@components/Images/ProjectDetailsImages/UdemyImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
 
 
 class Project extends Component {

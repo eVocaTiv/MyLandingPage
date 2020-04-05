@@ -6,7 +6,6 @@ import OtherFiddlesImage1 from '@components/Images/ProjectDetailsImages/OtherFid
 import OtherFiddlesImage2 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
 
 
 class Project extends Component {

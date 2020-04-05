@@ -6,9 +6,6 @@ import IoTImage1 from '@components/Images/ProjectDetailsImages/IoTImage1';
 import IoTImage2 from '@components/Images/ProjectDetailsImages/IoTImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
-
-
 
 class Project extends Component {
   render() {

@@ -5,7 +5,6 @@ import {
   ProjectDisplayContainer,
 } from '@containers';
 import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
 
 class Projects extends Component {
   render() {

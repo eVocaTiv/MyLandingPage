@@ -6,7 +6,6 @@ import MyWebsiteImage1 from '@components/Images/ProjectDetailsImages/MyWebsiteIm
 import MyWebsiteImage2 from '@components/Images/ProjectDetailsImages/MyWebsiteImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
 
 class Project extends Component {
   render() {
