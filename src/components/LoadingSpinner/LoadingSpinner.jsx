@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 
 const override = css`
-  display: block;
+  display: none;
   margin: 0 auto;
 `;
 

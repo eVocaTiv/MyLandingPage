@@ -27,6 +27,10 @@ const StyledButton = styled(Button)`
   }
 `;
 
+const EmptyDiv = styled.div`
+  display: none;
+`;
+
 const StyledBadge = withStyles((theme) => ({
   badge: {
     right: 40,
@@ -74,7 +78,7 @@ function NavBar(props) {
             color="inherit"
             className="nav-button"
             endIcon={<HomeSharpIcon />}
-          ></StyledButton>
+          ><EmptyDiv /></StyledButton>
         </Typography>
 
         <StyledButton
@@ -82,7 +86,7 @@ function NavBar(props) {
           color="inherit"
           className="home-button-right-container nav-button"
           endIcon={<HomeSharpIcon />}
-        ></StyledButton>
+        ><EmptyDiv /></StyledButton>
         {!isProjectPage && (
           <StyledButton
             onClick={onVisionClicked}
