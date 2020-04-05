@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
-import '@styles/commonStyles.css';
 import { ProjectContainer } from '@containers';
 import OtherFiddlesImage1 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage1';
 import OtherFiddlesImage2 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
+import '@styles/commonStyles.css';
+import 'animate.css/animate.min.css';
+
 
 class Project extends Component {
   render() {

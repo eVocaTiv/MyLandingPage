@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { ProjectDisplayCard } from '@components';
-import 'animate.css/animate.min.css';
 import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
 import { onConnectClicked } from '@utils/commonUtils';

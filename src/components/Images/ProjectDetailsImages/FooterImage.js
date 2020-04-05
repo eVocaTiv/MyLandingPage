@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
 import ScrollAnimation from 'react-animate-on-scroll';
-import 'animate.css/animate.min.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LiveTvIcon from '@material-ui/icons/LiveTv';
 import Tooltip from '@material-ui/core/Tooltip';

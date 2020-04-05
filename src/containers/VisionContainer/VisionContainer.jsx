@@ -5,7 +5,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
 import { onAboutMeClicked } from '@utils/commonUtils';
-import 'animate.css/animate.min.css';
 
 const StyledVisionBGImage = styled(VisionBGImage)`
   clip-path: polygon(0 25vh, 100% 0, 100% 75vh, 0 100%);
@@ -37,7 +36,7 @@ class VisionContainer extends Component {
         </NavBarContainer>
         <StyledVisionBGImage />
         <ArrowDiv className="arrow-div">
-          <ScrollAnimation delay={3000}animateIn="fadeIn">
+          <ScrollAnimation delay={3000} animateIn="fadeIn">
             <StyledArrow onClick={onAboutMeClicked} />
           </ScrollAnimation>
         </ArrowDiv>

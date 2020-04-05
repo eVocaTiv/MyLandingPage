@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CardImage from '@components/Images/CardImage';
 import ScrollAnimation from 'react-animate-on-scroll';
-import '@styles/cardStyles.css';
 
 class Card extends Component {
   render() {

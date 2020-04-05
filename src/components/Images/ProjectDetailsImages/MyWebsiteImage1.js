@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
 import ScrollAnimation from 'react-animate-on-scroll';
-import 'animate.css/animate.min.css';
 
 const StyledPaperText = styled.div`
   // override default transition in card's child.

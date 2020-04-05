@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
-import '@styles/commonStyles.css';
 import { ProjectContainer } from '@containers';
 import MyWebsiteImage1 from '@components/Images/ProjectDetailsImages/MyWebsiteImage1';
 import MyWebsiteImage2 from '@components/Images/ProjectDetailsImages/MyWebsiteImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
+import '@styles/commonStyles.css';
+import 'animate.css/animate.min.css';
 
 class Project extends Component {
   render() {
