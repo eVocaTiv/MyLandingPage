@@ -61,21 +61,6 @@ html, body {
   border-radius: 100px;
 }
 
-.zelda-sword-image-container img {
-  height: auto !important;
-  width: auto !important;
-  transition: all 0.5s ease-in-out !important;
-}
-
-.zelda-sword-image-container:hover img {
-  transform: rotate(45deg) scale(0.6) translateY(-1rem);
-  cursor: pointer;
-}
-
-.zelda-sword-image-container {
-  transition: all 0.5s ease-in-out;
-}
-
 /* overrrides for material UI components.
 due to bugs in gatsby. */
 
