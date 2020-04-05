@@ -1,3 +1,3 @@
-import Constants from './constants';
+import Constants from './Constants';
 
 export default Constants;
