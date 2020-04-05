@@ -4,6 +4,7 @@ import { NavBar } from '@components';
 import Card from '@material-ui/core/Card';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
+import '@styles/commonStyles.css';
 
 const ProjectContainerDiv = styled.div`
   background-color: #407c80;

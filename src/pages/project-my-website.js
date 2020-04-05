@@ -5,7 +5,6 @@ import { ProjectContainer } from '@containers';
 import MyWebsiteImage1 from '@components/Images/ProjectDetailsImages/MyWebsiteImage1';
 import MyWebsiteImage2 from '@components/Images/ProjectDetailsImages/MyWebsiteImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
-import '@styles/commonStyles.css';
 
 class Project extends Component {
   render() {

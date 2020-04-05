@@ -4,9 +4,6 @@ import theme from '@colors/theme';
 import {
   VisionContainer,
 } from '@containers';
-import '@styles/cardStyles.css';
-import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
 
 class Vision extends Component {
   render() {

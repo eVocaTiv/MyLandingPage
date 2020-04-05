@@ -4,8 +4,6 @@ import theme from '@colors/theme';
 import {
   AboutMeContainer,
 } from '@containers';
-import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
 
 class AboutMe extends Component {
   render() {

@@ -5,8 +5,6 @@ import { ProjectContainer } from '@containers';
 import OtherFiddlesImage1 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage1';
 import OtherFiddlesImage2 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
-import '@styles/commonStyles.css';
-
 
 class Project extends Component {
   render() {

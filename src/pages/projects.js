@@ -4,7 +4,6 @@ import theme from '@colors/theme';
 import {
   ProjectDisplayContainer,
 } from '@containers';
-import '@styles/commonStyles.css';
 
 class Projects extends Component {
   render() {

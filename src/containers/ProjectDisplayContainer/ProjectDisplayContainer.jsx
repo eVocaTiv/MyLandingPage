@@ -12,6 +12,7 @@ import OtherFiddlesImage from '@components/Images/ProjectImages/OtherFiddlesImag
 import UdemyImage from '@components/Images/ProjectImages/UdemyImage';
 import ZentorsUIImage from '@components/Images/ProjectImages/ZentorsUIImage';
 import Constants from '@constants';
+import '@styles/commonStyles.css';
 
 const NavBarContainer = styled.div`
   width: 100%;

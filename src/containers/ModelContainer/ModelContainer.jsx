@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Model from '@components/3DModel/Model.js';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
+import '@styles/commonStyles.css';
 
 const ModelCreditsDiv = styled.div`
   position: absolute;

@@ -4,8 +4,6 @@ import theme from '@colors/theme';
 import { FooterContainer } from '@containers';
 import ParallaxWrapper from '@src/appContent/ParallaxWrapper';
 import ScrollAnimation from 'react-animate-on-scroll';
-import '@styles/commonStyles.css';
-import 'animate.css/animate.min.css';
 
 class Footer extends Component {
   render() {
