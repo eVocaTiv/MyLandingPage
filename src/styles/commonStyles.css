@@ -49,10 +49,6 @@ html, body {
   transition: filter 0.5s ease;
 }
 
-/* #vision-bg-image:hover::before {
-  filter: blur(5px);
-} */
-
 .arrow-div * svg {
   font-size: 4rem;
   padding: 0;

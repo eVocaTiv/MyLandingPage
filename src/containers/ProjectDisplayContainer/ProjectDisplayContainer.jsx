@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
-import Constants from '@constants';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { ProjectDisplayCard } from '@components';
 import 'animate.css/animate.min.css';

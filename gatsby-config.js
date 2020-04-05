@@ -1,27 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Kunal Dewan`,
-    description: `Kunal Dewan's Landing Page`,
+    description: `Kunal Dewan's Website`,
     author: `Kunal Dewan`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-emotion`,
-    {
-      resolve: `gatsby-plugin-scroll-indicator`,
-      options: {
-        // Configure color of the scroll indicator
-        color: 'linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(128,57,102,1) 25%, rgba(137,90,243,1) 56%, rgba(0,194,203,1) 81%)',
-        // Height of the scroll indicator
-        height: '10px',
-        // Configure paths where the scroll indicator will appear
-        paths: ['/', '/blog/**'],
-        // Configure the z-index of the indicator element
-        zIndex: `9999`,
-      },
-    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -31,7 +16,6 @@ module.exports = {
           '@appContent': 'src/appContent',
           '@components': 'src/components',
           '@containers': 'src/containers',
-          '@constants': 'src/constants',
           '@layouts': 'src/layouts',
           '@pages': 'src/pages',
           '@sass': 'src/sass',
@@ -72,8 +56,5 @@ module.exports = {
         icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
-import Constants from '@constants';
 import 'animate.css/animate.min.css';
 import { NavBar } from '@components';
 import Card from '@material-ui/core/Card';
