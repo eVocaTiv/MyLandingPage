@@ -16,6 +16,7 @@ module.exports = {
           '@appContent': 'src/appContent',
           '@components': 'src/components',
           '@containers': 'src/containers',
+          '@constants': 'src/constants',
           '@layouts': 'src/layouts',
           '@pages': 'src/pages',
           '@sass': 'src/sass',

@@ -9,7 +9,6 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import Tooltip from '@material-ui/core/Tooltip';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { NavBar } from '@components';
-import 'animate.css/animate.min.css';
 
 const NavBarContainer = styled.div`
   width: 100%;

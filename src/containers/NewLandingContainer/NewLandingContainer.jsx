@@ -10,7 +10,7 @@ const fullScreenDiv = styled.div`
 class NewLandingContainer extends Component {
   render() {
     return (
-      <NewLandingContainerBGImage />
+        <NewLandingContainerBGImage />
     );
   }
 }

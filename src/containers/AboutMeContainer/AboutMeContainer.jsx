@@ -20,7 +20,7 @@ const StyledAboutMeDiv = styled.div`
 
 const ArrowDiv = styled.div`
   position: absolute;
-  left: 75%;
+  left: 47.5%;
   top: 75%;
 `;
 

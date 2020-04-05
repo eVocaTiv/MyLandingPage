@@ -12,6 +12,7 @@ import LandingPageImage from '@components/Images/ProjectImages/LandingPageImage'
 import OtherFiddlesImage from '@components/Images/ProjectImages/OtherFiddlesImage';
 import UdemyImage from '@components/Images/ProjectImages/UdemyImage';
 import ZentorsUIImage from '@components/Images/ProjectImages/ZentorsUIImage';
+import Constants from '@constants';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -66,6 +67,7 @@ class ProjectDisplayContainer extends Component {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
+        <ScrollAnimation duration={1.5} animateIn="zoomIn">
         <StyledProjectsDiv>
           <StyledFooterText>
             <ScrollAnimation
@@ -171,6 +173,7 @@ class ProjectDisplayContainer extends Component {
             </ScrollAnimation>
           </ArrowDiv>
         </StyledProjectsDiv>
+        </ScrollAnimation>
       </Fragment>
     );
   }
