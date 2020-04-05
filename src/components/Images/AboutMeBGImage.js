@@ -31,7 +31,6 @@ const MultiBackground = ({ className }) => {
       className={className}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan About Me Background"
-      loading="eager"
     >
       <AboutMeCard />
     </BackgroundImage>
