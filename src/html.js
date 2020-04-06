@@ -41,7 +41,6 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
-          style={{ opacity: 0 }}
         />
         {props.postBodyComponents}
       </body>
