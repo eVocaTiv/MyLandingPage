@@ -22,6 +22,7 @@ export default function HTML(props) {
           margin: 0,
           padding: 0,
           overflowX: 'hidden',
+          maxHeight: '100vh',
         }}
       >
         {props.preBodyComponents}
