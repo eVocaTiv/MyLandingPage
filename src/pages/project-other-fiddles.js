@@ -13,7 +13,7 @@ class Project extends Component {
         <ProjectContainer
           TopImage={<OtherFiddlesImage1 />}
           BottomImage={<OtherFiddlesImage2 />}
-          ProjectDescription="Some mesmerizing effects I made in my hobby time!! These are made using CSS, HTML, Javascript and misc. libraries."
+          ProjectDescription="Some mesmerizing effects I made in my personal time!! These are made using CSS, HTML, Javascript and misc. libraries. Feel free to connect to me if you want to work on any idea!"
           FooterImage={
             <FooterImage
               demoURLs={[

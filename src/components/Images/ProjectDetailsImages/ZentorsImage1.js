@@ -26,7 +26,7 @@ const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "proj-my-website-1.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "proj-zentors-1.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
@@ -40,7 +40,7 @@ const MultiBackground = ({ className }) => {
   // The lowermost image comes last!
   const backgroundFluidImageStack = [
     seamlessBackground.childImageSharp.fluid,
-    'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(20,43,89,1) 40%, rgba(0,0,0,0.5) 100%)',
+    'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(20,43,89,1) 10%, rgba(0,0,0,0.5) 100%)',
   ].reverse();
 
   return (
@@ -52,14 +52,14 @@ const MultiBackground = ({ className }) => {
     >
       <StyledPaperText>
         <ScrollAnimation animateIn="zoomIn">
-          My Website!
+          Zentors Website Redesign!
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>
   );
 };
 
-const MyWebsiteImage1 = styled(MultiBackground)`
+const ZentorsImage1 = styled(MultiBackground)`
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -70,4 +70,4 @@ const MyWebsiteImage1 = styled(MultiBackground)`
   background-attachment: fixed;
 `;
 
-export default MyWebsiteImage1;
+export default ZentorsImage1;

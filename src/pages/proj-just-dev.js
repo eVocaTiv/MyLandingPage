@@ -13,14 +13,13 @@ class Project extends Component {
         <ProjectContainer
           TopImage={<IoTImage1 />}
           BottomImage={<IoTImage2 />}
-          ProjectDescription="An interactive IoT vulnerability scanner for detecting vulnerabilities
-           in an enterprise network by scanning multiple communication protocols. 
-           The application scans through the given IP range, detects devices present on each
-           IP, logs the scanned data and presents a graphical report. I contributed as the UML prototyper &amp; UI developer."
+          isMoreSpaced={'medium'}
+          ProjectDescription="The master code collection of my programming efforts.
+          This includes all the algorithms, contests, design-patterns and other personal
+           small snippets coded in Java. "
           FooterImage={
-            <FooterImage githubURL="https://github.com/eVocaTiv/IoTVulnerabilityScanner-1" />
+            <FooterImage githubURL="https://github.com/eVocaTiv/JustDev" />
           }
-          isMoreSpaced={"large"}
         />
       </ThemeProvider>
     );

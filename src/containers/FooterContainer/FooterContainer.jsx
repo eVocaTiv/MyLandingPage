@@ -46,7 +46,7 @@ const StyledFooterDiv = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  background-color: #4c4659;
+  background-color: #4C4659;
   clip-path: polygon(0 0, 100% 0, 0 100%, 75vh 100%);
 `;
 
@@ -135,7 +135,7 @@ class FooterContainer extends Component {
           <NavBar />
         </NavBarContainer>
 
-        <CopyRightDiv>© 2020 Kunal Dewan</CopyRightDiv>
+        <CopyRightDiv className="copyright">© 2020 Kunal Dewan</CopyRightDiv>
 
         <StyledFooterDiv>
           <StyledFooterText>

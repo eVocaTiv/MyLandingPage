@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '@colors/theme';
 import { ProjectContainer } from '@containers';
-import IoTImage1 from '@components/Images/ProjectDetailsImages/IoTImage1';
-import IoTImage2 from '@components/Images/ProjectDetailsImages/IoTImage2';
+import ZentorsImage1 from '@components/Images/ProjectDetailsImages/ZentorsImage1';
+import ZentorsImage2 from '@components/Images/ProjectDetailsImages/ZentorsImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 
 class Project extends Component {
@@ -11,13 +11,11 @@ class Project extends Component {
     return (
       <ThemeProvider theme={theme}>
         <ProjectContainer
-          TopImage={<IoTImage1 />}
-          BottomImage={<IoTImage2 />}
-          isMoreSpaced={'medium'}
-          ProjectDescription="An interactive IoT vulnerability scanner for detecting vulnerabilities
-           in an enterprise network by scanning multiple communication protocols. 
-           The application scans through the given IP range, detects devices present on each
-           IP, logs the scanned data and presents a graphical report. I contributed as the UML prototyper &amp; UI developer."
+          TopImage={<ZentorsImage1 />}
+          BottomImage={<ZentorsImage2 />}
+          isMoreSpaced={'large'}
+          ProjectDescription="Zentors is a college student mentoring startup founded by 3 students of Stanford University, California. I worked as a UI Developer &amp; 
+          UX Designer to make prototypes for their new application and provide technical guidance on the software architecture to the business leads."
           FooterImage={
             <FooterImage githubURL="https://github.com/eVocaTiv/ZentorsUI" />
           }

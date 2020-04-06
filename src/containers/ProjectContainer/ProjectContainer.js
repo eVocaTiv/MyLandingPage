@@ -38,7 +38,7 @@ const StyledPaper = styled(Card)`
       ? '15%'
       : '10%'};
   line-height: 3rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   box-shadow: none !important;
   pointer-events: none;
@@ -66,7 +66,7 @@ export default class ProjectContainer extends Component {
           <NavBar isProjectPage />
         </NavBarContainer>
         <ScrollAnimation duration={3} animateIn="fadeIn">{TopImage}</ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation delay={500} animateIn="fadeIn">
           <StyledProjectDescriptionDiv>
             <StyledPaper isMoreSpaced={isMoreSpaced}>
               {ProjectDescription}

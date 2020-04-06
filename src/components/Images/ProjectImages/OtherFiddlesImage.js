@@ -19,7 +19,7 @@ const CardImage = () => {
 
   return (
     <Img
-      id="venture-ui-image"
+      id="other-fiddles-image"
       // inline style for image wrapper div.
       style={{
         height: '100%',

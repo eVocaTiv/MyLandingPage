@@ -6,7 +6,7 @@ import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
 import { onConnectClicked } from '@utils/commonUtils';
 import IoTImage from '@components/Images/ProjectImages/IoTImage';
-import VentureUIImage from '@components/Images/ProjectImages/VentureUIImage';
+import JustDevImage from '@components/Images/ProjectImages/JustDevImage';
 import LandingPageImage from '@components/Images/ProjectImages/LandingPageImage';
 import OtherFiddlesImage from '@components/Images/ProjectImages/OtherFiddlesImage';
 import UdemyImage from '@components/Images/ProjectImages/UdemyImage';
@@ -29,10 +29,10 @@ const StyledFooterText = styled.div`
 
 const StyledProjectsDiv = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 175vh;
   position: relative;
   z-index: 1;
-  background-color: #4c4659;
+  background-color: black;
 `;
 
 const ProjectDisplayCardsDiv = styled.div`
@@ -48,7 +48,7 @@ const ProjectDisplayCardsDiv = styled.div`
 const ArrowDiv = styled.div`
   position: absolute;
   left: 47%;
-  top: 77.5%;
+  top: 85%;
 `;
 
 class ProjectDisplayContainer extends Component {
@@ -58,7 +58,7 @@ class ProjectDisplayContainer extends Component {
       myWebsite,
       otherFiddles,
       udemy,
-      ventureUI,
+      justDev,
       zentors,
     } = Constants.projects;
 
@@ -110,7 +110,7 @@ class ProjectDisplayContainer extends Component {
 
             <ScrollAnimation
               animateOnce
-              delay={700}
+              delay={250}
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
@@ -124,7 +124,7 @@ class ProjectDisplayContainer extends Component {
 
             <ScrollAnimation
               animateOnce
-              delay={750}
+              delay={350}
               duration={0.5}
               animateIn="fadeInRightBig"
             >
@@ -136,25 +136,22 @@ class ProjectDisplayContainer extends Component {
               </ProjectDisplayCard>
             </ScrollAnimation>
 
-            {/* <ScrollAnimation
+            <ScrollAnimation
               animateOnce
-              delay={500}
+              delay={400}
               duration={0.5}
               animateIn="fadeInLeftBig"
             >
               <ProjectDisplayCard
-                projectURL={ventureUI}
-                projectTitle="Coming soon!"
-                // projectTitle="Other UI Fiddles"
-                isDisabled
+                projectURL={zentors}
+                projectTitle="Zentors Website Redesign!"
               >
-                <OtherFiddlesImage />
+                <ZentorsUIImage />
               </ProjectDisplayCard>
             </ScrollAnimation>
 
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateOnce
-              delay={550}
               duration={0.5}
               animateIn="fadeInRightBig"
             >
@@ -166,9 +163,10 @@ class ProjectDisplayContainer extends Component {
                 <OtherFiddlesImage />
               </ProjectDisplayCard>
             </ScrollAnimation> */}
+
           </ProjectDisplayCardsDiv>
           <ArrowDiv className="arrow-div">
-            <ScrollAnimation delay={600} animateOnce animateIn="zoomIn">
+            <ScrollAnimation animateOnce animateIn="zoomIn">
               <StyledArrow onClick={onConnectClicked} />
             </ScrollAnimation>
           </ArrowDiv>

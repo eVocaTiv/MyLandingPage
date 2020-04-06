@@ -58,7 +58,7 @@ const MultiBackground = ({ className }) => {
   );
 };
 
-const MyWebsiteImage1 = styled(MultiBackground)`
+const UdemyImage2 = styled(MultiBackground)`
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -69,4 +69,4 @@ const MyWebsiteImage1 = styled(MultiBackground)`
   background-attachment: fixed;
 `;
 
-export default MyWebsiteImage1;
+export default UdemyImage2;

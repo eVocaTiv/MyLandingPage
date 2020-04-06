@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 const CardImage = () => {
   const { cardImage } = useStaticQuery(graphql`
     query {
-      cardImage: file(relativePath: { eq: "zentors-ui.jpg" }) {
+      cardImage: file(relativePath: { eq: "proj-zentors.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -19,7 +19,7 @@ const CardImage = () => {
 
   return (
     <Img
-      id="venture-ui-image"
+      id="zentors-ui-image"
       // inline style for image wrapper div.
       style={{
         height: '100%',
@@ -27,7 +27,6 @@ const CardImage = () => {
       }}
       imgStyle={{ 
         objectPosition: 'center',
-        objectFit: 'fill',
       }}
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan Zentors UI website mockups fiddles"

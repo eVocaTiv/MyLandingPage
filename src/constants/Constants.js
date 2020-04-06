@@ -4,7 +4,7 @@ const Constants = {
     myWebsite: 'project-my-website',
     otherFiddles: 'project-other-fiddles',
     udemy: 'project-udemy',
-    ventureUI: 'project-venture-ui',
+    justDev: 'project-just-dev',
     zentors: 'project-zentors',
   },
 };
