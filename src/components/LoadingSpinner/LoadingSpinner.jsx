@@ -11,7 +11,7 @@ class LoadingSpinner extends React.Component {
   render() {
     return (
       <div className="sweet-loading">
-        <ScaleLoader css={override} size={500} color={'#00C2CB'} loading />
+        <ScaleLoader css={override} size={150} color={'#00C2CB'} loading />
       </div>
     );
   }
