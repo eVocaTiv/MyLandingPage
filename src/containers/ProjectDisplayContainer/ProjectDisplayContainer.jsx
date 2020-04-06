@@ -160,7 +160,6 @@ class ProjectDisplayContainer extends Component {
                 <ProjectDisplayCard
                   projectURL={amazon}
                   projectTitle="Amazon Work Ex."
-                  isDisabled
                 >
                   <AmazonImage />
                 </ProjectDisplayCard>
@@ -187,7 +186,7 @@ class ProjectDisplayContainer extends Component {
               >
                 <ProjectDisplayCard
                   projectURL={javaCodes}
-                  projectTitle="Java Code Catalog"
+                  projectTitle="Code Catalog"
                 >
                   <JavaCodesImage />
                 </ProjectDisplayCard>

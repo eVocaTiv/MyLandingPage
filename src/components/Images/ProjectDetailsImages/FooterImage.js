@@ -98,6 +98,9 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
             </a>
           )}
           {demoURLs && 'Demos '}
+          {!demoURLs && !githubURL && (
+            ' =] '
+          )}
           <br />
           {getDemoLinks(demoURLs)}
         </ScrollAnimation>

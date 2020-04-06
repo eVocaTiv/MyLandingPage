@@ -31,10 +31,14 @@ const StyledPaper = styled(Paper)`
 
 const useStylesBootstrap = makeStyles((theme) => ({
   arrow: {
-    color: theme.palette.common.black,
+    color: '#00C2CB',
   },
   tooltip: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: '#00C2CB',
+    color: 'black',
+    'font-family': 'Allan',
+    'letter-spacing': '0.1rem',
+    'font-size': '0.75rem',
   },
 }));
 

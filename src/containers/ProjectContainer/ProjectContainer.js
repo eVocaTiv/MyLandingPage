@@ -23,12 +23,12 @@ const StyledPaper = styled(Card)`
   // override default transition in card's child.
   cursor: pointer;
   min-width: 200px !important;
-  width: 60% !important;
+  width: 80% !important;
   height: 80%;
   padding: 0.5rem;
   background-color: transparent !important;
   position: absolute;
-  left: 20%;
+  left: 10%;
   top: ${(props) =>
     props.isMoreSpaced === 'xLarge'
       ? '35%'
@@ -36,7 +36,9 @@ const StyledPaper = styled(Card)`
       ? '25%'
       : props.isMoreSpaced === 'medium'
       ? '15%'
-      : '10%'};
+      : props.isMoreSpaced === 'small'
+      ? '10%'
+      : '5%'};
   line-height: 3rem;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -66,7 +68,7 @@ export default class ProjectContainer extends Component {
           <NavBar isProjectPage />
         </NavBarContainer>
         <ScrollAnimation duration={3} animateIn="fadeIn">{TopImage}</ScrollAnimation>
-        <ScrollAnimation delay={500} animateIn="fadeIn">
+        <ScrollAnimation delay={250} animateIn="zoomIn">
           <StyledProjectDescriptionDiv>
             <StyledPaper isMoreSpaced={isMoreSpaced}>
               {ProjectDescription}

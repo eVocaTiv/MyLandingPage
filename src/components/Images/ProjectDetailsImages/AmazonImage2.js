@@ -8,18 +8,19 @@ const StyledPaperText = styled.div`
   // override default transition in card's child.
   cursor: pointer;
   min-width: 200px !important;
-  width: 50% !important;
+  width: 80% !important;
   box-sizing: border-box;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
+  line-height: 3rem;
   background-color: transparent !important;
   position: absolute;
-  left: 27.5%;
-  top: 40%;
+  left: 15%;
+  top: 25%;
   pointer-events: none;
   color: white;
   width: 100%;
-  font-family: 'Julius Sans One';
+  font-family: 'Allan';
 `;
 
 const MultiBackground = ({ className }) => {
@@ -52,6 +53,12 @@ const MultiBackground = ({ className }) => {
     >
       <StyledPaperText>
         <ScrollAnimation animateIn="zoomIn">
+          Being the 1st ever Front-End Engineer hire at Amazon India straight
+          out of college was a big thing for me! I currently work in the same
+          team building sophisticated dashboards and reusable components. The
+          tech. stack includes vanilla JavaScript, HTML, CSS, React, Java and
+          JSPs. The work is highly confidential &amp; obviously can't be revealed :P. 
+           If you are interested to know more about me, feel free to get in touch!
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>

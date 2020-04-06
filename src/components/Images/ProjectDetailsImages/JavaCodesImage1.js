@@ -48,12 +48,10 @@ const MultiBackground = ({ className }) => {
       Tag={`section`}
       className={className}
       fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan Java Code Catalog"
+      alt="Kunal Dewan Code Catalog"
     >
       <StyledPaperText>
-        <ScrollAnimation animateIn="zoomIn">
-          Java Code Catalog
-        </ScrollAnimation>
+        <ScrollAnimation animateIn="zoomIn">Code Catalog</ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>
   );

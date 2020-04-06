@@ -6,17 +6,21 @@ class NewLandingGlass extends Component {
     return (
       <div>
         <div className="blurred-box">
-        <ScrollAnimation delay={500} animateIn="fadeInRight">
-          <ScrollAnimation initiallyVisible={true} delay={2000} animateIn="fadeOutLeft">
-            <div className="text-immersion">Immersion</div>
+          <ScrollAnimation delay={500} animateIn="fadeInRight">
+            <ScrollAnimation
+              initiallyVisible={true}
+              delay={2000}
+              animateIn="fadeOutLeft"
+            >
+              <div className="text-immersion">Immersion</div>
+            </ScrollAnimation>
           </ScrollAnimation>
-          </ScrollAnimation>
-          <ScrollAnimation delay={2250} animateIn="fadeIn">
-            <div className="box">
-              <span className="icon"></span>
+          <div className="box">
+            <span className="icon"></span>
+            <ScrollAnimation delay={2250} animateIn="flip">
               <div className="name">Kunal Dewan</div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
         </div>
       </div>
     );
