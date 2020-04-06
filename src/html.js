@@ -15,7 +15,14 @@ export default function HTML(props) {
         <title>Kunal Dewan</title>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body
+        {...props.bodyAttributes}
+        style={{
+          margin: 0,
+          padding: 0,
+          overflowX: 'hidden',
+        }}
+      >
         {props.preBodyComponents}
         <div
           key={`loader`}
@@ -33,8 +40,6 @@ export default function HTML(props) {
             zIndex: 1,
             height: '100vh',
             width: '100vw',
-            overflowY: 'hidden',
-            overflowX: 'hidden',
           }}
         >
           <LoadingSpinner />
@@ -43,6 +48,11 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
+          style={{
+            width: '100vw',
+            opacity: 0,
+            overflow: 'hidden',
+          }}
         />
         {props.postBodyComponents}
       </body>
