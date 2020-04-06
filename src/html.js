@@ -16,6 +16,7 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body
+        id="___body"
         {...props.bodyAttributes}
         style={{
           margin: 0,
@@ -50,7 +51,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
           style={{
             width: '100vw',
-            opacity: 0,
             overflow: 'hidden',
           }}
         />

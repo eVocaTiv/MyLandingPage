@@ -13,7 +13,6 @@ const processNavigation = (currentSection, URL) => {
   if (URL === '/') {
     // if not at home already.
     if (currentSection.indexOf(homeString) === -1) {
-      console.log('URL', URL);
       document.getElementById('___gatsby').style.opacity = 0;
       document.getElementById('___loader').style.display = 'flex';
       navigate('/');
