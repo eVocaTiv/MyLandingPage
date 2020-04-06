@@ -33,6 +33,8 @@ export default function HTML(props) {
             zIndex: 1,
             height: '100vh',
             width: '100vw',
+            overflowY: 'hidden',
+            overflowX: 'hidden',
           }}
         >
           <LoadingSpinner />
