@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { LoadingSpinner } from '@components';
+import { LoadingSpinner } from '@components';
 
 export default function HTML(props) {
   return (
@@ -44,7 +44,7 @@ export default function HTML(props) {
             width: '100vw',
           }}
         >
-          Loading...
+          <LoadingSpinner />
         </div>
         <div
           key={`body`}
