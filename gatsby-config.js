@@ -7,7 +7,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
