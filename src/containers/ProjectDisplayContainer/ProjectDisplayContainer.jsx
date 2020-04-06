@@ -6,11 +6,14 @@ import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
 import { onConnectClicked } from '@utils/commonUtils';
 import IoTImage from '@components/Images/ProjectImages/IoTImage';
-import JustDevImage from '@components/Images/ProjectImages/JustDevImage';
+import JavaCodesImage from '@components/Images/ProjectImages/JavaCodesImage';
 import LandingPageImage from '@components/Images/ProjectImages/LandingPageImage';
 import OtherFiddlesImage from '@components/Images/ProjectImages/OtherFiddlesImage';
 import UdemyImage from '@components/Images/ProjectImages/UdemyImage';
 import ZentorsUIImage from '@components/Images/ProjectImages/ZentorsUIImage';
+import AmazonImage from '@components/Images/ProjectImages/AmazonImage';
+import BooksImage from '@components/Images/ProjectImages/BooksImage';
+
 import Constants from '@constants';
 import '@styles/commonStyles.css';
 
@@ -23,13 +26,13 @@ const StyledFooterText = styled.div`
   color: #00C2CB;
   font-family: 'Great Vibes';
   left: 37.5%;
-  top: 12.5%;
+  top: 10%;
   font-size: 2.5rem;
 `;
 
 const StyledProjectsDiv = styled.div`
   width: 100%;
-  height: 175vh;
+  height: 250vh;
   position: relative;
   z-index: 1;
   background-color: black;
@@ -37,7 +40,7 @@ const StyledProjectsDiv = styled.div`
 
 const ProjectDisplayCardsDiv = styled.div`
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 12vw;
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
@@ -48,7 +51,7 @@ const ProjectDisplayCardsDiv = styled.div`
 const ArrowDiv = styled.div`
   position: absolute;
   left: 47%;
-  top: 85%;
+  top: 87.5%;
 `;
 
 class ProjectDisplayContainer extends Component {
@@ -58,8 +61,10 @@ class ProjectDisplayContainer extends Component {
       myWebsite,
       otherFiddles,
       udemy,
-      justDev,
       zentors,
+      amazon,
+      books,
+      javaCodes,
     } = Constants.projects;
 
     return (
@@ -68,109 +73,132 @@ class ProjectDisplayContainer extends Component {
           <NavBar />
         </NavBarContainer>
         <ScrollAnimation duration={1.5} animateIn="zoomIn">
-        <StyledProjectsDiv>
-          <StyledFooterText>
-            <ScrollAnimation
-              animateOnce
-              delay={250}
-              duration={0.5}
-              animateIn="rotateIn"
-            >
-              Some of my work!
-            </ScrollAnimation>
-          </StyledFooterText>
-          <ProjectDisplayCardsDiv>
-            <ScrollAnimation
-              animateOnce
-              delay={600}
-              duration={0.5}
-              animateIn="fadeInLeftBig"
-            >
-              <ProjectDisplayCard
-                projectURL={iotScanner}
-                projectTitle="IoT Vulnerability Scanner"
+          <StyledProjectsDiv>
+            <StyledFooterText>
+              <ScrollAnimation
+                animateOnce
+                delay={250}
+                duration={0.5}
+                animateIn="rotateIn"
               >
-                <IoTImage />
-              </ProjectDisplayCard>
-            </ScrollAnimation>
-
-            <ScrollAnimation
-              animateOnce
-              delay={650}
-              duration={0.5}
-              animateIn="fadeInRightBig"
-            >
-              <ProjectDisplayCard
-                projectURL={udemy}
-                projectTitle="Udemy courses' projects"
+                Some of my work!
+              </ScrollAnimation>
+            </StyledFooterText>
+            <ProjectDisplayCardsDiv>
+              <ScrollAnimation
+                animateOnce
+                delay={600}
+                duration={0.5}
+                animateIn="fadeInLeftBig"
               >
-                <UdemyImage />
-              </ProjectDisplayCard>
-            </ScrollAnimation>
+                <ProjectDisplayCard
+                  projectURL={iotScanner}
+                  projectTitle="IoT Vulnerability Scanner"
+                >
+                  <IoTImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
 
-            <ScrollAnimation
-              animateOnce
-              delay={250}
-              duration={0.5}
-              animateIn="fadeInLeftBig"
-            >
-              <ProjectDisplayCard
-                projectURL={myWebsite}
-                projectTitle="My website"
+              <ScrollAnimation
+                animateOnce
+                delay={650}
+                duration={0.5}
+                animateIn="fadeInRightBig"
               >
-                <LandingPageImage />
-              </ProjectDisplayCard>
-            </ScrollAnimation>
+                <ProjectDisplayCard
+                  projectURL={udemy}
+                  projectTitle="Udemy courses' projects"
+                >
+                  <UdemyImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
 
-            <ScrollAnimation
-              animateOnce
-              delay={350}
-              duration={0.5}
-              animateIn="fadeInRightBig"
-            >
-              <ProjectDisplayCard
-                projectURL={otherFiddles}
-                projectTitle="UI Fiddles"
+              <ScrollAnimation
+                animateOnce
+                duration={0.5}
+                animateIn="fadeInLeftBig"
               >
-                <OtherFiddlesImage />
-              </ProjectDisplayCard>
-            </ScrollAnimation>
+                <ProjectDisplayCard
+                  projectURL={myWebsite}
+                  projectTitle="My website"
+                >
+                  <LandingPageImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
 
-            <ScrollAnimation
-              animateOnce
-              delay={400}
-              duration={0.5}
-              animateIn="fadeInLeftBig"
-            >
-              <ProjectDisplayCard
-                projectURL={zentors}
-                projectTitle="Zentors Website Redesign!"
+              <ScrollAnimation
+                animateOnce
+                duration={0.5}
+                animateIn="fadeInRightBig"
               >
-                <ZentorsUIImage />
-              </ProjectDisplayCard>
-            </ScrollAnimation>
+                <ProjectDisplayCard
+                  projectURL={otherFiddles}
+                  projectTitle="UI Fiddles"
+                >
+                  <OtherFiddlesImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
 
-            {/* <ScrollAnimation
-              animateOnce
-              duration={0.5}
-              animateIn="fadeInRightBig"
-            >
-              <ProjectDisplayCard
-                projectURL={otherFiddles}
-                projectTitle="Other UI fiddles"
-                isDisabled
+              <ScrollAnimation
+                animateOnce
+                duration={0.5}
+                animateIn="fadeInLeftBig"
               >
-                <OtherFiddlesImage />
-              </ProjectDisplayCard>
-            </ScrollAnimation> */}
+                <ProjectDisplayCard
+                  projectURL={zentors}
+                  projectTitle="Zentors Website Redesign"
+                >
+                  <ZentorsUIImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
 
-          </ProjectDisplayCardsDiv>
-          <ArrowDiv className="arrow-div">
-            <ScrollAnimation animateOnce animateIn="zoomIn">
-              <StyledArrow onClick={onConnectClicked} />
-            </ScrollAnimation>
-          </ArrowDiv>
-        </StyledProjectsDiv>
+              <ScrollAnimation
+                animateOnce
+                duration={0.5}
+                animateIn="fadeInRightBig"
+              >
+                <ProjectDisplayCard
+                  projectURL={amazon}
+                  projectTitle="Amazon Work Ex."
+                  isDisabled
+                >
+                  <AmazonImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+              <ScrollAnimation
+                animateOnce
+                duration={0.5}
+                animateIn="fadeInLeftBig"
+              >
+                <ProjectDisplayCard
+                  projectURL={books}
+                  projectTitle="Library Search App"
+                  isDisabled
+                >
+                  <BooksImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+              <ScrollAnimation
+                animateOnce
+                duration={0.5}
+                animateIn="fadeInRightBig"
+              >
+                <ProjectDisplayCard
+                  projectURL={javaCodes}
+                  projectTitle="Java Code Catalog"
+                >
+                  <JavaCodesImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+            </ProjectDisplayCardsDiv>
+            <ArrowDiv className="arrow-div">
+              <ScrollAnimation animateOnce animateIn="zoomIn">
+                <StyledArrow onClick={onConnectClicked} />
+              </ScrollAnimation>
+            </ArrowDiv>
+          </StyledProjectsDiv>
         </ScrollAnimation>
       </Fragment>
     );

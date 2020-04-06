@@ -79,7 +79,7 @@ due to bugs in gatsby. */
   transform: scale(1.1);
   box-sizing: border-box;
   color: #895af3;
-  background: linear-gradient( 45deg, rgba(0, 194, 203, 1) 30%, rgba(137, 90, 243, 1) 70%);
+  background: linear-gradient( 45deg, rgba(0, 194, 203, 1) 30%, rgba(137, 90, 243, 1) 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

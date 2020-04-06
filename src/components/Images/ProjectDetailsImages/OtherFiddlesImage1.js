@@ -52,7 +52,7 @@ const MultiBackground = ({ className }) => {
     >
       <StyledPaperText>
         <ScrollAnimation animateIn="zoomIn">
-          My UI Fiddles!
+          My UI Fiddles &amp; effects!
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>

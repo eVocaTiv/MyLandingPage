@@ -18,7 +18,7 @@ const StyledPaper = styled(Paper)`
   cursor: pointer;
   min-width: 200px !important;
   width: 35vw !important;
-  height: 30vh !important;
+  height: 35vh !important;
   transition: all ease 0.5s !important;
   box-sizing: border-box;
   &:hover {

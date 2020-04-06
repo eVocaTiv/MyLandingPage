@@ -24,6 +24,7 @@ class Project extends Component {
                 'https://evocativ.github.io/SteeringEffectXclam',
                 'https://evocativ.github.io/RockPaperScissorCSS',
                 'https://evocativ.github.io/PureCSS_Nav',
+                'https://drive.google.com/open?id=1y16ghuqgk4rw0AcznoBlZE8UnGFsDmlF',
               ]}
               toolTips={[
                 'A 3-D model effect using GLTFJSX! \ [ caution: GPU heavy ]',
@@ -31,6 +32,7 @@ class Project extends Component {
                 'A text effect using p5js library!',
                 'Rock-Paper-Scissors game!',
                 'A simple navbar with drop down using only pure CSS!',
+                'A custom made logo video'
               ]}
             />
           }

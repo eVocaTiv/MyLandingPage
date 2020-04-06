@@ -7,7 +7,7 @@ const CardImage = () => {
     query {
       cardImage: file(relativePath: { eq: "iot-image.jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -19,7 +19,7 @@ const CardImage = () => {
 
   return (
     <Img
-      id="iot-image"
+      id="kunal-dewan-iot-image"
       // inline style for image wrapper div.
       style={{
         height: '100%',

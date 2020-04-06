@@ -6,6 +6,9 @@ const Constants = {
     udemy: 'project-udemy/',
     justDev: 'project-just-dev/',
     zentors: 'project-zentors/',
+    amazon: 'proj-amazon/',
+    books: 'proj-books/',
+    javaCodes: 'proj-codes/'
   },
 };
   
