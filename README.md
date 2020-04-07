@@ -27,7 +27,7 @@ Development of my personal website using Gatsby ( https://www.gatsbyjs.org/ )
 ### Project Page Sample 2
 <p align="center"><img src="screenshots/proj-2.JPG" /></p>
 
-### A 3D Model effect created using GLTFJSX
+### A 3D Model effect created using GLTFJSX and three.js
 (Presently taken down from showcase for performance purposes [GPU Heavy] )
 <p align="center"><img src="screenshots/model.JPG" /></p>
 
