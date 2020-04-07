@@ -19,7 +19,7 @@ const processNavigation = (currentSection, URL) => {
       document.getElementById('___body').style.maxHeight = '100vh';
       document.getElementById('___body').style.overflowY = 'hidden';
       document.getElementById('___loader').style.display = 'flex';
-      navigate('/');
+      window.location.href = ('/');
     }
   } else {
     // navigate from other sections
@@ -30,7 +30,7 @@ const processNavigation = (currentSection, URL) => {
       document.getElementById('___body').style.maxHeight = '100vh';
       document.getElementById('___body').style.overflowY = 'hidden';
       document.getElementById('___loader').style.display = 'flex';
-      navigate(URL);
+      window.location.href = (URL);
     }
   }
 };
