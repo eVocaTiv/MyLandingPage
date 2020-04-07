@@ -15,9 +15,6 @@ class Project extends Component {
             <FooterImage
               demoURLs={[
                 'https://drive.google.com/open?id=1y16ghuqgk4rw0AcznoBlZE8UnGFsDmlF',
-                process.env.NODE_ENV === 'development'
-                  ? 'http://localhost:8000/model-effect'
-                  : 'https://www.kunaldewan.com/model-effect',
                 'https://evocativ.github.io/VentureUI',
                 'https://evocativ.github.io/SteeringEffectXclam',
                 'https://evocativ.github.io/RockPaperScissorCSS',
@@ -25,7 +22,6 @@ class Project extends Component {
               ]}
               toolTips={[
                 'A custom made logo video',
-                'A 3-D model effect using GLTFJSX! \ [ caution: GPU heavy ]',
                 'A split page effect!',
                 'A text effect using p5js library!',
                 'Rock-Paper-Scissors game!',
