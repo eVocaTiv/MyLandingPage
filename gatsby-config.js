@@ -78,6 +78,5 @@ module.exports = {
         icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-no-javascript',
   ],
 };
