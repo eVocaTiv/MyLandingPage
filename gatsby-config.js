@@ -78,5 +78,13 @@ module.exports = {
         icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        analyzerMode: 'server',
+        analyzerPort: '8888',
+        devMode: true,
+      },
+    },
   ],
 };
