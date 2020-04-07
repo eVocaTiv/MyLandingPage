@@ -91,7 +91,6 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
       <StyledPaperText>
         <ScrollAnimation animateIn="flash">
           <br />
-          {githubURL && 'GitHub Repo: '}
           {githubURL && (
             <a href={githubURL} target="_blank">
               <StyledGitHubIcon />
