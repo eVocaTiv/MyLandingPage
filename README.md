@@ -1,6 +1,9 @@
 # MyLandingPage
 Development of my personal website using Gatsby ( https://www.gatsbyjs.org/ )
 
+## Colors & Typography
+<p align="center"><img src="screenshots/colors-typography.jpg" /></p>
+
 
 ## Pages
 ### Home Page 
