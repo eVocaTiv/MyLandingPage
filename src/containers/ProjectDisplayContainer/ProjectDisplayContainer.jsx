@@ -172,8 +172,7 @@ class ProjectDisplayContainer extends Component {
               >
                 <ProjectDisplayCard
                   projectURL={books}
-                  projectTitle="Library Search App"
-                  isDisabled
+                  projectTitle="Book Search App"
                 >
                   <BooksImage />
                 </ProjectDisplayCard>

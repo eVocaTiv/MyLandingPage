@@ -52,7 +52,7 @@ const MultiBackground = ({ className }) => {
     >
       <StyledPaperText>
         <ScrollAnimation animateIn="zoomIn">
-          My Library Search App
+        My Book Search App
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>

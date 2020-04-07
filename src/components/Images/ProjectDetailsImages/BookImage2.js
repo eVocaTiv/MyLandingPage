@@ -50,11 +50,6 @@ const MultiBackground = ({ className }) => {
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan Libary Books Search App"
     >
-      <StyledPaperText>
-        <ScrollAnimation animateIn="zoomIn">
-          My Library Search App
-        </ScrollAnimation>
-      </StyledPaperText>
     </BackgroundImage>
   );
 };
