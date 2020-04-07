@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import theme from '@colors/theme';
 import { ProjectContainer } from '@containers';
 import AmazonImage1 from '@components/Images/ProjectDetailsImages/AmazonImage1';
 import AmazonImage2 from '@components/Images/ProjectDetailsImages/AmazonImage2';
@@ -10,7 +8,6 @@ class Project extends Component {
 
   render() {
     return (
-      <ThemeProvider theme={theme}>
         <ProjectContainer
           TopImage={<AmazonImage1 />}
           BottomImage={<AmazonImage2 />}
@@ -20,7 +17,6 @@ class Project extends Component {
           isMoreSpaced={'large'}
           FooterImage={<FooterImage />}
         />
-      </ThemeProvider>
     );
   }
 }

@@ -127,6 +127,10 @@ due to bugs in gatsby. */
 
 /* Media queries */
 
+.MuiBadge-colorSecondary {
+  background-color: #00C2CB !important;
+}
+
 .MuiButton-root {
   padding-right: 35px!important;
 }

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import theme from '@colors/theme';
 import { ProjectContainer } from '@containers';
 import OtherFiddlesImage1 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage1';
 import OtherFiddlesImage2 from '@components/Images/ProjectDetailsImages/OtherFiddlesImage2';
@@ -9,7 +7,6 @@ import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 class Project extends Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
         <ProjectContainer
           TopImage={<OtherFiddlesImage1 />}
           BottomImage={<OtherFiddlesImage2 />}
@@ -38,7 +35,6 @@ class Project extends Component {
           }
           isMoreSpaced={'xLarge'}
         />
-      </ThemeProvider>
     );
   }
 }

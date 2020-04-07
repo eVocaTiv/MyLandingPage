@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import theme from '@colors/theme';
 import { ProjectContainer } from '@containers';
 import UdemyImage1 from '@components/Images/ProjectDetailsImages/UdemyImage1';
 import UdemyImage2 from '@components/Images/ProjectDetailsImages/UdemyImage2';
@@ -9,7 +7,6 @@ import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
 class Project extends Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
         <ProjectContainer
           TopImage={<UdemyImage1 />}
           BottomImage={<UdemyImage2 />}
@@ -33,7 +30,6 @@ class Project extends Component {
             />
           }
         />
-      </ThemeProvider>
     );
   }
 }
