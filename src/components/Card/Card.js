@@ -7,7 +7,7 @@ class Card extends Component {
     return (
       <div id="vision-card" className="card">
         <div className="card__side card__side--back">
-            <CardImage />
+          <CardImage />
           <h4 className="card__heading">
             <span className="card__heading-span">A messianic</span>
             <br />
@@ -26,11 +26,14 @@ class Card extends Component {
         </div>
         <div className="card__side card__side--front">
           <div className="card__cta">
-            <ScrollAnimation  delay={750} animateIn="fadeIn">
-              <p className="card-value">Transcend the usual.</p>
+            <ScrollAnimation delay={750} animateIn="fadeIn">
+              <p className="card-value card-value-heading">Transcend the usual.</p>
             </ScrollAnimation>
+            <ScrollAnimation delay={2000} animateIn="fadeIn">
+              <p className="card-value card-value-description">Know more..</p>
+              </ScrollAnimation>
           </div>
-        </div>
+        </div>  
       </div>
     );
   }

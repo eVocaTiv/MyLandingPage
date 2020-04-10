@@ -18,17 +18,18 @@ const CardImage = () => {
   const backgroundFluidImageStack = [cardImage.childImageSharp.fluid].reverse();
 
   return (
-      <Img
-        // inline style for image wrapper div.
-        style={{
-          height: '100%',
-          width: '40%',
-          clipPath:
-            'polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)',
-        }}
-        fluid={backgroundFluidImageStack}
-        alt="Kunal Dewan"
-      />
+    <Img
+      // inline style for image wrapper div.
+      style={{
+        height: '100%',
+        width: '40%',
+        clipPath:
+          'polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)',
+      }}
+      className="vision-card-image"
+      fluid={backgroundFluidImageStack}
+      alt="Kunal Dewan"
+    />
   );
 };
 

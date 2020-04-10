@@ -8,7 +8,7 @@
 }
 
 .card__side {
-  transform-style:preserve-3d;
+  transform-style: preserve-3d;
   transition: transform 0.5s ease-in-out;
   color: white;
   font-size: 2rem;
@@ -25,9 +25,7 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: translateX(20%) rotateY(180deg);
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5) 0%
-  );
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5) 0%);
 }
 
 .card__side--front {
@@ -56,16 +54,12 @@
   top: -1rem;
   right: 0rem;
 }
+
 .card__heading-span {
   padding: 1rem 1.5rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(183, 169, 217, 1) 54%,
-    rgba(137, 90, 243, 1) 100%
-  );
+  background-image: linear-gradient( to right bottom, rgba(0, 0, 0, 1) 0%, rgba(183, 169, 217, 1) 54%, rgba(137, 90, 243, 1) 100%);
 }
 
 .card__details {
@@ -103,7 +97,7 @@
   font-size: 1.25rem;
 }
 
-.card__data > .card__qoute {
+.card__data>.card__qoute {
   margin-top: 0.5rem;
   font-size: 1.15rem;
   color: #00c2cb;
@@ -116,4 +110,20 @@
   transform: rotate(8deg);
   margin: 0 0 1.45rem !important;
   line-height: 50%;
+}
+
+.card-value-description {
+  position: absolute;
+  left: 40%;
+  font-size: 1rem !important;
+  transform: rotate(8deg);
+  border: 1px solid #000;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0.5rem;
+  width: 25%;
+  top: 80%;
+  text-shadow: none;
+  color: #EECC00;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5) 0%);
 }

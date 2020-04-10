@@ -39,7 +39,7 @@ class VisionContainer extends Component {
         </NavBarContainer>
         <StyledVisionBGImage />
         <ArrowDiv className="arrow-div">
-          <ScrollAnimation delay={3000} animateIn="fadeIn">
+          <ScrollAnimation delay={3500} animateIn="fadeIn">
             <StyledArrow onClick={onAboutMeClicked} />
           </ScrollAnimation>
         </ArrowDiv>
