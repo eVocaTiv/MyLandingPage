@@ -251,6 +251,7 @@ due to bugs in gatsby. */
   }
   .projects-heading {
     width: 50%;
+    top: 8%;
   }
 }
 
