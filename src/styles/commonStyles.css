@@ -125,8 +125,6 @@ due to bugs in gatsby. */
   pointer-events: none !important;
 }
 
-/* Media queries */
-
 .MuiBadge-colorSecondary {
   background-color: #00C2CB !important;
 }
@@ -134,6 +132,14 @@ due to bugs in gatsby. */
 .MuiButton-root {
   padding-right: 35px!important;
 }
+
+.card-value-description {
+  font-family: 'Julius Sans One';
+  font-size: 0.6rem !important;
+  letter-spacing: 0.2rem;
+  line-height: 0.5rem;
+}
+/* Media queries */
 
 @media only screen and (max-width: 1300px) {
   .copyright {
@@ -153,6 +159,22 @@ due to bugs in gatsby. */
   .card__data {
     top: 15%;
   }
+  .project-display-cards-div {
+    grid-template-columns: minmax( 200px, 80vw) !important;
+    grid-row-gap: 0vh;
+    left: 9vw !important;
+    top: 100vh !important;
+  }
+  .project-card {
+    overflow: hidden;
+    width: 80vw !important;
+  }
+  .projects-container {
+    height: 475vh !important;
+  }
+  .projects-arrow {
+    top: 92.5% !important;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -168,6 +190,18 @@ due to bugs in gatsby. */
     left: 50%;
     top: 10%;
   }
+  .projects-arrow {
+    left: 45% !important;
+  }
+  .projects-heading {
+    left: 35% !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .projects-heading {
+    left: 32.5% !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -180,6 +214,9 @@ due to bugs in gatsby. */
   .card__side--back {
     background-image: linear-gradient( rgba(0, 0, 0, 0) 0%);
   }
+  .projects-heading {
+    left: 27.5% !important;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -190,9 +227,14 @@ due to bugs in gatsby. */
     left: 35%;
   }
   .card__cta {
-    top: 35%;
+    top: 25%;
   }
-
+  .projects-arrow {
+    left: 42.5% !important;
+  }
+  .projects-heading {
+    left: 22.5% !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -207,10 +249,23 @@ due to bugs in gatsby. */
   .nav-button {
     margin: 0 !important;
   }
+  .projects-heading {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 475px) {
   .card__data>.card__qoute {
     display: none;
   }
+  .projects-arrow {
+    left: 37.5% !important;
+  }
+}
+
+/* animated MQs */
+
+.anim-smooth {
+  transition: all 0.5s;
+  /* BYO prefixes */
 }

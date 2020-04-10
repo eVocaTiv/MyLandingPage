@@ -17,12 +17,12 @@ const StyledPaper = styled(Paper)`
   // override default transition in card's child.
   cursor: pointer;
   min-width: 200px !important;
-  width: 35vw !important;
-  height: 35vh !important;
+  width: 35vw;
+  height: 35vh;
   transition: all ease 0.5s !important;
   box-sizing: border-box;
   &:hover {
-    transform: rotate(3deg) scale(1.2);
+    transform: rotate(3deg) scale(1.1);
     box-shadow: 5px 5px 15px 1px #00C2CB;
   }
   background-color: #803966 !important;
@@ -58,6 +58,7 @@ export default function Variants(props) {
     >
       <div className={classes.root}>
         <StyledPaper
+          className="project-card"
           onClick={() => onNavigate(`/${projectURL}`)}
           elevation={10}
           variant="elevation"

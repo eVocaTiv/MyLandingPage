@@ -25,12 +25,12 @@ class Card extends Component {
           </div>
         </div>
         <div className="card__side card__side--front">
-          <div className="card__cta">
+          <div className="card__cta anim-smooth">
             <ScrollAnimation delay={750} animateIn="fadeIn">
-              <p className="card-value card-value-heading">Transcend the usual.</p>
+              <p className="card-value card-value-heading  anim-smooth">Transcend the usual.</p>
             </ScrollAnimation>
             <ScrollAnimation delay={2000} animateIn="fadeIn">
-              <p className="card-value card-value-description">Know more..</p>
+              <p className="card-value card-value-description  anim-smooth">Know more..</p>
               </ScrollAnimation>
           </div>
         </div>  

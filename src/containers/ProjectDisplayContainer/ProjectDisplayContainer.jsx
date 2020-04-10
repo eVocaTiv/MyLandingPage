@@ -28,6 +28,7 @@ const StyledFooterText = styled.div`
   left: 37.5%;
   top: 10%;
   font-size: 2.5rem;
+  text-align: center;
 `;
 
 const StyledProjectsDiv = styled.div`
@@ -73,8 +74,8 @@ class ProjectDisplayContainer extends Component {
           <NavBar />
         </NavBarContainer>
         <ScrollAnimation duration={1.5} animateIn="zoomIn">
-          <StyledProjectsDiv>
-            <StyledFooterText>
+          <StyledProjectsDiv className="projects-container">
+            <StyledFooterText className="projects-heading anim-smooth">
               <ScrollAnimation
                 animateOnce
                 delay={250}
@@ -84,12 +85,11 @@ class ProjectDisplayContainer extends Component {
                 Some of my work!
               </ScrollAnimation>
             </StyledFooterText>
-            <ProjectDisplayCardsDiv>
+            <ProjectDisplayCardsDiv className="project-display-cards-div">
               <ScrollAnimation
                 animateOnce
-                delay={600}
                 duration={0.5}
-                animateIn="fadeInLeftBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={iotScanner}
@@ -101,9 +101,8 @@ class ProjectDisplayContainer extends Component {
 
               <ScrollAnimation
                 animateOnce
-                delay={650}
                 duration={0.5}
-                animateIn="fadeInRightBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={udemy}
@@ -116,7 +115,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeInLeftBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={myWebsite}
@@ -129,7 +128,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeInRightBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={otherFiddles}
@@ -142,7 +141,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeInLeftBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={zentors}
@@ -155,7 +154,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeInRightBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={amazon}
@@ -168,7 +167,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeInLeftBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={books}
@@ -181,7 +180,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeInRightBig"
+                animateIn="fadeIn"
               >
                 <ProjectDisplayCard
                   projectURL={javaCodes}
@@ -191,7 +190,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
             </ProjectDisplayCardsDiv>
-            <ArrowDiv className="arrow-div">
+            <ArrowDiv className="arrow-div projects-arrow anim-smooth">
               <ScrollAnimation animateOnce animateIn="zoomIn">
                 <StyledArrow onClick={onConnectClicked} />
               </ScrollAnimation>
