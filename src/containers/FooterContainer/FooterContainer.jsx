@@ -33,8 +33,8 @@ const StyledIconsDiv = styled.div`
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 90%;
-  left: 12.5%;
+  top: 92.5%;
+  left: 40%;
   z-index: 1000;
 `;
 const BlackDiv = styled.div`
@@ -47,7 +47,8 @@ const StyledFooterDiv = styled.div`
   position: relative;
   z-index: 1;
   background-color: #4C4659;
-  clip-path: polygon(0 0, 100% 0, 0 100%, 75vh 100%);
+  // clip-path: polygon(0 0, 100% 0, 0 100%, 75vh 100%);
+  clip-path: polygon(0 90%, 100% 90%, 100% 100%, 0% 100%);
 `;
 
 const StyledMailIcon = styled(MailOutlineIcon)`
@@ -63,8 +64,8 @@ const StyledMailIcon = styled(MailOutlineIcon)`
 const CopyRightDiv = styled.div`
   position: fixed;
   font-family: 'Julius Sans One';
-  left: 10rem;
-  top: 1.75rem;
+  left: 37.5%;
+  top: 12.5rem;
   font-size: 1.25rem;
   color: #fff;
   z-index: 1000;
@@ -138,23 +139,7 @@ class FooterContainer extends Component {
         <CopyRightDiv className="copyright">© 2020 Kunal Dewan</CopyRightDiv>
 
         <StyledFooterDiv>
-          <StyledFooterText>
-            <ScrollAnimation delay={7000} animateIn="fadeIn">
-              Thank you!
-            </ScrollAnimation>
-            <ScrollAnimation delay={2000} animateIn="fadeIn">
-              <ScrollAnimation
-                delay={5000}
-                initiallyVisible={true}
-                animateOut="fadeOut"
-                animateIn="fadeOut"
-              >
-                This way &#8600;
-              </ScrollAnimation>
-            </ScrollAnimation>
-          </StyledFooterText>
-
-          <StyledIconsDiv>
+          <StyledIconsDiv className="styled-icons-div">
             <Tooltip title="Resume">
               <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
                 <StyledResumeIcon />

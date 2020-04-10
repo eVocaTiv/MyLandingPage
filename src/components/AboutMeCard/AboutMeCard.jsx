@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const useStyles = makeStyles({
   root: {
     position: 'absolute',
-    top: '10vh',
+    top: '15vh',
     'background-color': 'transparent',
   },
   cardHeader: {

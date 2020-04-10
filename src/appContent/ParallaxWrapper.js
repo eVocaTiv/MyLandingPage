@@ -44,19 +44,19 @@ class ParallaxWrapper extends React.Component {
             backgroundSize: 'cover',
           }}
         />
-        <ParallaxLayer offset={0.5} speed={0.8} style={{ opacity: 0.6 }}>
+        <ParallaxLayer offset={0.2} speed={0.8} style={{ opacity: 0.6 }}>
           <img
             src={url('cloud')}
             style={{ display: 'block', width: '10%', marginLeft: '55%' }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={0.65} speed={0.8} style={{ opacity: 0.4 }}>
+        <ParallaxLayer offset={0.55} speed={0.8} style={{ opacity: 0.4 }}>
           <img
             src={url('cloud')}
             style={{ display: 'block', width: '20%', marginLeft: '65%' }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={0.4} speed={0.4} style={{ opacity: 0.2 }}>
+        <ParallaxLayer offset={0.3} speed={0.4} style={{ opacity: 0.2 }}>
           <img
             src={url('cloud')}
             style={{ display: 'block', width: '15%', marginLeft: '75%' }}
