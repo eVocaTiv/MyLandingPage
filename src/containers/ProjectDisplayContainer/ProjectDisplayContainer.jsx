@@ -102,7 +102,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={udemy}
@@ -115,7 +115,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={myWebsite}
@@ -128,7 +128,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={otherFiddles}
@@ -141,7 +141,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={zentors}
@@ -154,7 +154,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={amazon}
@@ -167,7 +167,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={books}
@@ -180,7 +180,7 @@ class ProjectDisplayContainer extends Component {
               <ScrollAnimation
                 animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={javaCodes}
