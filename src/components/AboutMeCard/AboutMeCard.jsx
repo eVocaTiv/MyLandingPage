@@ -8,13 +8,11 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const useStyles = makeStyles({
   root: {
     position: 'absolute',
-    width: '80%',
-    left: '10%',
-    top: '15vh',
-    height: '65vh',
+    top: '10vh',
     'background-color': 'transparent',
   },
   cardHeader: {
+    'text-align': 'center',
     ' font-family': 'Great Vibes',
     'font-size': '2rem',
     color: '#00C2CB',
@@ -36,13 +34,8 @@ const useStyles = makeStyles({
     width: '90%',
     // !important necessary because of material ui card issues.
     margin: '0rem auto !important',
-    'box-shadow': '0px 0px 1rem 0px #00C2CB',
     opacity: '0.9',
     'background-color': 'black',
-    '&:hover': {
-      'background-color': 'transparent',
-      opacity: '0.2',
-    },
     transition: 'opacity 0.5s ease-in-out',
   },
   title: {
@@ -73,8 +66,12 @@ export default function AboutMeCard() {
             Something about me &#8623;
           </ScrollAnimation>
         </div>
-        <ScrollAnimation delay={500} initiallyVisible={false} animateIn="fadeIn">
-          <div className={classes.cardBody} variant="body2" component="p">
+        <ScrollAnimation
+          delay={500}
+          initiallyVisible={false}
+          animateIn="fadeIn"
+        >
+          <div id="about-me-card" className={classes.cardBody} variant="body2" component="p">
             <StyledBodyText>
               I'm an impassioned designer &amp; programmer striving to create a
               lucid user experience. Having completed my B. E. (Hons.) Computer

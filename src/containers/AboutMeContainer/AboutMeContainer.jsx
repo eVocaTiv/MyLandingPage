@@ -18,6 +18,7 @@ const StyledAboutMeDiv = styled.div`
   position: relative;
   z-index: 1;
   background-color: #000;
+  overflow: auto;
 `;
 
 const ArrowDiv = styled.div`
@@ -37,7 +38,7 @@ class AboutMeContainer extends Component {
         <ScrollAnimation duration={1.5} animateIn="zoomIn">
           <AboutMeBGImage />
         </ScrollAnimation>
-          <ArrowDiv className="arrow-div">
+          <ArrowDiv className="arrow-div about-me-arrow-div">
             <ScrollAnimation delay={1500}  animateIn="zoomIn">
               <StyledArrow onClick={onProjectsClicked} />
             </ScrollAnimation>
