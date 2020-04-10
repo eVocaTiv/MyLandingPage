@@ -87,9 +87,8 @@ class ProjectDisplayContainer extends Component {
             </StyledFooterText>
             <ProjectDisplayCardsDiv className="project-display-cards-div">
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
-                animateIn="fadeIn"
+                animateIn="zoomIn"
               >
                 <ProjectDisplayCard
                   projectURL={iotScanner}
@@ -100,7 +99,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
                 animateIn="zoomIn"
               >
@@ -113,7 +111,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
                 animateIn="zoomIn"
               >
@@ -126,7 +123,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
                 animateIn="zoomIn"
               >
@@ -139,7 +135,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
                 animateIn="zoomIn"
               >
@@ -152,7 +147,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
                 animateIn="zoomIn"
               >
@@ -165,7 +159,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
                 animateIn="zoomIn"
               >
@@ -178,7 +171,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation
-                animateOnce
                 duration={0.5}
                 animateIn="zoomIn"
               >
