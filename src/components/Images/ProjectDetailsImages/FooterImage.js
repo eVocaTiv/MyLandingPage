@@ -49,7 +49,11 @@ const StyledTvIcon = styled(LiveTvIcon)`
   },
 `;
 
-const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
+const StyledDesktopMessageDiv = styled.div`
+  font-size: 1rem;
+`;
+
+const MultiBackground = ({ className, githubURL, demoURLs, toolTips, areDesktopOnlyLinks }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
@@ -73,9 +77,9 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
   const getDemoLinks = (demoURLs) => {
     if (!demoURLs) return null;
     return demoURLs.map((url, index) => (
-      <Tooltip key={url}title={toolTips[index]}>
+      <Tooltip  key={url}title={toolTips[index]}>
         <a key={url} target="_blank" href={url}>
-          <StyledTvIcon />
+          <StyledTvIcon className={areDesktopOnlyLinks ? "desktop-only-links" : 'normal-links'}/>
         </a>
       </Tooltip>
     ));
@@ -96,10 +100,13 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
               <StyledGitHubIcon />
             </a>
           )}
-          {demoURLs && 'Demos '}
-          {!demoURLs && !githubURL && (
-            ' =] '
+          {demoURLs && 'Demos'}
+          {areDesktopOnlyLinks && (
+            <StyledDesktopMessageDiv>
+              (Desktop Only)
+            </StyledDesktopMessageDiv>
           )}
+          {!demoURLs && !githubURL && ' =] '}
           <br />
           {getDemoLinks(demoURLs)}
         </ScrollAnimation>

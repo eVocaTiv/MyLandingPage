@@ -2,9 +2,7 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import AboutMeBGImage from '@components/Images/AboutMeBGImage';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
-import { onProjectsClicked } from '@utils/commonUtils';
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
 

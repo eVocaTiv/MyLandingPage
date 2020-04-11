@@ -27,6 +27,7 @@ class Project extends Component {
                 'Rock-Paper-Scissors game!',
                 'A simple navbar with drop down using only pure CSS!',
               ]}
+              areDesktopOnlyLinks
             />
           }
           isMoreSpaced={'xLarge'}

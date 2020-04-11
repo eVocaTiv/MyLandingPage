@@ -313,6 +313,9 @@ due to bugs in gatsby. */
     left: 60% !important;
     top: 70% !important;
   }
+  .desktop-only-links {
+    pointer-events: none !important;
+  }
 }
 
 @media only screen and (max-width: 650px) {

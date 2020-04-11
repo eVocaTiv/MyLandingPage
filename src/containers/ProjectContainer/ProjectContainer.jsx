@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { NavBar } from '@components';
 import Card from '@material-ui/core/Card';
 import ScrollAnimation from 'react-animate-on-scroll';
-import 'animate.css/animate.min.css';
 import '@styles/commonStyles.css';
+import 'animate.css/animate.min.css';
 
 const ProjectContainerDiv = styled.div`
   background-color: #407c80;
@@ -24,7 +24,7 @@ const StyledPaper = styled(Card)`
   cursor: pointer;
   min-width: 200px !important;
   width: 80% !important;
-  height: 80%;
+  height: 80vh;
   padding: 0.5rem;
   background-color: transparent !important;
   position: absolute;
@@ -64,25 +64,30 @@ export default class ProjectContainer extends Component {
 
     return (
       <ProjectContainerDiv>
-        <NavBarContainer>
-          <NavBar isProjectPage />
-        </NavBarContainer>
-        <ScrollAnimation duration={3} animateIn="fadeIn">
-          <div style={{
-            clipPath: 'polygon(0 2.5%, 100% 2.5%, 100% 97.5%, 0% 97.5%)',
-          }}>{TopImage}</div>
-        </ScrollAnimation>
-        <ScrollAnimation delay={250} animateIn="zoomIn">
-          <StyledProjectDescriptionDiv>
-            <StyledPaper  className="project-description anim-smooth" isMoreSpaced={isMoreSpaced}>
-              {ProjectDescription}
-            </StyledPaper>
-          </StyledProjectDescriptionDiv>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
-        {BottomImage}
-        </ScrollAnimation>
-        <ProjectFooterDiv>{FooterImage}</ProjectFooterDiv>
+          <NavBarContainer>
+            <NavBar isProjectPage />
+          </NavBarContainer>
+          <ScrollAnimation duration={3} animateIn="fadeIn">
+            <div
+              style={{
+                clipPath: 'polygon(0 2.5%, 100% 2.5%, 100% 97.5%, 0% 97.5%)',
+              }}
+            >
+              {TopImage}
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
+            <StyledProjectDescriptionDiv>
+              <StyledPaper
+                className="project-description anim-smooth"
+                isMoreSpaced={isMoreSpaced}
+              >
+                {ProjectDescription}
+              </StyledPaper>
+            </StyledProjectDescriptionDiv>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">{BottomImage}</ScrollAnimation>
+          <ProjectFooterDiv>{FooterImage}</ProjectFooterDiv>
       </ProjectContainerDiv>
     );
   }
