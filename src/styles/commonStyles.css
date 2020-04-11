@@ -336,6 +336,12 @@ due to bugs in gatsby. */
     line-height: 2rem !important;
     font-size: 1.1rem !important;
   }
+  .styled-icons-div {
+    top: 82.5% !important;
+  }
+  .styled-footer-div {
+    clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0% 100%) !important;
+  }
 }
 
 @media only screen and (max-width: 525px) {
@@ -376,7 +382,7 @@ due to bugs in gatsby. */
 
 @media only screen and (max-width: 400px) {
   .styled-icons-div {
-    left: 15% !important;
+    left: 20% !important;
   }
   .project-icons {
     left: 20% !important;
