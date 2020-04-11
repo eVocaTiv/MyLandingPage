@@ -11,7 +11,7 @@
 }
 
 .blurred-box:hover {
-  filter: sepia(1);
+  filter: drop-shadow(2px 10px 2px black) sepia(0.75);
 }
 
 .blurred-box:after {
@@ -54,7 +54,8 @@
   background-position-x: center;
   background-image: url('face.jpg');
   opacity: 0.75;
-  filter: drop-shadow(2px 10px 2px black) sepia(0.75);
+  filter: drop-shadow(2px 10px 2px black) sepia(0.5);
+  transition: all 0.5s ease;
 }
 
 .name {
