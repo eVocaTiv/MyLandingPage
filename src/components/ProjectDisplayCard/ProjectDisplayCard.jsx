@@ -25,7 +25,7 @@ const StyledPaper = styled(Paper)`
     transform: rotate(3deg) scale(1.1);
     box-shadow: 5px 5px 15px 1px #00C2CB;
   }
-  background-color: #803966 !important;
+  background-color: black !important;
 `;
 
 const useStylesBootstrap = makeStyles((theme) => ({
@@ -33,7 +33,7 @@ const useStylesBootstrap = makeStyles((theme) => ({
     color: '#00C2CB',
   },
   tooltip: {
-    backgroundColor: 'black',
+    backgroundColor: '#00C2CB',
     color: 'black',
     'font-family': 'Allan',
     'letter-spacing': '0.1rem',
