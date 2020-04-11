@@ -11,7 +11,7 @@ import { onVisionClicked } from '@utils/commonUtils';
 const ArrowDiv = styled.div`
   position: absolute;
   left: 47%;
-  top: 65%;
+  top: 67.5%;
 `;
 const NavBarContainer = styled.div`
   width: 100%;
