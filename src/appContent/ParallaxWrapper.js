@@ -33,7 +33,17 @@ class ParallaxWrapper extends React.Component {
         <ParallaxLayer
           offset={5}
           speed={3}
-          style={{ backgroundColor: '#4C4659' }}
+          style={{ backgroundColor: '#4C4659', backgroundSize: 'cover' }}
+        />
+        <ParallaxLayer
+          offset={6}
+          speed={3}
+          style={{ backgroundColor: '#4C4659', backgroundSize: 'cover' }}
+        />
+        <ParallaxLayer
+          offset={7}
+          speed={3}
+          style={{ backgroundColor: '#4C4659', backgroundSize: 'cover' }}
         />
         <ParallaxLayer
           offset={0}
