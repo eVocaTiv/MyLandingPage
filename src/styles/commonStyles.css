@@ -309,6 +309,10 @@ due to bugs in gatsby. */
   .project-description {
     font-size: 1.2rem !important;
   }
+  .vision-arrow-div {
+    left: 65% !important;
+    top: 70% !important;
+  }
 }
 
 @media only screen and (max-width: 650px) {

@@ -22,7 +22,7 @@ const StyledVisionContainer = styled.div`
 const ArrowDiv = styled.div`
   position: absolute;
   left: 75%;
-  top: 70%;
+  top: 75%;
 `;
 
 const NavBarContainer = styled.div`
@@ -38,7 +38,7 @@ class VisionContainer extends Component {
           <NavBar />
         </NavBarContainer>
         <StyledVisionBGImage />
-        <ArrowDiv className="arrow-div">
+        <ArrowDiv className="arrow-div vision-arrow-div anim-smooth">
           <ScrollAnimation delay={3500} animateIn="fadeIn">
             <StyledArrow onClick={onAboutMeClicked} />
           </ScrollAnimation>
