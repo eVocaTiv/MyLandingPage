@@ -19,7 +19,7 @@ const StyledPaperText = styled.div`
   position: absolute;
   left: 35%;
   text-align: center;
-  top: 35%;
+  top: 37.5%;
   pointer-events: none;
   color: white;
   width: 100%;
