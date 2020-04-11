@@ -88,7 +88,7 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips }) => {
       className={className}
       alt="Kunal Dewan Project Footer Image"
     >
-      <StyledPaperText>
+      <StyledPaperText className="project-icons anim-smooth">
         <ScrollAnimation animateIn="flash">
           <br />
           {githubURL && (

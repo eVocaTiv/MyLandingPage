@@ -15,7 +15,7 @@ const StyledPaperText = styled.div`
   line-height: 3rem;
   background-color: transparent !important;
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 25%;
   pointer-events: none;
   color: white;
@@ -51,7 +51,7 @@ const MultiBackground = ({ className }) => {
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan Amazon Work Experience "
     >
-      <StyledPaperText>
+      <StyledPaperText className="project-image-2 anim-smooth">
         <ScrollAnimation animateIn="zoomIn">
           Being the 1st ever Front-End Engineer hire at Amazon India straight
           out of college was a big thing for me! I currently work in the same

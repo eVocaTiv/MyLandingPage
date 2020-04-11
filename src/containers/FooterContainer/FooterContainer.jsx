@@ -47,6 +47,7 @@ const StyledFooterDiv = styled.div`
   position: relative;
   z-index: 1;
   background-color: #4C4659;
+  // old design
   // clip-path: polygon(0 0, 100% 0, 0 100%, 75vh 100%);
   clip-path: polygon(0 90%, 100% 90%, 100% 100%, 0% 100%);
 `;
@@ -139,7 +140,7 @@ class FooterContainer extends Component {
         <CopyRightDiv className="copyright">© 2020 Kunal Dewan</CopyRightDiv>
 
         <StyledFooterDiv>
-          <StyledIconsDiv className="styled-icons-div">
+          <StyledIconsDiv className="styled-icons-div anim-smooth">
             <Tooltip title="Resume">
               <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
                 <StyledResumeIcon />

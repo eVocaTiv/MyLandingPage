@@ -28,7 +28,7 @@ const StyledPaper = styled(Card)`
   padding: 0.5rem;
   background-color: transparent !important;
   position: absolute;
-  left: 10%;
+  left: 9%;
   top: ${(props) =>
     props.isMoreSpaced === 'xLarge'
       ? '35%'
@@ -41,7 +41,7 @@ const StyledPaper = styled(Card)`
       : '5%'};
   line-height: 3rem;
   font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   box-shadow: none !important;
   pointer-events: none;
   font-family: 'Allan';
@@ -67,15 +67,21 @@ export default class ProjectContainer extends Component {
         <NavBarContainer>
           <NavBar isProjectPage />
         </NavBarContainer>
-        <ScrollAnimation duration={3} animateIn="fadeIn">{TopImage}</ScrollAnimation>
+        <ScrollAnimation duration={3} animateIn="fadeIn">
+          <div style={{
+            clipPath: 'polygon(0 2.5%, 100% 2.5%, 100% 97.5%, 0% 97.5%)',
+          }}>{TopImage}</div>
+        </ScrollAnimation>
         <ScrollAnimation delay={250} animateIn="zoomIn">
           <StyledProjectDescriptionDiv>
-            <StyledPaper isMoreSpaced={isMoreSpaced}>
+            <StyledPaper  className="project-description anim-smooth" isMoreSpaced={isMoreSpaced}>
               {ProjectDescription}
             </StyledPaper>
           </StyledProjectDescriptionDiv>
         </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
         {BottomImage}
+        </ScrollAnimation>
         <ProjectFooterDiv>{FooterImage}</ProjectFooterDiv>
       </ProjectContainerDiv>
     );

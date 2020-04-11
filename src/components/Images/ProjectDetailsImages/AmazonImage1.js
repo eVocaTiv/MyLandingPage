@@ -50,7 +50,7 @@ const MultiBackground = ({ className }) => {
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan Amazon Work Experience "
     >
-      <StyledPaperText>
+      <StyledPaperText className="project-image-1 anim-smooth">
         <ScrollAnimation animateIn="zoomIn">
           My Amazon Experience
         </ScrollAnimation>

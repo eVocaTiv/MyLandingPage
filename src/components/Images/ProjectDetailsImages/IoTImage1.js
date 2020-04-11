@@ -50,7 +50,7 @@ const MultiBackground = ({ className }) => {
       fluid={backgroundFluidImageStack}
       alt="Kunal Dewan IoT Vulnerability Scanner"
     >
-      <StyledPaperText>
+      <StyledPaperText className="project-image-1 anim-smooth">
         <ScrollAnimation animateIn="zoomIn">
           IoT Vulnerability Scanner
         </ScrollAnimation>
