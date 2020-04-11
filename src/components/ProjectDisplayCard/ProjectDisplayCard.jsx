@@ -33,7 +33,7 @@ const useStylesBootstrap = makeStyles((theme) => ({
     color: '#00C2CB',
   },
   tooltip: {
-    backgroundColor: '#00C2CB',
+    backgroundColor: 'black',
     color: 'black',
     'font-family': 'Allan',
     'letter-spacing': '0.1rem',
