@@ -21,12 +21,6 @@ const StyledAboutMeDiv = styled.div`
   overflow: auto;
 `;
 
-const ArrowDiv = styled.div`
-  position: absolute;
-  left: 47.5%;
-  top: 75%;
-`;
-
 class AboutMeContainer extends Component {
   render() {
     return (
@@ -35,14 +29,9 @@ class AboutMeContainer extends Component {
           <NavBar />
         </NavBarContainer>
         <StyledAboutMeDiv>
-        <ScrollAnimation duration={1.5} animateIn="zoomIn">
-          <AboutMeBGImage />
-        </ScrollAnimation>
-          <ArrowDiv className="arrow-div about-me-arrow-div">
-            <ScrollAnimation delay={1500}  animateIn="zoomIn">
-              <StyledArrow onClick={onProjectsClicked} />
-            </ScrollAnimation>
-          </ArrowDiv>
+          <ScrollAnimation duration={1.5} animateIn="zoomIn">
+            <AboutMeBGImage />
+          </ScrollAnimation>
         </StyledAboutMeDiv>
       </Fragment>
     );

@@ -4,6 +4,14 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { StyledArrow } from '@styles/commonStyledComponents';
+import { onProjectsClicked } from '@utils/commonUtils';
+
+const ArrowDiv = styled.div`
+  position: absolute;
+  left: 47%;
+  top: 70%;
+`;
 
 const useStyles = makeStyles({
   root: {
@@ -36,7 +44,7 @@ const useStyles = makeStyles({
     margin: '0rem auto !important',
     opacity: '0.9',
     'background-color': 'black',
-    transition: 'opacity 0.5s ease-in-out',
+    transition: 'all 0.5s ease',
   },
   title: {
     fontSize: 14,
@@ -71,7 +79,12 @@ export default function AboutMeCard() {
           initiallyVisible={false}
           animateIn="fadeIn"
         >
-          <div id="about-me-card" className={classes.cardBody} variant="body2" component="p">
+          <div
+            id="about-me-card"
+            className={classes.cardBody}
+            variant="body2"
+            component="p"
+          >
             <StyledBodyText>
               I'm an impassioned designer &amp; programmer striving to create a
               lucid user experience. Having completed my B. E. (Hons.) Computer
@@ -84,6 +97,11 @@ export default function AboutMeCard() {
               I'm probably at the gym.
               <br />
               Thank you for reading!
+              <ArrowDiv className="arrow-div about-me-arrow-div">
+                <ScrollAnimation delay={1500} animateIn="zoomIn">
+                  <StyledArrow onClick={onProjectsClicked} />
+                </ScrollAnimation>
+              </ArrowDiv>
             </StyledBodyText>
           </div>
         </ScrollAnimation>

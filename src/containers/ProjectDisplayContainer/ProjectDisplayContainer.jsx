@@ -23,7 +23,7 @@ const NavBarContainer = styled.div`
 
 const StyledFooterText = styled.div`
   position: absolute;
-  color: #00C2CB;
+  color: #00c2cb;
   font-family: 'Great Vibes';
   left: 37.5%;
   top: 10%;
@@ -49,7 +49,7 @@ const ProjectDisplayCardsDiv = styled.div`
   grid-row-gap: 7.5vh;
 `;
 
-const ArrowDiv = styled.div`
+const ArrowDivPrimary = styled.div`
   position: absolute;
   left: 47%;
   top: 87.5%;
@@ -86,10 +86,7 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
             </StyledFooterText>
             <ProjectDisplayCardsDiv className="project-display-cards-div">
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={iotScanner}
                   projectTitle="IoT Vulnerability Scanner"
@@ -98,10 +95,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={udemy}
                   projectTitle="Udemy courses' projects"
@@ -110,10 +104,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={myWebsite}
                   projectTitle="My website"
@@ -122,10 +113,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={otherFiddles}
                   projectTitle="UI Fiddles"
@@ -134,10 +122,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={zentors}
                   projectTitle="Zentors Website Redesign"
@@ -146,10 +131,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={amazon}
                   projectTitle="Amazon Work Ex."
@@ -158,10 +140,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={books}
                   projectTitle="Book Search App"
@@ -170,10 +149,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="zoomIn"
-              >
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={javaCodes}
                   projectTitle="Code Catalog"
@@ -182,11 +158,11 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
             </ProjectDisplayCardsDiv>
-            <ArrowDiv className="arrow-div projects-arrow anim-smooth">
+            <ArrowDivPrimary className="arrow-div projects-arrow-primary anim-smooth">
               <ScrollAnimation animateOnce animateIn="zoomIn">
                 <StyledArrow onClick={onConnectClicked} />
               </ScrollAnimation>
-            </ArrowDiv>
+            </ArrowDivPrimary>
           </StyledProjectsDiv>
         </ScrollAnimation>
       </Fragment>

@@ -5,7 +5,14 @@ import BackgroundImage from 'gatsby-background-image';
 import { NewLandingGlass } from '@components';
 import { NavBar } from '@components';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { StyledArrow } from '@styles/commonStyledComponents';
+import { onVisionClicked } from '@utils/commonUtils';
 
+const ArrowDiv = styled.div`
+  position: absolute;
+  left: 47%;
+  top: 70%;
+`;
 const NavBarContainer = styled.div`
   width: 100%;
 `;
@@ -42,6 +49,11 @@ const MultiBackground = ({ className }) => {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
+        <ArrowDiv className="arrow-div home-arrow-primary">
+          <ScrollAnimation delay={2500} animateIn="zoomIn">
+            <StyledArrow onClick={onVisionClicked} />
+          </ScrollAnimation>
+        </ArrowDiv>
         <NewLandingGlass />
       </BackgroundImage>
     </ScrollAnimation>
