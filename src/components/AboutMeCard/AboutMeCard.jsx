@@ -10,7 +10,7 @@ import { onProjectsClicked } from '@utils/commonUtils';
 const ArrowDiv = styled.div`
   position: absolute;
   left: 47%;
-  top: 70%;
+  top: 72%;
 `;
 
 const useStyles = makeStyles({
