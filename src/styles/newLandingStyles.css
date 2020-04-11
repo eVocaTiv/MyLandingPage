@@ -65,4 +65,24 @@
   font-family: 'Great Vibes';
   letter-spacing: 0.05rem;
   font-size: 1.5rem;
+  filter: drop-shadow(2px 10px 2px black) sepia(0.5);
+}
+
+/* Media queries */
+@media only screen and (max-width: 1100px) {
+  .new-landing-arrow-primary {
+    left: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .new-landing-arrow-primary {
+    left: 42.5% !important;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .new-landing-arrow-primary {
+    left: 37.5% !important;
+  }
 }

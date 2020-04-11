@@ -49,7 +49,7 @@ const MultiBackground = ({ className }) => {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
-        <ArrowDiv className="arrow-div home-arrow-primary">
+        <ArrowDiv className="arrow-div new-landing-arrow-primary">
           <ScrollAnimation delay={4000} animateIn="zoomIn">
             <StyledArrow onClick={onVisionClicked} />
           </ScrollAnimation>

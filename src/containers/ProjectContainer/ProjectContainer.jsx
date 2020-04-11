@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { NavBar } from '@components';
 import Card from '@material-ui/core/Card';
 import ScrollAnimation from 'react-animate-on-scroll';
+import '@styles/projectDetailStyles.css';
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
 

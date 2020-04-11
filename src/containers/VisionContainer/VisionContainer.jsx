@@ -6,6 +6,7 @@ import { StyledArrow } from '@styles/commonStyledComponents';
 import { NavBar } from '@components';
 import { onAboutMeClicked } from '@utils/commonUtils';
 import '@styles/cardStyles.css';
+import '@styles/visionStyles.css';
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
 

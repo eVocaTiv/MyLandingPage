@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import AboutMeBGImage from '@components/Images/AboutMeBGImage';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { NavBar } from '@components';
+import '@styles/aboutMeStyles.css'
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
 

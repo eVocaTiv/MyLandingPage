@@ -79,7 +79,7 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips, areDesktopO
     return demoURLs.map((url, index) => (
       <Tooltip  key={url}title={toolTips[index]}>
         <a key={url} target="_blank" href={url}>
-          <StyledTvIcon className={areDesktopOnlyLinks ? "desktop-only-links" : 'normal-links'}/>
+          <StyledTvIcon className={areDesktopOnlyLinks ? "project-desktop-only-links" : 'normal-links'}/>
         </a>
       </Tooltip>
     ));

@@ -15,6 +15,7 @@ import AmazonImage from '@components/Images/ProjectImages/AmazonImage';
 import BooksImage from '@components/Images/ProjectImages/BooksImage';
 
 import Constants from '@constants';
+import '@styles/projectsStyles.css';
 import '@styles/commonStyles.css';
 
 const NavBarContainer = styled.div`
@@ -76,10 +77,12 @@ class ProjectDisplayContainer extends Component {
         <ScrollAnimation duration={1.5} animateIn="zoomIn">
           <StyledProjectsDiv className="projects-container">
             <StyledFooterText className="projects-heading anim-smooth">
-              Some of my work! <br />
+              <ScrollAnimation duration={1.5} animateIn="rotateIn">
+                Some of my work! <br />
+              </ScrollAnimation>
               <div className="projects-down-arrow">&dArr;</div>
             </StyledFooterText>
-            <ProjectDisplayCardsDiv className="project-display-cards-div">
+            <ProjectDisplayCardsDiv className="projects-display-cards-div">
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   projectURL={iotScanner}

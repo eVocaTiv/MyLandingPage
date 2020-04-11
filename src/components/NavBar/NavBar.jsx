@@ -19,6 +19,7 @@ import {
   onConnectClicked,
 } from '@utils/commonUtils';
 import styled from 'styled-components';
+import '@styles/navStyles.css';
 
 const StyledButton = styled(Button)`
   font-size: 0.5rem !important;

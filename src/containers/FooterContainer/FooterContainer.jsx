@@ -8,6 +8,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Tooltip from '@material-ui/core/Tooltip';
 import { NavBar } from '@components';
+import '@styles/connectStyles.css';
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
 
@@ -136,10 +137,10 @@ class FooterContainer extends Component {
           <NavBar />
         </NavBarContainer>
 
-        <CopyRightDiv className="copyright">© 2020 Kunal Dewan</CopyRightDiv>
+        <CopyRightDiv className="footer-copyright">© 2020 Kunal Dewan</CopyRightDiv>
 
-        <StyledFooterDiv className="styled-footer-div anim-smooth">
-          <StyledIconsDiv className="styled-icons-div anim-smooth">
+        <StyledFooterDiv className="footer-styled-div anim-smooth">
+          <StyledIconsDiv className="footer-styled-icons-div anim-smooth">
             <Tooltip title="Resume">
               <a href="https://tinyurl.com/kunal-dewan-resume" target="_blank">
                 <StyledResumeIcon />

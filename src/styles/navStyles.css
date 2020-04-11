@@ -1,0 +1,95 @@
+.nav-button {
+  font-family: Julius Sans One !important;
+  box-sizing: border-box !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  transition: box-shadow 0.2s ease !important;
+  transition: transform 0.5s ease !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: bold !important;
+  margin: 1.5rem 0 1rem 0.25rem !important;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  box-sizing: border-box;
+  color: #895af3;
+  background: linear-gradient( 45deg, rgba(0, 194, 203, 1) 30%, rgba(137, 90, 243, 1) 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  box-shadow: 0px 0 0.5rem 0px #fff;
+  font-weight: bold !important;
+  backface-visibility: hidden;
+}
+
+.nav-button * svg {
+  opacity: 0 !important;
+}
+
+.nav-button:hover * svg {
+  opacity: 1 !important;
+  color: #895af3 !important;
+}
+
+.home-button:hover {
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0px 0 0.5rem 0px #fff;
+}
+
+.home-button-left-container {
+  flex-grow: 1;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 2rem 0 1rem 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: transform 0.5s ease !important;
+}
+
+.home-button-left-container * svg {
+  opacity: 1 !important;
+}
+
+.home-button-right-container {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+.MuiBadge-colorSecondary {
+  background-color: #00C2CB !important;
+}
+
+.MuiButton-root {
+  padding-right: 35px!important;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1100px) {
+  .nav-text {
+    display: none !important;
+  }
+  .nav-button * svg {
+    opacity: 1 !important;
+    font-size: 1.25rem !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .new-landing-arrow-primary {
+    left: 42.5% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-button-right-container {
+    display: inline-flex !important;
+    pointer-events: all !important;
+  }
+  .home-button-left-container {
+    display: none !important;
+    pointer-events: none !important;
+  }
+  .nav-button {
+    margin: 0 !important;
+  }
+}
