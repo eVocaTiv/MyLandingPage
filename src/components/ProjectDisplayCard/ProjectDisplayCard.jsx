@@ -26,7 +26,6 @@ const StyledPaper = styled(Paper)`
     box-shadow: 5px 5px 15px 1px #00C2CB;
   }
   background-color: #803966 !important;
-  pointer-events: ${props => props.isDisabled ? "none" : "all"} !important;
 `;
 
 const useStylesBootstrap = makeStyles((theme) => ({
@@ -46,7 +45,7 @@ export default function Variants(props) {
   const classes = useStyles();
   const toolTipClasses = useStylesBootstrap();
 
-  const { children, projectTitle, projectURL, isDisabled } = props;
+  const { children, projectTitle, projectURL } = props;
   return (
     <Tooltip
       TransitionComponent={Fade}
@@ -62,7 +61,6 @@ export default function Variants(props) {
           onClick={() => onNavigate(`/${projectURL}`)}
           elevation={10}
           variant="elevation"
-          isDisabled={isDisabled}
         >
           {children}
         </StyledPaper>

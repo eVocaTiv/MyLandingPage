@@ -11,7 +11,7 @@ import { onVisionClicked } from '@utils/commonUtils';
 const ArrowDiv = styled.div`
   position: absolute;
   left: 47%;
-  top: 70%;
+  top: 65%;
 `;
 const NavBarContainer = styled.div`
   width: 100%;
@@ -50,7 +50,7 @@ const MultiBackground = ({ className }) => {
           <NavBar />
         </NavBarContainer>
         <ArrowDiv className="arrow-div home-arrow-primary">
-          <ScrollAnimation delay={2500} animateIn="zoomIn">
+          <ScrollAnimation delay={3500} animateIn="zoomIn">
             <StyledArrow onClick={onVisionClicked} />
           </ScrollAnimation>
         </ArrowDiv>

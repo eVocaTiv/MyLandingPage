@@ -7,7 +7,6 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Tooltip from '@material-ui/core/Tooltip';
-import ScrollAnimation from 'react-animate-on-scroll';
 import { NavBar } from '@components';
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
@@ -147,7 +146,7 @@ class FooterContainer extends Component {
               </a>
             </Tooltip>
             <Tooltip title="Email: Kunalx011@gmail.com">
-              <a>
+              <a href="mailto:kunalx011@gmail.com">
                 <StyledMailIcon />
               </a>
             </Tooltip>

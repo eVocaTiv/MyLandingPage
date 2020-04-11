@@ -140,6 +140,10 @@ due to bugs in gatsby. */
   line-height: 0.5rem;
 }
 
+.projects-down-arrow {
+  opacity: 0;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 1300px) {
@@ -166,6 +170,9 @@ due to bugs in gatsby. */
     left: 9vw !important;
     top: 100vh !important;
   }
+  .projects-down-arrow {
+    opacity: 1;
+  }
   .project-card {
     overflow: hidden;
     width: 80vw !important;
@@ -175,6 +182,10 @@ due to bugs in gatsby. */
   }
   .projects-arrow-primary {
     top: 92.5% !important;
+  }
+  .about-me-arrow-div {
+    left: 70% !important;
+    top: 7.5% !important;
   }
 }
 
@@ -195,7 +206,7 @@ due to bugs in gatsby. */
     left: 45% !important;
   }
   .home-arrow-primary {
-    left: 45% !important; 
+    left: 45% !important;
   }
   .projects-heading {
     left: 35% !important;
@@ -205,10 +216,6 @@ due to bugs in gatsby. */
   }
   .project-description {
     font-size: 1.35rem !important;
-  }
-  .about-me-arrow-div {
-    left: 80% !important;
-    top: 7.5% !important;
   }
 }
 
@@ -288,7 +295,7 @@ due to bugs in gatsby. */
     left: 42.5% !important;
   }
   .home-arrow-primary {
-    left: 42.5% !important; 
+    left: 42.5% !important;
   }
   .projects-heading {
     left: 22.5% !important;
@@ -369,7 +376,7 @@ due to bugs in gatsby. */
     left: 37.5% !important;
   }
   .home-arrow-primary {
-    left: 37.5% !important; 
+    left: 37.5% !important;
   }
   .card__data {
     top: -9rem;

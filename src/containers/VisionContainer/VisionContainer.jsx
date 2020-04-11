@@ -22,7 +22,7 @@ const StyledVisionContainer = styled.div`
 const ArrowDiv = styled.div`
   position: absolute;
   left: 75%;
-  top: 75%;
+  top: 70%;
 `;
 
 const NavBarContainer = styled.div`

@@ -76,14 +76,8 @@ class ProjectDisplayContainer extends Component {
         <ScrollAnimation duration={1.5} animateIn="zoomIn">
           <StyledProjectsDiv className="projects-container">
             <StyledFooterText className="projects-heading anim-smooth">
-              <ScrollAnimation
-                animateOnce
-                delay={250}
-                duration={0.5}
-                animateIn="rotateIn"
-              >
-                Some of my work!
-              </ScrollAnimation>
+              Some of my work! <br />
+              <div className="projects-down-arrow">&dArr;</div>
             </StyledFooterText>
             <ProjectDisplayCardsDiv className="project-display-cards-div">
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
@@ -159,7 +153,7 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
             </ProjectDisplayCardsDiv>
             <ArrowDivPrimary className="arrow-div projects-arrow-primary anim-smooth">
-              <ScrollAnimation animateOnce animateIn="zoomIn">
+              <ScrollAnimation animateIn="zoomIn">
                 <StyledArrow onClick={onConnectClicked} />
               </ScrollAnimation>
             </ArrowDivPrimary>

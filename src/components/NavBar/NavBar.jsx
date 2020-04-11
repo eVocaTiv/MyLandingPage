@@ -4,10 +4,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import VisibilityIcon from '@material-ui/icons/Visibility';
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import LanguageIcon from '@material-ui/icons/Language';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
-import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
+import PhoneIcon from '@material-ui/icons/Phone';
 import HomeSharpIcon from '@material-ui/icons/HomeRounded';
 import Badge from '@material-ui/core/Badge';
 import { withStyles } from '@material-ui/core/styles';
@@ -92,7 +92,7 @@ function NavBar(props) {
             onClick={onVisionClicked}
             color="inherit"
             className="nav-button"
-            endIcon={<VisibilityIcon />}
+            endIcon={<LanguageIcon />}
           >
             <div className="nav-text">Vision</div>
           </StyledButton>
@@ -102,7 +102,7 @@ function NavBar(props) {
             onClick={onAboutMeClicked}
             color="inherit"
             className="nav-button"
-            endIcon={<EmojiPeopleIcon />}
+            endIcon={<AccountBoxIcon />}
           >
             <div className="nav-text">About me</div>
           </StyledButton>
@@ -125,7 +125,7 @@ function NavBar(props) {
             className="nav-button"
             endIcon={
               <StyledBadge variant="dot" color="secondary">
-                <ContactPhoneIcon />
+                <PhoneIcon />
               </StyledBadge>
             }
           >
