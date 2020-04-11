@@ -17,7 +17,7 @@ class NewLandingGlass extends Component {
           </ScrollAnimation>
           <div className="box">
             <span className="icon"></span>
-            <ScrollAnimation delay={2250} animateIn="fadeInRight">
+            <ScrollAnimation delay={2250} animateIn="flip">
               <div className="name">Kunal Dewan</div>
             </ScrollAnimation>
           </div>
