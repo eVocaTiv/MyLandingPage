@@ -33,7 +33,7 @@ const StyledIconsDiv = styled.div`
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 92.5%;
+  top: 87.5%;
   left: 40%;
   z-index: 1000;
 `;
@@ -49,7 +49,7 @@ const StyledFooterDiv = styled.div`
   background-color: #4C4659;
   // old design
   // clip-path: polygon(0 0, 100% 0, 0 100%, 75vh 100%);
-  clip-path: polygon(0 90%, 100% 90%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0% 100%);
 `;
 
 const StyledMailIcon = styled(MailOutlineIcon)`

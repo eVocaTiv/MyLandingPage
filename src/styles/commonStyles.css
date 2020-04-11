@@ -182,9 +182,6 @@ due to bugs in gatsby. */
   .nav-text {
     display: none !important;
   }
-  .copyright {
-    display: none;
-  }
   .nav-button * svg {
     opacity: 1 !important;
     font-size: 1.25rem !important;
@@ -226,6 +223,9 @@ due to bugs in gatsby. */
   }
   .styled-icons-div {
     left: 35% !important;
+  }
+  .copyright {
+    display: none;
   }
   .project-icons {
     left: 33% !important;
@@ -382,11 +382,11 @@ due to bugs in gatsby. */
     left: 20% !important;
   }
   .project-image-2 {
-    top: 15% !important;
+    top: 12.5% !important;
     line-height: 1.5rem !important;
   }
   .project-description {
-    top: 10% !important;
+    top: 20% !important;
     line-height: 1.5rem !important;
     font-size: 0.85rem !important;
   }
