@@ -5,6 +5,8 @@ const onVisionClicked = () => onNavigate('/vision/');
 const onAboutMeClicked = () => onNavigate('/about-me/');
 const onProjectsClicked = () => onNavigate('/projects/');
 const onConnectClicked = () => onNavigate('/connect/');
+const on404Clicked = () => onNavigate('/404/');
+
 const homeString =
   process.env.NODE_ENV === 'development' ? 'localhost' : 'kunaldewan';
 
@@ -42,6 +44,17 @@ const onNavigate = (URL) => {
   processNavigation(currentSection, URL);
 };
 
+const checkForInvalidBrowser = () => {
+   // Internet Explorer 6-11
+   const isIE = /*@cc_on!@*/ false || !!document.documentMode;
+   // Edge 20+
+   const isEdge = !isIE && !!window.StyleMedia;
+   // prevent IE disable ( 404 )
+   if(isIE || isEdge) {
+     on404Clicked();
+   }
+}
+
 export {
   onHomeClicked,
   onVisionClicked,
@@ -49,4 +62,6 @@ export {
   onProjectsClicked,
   onConnectClicked,
   onNavigate,
+  on404Clicked,
+  checkForInvalidBrowser,
 };

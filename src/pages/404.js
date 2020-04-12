@@ -29,12 +29,13 @@ const goingToHome = () => {
 const NotFoundPage = () => (
   <NotFoundContainer>
     <SEO title="404: Not found" />
-    <h1 style={{ color: '#00C2CB', margin: '5%' }}>This page doesn't exist!</h1>
+    <h1 style={{ color: '#00C2CB', margin: '5%' }}>Hold onnnnn!</h1>
+    <h4 style={{ color: '#00C2CB', margin: '2.5%' }}> Either your URL is incorrect or you are using an unsupported browser ( IE / Edge ) </h4>
     <StyledButton
       id="go-home-button"
       onClick={goingToHome}
       color="inherit"
-      className="nav-button"
+      className="go-home-button"
     >
       <h2 id="go-home-button-text"> Home</h2>
     </StyledButton>

@@ -24,6 +24,23 @@
   -webkit-backface-visibility: hidden;
 }
 
+/* go home button styles */
+
+.go-home-button {
+  font-family: Julius Sans One !important;
+  box-sizing: border-box !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  transition: box-shadow 0.2s ease !important;
+  transition: transform 0.5s ease !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: bold !important;
+  margin: 1.5rem 0 1rem 0.25rem !important;
+}
+
+.go-home-button:hover {
+  box-shadow: 0px 0 0.5rem 0px #fff;
+}
+
 .nav-button * svg {
   opacity: 0 !important;
 }

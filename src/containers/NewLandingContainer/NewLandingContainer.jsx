@@ -3,12 +3,15 @@ import NewLandingContainerBGImage from '@components/Images/NewLandingContainerBG
 import '@styles/commonStyles.css';
 import '@styles/newLandingStyles.css';
 import 'animate.css/animate.min.css';
+import { checkForInvalidBrowser } from '@utils/commonUtils';
 
 class NewLandingContainer extends Component {
+  componentDidMount = () => {
+    checkForInvalidBrowser();
+  };
+
   render() {
-    return (
-        <NewLandingContainerBGImage />
-    );
+    return <NewLandingContainerBGImage />;
   }
 }
 
