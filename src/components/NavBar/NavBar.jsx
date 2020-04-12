@@ -130,7 +130,7 @@ function NavBar(props) {
               </StyledBadge>
             }
           >
-            <div className="nav-text">Get In Touch!</div>
+            <span className="nav-text">Get In Touch!</span>
           </StyledButton>
         )}
       </Toolbar>
