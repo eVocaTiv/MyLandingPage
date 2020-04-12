@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import SEO from '@components/seo';
 import Button from '@material-ui/core/Button';
 import { navigate } from 'gatsby';
+import '@styles/navStyles.css';
 
 const NotFoundContainer = styled.div`
   width: 100%;

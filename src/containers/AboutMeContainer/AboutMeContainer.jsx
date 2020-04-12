@@ -6,9 +6,17 @@ import { NavBar } from '@components';
 import '@styles/aboutMeStyles.css'
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
+import { StyledArrow } from '@styles/commonStyledComponents';
+import { onProjectsClicked } from '@utils/commonUtils';
 
 const NavBarContainer = styled.div`
   width: 100%;
+`;
+
+const ArrowDiv = styled.div`
+  position: absolute;
+  left: 47%;
+  top: 60%;
 `;
 
 const StyledAboutMeDiv = styled.div`
@@ -31,6 +39,11 @@ class AboutMeContainer extends Component {
           <ScrollAnimation duration={1.5} animateIn="zoomIn">
             <AboutMeBGImage />
           </ScrollAnimation>
+          <ArrowDiv className="arrow-div about-me-arrow-div">
+            <ScrollAnimation delay={2500} animateIn="zoomIn">
+              <StyledArrow onClick={onProjectsClicked} />
+            </ScrollAnimation>
+          </ArrowDiv>
         </StyledAboutMeDiv>
       </Fragment>
     );

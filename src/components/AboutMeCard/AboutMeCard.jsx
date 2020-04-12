@@ -4,14 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { StyledArrow } from '@styles/commonStyledComponents';
-import { onProjectsClicked } from '@utils/commonUtils';
-
-const ArrowDiv = styled.div`
-  position: absolute;
-  left: 47%;
-  top: 72%;
-`;
 
 const useStyles = makeStyles({
   root: {
@@ -97,11 +89,6 @@ export default function AboutMeCard() {
               I'm probably at the gym.
               <br />
               Thank you for reading!
-              <ArrowDiv className="arrow-div about-me-arrow-div">
-                <ScrollAnimation delay={1500} animateIn="zoomIn">
-                  <StyledArrow onClick={onProjectsClicked} />
-                </ScrollAnimation>
-              </ArrowDiv>
             </StyledBodyText>
           </div>
         </ScrollAnimation>

@@ -1,7 +1,6 @@
 .footer-copyright {
   pointer-events: none;
   position: absolute !important;
-  left: 0;
 }
 
 /* Media queries */
