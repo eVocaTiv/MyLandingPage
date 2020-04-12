@@ -20,6 +20,9 @@ const CardImage = () => {
   return (
     <Img
       // inline style for image wrapper div.
+      imgStyle={{
+        objectFit: 'fill',
+      }}
       style={{
         height: '100%',
         width: '40%',

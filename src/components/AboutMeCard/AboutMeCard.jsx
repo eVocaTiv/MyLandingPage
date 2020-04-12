@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   },
   cardHeader: {
     'text-align': 'center',
-    ' font-family': 'Great Vibes',
+    'font-family': 'Great Vibes',
     'font-size': '2rem',
     color: '#00C2CB',
     display: 'flex',
@@ -33,9 +33,9 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     width: '90%',
     // !important necessary because of material ui card issues.
+    'box-shadow': '0px 0px 1rem 0px #00C2CB',
     margin: '0rem auto !important',
-    opacity: '0.9',
-    'background-color': 'black',
+    'background-color': 'rgba(0,0,0,0.5)',
     transition: 'all 0.5s ease',
   },
   title: {
@@ -55,7 +55,7 @@ export default function AboutMeCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card elevation={0} variant="elevation" className={classes.root}>
       <CardContent>
         <div className={classes.cardHeader} variant="h5" component="h2">
           <ScrollAnimation

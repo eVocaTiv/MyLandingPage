@@ -16,7 +16,7 @@ const NavBarContainer = styled.div`
 const ArrowDiv = styled.div`
   position: absolute;
   left: 47%;
-  top: 60%;
+  top: 70%;
 `;
 
 const StyledAboutMeDiv = styled.div`
@@ -39,7 +39,7 @@ class AboutMeContainer extends Component {
           <ScrollAnimation duration={1.5} animateIn="zoomIn">
             <AboutMeBGImage />
           </ScrollAnimation>
-          <ArrowDiv className="arrow-div about-me-arrow-div">
+          <ArrowDiv className="arrow-div about-me-arrow-div anim-smooth">
             <ScrollAnimation delay={2500} animateIn="zoomIn">
               <StyledArrow onClick={onProjectsClicked} />
             </ScrollAnimation>

@@ -10,8 +10,8 @@
 /* Media queries */
 @media only screen and (max-width: 1250px) {
   .about-me-arrow-div {
-    left: 70% !important;
-    top: 7.5% !important;
+    left: 72.5% !important;
+    top: 22.5% !important;
   }
 }
 
@@ -36,5 +36,11 @@
 @media only screen and (max-width: 600px) {
   #about-me-card {
     font-size: 0.75rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about-me-arrow-div {
+    top: 25% !important;
   }
 }

@@ -23,14 +23,17 @@
 .card__side--back {
   will-change: transform;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: translateX(20%) rotateY(180deg);
   background-image: linear-gradient( rgba(0, 0, 0, 0.5) 0%);
+  transform: rotateX(270deg);
 }
 
 .card__side--front {
   will-change: transform;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 

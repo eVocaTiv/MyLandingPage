@@ -66,7 +66,7 @@ const CopyRightDiv = styled.div`
   position: fixed;
   font-family: 'Julius Sans One';
   left: 37.5%;
-  top: 12.5rem;
+  top: 40vh;
   font-size: 1.25rem;
   color: #fff;
   z-index: 1000;
