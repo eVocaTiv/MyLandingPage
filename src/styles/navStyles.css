@@ -12,11 +12,11 @@
 .nav-button:hover {
   transform: scale(1.1);
   box-sizing: border-box;
-  color: #895af3;
   background: linear-gradient( 45deg, rgba(0, 194, 203, 1) 30%, rgba(137, 90, 243, 1) 60%);
+  color: white;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: none;
   box-shadow: 0px 0 0.5rem 0px #fff;
   font-weight: bold !important;
   backface-visibility: hidden;
