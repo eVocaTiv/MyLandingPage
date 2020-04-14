@@ -3,8 +3,12 @@ import { ProjectContainer } from '@containers';
 import UdemyImage1 from '@components/Images/ProjectDetailsImages/UdemyImage1';
 import UdemyImage2 from '@components/Images/ProjectDetailsImages/UdemyImage2';
 import FooterImage from '@components/Images/ProjectDetailsImages/FooterImage';
+import { checkForInvalidBrowser } from '@utils/commonUtils';
 
 class Project extends Component {
+  componentDidMount = () => {
+    checkForInvalidBrowser();
+  };
   render() {
     return (
       <ProjectContainer

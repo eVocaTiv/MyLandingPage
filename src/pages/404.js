@@ -30,7 +30,7 @@ const NotFoundPage = () => (
   <NotFoundContainer>
     <SEO title="404: Not found" />
     <h1 style={{ color: '#00C2CB', margin: '5%' }}>Hold onnnnn!</h1>
-    <h4 style={{ color: '#00C2CB', margin: '2.5%' }}> Either your URL is incorrect or you are using an unsupported browser ( IE / Edge ) </h4>
+    <h4 style={{ color: '#00C2CB', margin: '2.5%' }}> Either your URL is incorrect or you are using an unsupported browser ( IE / Edge / Safari ) </h4>
     <StyledButton
       id="go-home-button"
       onClick={goingToHome}

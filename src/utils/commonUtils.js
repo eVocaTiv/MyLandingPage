@@ -45,15 +45,24 @@ const onNavigate = (URL) => {
 };
 
 const checkForInvalidBrowser = () => {
-   // Internet Explorer 6-11
-   const isIE = /*@cc_on!@*/ false || !!document.documentMode;
-   // Edge 20+
-   const isEdge = !isIE && !!window.StyleMedia;
-   // prevent IE disable ( 404 )
-   if(isIE || isEdge) {
-     on404Clicked();
-   }
-}
+  // Internet Explorer 6-11
+  const isIE = /*@cc_on!@*/ false || !!document.documentMode;
+  // Edge 20+
+  const isEdge = !isIE && !!window.StyleMedia;
+  // Safari - transparent text bug
+  const isSafari =
+    /constructor/i.test(window.HTMLElement) ||
+    (function(p) {
+      return p.toString() === '[object SafariRemoteNotification]';
+    })(
+      !window['safari'] ||
+        (typeof safari !== 'undefined' && safari.pushNotification),
+    );
+  // prevent IE disable ( 404 )
+  if (isIE || isEdge || isSafari) {
+    on404Clicked();
+  }
+};
 
 export {
   onHomeClicked,
