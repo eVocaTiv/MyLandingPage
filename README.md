@@ -38,4 +38,4 @@ Development of my personal website using Gatsby ( https://www.gatsbyjs.org/ )
 ### Vision Page
 <p align="center"><img src="screenshots/Vision Page HF WF.jpg" /></p>
 
-More: https://github.com/eVocaTiv/UX-Design-Practice/tree/master/MyWebsiteWireframes
+Old wireframes: https://github.com/eVocaTiv/UX-Design-Practice/tree/master/MyWebsiteWireframes
