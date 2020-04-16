@@ -56,3 +56,10 @@ html, body {
 .anim-smooth {
   transition: all 0.5s !important;
 }
+
+/* mac flicker bug */
+
+.img {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+}
