@@ -32,6 +32,10 @@ Development of my personal website using Gatsby ( https://www.gatsbyjs.org/ )
 <p align="center"><img src="screenshots/model.JPG" /></p>
 
 ## Rough Sketches & Wireframes
+
+## Original Single Page App Idea
+<p align="center"><img src="screenshots/old WF.jpg" /></p>
+
 ### Home Page
 <p align="center"><img src="screenshots/Home Page Start WF.jpg" /></p>
 
