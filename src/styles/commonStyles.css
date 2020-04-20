@@ -59,7 +59,7 @@ html, body {
 
 /* mac flicker bug */
 
-.img {
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateX(0);
+img {
+  -webkit-backface-visibility: hidden !important;
+  -webkit-transform: translateX(0) !important;
 }
