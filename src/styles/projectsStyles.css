@@ -20,10 +20,13 @@
     opacity: 1;
   }
   .projects-container {
-    height: 475vh !important;
+    height: 575vh !important;
   }
   .projects-arrow-primary {
     top: 92.5% !important;
+  }
+  .projects-heading {
+    top: 50vh !important;
   }
 }
 

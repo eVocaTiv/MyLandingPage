@@ -13,6 +13,8 @@ import UdemyImage from '@components/Images/ProjectImages/UdemyImage';
 import ZentorsUIImage from '@components/Images/ProjectImages/ZentorsUIImage';
 import AmazonImage from '@components/Images/ProjectImages/AmazonImage';
 import BooksImage from '@components/Images/ProjectImages/BooksImage';
+import CollageImage from '@components/Images/ProjectImages/CollageImage';
+import BlogImage from '@components/Images/ProjectImages/BlogImage';
 
 import Constants from '@constants';
 import '@styles/projectsStyles.css';
@@ -34,7 +36,7 @@ const StyledFooterText = styled.div`
 
 const StyledProjectsDiv = styled.div`
   width: 100%;
-  height: 250vh;
+  height: 325vh;
   position: relative;
   z-index: 1;
   background-color: black;
@@ -53,7 +55,7 @@ const ProjectDisplayCardsDiv = styled.div`
 const ArrowDivPrimary = styled.div`
   position: absolute;
   left: 47%;
-  top: 87.5%;
+  top: 88.5%;
 `;
 
 class ProjectDisplayContainer extends Component {
@@ -152,6 +154,28 @@ class ProjectDisplayContainer extends Component {
                   projectTitle="Code Catalog"
                 >
                   <JavaCodesImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+              {/* BPGC Collage */}
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+                <ProjectDisplayCard
+                  // projectURL={javaCodes}
+                  projectTitle={`A Collage Website ( Coming Soon! )`}
+                  isDisabled
+                >
+                  <CollageImage />
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+              {/* Medium blog */}
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+                <ProjectDisplayCard
+                  // projectURL={javaCodes}
+                  projectTitle="My Blog  ( Coming Soon! )"
+                  isDisabled
+                >
+                  <BlogImage />
                 </ProjectDisplayCard>
               </ScrollAnimation>
             </ProjectDisplayCardsDiv>
