@@ -3,6 +3,9 @@
   opacity: 0;
 }
 
+.projects-display-cards-div {
+  top: 50vh !important;
+}
 
 /* Media queries */
 @media only screen and (max-width: 1250px) {
@@ -26,7 +29,7 @@
     top: 92.5% !important;
   }
   .projects-heading {
-    top: 50vh !important;
+    top: 45vh !important;
   }
 }
 

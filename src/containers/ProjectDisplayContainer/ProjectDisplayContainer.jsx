@@ -36,7 +36,7 @@ const StyledFooterText = styled.div`
 
 const StyledProjectsDiv = styled.div`
   width: 100%;
-  height: 325vh;
+  height: 305vh;
   position: relative;
   z-index: 1;
   background-color: black;
