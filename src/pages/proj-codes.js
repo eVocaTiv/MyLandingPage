@@ -14,8 +14,8 @@ class Project extends Component {
       <ProjectContainer
         TopImage={<JavaCodesImage1 />}
         BottomImage={<JavaCodesImage2 />}
-        ProjectDescription="This is the master code repository which contains code snippets from Competitive Programming, Computer Networks,
-         some tuitions I gave at Chegg, Principles of Programming Languages, Socket Programming, Microprocessors, Data Structures, Analysis of Algorithms, etc.   "
+        ProjectDescription="This is the master code repository which contains code snippets from Competitive Programming,
+         some tuitions I offered at Chegg Inc. and various subject like Principles of Programming Languages, Socket Programming, Microprocessors, Data Structures and Analysis of Algorithms.   "
         isMoreSpaced={'large'}
         FooterImage={
           <FooterImage githubURL="https://github.com/eVocaTiv/JustDev" />
