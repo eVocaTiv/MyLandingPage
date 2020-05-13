@@ -6,6 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import AppsIcon from '@material-ui/icons/Apps';
 import Tooltip from '@material-ui/core/Tooltip';
 import { NavBar } from '@components';
 import '@styles/connectStyles.css';
@@ -16,25 +17,14 @@ const NavBarContainer = styled.div`
   width: 100%;
 `;
 
-const StyledFooterText = styled.div`
-  position: fixed;
-  font-family: 'Great Vibes';
-  left: 20%;
-  top: 20%;
-  width: 500px;
-  height: 500px;
-  font-size: 4rem;
-  color: #00c2cb;
-`;
-
 const StyledIconsDiv = styled.div`
   display: flex;
-  width: 17.5%;
+  width: 20%;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   top: 92.5%;
-  left: 40%;
+  left: 39.5%;
   z-index: 1000;
 `;
 const BlackDiv = styled.div`
@@ -83,6 +73,17 @@ const StyledInstagramIcon = styled(InstagramIcon)`
   fontSize: 1rem;
   &:hover {
     color: #a72b9b;
+    transform: scale(1.5);
+  },
+`;
+
+const StyledChessIcon = styled(AppsIcon)`
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.5s ease !important;
+  fontSize: 1rem;
+  &:hover {
+    color: #e6912c;
     transform: scale(1.5);
   },
 `;
@@ -169,6 +170,11 @@ class FooterContainer extends Component {
             <Tooltip title="Instagram">
               <a href="https://www.instagram.com/kunz_dewn" target="_blank">
                 <StyledInstagramIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="Chess.com">
+              <a href="https://www.chess.com/member/evocativ" target="_blank">
+                <StyledChessIcon />
               </a>
             </Tooltip>
           </StyledIconsDiv>
