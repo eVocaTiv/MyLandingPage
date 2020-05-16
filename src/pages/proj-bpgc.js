@@ -14,8 +14,7 @@ class Project extends Component {
       <ProjectContainer
         TopImage={<BPGCImage1 />}
         BottomImage={<BPGCImage2 />}
-        ProjectDescription="A mini project which allows one to search the google books api using search parameters such as author, publisher, book name &amp; ISBN code.
-          The app is built as a dynamic web project making use of AJAX, Servlets, CSS, HTML, Jquery and Tomcat 9.0 Server."
+        ProjectDescription="A pictorial website capturing moments from my undergraduate days at  BITS Pilani, K. K. Birla Goa Campus. Made using React &amp; JavaScript, HTML5 for markup,  Sass for styling, Swiper for image display &amp; Parallax for animations. Feel free to reach out to me incase of any contributions or your own moments at BITS!"
         isMoreSpaced={'xLarge'}
         FooterImage={
           <FooterImage
