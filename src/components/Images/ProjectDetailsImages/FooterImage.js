@@ -100,7 +100,8 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips, areDesktopO
               <StyledGitHubIcon />
             </a>
           )}
-          {demoURLs && 'Demos'}
+          {demoURLs && demoURLs.length >1 && 'Demos'}
+          {demoURLs && demoURLs.length ===1 && 'Website'}
           {areDesktopOnlyLinks && (
             <StyledDesktopMessageDiv>
               (Desktop Only)
