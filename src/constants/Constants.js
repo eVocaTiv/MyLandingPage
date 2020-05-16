@@ -8,8 +8,9 @@ const Constants = {
     zentors: 'project-zentors/',
     amazon: 'proj-amazon/',
     books: 'proj-books/',
-    javaCodes: 'proj-codes/'
+    javaCodes: 'proj-codes/',
+    bpgcCollage: 'proj-bpgc/',
   },
 };
-  
-  export default Constants;
+
+export default Constants;

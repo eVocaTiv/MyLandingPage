@@ -13,7 +13,7 @@ import UdemyImage from '@components/Images/ProjectImages/UdemyImage';
 import ZentorsUIImage from '@components/Images/ProjectImages/ZentorsUIImage';
 import AmazonImage from '@components/Images/ProjectImages/AmazonImage';
 import BooksImage from '@components/Images/ProjectImages/BooksImage';
-import CollageImage from '@components/Images/ProjectImages/CollageImage';
+import BPGCImage from '@components/Images/ProjectImages/BPGCImage';
 import BlogImage from '@components/Images/ProjectImages/BlogImage';
 
 import Constants from '@constants';
@@ -69,6 +69,7 @@ class ProjectDisplayContainer extends Component {
       amazon,
       books,
       javaCodes,
+      bpgcCollage,
     } = Constants.projects;
 
     return (
@@ -157,14 +158,14 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              {/* BPGC Collage */}
+              {/* BPGC CollageCollage */}
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
                   // projectURL={javaCodes}
-                  projectTitle={`A Collage Website ( Coming Soon! )`}
-                  isDisabled
+                  projectTitle={`A collage website on BITS`}
+                  projectURL={bpgcCollage}
                 >
-                  <CollageImage />
+                  <BPGCImage />
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
