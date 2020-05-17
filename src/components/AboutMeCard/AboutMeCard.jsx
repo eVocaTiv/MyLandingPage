@@ -24,6 +24,7 @@ const useStyles = makeStyles({
   },
   cardBody: {
     'font-family': 'Montserrat',
+    'font-style': 'italic',
     'line-height': '1.75rem',
     'letter-spacing': ' 0.05rem',
     'font-size': '0.9rem',

@@ -21,8 +21,7 @@ const StyledPaper = styled(Paper)`
   transition: all ease 0.5s !important;
   box-sizing: border-box;
   &:hover {
-    transform: rotate(3deg) scale(1.1);
-    box-shadow: 5px 5px 15px 1px #00c2cb;
+    transform: scale(1.1);
     opacity: 1;
 
     .project-card-overlay {

@@ -119,7 +119,7 @@ class ProjectDisplayContainer extends Component {
                   <IoTImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      IoT Security Web App
+                      IoT Security Web Application
                     </div>
                     <div className="overlay-text--role">
                       UI Development and Prototyping
