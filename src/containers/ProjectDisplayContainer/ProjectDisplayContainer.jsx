@@ -76,7 +76,7 @@ const Overlay = styled.div`
   .overlay-text--heading {
     font-size: 1.25rem;
     position: relative;
-    top: 45%;
+    top: 40%;
     color: black;
   }
 

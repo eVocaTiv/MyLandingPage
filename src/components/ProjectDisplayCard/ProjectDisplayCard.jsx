@@ -38,7 +38,7 @@ const StyledPaper = styled(Paper)`
 
       & .overlay-text--role {
         display: block;
-        padding-top: 2%;
+        padding-top: 3%;
       }
     }
   }
