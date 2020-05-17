@@ -214,7 +214,7 @@ class ProjectDisplayContainer extends Component {
                 <ProjectDisplayCard projectURL={books}>
                   <BooksImage />
                   <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">Book Search App</div>
+                    <div className="overlay-text--heading">Book Search Web Project</div>
                     <div className="overlay-text--role">
                       Software Development and UI Design
                     </div>
