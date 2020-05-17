@@ -21,11 +21,14 @@ const StyledPaper = styled(Paper)`
   transition: all ease 0.5s !important;
   box-sizing: border-box;
   &:hover {
-    transform: scale(1.1);
     opacity: 1;
+    transform: scale(1.1);
 
     .project-card-overlay {
-      top: 80%;
+      top: 81%;
+      height: 20%;
+      left: -0.2%;
+      width: 100.4%;
       color: #00c2cb;
       background: rgba(0, 0, 0, 0.8);
       letter-spacing: 0rem;

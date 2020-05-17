@@ -8,6 +8,7 @@
   border-radius: 2px;
   overflow: hidden;
   transition: all 0.5s ease;
+  opacity: 0.75;
 }
 
 .blurred-box:hover {
