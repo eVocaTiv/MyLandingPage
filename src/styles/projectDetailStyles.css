@@ -3,6 +3,7 @@
 }
 
 /* Media queries */
+
 @media only screen and (max-width: 1300px) {
   .project-image-2 {
     top: 15% !important;
@@ -20,10 +21,12 @@
 
 @media only screen and (max-width: 1000px) {
   .project-description {
-    top: 12.5% !important;
+    top: 9% !important;
+    line-height: 2.5rem !important;
   }
   .project-image-2 {
-    top: 12.5% !important;
+    top: 9% !important;
+    line-height: 2.5rem !important;
   }
 }
 
@@ -31,32 +34,34 @@
   .project-icons {
     left: 33% !important;
   }
+  .project-description {
+    top: 7% !important;
+    line-height: 2.15rem !important;
+  }
   .project-image-1 {
     font-size: 1.5rem !important;
     left: 35% !important;
   }
   .project-image-2 {
-    top: 10% !important;
+    top: 7% !important;
     line-height: 2.5rem !important;
   }
-  .project-description {
-    line-height: 2.5rem !important;
-  }
+
 }
 
 @media only screen and (max-width: 800px) {
   .project-image-2 {
-    line-height: 2.15rem !important;
+    line-height: 2rem !important;
   }
   .project-description {
-    line-height: 2.25rem !important;
+    line-height: 2rem !important;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .project-image-2 {
     font-size: 1rem !important;
-  } 
+  }
   .project-description {
     font-size: 1rem !important;
   }
@@ -67,7 +72,7 @@
 
 @media only screen and (max-width: 650px) {
   .project-description {
-    top: 7.5% !important;
+    top: 5% !important;
   }
   .project-image-2 {
     top: 7.5% !important;
@@ -84,7 +89,10 @@
   .project-image-2 {
     line-height: 1.75rem !important;
     top: 5% !important;
-    }
+  }
+  .project-description {
+    line-height: 1.65rem !important;
+  }
 }
 
 @media only screen and (max-width: 525px) {
@@ -93,8 +101,7 @@
     line-height: 1.65rem !important;
   }
   .project-description {
-    line-height: 1.9rem !important;
-    top: 7.5% !important;
+    font-size: 0.8rem !important;
   }
 }
 
@@ -102,10 +109,12 @@
   .project-icons {
     left: 25% !important;
   }
-
+  .project-image-2 {
+    font-size: 0.7rem !important;
+  }
   .project-description {
-    line-height: 1.65rem !important;
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
+    line-height: 1.5rem !important;
   }
 }
 
@@ -114,12 +123,10 @@
     left: 20% !important;
   }
   .project-image-2 {
-    line-height: 1.5rem !important;
+    font-size: 0.6rem !important;
   }
   .project-description {
-    top: 20% !important;
-    line-height: 1.5rem !important;
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
   .project-image-1 {
     font-size: 1rem !important;

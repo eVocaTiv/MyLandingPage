@@ -41,7 +41,7 @@ const StyledPaper = styled(Card)`
       ? '10%'
       : '5%'};
   line-height: 3rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: bold;
   letter-spacing: 0.05rem;
   box-shadow: none !important;

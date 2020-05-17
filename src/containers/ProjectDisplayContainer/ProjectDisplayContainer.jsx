@@ -119,10 +119,25 @@ class ProjectDisplayContainer extends Component {
                   <IoTImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      IoT Vulnerability Scanner
+                      IoT Security Web App
                     </div>
                     <div className="overlay-text--role">
-                       UI Developer and UML Prototyper
+                      UI Development and Prototyping
+                    </div>
+                  </Overlay>
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+              {/* BPGC CollageCollage */}
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+                <ProjectDisplayCard projectURL={bpgcCollage}>
+                  <BPGCImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      A Pictorial Website on BITS
+                    </div>
+                    <div className="overlay-text--role">
+                      Software Development and UI Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -132,11 +147,9 @@ class ProjectDisplayContainer extends Component {
                 <ProjectDisplayCard projectURL={udemy}>
                   <UdemyImage />
                   <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">
-                      Udemy courses' projects
-                    </div>
+                    <div className="overlay-text--heading">Udemy Learnings</div>
                     <div className="overlay-text--role">
-                       UI Developer
+                      UI Development &amp; Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -147,10 +160,10 @@ class ProjectDisplayContainer extends Component {
                   <LandingPageImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      My personal website
+                      Personal Website
                     </div>
                     <div className="overlay-text--role">
-                       Software Developer and UI Designer
+                      Software Development and UI Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -160,10 +173,9 @@ class ProjectDisplayContainer extends Component {
                 <ProjectDisplayCard projectURL={otherFiddles}>
                   <OtherFiddlesImage />
                   <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">UI Fiddles</div>
+                    <div className="overlay-text--heading">Misc. Effects </div>
                     <div className="overlay-text--role">
-                       Logo &amp; VFX Designer, CSS custom effects
-                      developer
+                      Logo &amp; VFX Design and CSS custom effects.
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -177,8 +189,8 @@ class ProjectDisplayContainer extends Component {
                       Zentors Website Redesign
                     </div>
                     <div className="overlay-text--role">
-                      UX Researcher, Designer, Developer and
-                      Software Architect.
+                      UX Research &amp; Design, Software Design &amp;
+                      Development
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -192,7 +204,7 @@ class ProjectDisplayContainer extends Component {
                       Amazon Work Experience
                     </div>
                     <div className="overlay-text--role">
-                       Software Developer and Front-End Engineer
+                      Software Development and Front-End Engineering
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -204,7 +216,7 @@ class ProjectDisplayContainer extends Component {
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">Book Search App</div>
                     <div className="overlay-text--role">
-                       Software Developer and UI Designer
+                      Software Development and UI Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -216,22 +228,7 @@ class ProjectDisplayContainer extends Component {
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">Code Catalog</div>
                     <div className="overlay-text--role">
-                       Programmer and Tutor{' '}
-                    </div>
-                  </Overlay>
-                </ProjectDisplayCard>
-              </ScrollAnimation>
-
-              {/* BPGC CollageCollage */}
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={bpgcCollage}>
-                  <BPGCImage />
-                  <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">
-                      A collage website on BITS
-                    </div>
-                    <div className="overlay-text--role">
-                       Software Developer and UI Designer
+                      Programming and Tutoring
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -240,15 +237,14 @@ class ProjectDisplayContainer extends Component {
               {/* Medium blog */}
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
-                  projectTitle="My Blog  ( Coming Soon! )"
                   isDisabled
                 >
                   <BlogImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      My Blog on UX ( Coming Soon! )
+                      UX Blog ( Coming Soon! )
                     </div>
-                    <div className="overlay-text--role"> Writer </div>
+                    <div className="overlay-text--role"> Blog Writing </div>
                   </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>

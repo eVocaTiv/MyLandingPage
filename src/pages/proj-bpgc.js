@@ -15,7 +15,7 @@ class Project extends Component {
         TopImage={<BPGCImage1 />}
         BottomImage={<BPGCImage2 />}
         ProjectDescription="A pictorial website capturing moments from my undergraduate days at  BITS Pilani, K. K. Birla Goa Campus. Made using React &amp; JavaScript, HTML5 for markup,  Sass for styling, Swiper for image display &amp; Parallax for animations. Feel free to reach out to me incase of any contributions or your own moments at BITS!"
-        isMoreSpaced={'xLarge'}
+        isMoreSpaced={'medium'}
         FooterImage={
           <FooterImage
           demoURLs={[

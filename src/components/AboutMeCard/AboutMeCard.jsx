@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   cardHeader: {
     'text-align': 'center',
     'font-family': 'Great Vibes',
-    'font-size': '2rem',
+    'font-size': '2.25rem',
     color: '#00C2CB',
     display: 'flex',
     alignItems: 'center',
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     'font-family': 'Montserrat',
     'line-height': '1.75rem',
     'letter-spacing': ' 0.05rem',
-    'font-size': '0.8rem',
+    'font-size': '0.9rem',
     'font-weight': 'bold',
     color: '#B7A9D9',
     display: 'flex',

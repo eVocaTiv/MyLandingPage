@@ -26,7 +26,7 @@ const StyledPaper = styled(Paper)`
     opacity: 1;
 
     .project-card-overlay {
-      top: 90%;
+      top: 80%;
       color: #00c2cb;
       background: rgba(0, 0, 0, 0.8);
       letter-spacing: 0rem;
@@ -38,7 +38,7 @@ const StyledPaper = styled(Paper)`
 
       & .overlay-text--role {
         display: block;
-        padding-top: 0.5%;
+        padding-top: 2%;
       }
     }
   }
@@ -50,7 +50,7 @@ const StyledPaper = styled(Paper)`
 export default function Variants(props) {
   const classes = useStyles();
 
-  const { children, projectTitle, projectURL, isDisabled } = props;
+  const { children, projectURL, isDisabled } = props;
   return (
       <div className={classes.root}>
         <StyledPaper

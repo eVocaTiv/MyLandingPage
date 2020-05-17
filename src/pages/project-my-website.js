@@ -19,7 +19,7 @@ class Project extends Component {
         FooterImage={
           <FooterImage githubURL="https://github.com/eVocaTiv/MyLandingPage" />
         }
-        isMoreSpaced={'medium'}
+        isMoreSpaced={'small'}
       />
     );
   }
