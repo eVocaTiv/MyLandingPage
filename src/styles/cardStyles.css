@@ -88,26 +88,27 @@
 .card__data {
   position: absolute;
   transform: rotate(10deg);
-  font-size: 1.05rem;
   overflow: hidden;
-  font-family: 'Allan';
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
   width: 50%;
   bottom: 40%;
   left: 70%;
   line-height: 1.75rem;
-  letter-spacing: 0.05rem;
+  /* letter-spacing: 0.05rem; */
   transform: translate(-50%, 50%);
   text-align: center;
 }
 
 .card__data__prelude {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
 }
 
 .card__data>.card__qoute {
   margin-top: 0.5rem;
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: #00c2cb;
 }
 

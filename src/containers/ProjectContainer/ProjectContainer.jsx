@@ -41,11 +41,12 @@ const StyledPaper = styled(Card)`
       ? '10%'
       : '5%'};
   line-height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
   letter-spacing: 0.05rem;
   box-shadow: none !important;
   pointer-events: none;
-  font-family: 'Allan';
+  font-family: 'Montserrat';
 `;
 
 const ProjectFooterDiv = styled.div`

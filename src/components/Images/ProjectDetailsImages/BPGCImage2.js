@@ -20,7 +20,7 @@ const StyledPaperText = styled.div`
   pointer-events: none;
   color: white;
   width: 100%;
-  font-family: 'Allan';
+  font-family: 'Montserrat';
 `;
 
 const MultiBackground = ({ className }) => {

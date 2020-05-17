@@ -10,17 +10,17 @@ const StyledPaperText = styled.div`
   min-width: 200px !important;
   width: 80% !important;
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   padding: 0.5rem;
+  font-weight: bold;
   line-height: 3rem;
   background-color: transparent !important;
   position: absolute;
   left: 10%;
-  top: 25%;
   pointer-events: none;
   color: white;
   width: 100%;
-  font-family: 'Allan';
+  font-family: 'Montserrat';
 `;
 
 const MultiBackground = ({ className }) => {

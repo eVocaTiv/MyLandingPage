@@ -129,7 +129,6 @@ const StyledGitHubIcon = styled(GitHubIcon)`
     transform: scale(1.5);
   },
 `;
-
 class FooterContainer extends Component {
   render() {
     return (

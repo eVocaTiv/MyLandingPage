@@ -29,14 +29,14 @@ const StyledFooterText = styled.div`
   color: #00c2cb;
   font-family: 'Great Vibes';
   left: 37.5%;
-  top: 10%;
+  top: 7.5%;
   font-size: 2.5rem;
   text-align: center;
 `;
 
 const StyledProjectsDiv = styled.div`
   width: 100%;
-  height: 305vh;
+  height: 375vh;
   position: relative;
   z-index: 1;
   background-color: black;
@@ -49,13 +49,41 @@ const ProjectDisplayCardsDiv = styled.div`
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   grid-column-gap: 6.5vw;
-  grid-row-gap: 7.5vh;
+  grid-row-gap: 20vh;
 `;
 
 const ArrowDivPrimary = styled.div`
   position: absolute;
   left: 47%;
   top: 88.5%;
+`;
+
+const Overlay = styled.div`
+  position: absolute;
+  transition: all 0.5s ease;
+  height: 100%;
+  width: 100%;
+  color: #00c2cb;
+  top: 0;
+  letter-spacing: -0.1rem;
+  font-style: italic;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  background: rgba(0, 194, 203, 0.8);
+  font-weight: 900;
+
+  .overlay-text--heading {
+    font-size: 1.25rem;
+    position: relative;
+    top: 45%;
+    color: black;
+  }
+
+  .overlay-text--role {
+    display: none;
+    font-size: 0.65rem;
+  }
 `;
 
 class ProjectDisplayContainer extends Component {
@@ -87,96 +115,141 @@ class ProjectDisplayContainer extends Component {
             </StyledFooterText>
             <ProjectDisplayCardsDiv className="projects-display-cards-div">
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={iotScanner}
-                  projectTitle="IoT Vulnerability Scanner"
-                >
+                <ProjectDisplayCard projectURL={iotScanner}>
                   <IoTImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      IoT Vulnerability Scanner
+                    </div>
+                    <div className="overlay-text--role">
+                       UI Developer and UML Prototyper
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={udemy}
-                  projectTitle="Udemy courses' projects"
-                >
+                <ProjectDisplayCard projectURL={udemy}>
                   <UdemyImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      Udemy courses' projects
+                    </div>
+                    <div className="overlay-text--role">
+                       UI Developer
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={myWebsite}
-                  projectTitle="My website"
-                >
+                <ProjectDisplayCard projectURL={myWebsite}>
                   <LandingPageImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      My personal website
+                    </div>
+                    <div className="overlay-text--role">
+                       Software Developer and UI Designer
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={otherFiddles}
-                  projectTitle="UI Fiddles"
-                >
+                <ProjectDisplayCard projectURL={otherFiddles}>
                   <OtherFiddlesImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">UI Fiddles</div>
+                    <div className="overlay-text--role">
+                       Logo &amp; VFX Designer, CSS custom effects
+                      developer
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={zentors}
-                  projectTitle="Zentors Website Redesign"
-                >
+                <ProjectDisplayCard projectURL={zentors}>
                   <ZentorsUIImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      Zentors Website Redesign
+                    </div>
+                    <div className="overlay-text--role">
+                      UX Researcher, Designer, Developer and
+                      Software Architect.
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={amazon}
-                  projectTitle="Amazon Work Ex."
-                >
+                <ProjectDisplayCard projectURL={amazon}>
                   <AmazonImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      Amazon Work Experience
+                    </div>
+                    <div className="overlay-text--role">
+                       Software Developer and Front-End Engineer
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={books}
-                  projectTitle="Book Search App"
-                >
+                <ProjectDisplayCard projectURL={books}>
                   <BooksImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">Book Search App</div>
+                    <div className="overlay-text--role">
+                       Software Developer and UI Designer
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  projectURL={javaCodes}
-                  projectTitle="Code Catalog"
-                >
+                <ProjectDisplayCard projectURL={javaCodes}>
                   <JavaCodesImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">Code Catalog</div>
+                    <div className="overlay-text--role">
+                       Programmer and Tutor{' '}
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               {/* BPGC CollageCollage */}
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  // projectURL={javaCodes}
-                  projectTitle={`A collage website on BITS`}
-                  projectURL={bpgcCollage}
-                >
+                <ProjectDisplayCard projectURL={bpgcCollage}>
                   <BPGCImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      A collage website on BITS
+                    </div>
+                    <div className="overlay-text--role">
+                       Software Developer and UI Designer
+                    </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
               {/* Medium blog */}
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard
-                  // projectURL={javaCodes}
                   projectTitle="My Blog  ( Coming Soon! )"
                   isDisabled
                 >
                   <BlogImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      My Blog on UX ( Coming Soon! )
+                    </div>
+                    <div className="overlay-text--role"> Writer </div>
+                  </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
             </ProjectDisplayCardsDiv>

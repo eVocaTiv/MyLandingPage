@@ -23,10 +23,11 @@ const useStyles = makeStyles({
     paddingBottom: '0.5rem',
   },
   cardBody: {
-    'font-family': 'Allan',
+    'font-family': 'Montserrat',
     'line-height': '1.75rem',
     'letter-spacing': ' 0.05rem',
-    'font-size': '1.15rem',
+    'font-size': '0.8rem',
+    'font-weight': 'bold',
     color: '#B7A9D9',
     display: 'flex',
     alignItems: 'center',
@@ -85,7 +86,7 @@ export default function AboutMeCard() {
               Amazon as a Front-End Engineer where I solve customer problems
               observing a 'user-friendly' fashion. A firm believer of “A great
               UX is more than what meets the eye, it resonates with the mind.”,
-              I assay to furnish a gratifying experience to my users. Otherwise,
+              I seek to furnish a gratifying experience for my users. Otherwise,
               I'm probably at the gym.
               <br />
               Thank you for reading!
