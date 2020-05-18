@@ -68,8 +68,12 @@ img, section::before, section::after {
   -webkit-filter: none;
   filter: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-perspective: 1000;
+  perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
   -webkit-transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000;
@@ -79,27 +83,5 @@ img, section::before, section::after {
 
 .MuiPaper-rounded:hover img {
   transition: all 0.5s ease;
-  -webkit-filter: blur(0px);
-  filter: blur(0px);
-}
-
-@media only screen and (min-width: 600px) {
-  .overlay-text--heading {
-    top: 45% !important;
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .overlay-text--role {
-    padding-top: 2% !important;
-  }
-}
-
-/* blur only above 1350px */
-
-@media only screen and (min-width: 1350px) {
-  .MuiPaper-rounded img {
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-  }
+  transform: translateZ(0);
 }

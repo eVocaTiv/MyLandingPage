@@ -72,11 +72,12 @@ const Overlay = styled.div`
   text-align: center;
   background: rgba(0, 194, 203, 0.8);
   font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .overlay-text--heading {
     font-size: 1.25rem;
-    position: relative;
-    top: 40%;
     color: black;
   }
 

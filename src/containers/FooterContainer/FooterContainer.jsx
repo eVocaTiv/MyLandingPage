@@ -19,13 +19,17 @@ const NavBarContainer = styled.div`
 
 const StyledIconsDiv = styled.div`
   display: flex;
-  width: 20%;
+  width: 80%;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   top: 92.5%;
-  left: 39.5%;
   z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 `;
 const BlackDiv = styled.div`
   background-color: black;

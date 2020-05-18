@@ -20,6 +20,7 @@ const StyledPaper = styled(Paper)`
   height: 35vh;
   transition: all ease 0.5s !important;
   box-sizing: border-box;
+  transform: translateZ(0);
   &:hover {
     opacity: 1;
     transform: scale(1.1);
@@ -39,8 +40,9 @@ const StyledPaper = styled(Paper)`
       }
 
       & .overlay-text--role {
-        display: block;
-        padding-top: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
