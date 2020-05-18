@@ -47,6 +47,7 @@ const StyledPaper = styled(Card)`
   box-shadow: none !important;
   pointer-events: none;
   font-family: 'Montserrat';
+  text-align: justify;
 `;
 
 const ProjectFooterDiv = styled.div`

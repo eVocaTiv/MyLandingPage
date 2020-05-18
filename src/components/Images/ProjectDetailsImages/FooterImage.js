@@ -93,7 +93,7 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips, areDesktopO
       alt="Kunal Dewan Project Footer Image"
     >
       <StyledPaperText className="project-icons anim-smooth">
-        <ScrollAnimation animateIn="flash">
+        <ScrollAnimation animateIn="fadeIn">
           <br />
           {githubURL && (
             <a href={githubURL} target="_blank">
