@@ -64,10 +64,9 @@ img, section::before, section::after {
 
 /* Override paper images */
 
-.MuiPaper-rounded:hover img {
-  transition: all 0.5s ease;
-  -webkit-filter: blur(0);
-  filter: blur(0);
+.MuiPaper-rounded img {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0);
@@ -78,12 +77,19 @@ img, section::before, section::after {
   transform: translateZ(0);
 }
 
+.MuiPaper-rounded:hover img {
+  transition: all 0.5s ease;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
 @media only screen and (min-width: 600px) {
-  .MuiPaper-rounded img {
-    -webkit-filter: blur(1px);
-  }
   .overlay-text--heading {
     top: 45% !important;
+  }
+  .MuiPaper-rounded img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
   }
 }
 
