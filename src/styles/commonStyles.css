@@ -87,14 +87,17 @@ img, section::before, section::after {
   .overlay-text--heading {
     top: 45% !important;
   }
-  .MuiPaper-rounded img {
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-  }
 }
 
 @media only screen and (max-width: 1250px) {
   .overlay-text--role {
     padding-top: 2% !important;
   }
+}
+
+/* blur only above 1350px */
+@media only screen and (min-width: 1350px) {
+.MuiPaper-rounded img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
