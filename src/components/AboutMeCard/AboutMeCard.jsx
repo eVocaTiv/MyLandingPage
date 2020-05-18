@@ -51,6 +51,7 @@ const useStyles = makeStyles({
 // LAG ISSUES EXIST W/ gatsby.
 const StyledBodyText = styled.div`
   padding: 1rem;
+  text-align: justify;
 `;
 
 export default function AboutMeCard() {
