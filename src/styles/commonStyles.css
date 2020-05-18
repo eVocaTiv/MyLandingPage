@@ -57,7 +57,7 @@ html, body {
 
 /* mac flicker bug */
 
-img {
+img, section::before, section::after {
   -webkit-backface-visibility: hidden !important;
   -webkit-transform: translateX(0) !important;
 }
