@@ -59,7 +59,6 @@ const checkForInvalidBrowser = () => {
         (typeof safari !== 'undefined' && safari.pushNotification),
     );
     const  isFirefox = typeof InstallTrigger !== 'undefined';
-    return isIE || isEdge || isSafari || isFirefox;
   // prevent IE disable ( 404 )
   if (isIE || isEdge || isSafari || isFirefox) {
     on404Clicked();
