@@ -65,8 +65,8 @@ img, section::before, section::after {
 /* Override paper images */
 
 .MuiPaper-rounded img {
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
+  -webkit-filter: none;
+  filter: none;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0);
@@ -79,8 +79,8 @@ img, section::before, section::after {
 
 .MuiPaper-rounded:hover img {
   transition: all 0.5s ease;
-  -webkit-filter: blur(0);
-  filter: blur(0);
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
 }
 
 @media only screen and (min-width: 600px) {
@@ -96,8 +96,10 @@ img, section::before, section::after {
 }
 
 /* blur only above 1350px */
+
 @media only screen and (min-width: 1350px) {
-.MuiPaper-rounded img {
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+  .MuiPaper-rounded img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
 }
