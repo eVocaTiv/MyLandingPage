@@ -12,7 +12,7 @@ class NewLandingGlass extends Component {
               delay={2000}
               animateIn="fadeOutLeft"
             >
-              <div className="text-immersion">Immersion</div>
+              <div className="text-immersion">Welcome</div>
             </ScrollAnimation>
           </ScrollAnimation>
           <div className="box">
