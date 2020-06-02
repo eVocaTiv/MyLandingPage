@@ -14,7 +14,7 @@ class Project extends Component {
       <ProjectContainer
         TopImage={<UdemyImage1 />}
         BottomImage={<UdemyImage2 />}
-        ProjectDescription="A collection of UI mockups coded by me. These were made as a part of completion for Udemy courses by Jonas Schmedtmann on Advanced CSS, JavaScript &amp; Web Design.
+        ProjectDescription="A collection of UI mockups coded by me. These were made with my own touch, as a part of completion for Udemy courses by Jonas Schmedtmann on Advanced CSS, JavaScript &amp; Web Design.
            The mockups are coded in vanilla JS, HTML &amp; CSS."
         isMoreSpaced={'xLarge'}
         FooterImage={
