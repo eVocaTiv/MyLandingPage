@@ -5,7 +5,7 @@ Development of my personal website using Gatsby ( https://www.gatsbyjs.org/ )
 <p align="center"><img src="screenshots/colors-typography.jpg" /></p>
 
 
-## Pages
+## Pages ( Initial concept )
 ### Home Page 
 <p align="center"><img src="screenshots/home-page.JPG" /></p>
 
