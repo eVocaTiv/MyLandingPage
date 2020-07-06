@@ -15,8 +15,7 @@ class Card extends Component {
           </h4>
           <div className="card__data">
             <div className="card__data__prelude">
-              A subtle design fused with user psychology animates the
-              lacklustre semblance of otherwise dull code.
+              A subtle design fused with user psychology creates a lasting impression of any product.
             </div>
             <div className="card__qoute">
               “Good design is obvious. Great design is transparent.” — Joe

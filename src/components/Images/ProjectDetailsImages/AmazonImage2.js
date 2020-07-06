@@ -55,7 +55,7 @@ const MultiBackground = ({ className }) => {
       <StyledPaperText className="project-image-2 anim-smooth">
         <ScrollAnimation animateIn="zoomIn">
           Being the 1st ever Front-End Engineer hire at Amazon India straight
-          out of college was a big thing for me! I currently work in the same
+          out of college was a big milestone for me! I currently work in the same
           team building sophisticated dashboards and reusable components. The
           tech. stack includes vanilla JavaScript, HTML, CSS, React, Java and
           JSPs. The work is highly confidential &amp; obviously can't be revealed :P. 
