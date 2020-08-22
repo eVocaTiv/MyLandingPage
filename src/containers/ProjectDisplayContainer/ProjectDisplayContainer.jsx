@@ -15,6 +15,7 @@ import AmazonImage from '@components/Images/ProjectImages/AmazonImage';
 import BooksImage from '@components/Images/ProjectImages/BooksImage';
 import BPGCImage from '@components/Images/ProjectImages/BPGCImage';
 import BlogImage from '@components/Images/ProjectImages/BlogImage';
+import ReactGA from 'react-ga';
 
 import Constants from '@constants';
 import '@styles/projectsStyles.css';
@@ -88,6 +89,12 @@ const Overlay = styled.div`
 `;
 
 class ProjectDisplayContainer extends Component {
+
+  componentDidMount = () => {
+    ReactGA.initialize('UA-162482291-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
+
   render() {
     const {
       iotScanner,

@@ -8,6 +8,7 @@ import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
 import { StyledArrow } from '@styles/commonStyledComponents';
 import { onProjectsClicked } from '@utils/commonUtils';
+import ReactGA from 'react-ga';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -29,6 +30,11 @@ const StyledAboutMeDiv = styled.div`
 `;
 
 class AboutMeContainer extends Component {
+  componentDidMount = () => {
+    ReactGA.initialize('UA-162482291-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
+
   render() {
     return (
       <Fragment>

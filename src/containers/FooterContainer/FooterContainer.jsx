@@ -12,6 +12,7 @@ import { NavBar } from '@components';
 import '@styles/connectStyles.css';
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
+import ReactGA from 'react-ga';
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -134,6 +135,12 @@ const StyledGitHubIcon = styled(GitHubIcon)`
   },
 `;
 class FooterContainer extends Component {
+
+  componentDidMount = () => {
+    ReactGA.initialize('UA-162482291-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
+
   render() {
     return (
       <BlackDiv>

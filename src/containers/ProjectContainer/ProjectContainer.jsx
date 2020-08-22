@@ -6,6 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import '@styles/projectDetailStyles.css';
 import '@styles/commonStyles.css';
 import 'animate.css/animate.min.css';
+import ReactGA from 'react-ga';
 
 const ProjectContainerDiv = styled.div`
   background-color: #407c80;
@@ -64,6 +65,11 @@ export default class ProjectContainer extends Component {
       FooterImage,
       isMoreSpaced,
     } = this.props;
+
+    componentDidMount = () => {
+      ReactGA.initialize('UA-162482291-1');
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }
 
     return (
       <ProjectContainerDiv>
