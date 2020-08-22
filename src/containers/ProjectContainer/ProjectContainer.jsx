@@ -57,6 +57,12 @@ const ProjectFooterDiv = styled.div`
 `;
 
 export default class ProjectContainer extends Component {
+  
+  componentDidMount = () => {
+    ReactGA.initialize('UA-162482291-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
+
   render() {
     const {
       TopImage,
@@ -65,12 +71,6 @@ export default class ProjectContainer extends Component {
       FooterImage,
       isMoreSpaced,
     } = this.props;
-
-    componentDidMount = () => {
-      ReactGA.initialize('UA-162482291-1');
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }
-
     return (
       <ProjectContainerDiv>
           <NavBarContainer>
