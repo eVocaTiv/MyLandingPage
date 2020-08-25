@@ -26,7 +26,7 @@ const CardImage = () => {
         width: '100%',
       }}
       fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan MEDIUM BLOG IMAGE"
+      alt="Kunal Dewan User Experience Design Projects IMAGE"
     />
   );
 };

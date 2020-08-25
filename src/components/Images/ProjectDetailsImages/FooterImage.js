@@ -6,6 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LiveTvIcon from '@material-ui/icons/LiveTv';
 import Tooltip from '@material-ui/core/Tooltip';
+import AdobeIcon from '@material-ui/icons/FontDownload';
 
 const StyledPaperText = styled.div`
   // override default transition in card's child.
@@ -37,6 +38,17 @@ const StyledGitHubIcon = styled(GitHubIcon)`
   },
 `;
 
+const StyledAdobeIcon = styled(AdobeIcon)`
+  color: #ffffff;
+  // overriding default child transition
+  transition: all 0.5s ease !important;
+  fontSize: 1rem;
+  pointer-events: auto;
+  &:hover {
+    transform: scale(1.5);
+  },
+`;
+
 const StyledTvIcon = styled(LiveTvIcon)`
   color: #ffffff;
   // overriding default child transition
@@ -53,7 +65,14 @@ const StyledDesktopMessageDiv = styled.div`
   font-size: 1rem;
 `;
 
-const MultiBackground = ({ className, githubURL, demoURLs, toolTips, areDesktopOnlyLinks }) => {
+const MultiBackground = ({
+  className,
+  githubURL,
+  demoURLs,
+  toolTips,
+  areDesktopOnlyLinks,
+  adobeURL,
+}) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
@@ -77,9 +96,15 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips, areDesktopO
   const getDemoLinks = (demoURLs) => {
     if (!demoURLs) return null;
     return demoURLs.map((url, index) => (
-      <Tooltip  key={url}title={toolTips[index]}>
+      <Tooltip key={url} title={toolTips[index]}>
         <a key={url} target="_blank" href={url}>
-          <StyledTvIcon className={areDesktopOnlyLinks ? "project-desktop-only-links" : 'normal-links'}/>
+          <StyledTvIcon
+            className={
+              areDesktopOnlyLinks
+                ? 'project-desktop-only-links'
+                : 'normal-links'
+            }
+          />
         </a>
       </Tooltip>
     ));
@@ -100,14 +125,17 @@ const MultiBackground = ({ className, githubURL, demoURLs, toolTips, areDesktopO
               <StyledGitHubIcon />
             </a>
           )}
-          {demoURLs && demoURLs.length >1 && 'Demos'}
-          {demoURLs && demoURLs.length ===1 && 'Website'}
-          {areDesktopOnlyLinks && (
-            <StyledDesktopMessageDiv>
-              (Desktop Only)
-            </StyledDesktopMessageDiv>
+          {adobeURL && (
+            <a href={adobeURL} target="_blank">
+              <StyledAdobeIcon />
+            </a>
           )}
-          {!demoURLs && !githubURL && ' =] '}
+          {demoURLs && demoURLs.length > 1 && 'Demos'}
+          {demoURLs && demoURLs.length === 1 && 'Website'}
+          {areDesktopOnlyLinks && (
+            <StyledDesktopMessageDiv>(Desktop Only)</StyledDesktopMessageDiv>
+          )}
+          {!demoURLs && !githubURL && !adobeURL && ' =] '}
           <br />
           {getDemoLinks(demoURLs)}
         </ScrollAnimation>

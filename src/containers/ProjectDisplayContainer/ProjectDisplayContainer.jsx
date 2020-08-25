@@ -14,7 +14,8 @@ import ZentorsUIImage from '@components/Images/ProjectImages/ZentorsUIImage';
 import AmazonImage from '@components/Images/ProjectImages/AmazonImage';
 import BooksImage from '@components/Images/ProjectImages/BooksImage';
 import BPGCImage from '@components/Images/ProjectImages/BPGCImage';
-import BlogImage from '@components/Images/ProjectImages/BlogImage';
+import UXImage from '@components/Images/ProjectImages/UXImage';
+// import BlogImage from '@components/Images/ProjectImages/BlogImage';
 import ReactGA from 'react-ga';
 
 import Constants from '@constants';
@@ -89,11 +90,10 @@ const Overlay = styled.div`
 `;
 
 class ProjectDisplayContainer extends Component {
-
   componentDidMount = () => {
     ReactGA.initialize('UA-162482291-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
-  }
+  };
 
   render() {
     const {
@@ -106,6 +106,7 @@ class ProjectDisplayContainer extends Component {
       books,
       javaCodes,
       bpgcCollage,
+      ux,
     } = Constants.projects;
 
     return (
@@ -122,6 +123,19 @@ class ProjectDisplayContainer extends Component {
               <div className="projects-down-arrow">&dArr;</div>
             </StyledFooterText>
             <ProjectDisplayCardsDiv className="projects-display-cards-div">
+              {/* UX Design */}
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+                <ProjectDisplayCard projectURL={ux}>
+                  <UXImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">Design Showcase</div>
+                    <div className="overlay-text--role">
+                      {' '}
+                      UX Design, UI Design{' '}
+                    </div>
+                  </Overlay>
+                </ProjectDisplayCard>
+              </ScrollAnimation>
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={iotScanner}>
                   <IoTImage />
@@ -152,18 +166,6 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={udemy}>
-                  <UdemyImage />
-                  <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">Udemy Learnings</div>
-                    <div className="overlay-text--role">
-                      UI Development &amp; Design
-                    </div>
-                  </Overlay>
-                </ProjectDisplayCard>
-              </ScrollAnimation>
-
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={myWebsite}>
                   <LandingPageImage />
                   <Overlay className="project-card-overlay">
@@ -178,12 +180,12 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={otherFiddles}>
-                  <OtherFiddlesImage />
+                <ProjectDisplayCard projectURL={udemy}>
+                  <UdemyImage />
                   <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">Misc. Effects </div>
+                    <div className="overlay-text--heading">UI Learnings at Udemy</div>
                     <div className="overlay-text--role">
-                      Logo &amp; VFX Design and CSS custom effects.
+                      UI Development &amp; Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -197,8 +199,19 @@ class ProjectDisplayContainer extends Component {
                       Zentors Website Redesign
                     </div>
                     <div className="overlay-text--role">
-                      UX Research &amp; Design, Software Design &amp;
-                      Development
+                      UX Research &amp; Design, Software Design
+                    </div>
+                  </Overlay>
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+                <ProjectDisplayCard projectURL={otherFiddles}>
+                  <OtherFiddlesImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">Misc. Effects </div>
+                    <div className="overlay-text--role">
+                      CSS Effects &amp; Logo Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -222,7 +235,9 @@ class ProjectDisplayContainer extends Component {
                 <ProjectDisplayCard projectURL={books}>
                   <BooksImage />
                   <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">Book Search Web Project</div>
+                    <div className="overlay-text--heading">
+                      Book Search Web Project
+                    </div>
                     <div className="overlay-text--role">
                       Software Development and UI Design
                     </div>
@@ -236,23 +251,8 @@ class ProjectDisplayContainer extends Component {
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">Code Catalog</div>
                     <div className="overlay-text--role">
-                      Programming and Tutoring
+                      Algorithmic Programming and Tutoring
                     </div>
-                  </Overlay>
-                </ProjectDisplayCard>
-              </ScrollAnimation>
-
-              {/* Medium blog */}
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard
-                  isDisabled
-                >
-                  <BlogImage />
-                  <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">
-                      UX Blog ( Coming Soon! )
-                    </div>
-                    <div className="overlay-text--role"> Blog Writing </div>
                   </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>

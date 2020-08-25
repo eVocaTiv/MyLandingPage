@@ -10,6 +10,7 @@ const Constants = {
     books: 'proj-books/',
     javaCodes: 'proj-codes/',
     bpgcCollage: 'proj-bpgc/',
+    ux: 'proj-ux',
   },
 };
 

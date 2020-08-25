@@ -26,7 +26,7 @@ const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "proj-udemy-1.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "proj-ux-1.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
@@ -48,11 +48,11 @@ const MultiBackground = ({ className }) => {
       Tag={`section`}
       className={className}
       fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan Udemy UI Fiddles"
+      alt="Kunal Dewan User Experience Designs"
     >
       <StyledPaperText className="project-image-1 anim-smooth">
         <ScrollAnimation animateIn="zoomIn">
-          My Udemy UI Learnings
+          Design Showcase
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>

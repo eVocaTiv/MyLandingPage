@@ -15,7 +15,7 @@ const StyledPaperText = styled.div`
   background-color: transparent !important;
   position: absolute;
   left: 40%;
-  top: 40%;
+  top: 30%;
   pointer-events: none;
   color: white;
   width: 100%;
@@ -26,7 +26,7 @@ const MultiBackground = ({ className }) => {
   const { seamlessBackground } = useStaticQuery(
     graphql`
       query {
-        seamlessBackground: file(relativePath: { eq: "proj-udemy-1.jpg" }) {
+        seamlessBackground: file(relativePath: { eq: "proj-ux-2.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
@@ -40,7 +40,7 @@ const MultiBackground = ({ className }) => {
   // The lowermost image comes last!
   const backgroundFluidImageStack = [
     seamlessBackground.childImageSharp.fluid,
-    'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(20,43,89,1) 40%, rgba(0,0,0,0.5) 100%)',
+    'linear-gradient(45deg, rgba(128,57,102,0.75) 0%, rgba(204,112,171,0.5) 100%)',
   ].reverse();
 
   return (
@@ -48,18 +48,17 @@ const MultiBackground = ({ className }) => {
       Tag={`section`}
       className={className}
       fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan Udemy UI Fiddles"
+      alt="Kunal Dewan User Experience Designs"
     >
-      <StyledPaperText className="project-image-1 anim-smooth">
+      <StyledPaperText>
         <ScrollAnimation animateIn="zoomIn">
-          My Udemy UI Learnings
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>
   );
 };
 
-const UdemyImage1 = styled(MultiBackground)`
+const UdemyImage2 = styled(MultiBackground)`
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -70,4 +69,4 @@ const UdemyImage1 = styled(MultiBackground)`
   background-attachment: fixed;
 `;
 
-export default UdemyImage1;
+export default UdemyImage2;
