@@ -38,7 +38,7 @@ const StyledFooterText = styled.div`
 
 const StyledProjectsDiv = styled.div`
   width: 100%;
-  height: 375vh;
+  height: 275vh;
   position: relative;
   z-index: 1;
   background-color: black;
@@ -57,7 +57,7 @@ const ProjectDisplayCardsDiv = styled.div`
 const ArrowDivPrimary = styled.div`
   position: absolute;
   left: 47%;
-  top: 88.5%;
+  top: 92%;
 `;
 
 const Overlay = styled.div`
@@ -216,7 +216,7 @@ class ProjectDisplayContainer extends Component {
                   </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
-
+{/* 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={amazon}>
                   <AmazonImage />
@@ -229,7 +229,7 @@ class ProjectDisplayContainer extends Component {
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
-              </ScrollAnimation>
+              </ScrollAnimation> */}
 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={books}>
@@ -245,7 +245,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+              {/* <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={javaCodes}>
                   <JavaCodesImage />
                   <Overlay className="project-card-overlay">
@@ -255,7 +255,8 @@ class ProjectDisplayContainer extends Component {
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
-              </ScrollAnimation>
+              </ScrollAnimation> */}
+
             </ProjectDisplayCardsDiv>
             <ArrowDivPrimary className="arrow-div projects-arrow-primary anim-smooth">
               <ScrollAnimation animateIn="zoomIn">

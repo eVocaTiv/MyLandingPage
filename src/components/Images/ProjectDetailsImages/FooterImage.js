@@ -62,7 +62,11 @@ const StyledTvIcon = styled(LiveTvIcon)`
 `;
 
 const StyledDesktopMessageDiv = styled.div`
-  font-size: 1rem;
+  font-size: 0.5rem;
+`;
+
+const StyledDemosText = styled.span`
+  font-size: 2rem;
 `;
 
 const MultiBackground = ({
@@ -130,7 +134,7 @@ const MultiBackground = ({
               <StyledAdobeIcon />
             </a>
           )}
-          {demoURLs && demoURLs.length > 1 && 'Demos'}
+          {demoURLs && demoURLs.length > 1 && <StyledDemosText id="styled-demos-text">Demos</StyledDemosText>}
           {demoURLs && demoURLs.length === 1 && 'Website'}
           {areDesktopOnlyLinks && (
             <StyledDesktopMessageDiv>(Desktop Only)</StyledDesktopMessageDiv>

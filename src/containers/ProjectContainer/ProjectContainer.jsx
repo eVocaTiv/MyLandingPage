@@ -9,7 +9,7 @@ import 'animate.css/animate.min.css';
 import ReactGA from 'react-ga';
 
 const ProjectContainerDiv = styled.div`
-  background-color: #407c80;
+  background-color: black;
 `;
 
 const NavBarContainer = styled.div`
@@ -19,6 +19,7 @@ const NavBarContainer = styled.div`
 const StyledProjectDescriptionDiv = styled.div`
   height: 100vh;
   position: relative;
+  color: white;
 `;
 
 const StyledPaper = styled(Card)`
@@ -43,17 +44,16 @@ const StyledPaper = styled(Card)`
       : '5%'};
   line-height: 3rem;
   font-size: 1.15rem;
-  font-weight: bold;
   letter-spacing: 0.05rem;
   box-shadow: none !important;
   pointer-events: none;
   font-family: 'Montserrat';
+  color: white !important;
   text-align: justify;
 `;
 
 const ProjectFooterDiv = styled.div`
   height: 100vh;
-  color: black;
 `;
 
 export default class ProjectContainer extends Component {
@@ -76,7 +76,7 @@ export default class ProjectContainer extends Component {
           <NavBarContainer>
             <NavBar isProjectPage />
           </NavBarContainer>
-          <ScrollAnimation duration={3} animateIn="fadeIn">
+          <ScrollAnimation animateOnce duration={3} animateIn="fadeIn">
             <div
               style={{
                 clipPath: 'polygon(0 2.5%, 100% 2.5%, 100% 97.5%, 0% 97.5%)',
@@ -85,7 +85,7 @@ export default class ProjectContainer extends Component {
               {TopImage}
             </div>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateOnce animateIn="fadeIn">
             <StyledProjectDescriptionDiv>
               <StyledPaper
                 className="project-description anim-smooth"
@@ -95,7 +95,7 @@ export default class ProjectContainer extends Component {
               </StyledPaper>
             </StyledProjectDescriptionDiv>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">{BottomImage}</ScrollAnimation>
+          <ScrollAnimation animateOnce animateIn="fadeIn">{BottomImage}</ScrollAnimation>
           <ProjectFooterDiv>{FooterImage}</ProjectFooterDiv>
       </ProjectContainerDiv>
     );

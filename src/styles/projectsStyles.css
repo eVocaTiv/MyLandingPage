@@ -23,7 +23,7 @@
     opacity: 1;
   }
   .projects-container {
-    height: 700vh !important;
+    height: 580vh !important;
   }
   .projects-arrow-primary {
     top: 92.5% !important;
@@ -67,6 +67,9 @@
   .projects-heading {
     width: 50%;
     top: 6% !important;
+  }
+  #styled-demos-text {
+    font-size: 1.25rem;
   }
 }
 

@@ -14,10 +14,10 @@ class Project extends Component {
       <ProjectContainer
         TopImage={<UXImage1 />}
         BottomImage={<UXImage2 />}
-        ProjectDescription="These designs started out of interest when I completed few courses on UX principles
-        and design tools. By completing them I have expanded my knowledge by large amounts and wish to make the next
+        ProjectDescription="These designs started out of interest when I completed a few courses on UX principles
+        and design tools. By completing them I have expanded my knowledge tremendously and wish to make the next
         projects even better. Currently I'm teaching myself Photoshop to enhance my visual design skills and 
-        diving deep into user research through case studies for a better understanding of people."
+        diving deep into user research through case studies."
         FooterImage={
           <FooterImage adobeURL="https://dewan.design" />
         }
