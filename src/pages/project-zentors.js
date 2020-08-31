@@ -16,7 +16,7 @@ class Project extends Component {
         BottomImage={<ZentorsImage2 />}
         isMoreSpaced={'large'}
         ProjectDescription="Zentors is a college student mentoring startup founded by 3 students of Stanford University, California. I worked as a
-          UX Designer to ideate prototypes for their new application and provide technical guidance on the software architecture to the business leads."
+          UX Designer to identify and design new requirements for the application and provide technical guidance on the software architecture to the business leads."
         FooterImage={
           <FooterImage githubURL="https://github.com/eVocaTiv/ZentorsUI" />
         }
