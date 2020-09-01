@@ -196,7 +196,7 @@ class ProjectDisplayContainer extends Component {
                   <ZentorsUIImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      Zentors Website Redesign
+                      Zentors Website Concept
                     </div>
                     <div className="overlay-text--role">
                       UX Research &amp; Design, Software Design

@@ -52,7 +52,7 @@ const MultiBackground = ({ className }) => {
     >
       <StyledPaperText className="project-image-1 anim-smooth">
         <ScrollAnimation animateIn="zoomIn">
-          Zentors Website Redesign
+          Zentors Website Concept
         </ScrollAnimation>
       </StyledPaperText>
     </BackgroundImage>
