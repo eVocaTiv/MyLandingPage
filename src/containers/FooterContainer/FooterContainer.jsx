@@ -153,7 +153,7 @@ class FooterContainer extends Component {
         <StyledFooterDiv className="footer-styled-div anim-smooth">
           <StyledIconsDiv className="footer-styled-icons-div anim-smooth">
             <Tooltip title="Resume">
-              <a href="https://drive.google.com/file/d/1k3ptlGZTmrcx9d0Hp8NIbUOaGbMHG6fB/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/15G45rN9lfntPN79IQSELWJVlkQ5oeqgk/view?usp=sharing" target="_blank">
                 <StyledResumeIcon />
               </a>
             </Tooltip>
