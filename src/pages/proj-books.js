@@ -14,7 +14,7 @@ class Project extends Component {
       <ProjectContainer
         TopImage={<BookImage1 />}
         BottomImage={<BookImage2 />}
-        ProjectDescription="A mini project which allows one to search the google books api using search parameters such as author, publisher, book name &amp; ISBN code.
+        ProjectDescription="A mini project which allows one to search the google books API using search parameters such as author, publisher, book name &amp; ISBN code.
           The app is built as a dynamic web project making use of AJAX, Servlets, CSS, HTML, Jquery and Tomcat 9.0 Server."
         isMoreSpaced={'xLarge'}
         FooterImage={
