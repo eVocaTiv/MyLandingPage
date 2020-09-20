@@ -86,7 +86,7 @@ export default function AboutMeCard() {
               Science from BITS Pilani, Goa Campus in 2019, and a few internships, I became fascinated
               the most by Human-Computer Interaction and User Experience. Presently, I work at
               Amazon as a Front-End Engineer where I solve user problems
-              through extensive research, design and programming. I firmly believe that great
+              via thorough research, design and programming. I firmly believe that great
               UX resonates with the mind and hence,
               I thrive to innovate such products, which are enjoyed as much as they as used.
               <br />
