@@ -14,7 +14,7 @@ const StyledPaperText = styled.div`
   min-width: 200px !important;
   width: 30% !important;
   box-sizing: border-box;
-  font-size: 2rem;
+  font-size: 1.75rem;
   padding: 0.5rem;
   background-color: transparent !important;
   position: absolute;
@@ -128,7 +128,7 @@ const MultiBackground = ({
           {githubURL && (
             <>
               {' '}
-              Github Link:&nbsp;
+              Github Link <br />
               <a href={githubURL} target="_blank">
                 <StyledGitHubIcon />
               </a>
@@ -137,7 +137,7 @@ const MultiBackground = ({
           {adobeURL && (
             <>
               {' '}
-              PROJECT LINK:&nbsp;
+              Project Link  <br />
               <a href={adobeURL} target="_blank">
                 <StyledAdobeIcon />
               </a>

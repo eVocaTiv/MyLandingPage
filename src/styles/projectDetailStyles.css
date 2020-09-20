@@ -39,6 +39,7 @@
 @media only screen and (max-width: 950px) {
   .project-icons {
     left: 33% !important;
+    font-size: 1.25rem !important;
   }
   .project-description {
     top: 7% !important;
@@ -114,6 +115,7 @@
 @media only screen and (max-width: 475px) {
   .project-icons {
     left: 25% !important;
+    font-size: 1rem !important;
   }
   .project-image-2 {
     font-size: 0.7rem !important;
@@ -127,7 +129,9 @@
 @media only screen and (max-width: 400px) {
   .project-icons {
     left: 20% !important;
+    font-size: 0.75rem !important;
   }
+
   .project-image-2 {
     font-size: 0.6rem !important;
   }
