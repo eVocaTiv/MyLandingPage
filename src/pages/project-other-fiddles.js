@@ -22,7 +22,7 @@ class Project extends Component {
               'https://evocativ.github.io/VentureUI',
               'https://evocativ.github.io/SteeringEffectXclam',
               'https://evocativ.github.io/RockPaperScissorCSS',
-              'https://evocativ.github.io/PureCSS_Nav',
+              // 'https://evocativ.github.io/PureCSS_Nav',
             ]}
             toolTips={[
               'A custom made logo video',

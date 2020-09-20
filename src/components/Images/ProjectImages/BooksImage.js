@@ -29,7 +29,7 @@ const CardImage = () => {
         objectPosition: 'center',
       }}
       fluid={backgroundFluidImageStack}
-      alt="Kunal Dewan Library Books Search App"
+      alt="Kunal Dewan UX Sketch Showcase"
     />
   );
 };

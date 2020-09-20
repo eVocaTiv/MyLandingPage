@@ -232,15 +232,15 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation> */}
 
               <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={books}>
+                <ProjectDisplayCard isDisabled >
                   <BooksImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      Book Search Web Project
+                      Sketch Showcase <br /> (Coming Soon!)
                     </div>
-                    <div className="overlay-text--role">
+                    {/* <div className="overlay-text--role">
                       Software Development and UI Design
-                    </div>
+                    </div> */}
                   </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
