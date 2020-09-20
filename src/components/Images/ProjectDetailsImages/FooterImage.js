@@ -25,6 +25,7 @@ const StyledPaperText = styled.div`
   color: white;
   width: 100%;
   font-family: 'Julius Sans One';
+  color: white;
 `;
 
 const StyledGitHubIcon = styled(GitHubIcon)`
@@ -122,19 +123,29 @@ const MultiBackground = ({
       alt="Kunal Dewan Project Footer Image"
     >
       <StyledPaperText className="project-icons anim-smooth">
-        <ScrollAnimation animateIn="zoomIn">
+        <ScrollAnimation animateIn="flash">
           <br />
           {githubURL && (
-            <a href={githubURL} target="_blank">
-              <StyledGitHubIcon />
-            </a>
+            <>
+              {' '}
+              Github Link:&nbsp;
+              <a href={githubURL} target="_blank">
+                <StyledGitHubIcon />
+              </a>
+            </>
           )}
           {adobeURL && (
-            <a href={adobeURL} target="_blank">
-              <StyledAdobeIcon />
-            </a>
+            <>
+              {' '}
+              PROJECT LINK:&nbsp;
+              <a href={adobeURL} target="_blank">
+                <StyledAdobeIcon />
+              </a>
+            </>
           )}
-          {demoURLs && demoURLs.length > 1 && <StyledDemosText id="styled-demos-text">Demos</StyledDemosText>}
+          {demoURLs && demoURLs.length > 1 && (
+            <StyledDemosText id="styled-demos-text">Demos</StyledDemosText>
+          )}
           {demoURLs && demoURLs.length === 1 && 'Website'}
           {areDesktopOnlyLinks && (
             <StyledDesktopMessageDiv>(Desktop Only)</StyledDesktopMessageDiv>

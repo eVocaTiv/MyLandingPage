@@ -20,6 +20,7 @@ const StyledProjectDescriptionDiv = styled.div`
   height: 100vh;
   position: relative;
   color: white;
+  font-style: italic;
 `;
 
 const StyledPaper = styled(Card)`

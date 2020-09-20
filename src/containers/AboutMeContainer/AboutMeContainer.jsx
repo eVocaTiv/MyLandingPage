@@ -42,11 +42,11 @@ class AboutMeContainer extends Component {
           <NavBar />
         </NavBarContainer>
         <StyledAboutMeDiv>
-          <ScrollAnimation duration={1.5} animateIn="zoomIn">
+          <ScrollAnimation duration={2} animateIn="zoomIn">
             <AboutMeBGImage />
           </ScrollAnimation>
           <ArrowDiv className="arrow-div about-me-arrow-div anim-smooth">
-            <ScrollAnimation delay={2500} animateIn="zoomIn">
+            <ScrollAnimation delay={5000} animateIn="zoomIn">
               <StyledArrow onClick={onProjectsClicked} />
             </ScrollAnimation>
           </ArrowDiv>

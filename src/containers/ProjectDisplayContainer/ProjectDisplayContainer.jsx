@@ -27,11 +27,9 @@ const NavBarContainer = styled.div`
 `;
 
 const StyledFooterText = styled.div`
-  position: absolute;
+  margin-top: 25vh;
   color: #00c2cb;
   font-family: 'Great Vibes';
-  left: 37.5%;
-  top: 7.5%;
   font-size: 2.5rem;
   text-align: center;
 `;
@@ -114,17 +112,14 @@ class ProjectDisplayContainer extends Component {
         <NavBarContainer>
           <NavBar />
         </NavBarContainer>
-        <ScrollAnimation duration={1.5} animateIn="zoomIn">
+        <ScrollAnimation delay={500} duration={1} animateIn="fadeIn">
           <StyledProjectsDiv className="projects-container">
             <StyledFooterText className="projects-heading anim-smooth">
-              <ScrollAnimation duration={1.5} animateIn="rotateIn">
-                Some of my work! <br />
-              </ScrollAnimation>
-              <div className="projects-down-arrow">&dArr;</div>
+                Showcase <br /> &#9660;
             </StyledFooterText>
             <ProjectDisplayCardsDiv className="projects-display-cards-div">
               {/* UX Design */}
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+              <ScrollAnimation duration={1} animateOnce animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={ux}>
                   <UXImage />
                   <Overlay className="project-card-overlay">
@@ -136,7 +131,23 @@ class ProjectDisplayContainer extends Component {
                   </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+
+              <ScrollAnimation  duration={1} animateOnce animateIn="zoomIn">
+                <ProjectDisplayCard projectURL={myWebsite}>
+                  <LandingPageImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      Personal Website
+                    </div>
+                    <div className="overlay-text--role">
+                      Software Development and UI Design
+                    </div>
+                  </Overlay>
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+
+              <ScrollAnimation animateOnce duration={1}  animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={iotScanner}>
                   <IoTImage />
                   <Overlay className="project-card-overlay">
@@ -151,7 +162,7 @@ class ProjectDisplayContainer extends Component {
               </ScrollAnimation>
 
               {/* BPGC CollageCollage */}
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+              <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={bpgcCollage}>
                   <BPGCImage />
                   <Overlay className="project-card-overlay">
@@ -165,25 +176,14 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={myWebsite}>
-                  <LandingPageImage />
-                  <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">
-                      Personal Website
-                    </div>
-                    <div className="overlay-text--role">
-                      Software Development and UI Design
-                    </div>
-                  </Overlay>
-                </ProjectDisplayCard>
-              </ScrollAnimation>
 
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+              <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={udemy}>
                   <UdemyImage />
                   <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">UI Learnings at Udemy</div>
+                    <div className="overlay-text--heading">
+                      UI Learnings at Udemy
+                    </div>
                     <div className="overlay-text--role">
                       UI Development &amp; Design
                     </div>
@@ -191,7 +191,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+              <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={zentors}>
                   <ZentorsUIImage />
                   <Overlay className="project-card-overlay">
@@ -205,7 +205,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+              <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={otherFiddles}>
                   <OtherFiddlesImage />
                   <Overlay className="project-card-overlay">
@@ -216,7 +216,7 @@ class ProjectDisplayContainer extends Component {
                   </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation>
-{/* 
+              {/* 
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={amazon}>
                   <AmazonImage />
@@ -231,7 +231,7 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation> */}
 
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
+              <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={books}>
                   <BooksImage />
                   <Overlay className="project-card-overlay">
@@ -256,9 +256,11 @@ class ProjectDisplayContainer extends Component {
                   </Overlay>
                 </ProjectDisplayCard>
               </ScrollAnimation> */}
-
             </ProjectDisplayCardsDiv>
-            <ArrowDivPrimary className="arrow-div projects-arrow-primary anim-smooth">
+            <ArrowDivPrimary
+              animateOnce
+              className="arrow-div projects-arrow-primary anim-smooth"
+            >
               <ScrollAnimation animateIn="zoomIn">
                 <StyledArrow onClick={onConnectClicked} />
               </ScrollAnimation>

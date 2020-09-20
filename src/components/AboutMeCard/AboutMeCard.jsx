@@ -64,13 +64,13 @@ export default function AboutMeCard() {
           <ScrollAnimation
             delay={750}
             initiallyVisible={false}
-            animateIn="flash"
+            animateIn="fadeIn"
           >
-            Something about me &#8623;
+            Something about me
           </ScrollAnimation>
         </div>
         <ScrollAnimation
-          delay={500}
+          delay={1750}
           initiallyVisible={false}
           animateIn="fadeIn"
         >

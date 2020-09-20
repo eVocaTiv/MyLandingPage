@@ -1,6 +1,9 @@
 import { navigate } from 'gatsby';
 
-const onHomeClicked = () => onNavigate('/');
+const onHomeClicked = () => {
+  console.log('home clicked');
+  onNavigate('');
+}
 const onVisionClicked = () => onNavigate('/vision/');
 const onAboutMeClicked = () => onNavigate('/about-me/');
 const onProjectsClicked = () => onNavigate('/projects/');
