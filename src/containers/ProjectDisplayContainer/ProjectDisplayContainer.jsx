@@ -236,7 +236,7 @@ class ProjectDisplayContainer extends Component {
                   <BooksImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      Sketch Showcase <br /> (Coming Soon!)
+                      Sketching - An ideation medium <br /> (Coming Soon!)
                     </div>
                     {/* <div className="overlay-text--role">
                       Software Development and UI Design
