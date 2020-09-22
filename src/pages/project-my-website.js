@@ -14,7 +14,7 @@ class Project extends Component {
       <ProjectContainer
         TopImage={<MyWebsiteImage1 />}
         BottomImage={<MyWebsiteImage2 />}
-        ProjectDescription="Made from scratch in a desktop-first fashion using Vanilla JS, Gatsby (based on React v16), CSS styled-components, HTML &amp; Material-UI. Other things include a custom designed
+        ProjectDescription="Made from scratch in a desktop-first fashion using Vanilla JS, Gatsby (based on React v16), CSS styled-components, HTML &amp; Material-UI. Other deliverables include a custom designed
           logo on Canva and web design with mock-ups via hand sketches &amp; Adobe XD. Optimized for slow networks using lazy-loading, pre-loading, pre-fetching, image-thumbnailing and usage of gatsby's code-splitting &amp; static rendering."
         FooterImage={
           <FooterImage githubURL="https://github.com/eVocaTiv/MyLandingPage" />

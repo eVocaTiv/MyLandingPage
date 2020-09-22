@@ -15,8 +15,8 @@ class Project extends Component {
         TopImage={<UXImage1 />}
         BottomImage={<UXImage2 />}
         ProjectDescription="These designs started out of interest when I completed a few courses on UX principles
-        and design tools. By completing them I have expanded my knowledge tremendously and wish to make the next
-        projects even better. Currently I'm teaching myself Photoshop to enhance my visual design skills and 
+        and design tools. Being hands-on has helped me further my knowledge. I wish to make the next
+        projects even better through these learnings. Currently I'm teaching myself Photoshop to enhance my visual design skills and 
         diving deep into user research through case studies."
         FooterImage={
           <FooterImage adobeURL="https://dewan.design" />
