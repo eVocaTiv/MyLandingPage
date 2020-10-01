@@ -132,21 +132,6 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation  duration={1} animateOnce animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={myWebsite}>
-                  <LandingPageImage />
-                  <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">
-                      Personal Website
-                    </div>
-                    <div className="overlay-text--role">
-                      Software Development and UI Design
-                    </div>
-                  </Overlay>
-                </ProjectDisplayCard>
-              </ScrollAnimation>
-
-
               <ScrollAnimation animateOnce duration={1}  animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={iotScanner}>
                   <IoTImage />
@@ -156,6 +141,20 @@ class ProjectDisplayContainer extends Component {
                     </div>
                     <div className="overlay-text--role">
                       UI Development and Prototyping
+                    </div>
+                  </Overlay>
+                </ProjectDisplayCard>
+              </ScrollAnimation>
+
+              <ScrollAnimation  duration={1} animateOnce animateIn="zoomIn">
+                <ProjectDisplayCard projectURL={myWebsite}>
+                  <LandingPageImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      Personal Website
+                    </div>
+                    <div className="overlay-text--role">
+                      Software Development and UI Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
