@@ -146,15 +146,15 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
-              <ScrollAnimation  duration={1} animateOnce animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={myWebsite}>
-                  <LandingPageImage />
+              <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
+                <ProjectDisplayCard projectURL={zentors}>
+                  <ZentorsUIImage />
                   <Overlay className="project-card-overlay">
                     <div className="overlay-text--heading">
-                      Personal Website
+                      Zentors Website Concept
                     </div>
                     <div className="overlay-text--role">
-                      Software Development and UI Design
+                      UX Research &amp; Design, Software Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
@@ -175,6 +175,19 @@ class ProjectDisplayContainer extends Component {
                 </ProjectDisplayCard>
               </ScrollAnimation>
 
+              <ScrollAnimation  duration={1} animateOnce animateIn="zoomIn">
+                <ProjectDisplayCard projectURL={myWebsite}>
+                  <LandingPageImage />
+                  <Overlay className="project-card-overlay">
+                    <div className="overlay-text--heading">
+                      Personal Website
+                    </div>
+                    <div className="overlay-text--role">
+                      Software Development and UI Design
+                    </div>
+                  </Overlay>
+                </ProjectDisplayCard>
+              </ScrollAnimation>
 
               <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
                 <ProjectDisplayCard projectURL={udemy}>
@@ -185,20 +198,6 @@ class ProjectDisplayContainer extends Component {
                     </div>
                     <div className="overlay-text--role">
                       UI Development &amp; Design
-                    </div>
-                  </Overlay>
-                </ProjectDisplayCard>
-              </ScrollAnimation>
-
-              <ScrollAnimation animateOnce duration={1} animateIn="zoomIn">
-                <ProjectDisplayCard projectURL={zentors}>
-                  <ZentorsUIImage />
-                  <Overlay className="project-card-overlay">
-                    <div className="overlay-text--heading">
-                      Zentors Website Concept
-                    </div>
-                    <div className="overlay-text--role">
-                      UX Research &amp; Design, Software Design
                     </div>
                   </Overlay>
                 </ProjectDisplayCard>
