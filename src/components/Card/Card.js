@@ -9,9 +9,9 @@ class Card extends Component {
         <div className="card__side card__side--back">
           <CardImage />
           <h4 className="card__heading">
-            <span className="card__heading-span">A messianic</span>
+            <span className="card__heading-span">An ardent</span>
             <br />
-            <span className="card__heading-span">touch</span>
+            <span className="card__heading-span">vision</span>
           </h4>
           <div className="card__data">
             <div className="card__data__prelude">
