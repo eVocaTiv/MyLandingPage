@@ -81,14 +81,14 @@ export default function AboutMeCard() {
             component="p"
           >
             <StyledBodyText>
-              I'm an impassioned programmer and a budding designer, striving to create a
-              lucid user experience. Having completed my B. E. (Hons.) Computer
+              I'm an impassioned programmer and a budding designer, who is striving to create
+              lucid user experiences. Having completed my B. E. (Hons.) Computer
               Science from BITS Pilani, Goa Campus in 2019, and a few internships, I became fascinated
               the most by Human-Computer Interaction and User Experience. Presently, I work at
               Amazon as a Front-End Engineer where I solve user problems
-              via thorough research, design and programming. I firmly believe that great
+              using thorough research, design and programming. I firmly believe that a great
               UX resonates with the mind and hence,
-              I thrive to be cognizant of the users' needs and intuitive designs.
+              I thrive to be cognizant of the users' needs, and inculcate intuitive designs in my work.
               <br />
               Thank you for reading!
             </StyledBodyText>
