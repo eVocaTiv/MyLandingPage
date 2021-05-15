@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import CreateIcon from '@material-ui/icons/Create';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -114,12 +114,12 @@ const StyledLinkedInIcon = styled(LinkedInIcon)`
   },
 `;
 
-const StyledFacebookIcon = styled(FacebookIcon)`
+const StyledMediumIcon = styled(CreateIcon)`
   color: #ffffff;
   transition: all 0.5s ease !important;
   fontSize: 1rem;
   &:hover {
-    color: #4267b2;
+    color: #eff6fd;
     transform: scale(1.5);
   },
 `;
@@ -167,14 +167,14 @@ class FooterContainer extends Component {
                 <StyledLinkedInIcon />
               </a>
             </Tooltip>
+            <Tooltip title="Medium">
+              <a href="https://designkun.medium.com/" target="_blank">
+                <StyledMediumIcon />
+              </a>
+            </Tooltip>
             <Tooltip title="GitHub">
               <a href="https://github.com/eVocaTiv" target="_blank">
                 <StyledGitHubIcon />
-              </a>
-            </Tooltip>
-            <Tooltip title="Facebook">
-              <a href="https://www.facebook.com/NkT.NeveR" target="_blank">
-                <StyledFacebookIcon />
               </a>
             </Tooltip>
             <Tooltip title="Instagram">
