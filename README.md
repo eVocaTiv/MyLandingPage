@@ -1,3 +1,8 @@
+
+# Note
+This repo is archived and no longer active! :(
+I can still be reached @ kunaldewan.com :)
+
 # MyLandingPage
 Development of my personal website using Gatsby ( https://www.gatsbyjs.org/ )
 
